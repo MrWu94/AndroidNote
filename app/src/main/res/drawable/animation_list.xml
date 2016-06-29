@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <!--android:oneshot属性设置是否循环播放，设为true时，只播放一轮就结束，设为false时，则会轮询播放。-->
+    <item
+        android:drawable="@drawable/ic_launcher"
+        android:duration="1000"/>
+    <item
+        android:drawable="@drawable/ic_launcher"
+        android:duration="100"/>
+    <item
+        android:drawable="@drawable/ic_launcher"
+        android:duration="800"/>
+    <item
+        android:drawable="@drawable/ic_launcher"
+        android:duration="700"/>
+
+</animation-list>

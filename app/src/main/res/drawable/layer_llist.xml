@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--android:top 顶部的偏移量
+    android:bottom 底部的偏移量
+    android:left 左边的偏移量
+    android:right 右边的偏移量-->
+    <item
+        android:left="2dp"
+        android:top="4dp"
+        >
+        <shape>
+            <solid android:color="@android:color/darker_gray"/>
+            <corners android:radius="10dp"/>
+
+        </shape>
+    </item>
+
+    <item
+        android:bottom="4dp"
+        android:right="2dp"
+        >
+        <shape>
+            <solid android:color="#ffffff"/>
+             <corners android:radius="10dp"/>
+        </shape>
+
+    </item>
+
+
+</layer-list>

@@ -1,0 +1,7 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/Volley.jar')
+}

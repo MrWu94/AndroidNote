@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <!--<com.hansheng.customview.VolumeView-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent" />-->
+   <!--<com.hansheng.customview.Bezier2-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent" />-->
+   <!--<com.hansheng.customview.RadarView-->
+       <!--android:layout_width="match_parent"-->
+         <!--android:layout_height="match_parent"-->
+       <!--/>-->
+   <!--<com.hansheng.customview.curve.CurveView-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="match_parent" />-->
+
+   <!--<RelativeLayout-->
+       <!--android:layout_width="fill_parent"-->
+       <!--android:layout_height="200dp"-->
+       <!--android:layout_marginLeft="10dp"-->
+       <!--android:layout_marginRight="10dp"-->
+       <!--android:layout_marginTop="10dp"-->
+       <!--android:background="@drawable/btn_bg"-->
+       <!--android:orientation="vertical"-->
+       <!--android:padding="10dp"-->
+       <!--&gt;-->
+
+      <!--<com.hansheng.customview.curve.DottedLine-->
+          <!--android:layout_width="fill_parent"-->
+          <!--android:layout_height="wrap_content"-->
+          <!--android:layout_centerVertical="true"/>-->
+
+      <!--<com.hansheng.customview.curve.CurveView-->
+          <!--android:id="@+id/wxs_statistics"-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="match_parent" />-->
+   <!--</RelativeLayout>-->
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/image1"
+       android:src="@mipmap/ic_launcher"/>
+
+
+
+   <TextView
+      android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="8dp"
+       android:text="加了虚边的矩形"
+       android:textSize="16dp"
+       android:textColor="@android:color/white"
+       android:background="@drawable/rectangle"
+        />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="6"
+       android:textSize="20dp"
+       android:textColor="@android:color/black"
+       android:background="@drawable/oval"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="实现"
+       android:textSize="20dp"
+       android:textColor="@android:color/darker_gray"
+       android:background="@drawable/line"
+       />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="haha"
+       android:textColor="@android:color/black"
+       android:background="@drawable/rotate_ring"
+       />
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="圆角矩形"
+       android:background="@drawable/bg_btn_activated"
+       />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+       >
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="完美"
+       android:background="@drawable/bg_btn_disable"
+       />
+   <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="xixi"
+      android:background="@drawable/bg_line_dash"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="ahha"
+       android:background="@drawable/bg_oval_with_gradient"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="hah"
+       android:background="@drawable/bg_oval_with_stroke_only"
+       />
+   </LinearLayout>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="jha"
+          android:background="@drawable/bg_rectangle_with_arc"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="hahha"
+          android:background="@drawable/bg_rectangle_with_corners_top"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="hahhha"
+          android:background="@drawable/bg_rectangle_with_gradient"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="hhah"
+          android:background="@drawable/bg_ring_with_gradient"
+          />
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/layer_llist"
+          />
+   </LinearLayout>
+
+</LinearLayout>
