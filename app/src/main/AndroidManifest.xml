@@ -10,8 +10,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:name=".StudyApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".loader.DiskLruCacheActivity">
+        <activity android:name=".listview.ImageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
