@@ -11,13 +11,27 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".volleydemo.VolleyDemo">
+        <activity android:name=".loader.DiskLruCacheActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".service.MsgService">
+            <!--<intent-filter>-->
+                <!--<action android:name="com.hansheng.studynote.service.MSG_ACTION"/>-->
+            <!--</intent-filter>-->
+        </service>
+        <service android:name=".broadcast.MsgService">
+            <!--<intent-filter>-->
+            <!--<action android:name="com.hansheng.studynote.broadcast.MSG_ACTION"/>-->
+            <!--</intent-filter>-->
+        </service>
+        <service android:name=".service.MyService"
+            android:process=":remote"
+            />
+
     </application>
 
 </manifest>
