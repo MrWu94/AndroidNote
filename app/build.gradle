@@ -29,5 +29,7 @@ dependencies {
     compile 'com.jiechic.library:xUtils:2.6.14'
     compile files('libs/Volley.jar')
     compile 'com.google.code.gson:gson:2.2.4'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:0.24.0'
     compile files('libs/universal-image-loader-1.9.4.jar')
 }
