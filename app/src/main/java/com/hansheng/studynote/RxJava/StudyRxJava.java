@@ -1,8 +1,11 @@
 package com.hansheng.studynote.RxJava;
 
 
+import android.content.Intent;
+
 import rx.Observable;
 import rx.Subscriber;
+import rx.functions.Action0;
 import rx.functions.Action1;
 import rx.functions.Func1;
 
@@ -18,6 +21,8 @@ public class StudyRxJava {
         study3();
         study4();
         study5();
+        study6();
+        study7();
 
     }
 
@@ -119,6 +124,55 @@ public class StudyRxJava {
                     @Override
                     public void call(String s) {
                         System.out.println(s);
+                    }
+                });
+    }
+    public static void study6(){
+        Observable.create(new Observable.OnSubscribe<Integer>(){
+            @Override
+            public void call(Subscriber<? super Integer> subscriber) {
+                if(!subscriber.isUnsubscribed()){
+                    for(int i=1;i<5;i++){
+                        subscriber.onNext(i);
+                    }
+                    subscriber.onCompleted();
+                }
+            }
+        }).subscribe(new Subscriber<Integer>() {
+            @Override
+            public void onCompleted() {
+                System.out.println("Sequence complete");
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                System.err.println("Error: " + e.getMessage());
+            }
+
+            @Override
+            public void onNext(Integer integer) {
+                System.out.println("Next: " + integer);
+            }
+        });
+    }
+    public static void study7(){
+        final Integer[] items={0,1,2,3,4,5};
+        Observable.from(items)
+                .subscribe(new Action1<Integer>() {
+                    @Override
+                    public void call(Integer integer) {
+                        System.out.println(integer);
+                    }
+                }, new Action1<Throwable>() {
+                    @Override
+                    public void call(Throwable throwable) {
+                        System.out.println("Error encountered: " + throwable.getMessage());
+                    }
+                },new Action0(){
+
+                    @Override
+                    public void call() {
+                        System.out.println("Sequence complete");
                     }
                 });
     }
