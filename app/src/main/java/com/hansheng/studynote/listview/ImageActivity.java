@@ -18,7 +18,7 @@ public class ImageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview_layout);
         listView = (ListView) findViewById(R.id.list_view);
-        ImageAdapter adapter = new ImageAdapter(this, 0, Images.imageUrls);
+        WeakImageAdapter adapter = new WeakImageAdapter(this, 0, Images.imageUrls);
         listView.setAdapter(adapter);
     }
 }
