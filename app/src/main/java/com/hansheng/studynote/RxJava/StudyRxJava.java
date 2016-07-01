@@ -32,6 +32,20 @@ public class StudyRxJava {
      * Conditional and Boolean Operators(Observable的条件操作符)，比如：observable.amb()、observable.contains()、observable.skipUntil()等等；
      * Mathematical and Aggregate Operators(Observable数学运算及聚合操作符)，比如：observable.count()、observable.reduce()、observable.concat()等等；
      * 其他如observable.toList()、observable.connect()、observable.publish()等等；
+     * <p/>
+     * <p/>
+     * flatMap的作用就是对传入的对象进行处理，返回下一级所要的对象的Observable包装
+     * FuncX和ActionX的区别。FuncX包装的是有返回值的方法，用于Observable的变换、组合等等；ActionX用于包装无返回值的方法，
+     * 用于subscribe方法的闭包参数。Func1有两个入参，前者是原始的参数类型，后者是返回值类型；而Action1只有一个入参，就是传入的被消费的数据类型。
+     * subscribeOn(Schedulers.io()).observeOn(AndroidScheduler.mainThread())是最常用的方式，后台读取数据，主线程更新界面。
+     * subScribeOn指在哪个线程发射数据，observeOn是指在哪里消费数据
+     * 那么到底map和flatMap有什么区别，或者说什么时候使用map什么时候使用flatMap呢？
+     * flatMap() 和 map() 有一个相同点：它也是把传入的参数转化之后返回另一个对象。但需要注意，和 map() 不同的是，
+     * flatMap() 中返回的是个 Observable 对象，并且这个 Observable 对象并不是被直接发送到了 Subscriber 的回调方法中。
+     * 首先，如果你需要将一个类型的对象经过处理（非异步）直接转化成下一个类型，推荐用map，否则的话就用flatMap。
+     * 其次，如果你需要在处理中加入容错的机制（特别是你自己封装基于RxJava的网络请求框架），推荐用flatMap。
+     * <p/>
+     * <p/>
      */
 
     public static void main(String[] args) {
@@ -134,6 +148,12 @@ public class StudyRxJava {
                 });
     }
 
+    /**
+     * map操作符
+     * <p/>
+     * map操作符是把源Observable产生的结果，通过映射规则转换成另一个结果集，并提交给订阅者进行处理
+     */
+
     public static void study4() {
         Observable.just("hello world 5")
                 .map(new Func1<String, Integer>() {
@@ -173,7 +193,8 @@ public class StudyRxJava {
     }
 
     /**
-     * 在使用create操作符时，最好要在回调的call函数中增加isUnsubscribed的判断，以便在subscriber在取消订阅时不会再执行call函数中相关代码逻辑，从而避免导致一些意想不到的错误出现；
+     * 在使用create操作符时，最好要在回调的call函数中增加isUnsubscribed的判断，以便在subscriber在取消订阅时不会再执行call函数中相关代码逻辑，
+     * 从而避免导致一些意想不到的错误出现；
      */
     public static void study6() {
         Observable.create(new Observable.OnSubscribe<Integer>() {
@@ -204,6 +225,12 @@ public class StudyRxJava {
         });
     }
 
+    /**
+     * from操作符
+     * <p/>
+     * from操作符是把其他类型的对象和数据类型转化成Observable
+     */
+
     public static void study7() {
         final Integer[] items = {0, 1, 2, 3, 4, 5};
         Observable.from(items)
@@ -226,6 +253,11 @@ public class StudyRxJava {
                 });
     }
 
+    /**
+     * just操作符
+     * <p/>
+     * just操作符也是把其他类型的对象和数据类型转化成Observable，它和from操作符很像，只是方法的参数有所差别，
+     */
     public static void study8() {
         Observable.just(1, 2, 3, 4)
                 .filter(new Func1<Integer, Boolean>() {
@@ -394,6 +426,12 @@ public class StudyRxJava {
         });
     }
 
+    /**
+     * repeat/repeatWhen操作符
+     * <p/>
+     * repeat操作符是对某一个Observable，重复产生多次结果
+     */
+
     public static void study14() {
         Observable.range(3, 3).repeat(2).subscribe(new Subscriber<Integer>() {
             @Override
@@ -412,6 +450,12 @@ public class StudyRxJava {
             }
         });
     }
+
+    /**
+     * flatMap操作符
+     * <p/>
+     * flatMap操作符是把Observable产生的结果转换成多个Observable，然后把这多个Observable“扁平化”成一个Observable，并依次提交产生的结果给订阅者。
+     */
 
     public static void study15() {
         Observable.just(1, 2, 3).repeatWhen(new Func1<Observable<? extends Void>, Observable<?>>() {
@@ -654,11 +698,12 @@ public class StudyRxJava {
                     }
                 });
     }
+
     /**
      * take操作符
-     take操作符是把源Observable产生的结果，提取前面的n个提交给订阅者，而忽略后面的结果
+     * take操作符是把源Observable产生的结果，提取前面的n个提交给订阅者，而忽略后面的结果
      */
-    public static void study25(){
+    public static void study25() {
         Observable.just(1, 2, 3, 4, 5, 6, 7, 8)
                 .take(4)
                 .subscribe(new Subscriber<Integer>() {
@@ -679,19 +724,20 @@ public class StudyRxJava {
                 });
 
     }
+
     /**
      * takeFirst操作符
-
-     takeFirst操作符类似于take操作符，同时也类似于first操作符，都是获取源Observable产生的结果列表中符合指定条件的前一个或多个，
-     与first操作符不同的是，first操作符如果获取不到数据，则会抛出NoSuchElementException异常，而takeFirst则会返回一个空的Observable，
-     该Observable只有onCompleted通知而没有onNext通知。
+     * <p/>
+     * takeFirst操作符类似于take操作符，同时也类似于first操作符，都是获取源Observable产生的结果列表中符合指定条件的前一个或多个，
+     * 与first操作符不同的是，first操作符如果获取不到数据，则会抛出NoSuchElementException异常，而takeFirst则会返回一个空的Observable，
+     * 该Observable只有onCompleted通知而没有onNext通知。
      */
-    public static void study26(){
-        Observable.just(1,2,3,4,5,6,7).takeFirst(new Func1<Integer, Boolean>() {
+    public static void study26() {
+        Observable.just(1, 2, 3, 4, 5, 6, 7).takeFirst(new Func1<Integer, Boolean>() {
             @Override
             public Boolean call(Integer integer) {
                 //获取数值大于3的数据
-                return integer>3;
+                return integer > 3;
             }
         })
                 .subscribe(new Subscriber<Integer>() {
@@ -711,13 +757,14 @@ public class StudyRxJava {
                     }
                 });
     }
-    /**
-     *takeLast操作符
 
-     takeLast操作符是把源Observable产生的结果的后n项提交给订阅者，提交时机是Observable发布onCompleted通知之时。
+    /**
+     * takeLast操作符
+     * <p/>
+     * takeLast操作符是把源Observable产生的结果的后n项提交给订阅者，提交时机是Observable发布onCompleted通知之时。
      */
-    public static void study27(){
-        Observable.just(1,2,3,4,5,6,7).takeLast(2)
+    public static void study27() {
+        Observable.just(1, 2, 3, 4, 5, 6, 7).takeLast(2)
                 .subscribe(new Subscriber<Integer>() {
                     @Override
                     public void onNext(Integer item) {
@@ -735,13 +782,14 @@ public class StudyRxJava {
                     }
                 });
     }
-/**
- * merge操作符
 
- merge操作符是按照两个Observable提交结果的时间顺序，对Observable进行合并，如ObservableA每隔500毫秒产生数据为0,5,10,15,20；
- 而ObservableB每隔500毫秒产生数据0,10,20,30,40，其中第一个数据延迟500毫秒产生，最后合并结果为：0,0,5,10,10,20,15,30,20,40
- */
-    public static void study28(){
+    /**
+     * merge操作符
+     * <p/>
+     * merge操作符是按照两个Observable提交结果的时间顺序，对Observable进行合并，如ObservableA每隔500毫秒产生数据为0,5,10,15,20；
+     * 而ObservableB每隔500毫秒产生数据0,10,20,30,40，其中第一个数据延迟500毫秒产生，最后合并结果为：0,0,5,10,10,20,15,30,20,40
+     */
+    public static void study28() {
         //产生0,5,10,15,20数列
         Observable<Long> observable1 = Observable.timer(0, 1000, TimeUnit.MILLISECONDS)
                 .map(new Func1<Long, Long>() {
@@ -781,11 +829,11 @@ public class StudyRxJava {
 
     /**
      * startWith操作符
-
-     startWith操作符是在源Observable提交结果之前，插入指定的某些数据
+     * <p/>
+     * startWith操作符是在源Observable提交结果之前，插入指定的某些数据
      */
-    public static void study29(){
-        Observable.just(10,20,30).startWith(2, 3, 4).subscribe(new Subscriber<Integer>() {
+    public static void study29() {
+        Observable.just(10, 20, 30).startWith(2, 3, 4).subscribe(new Subscriber<Integer>() {
             @Override
             public void onCompleted() {
                 System.out.println("Sequence complete.");
