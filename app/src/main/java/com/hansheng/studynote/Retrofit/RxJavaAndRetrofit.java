@@ -43,6 +43,7 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
     String baseUrl="https://api.douban.com/v2/movie/";
     Subscriber<MoiveEntity> subscriber;
     Subscriber<HttpResult<List<Subject>>> subscriber1;
+    Subscriber<List<Subject>> subscriber2;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,13 +54,15 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
 
     @OnClick(R.id.click_me_BN)
     public void onClick(){
-        getMovie2();
+        getMoive3();
     }
     public interface MovieService {
         @GET("top250")
         Observable<MoiveEntity> getTopMovie(@Query("start") int start, @Query("count") int count);
         @GET("top250")
         Observable<HttpResult<List<Subject>>> getTopMoive(@Query("start") int start, @Query("count") int count);
+        @GET("top250")
+        Observable<HttpResult<List<Subject>>> getTopMoive1(@Query("start") int start, @Query("count") int count);
     }
 
 
@@ -135,6 +138,27 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
             }
         };
         HttpMethods.getInstance().getTopMoive(subscriber1,0,10);
+
+    }
+
+    public void getMoive3(){
+        subscriber2=new Subscriber<List<Subject>>() {
+            @Override
+            public void onCompleted() {
+                Toast.makeText(RxJavaAndRetrofit.this, "Get Top Movie Completed", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                resultTV.setText(e.getMessage());
+            }
+
+            @Override
+            public void onNext(List<Subject> subjects) {
+                resultTV.setText(subjects.toString());
+            }
+        };
+        HttpMethods.getInstance().getTopMovie1(subscriber2,0,10);
 
     }
 
