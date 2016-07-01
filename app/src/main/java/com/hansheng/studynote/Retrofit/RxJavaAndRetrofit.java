@@ -40,6 +40,8 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
     Button clickMeBN;
     @Bind(R.id.result_TV)
     TextView resultTV;
+
+    private SubscriberOnNextListener getTopMoiveOnNext;
     String baseUrl="https://api.douban.com/v2/movie/";
     Subscriber<MoiveEntity> subscriber;
     Subscriber<HttpResult<List<Subject>>> subscriber1;
@@ -50,11 +52,20 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.rxjava_retrofit_layout);
         ButterKnife.bind(this);
+
+        getTopMoiveOnNext=new SubscriberOnNextListener<List<Subject>>() {
+
+            @Override
+            public void onNext(List<Subject> subjects) {
+                resultTV.setText(subjects.toString());
+            }
+        };
     }
 
     @OnClick(R.id.click_me_BN)
     public void onClick(){
-        getMoive3();
+//        getMoive3();
+        HttpMethods.getInstance().getTopMovie1(new ProgressSubscriber<List<Subject>>(getTopMoiveOnNext,RxJavaAndRetrofit.this),0,10);
     }
     public interface MovieService {
         @GET("top250")

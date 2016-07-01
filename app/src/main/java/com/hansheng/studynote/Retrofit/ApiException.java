@@ -3,7 +3,7 @@ package com.hansheng.studynote.Retrofit;
 /**
  * Created by hansheng on 2016/7/1.
  */
-public class ApiException extends Exception {
+public class ApiException extends RuntimeException {
 
     public static final int USER_NOT_EXIST=100;
     public static final int WRONG_PASSWORD=101;
