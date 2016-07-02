@@ -29,11 +29,19 @@ public class AsynchronousGet {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
-                RequestBody requestBody=request.body();
+                RequestBody responseBody=request.body();
                 if(!response.isSuccessful())throw new IOException("Unexpected code " + response);
-                Headers responseHeaders=response.headers();
+                Headers responseHeaders = response.headers();
+                for (int i = 0, size = responseHeaders.size(); i < size; i++) {
+                    System.out.println(responseHeaders.name(i) + ": " + responseHeaders.value(i));
+                }
+
+                System.out.println(responseBody.toString());
 
             }
         });
+    }
+    public static void main(String... args){
+        run();
     }
 }
