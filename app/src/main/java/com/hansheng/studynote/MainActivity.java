@@ -30,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layoutinflater);
-        mainLayout= (LinearLayout) findViewById(R.id.main_layout);
-
-        LayoutInflater layoutInflater=LayoutInflater.from(this);
-        View buttonLayout=layoutInflater.inflate(R.layout.button_layout,null);
-        mainLayout.addView(buttonLayout);
+        setContentView(R.layout.view_layout);
+//              mainLayout= (LinearLayout) findViewById(R.id.main_layout);
+//
+//        LayoutInflater layoutInflater=LayoutInflater.from(this);
+//        View buttonLayout=layoutInflater.inflate(R.layout.button_layout,null);
+//        mainLayout.addView(buttonLayout);
 
 
 
