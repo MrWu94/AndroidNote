@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import rx.Observable;
 import rx.Scheduler;
 import rx.Subscriber;
+import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action0;
 import rx.functions.Action1;
@@ -76,7 +77,7 @@ public class StudyRxJava {
 //        study24();
 //        study25();
 //        study26();
-        study30();
+        study31();
 
     }
 
@@ -870,6 +871,25 @@ public class StudyRxJava {
                     }
                 });
     }
+
+    /**
+     *其实很简单:
+     Observable.subscribe()方法可以返回一个Subscription的对象,即我们每次订阅都会返回.
+     感觉Subscription就像一个订单,你下单了就会生成一个订单,而你也可以用这个订单取消订单.
+     */
+    public static void study31(){
+        Subscription subscription=Observable.just("hello subscription")
+                .subscribe(new Action1<String>() {
+                    @Override
+                    public void call(String s) {
+                        System.out.println(s);
+                    }
+                });
+        System.out.println(subscription.isUnsubscribed());
+        subscription.unsubscribe();
+        System.out.println(subscription.isUnsubscribed());
+    }
+
 
 
 }

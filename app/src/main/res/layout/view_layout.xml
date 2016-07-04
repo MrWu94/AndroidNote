@@ -6,7 +6,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
-        android:id="@+id/tv1"
+        android:id="@+id/tv0"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:background="#88ff33"
@@ -17,7 +17,7 @@
 
 
     <TextView
-        android:id="@+id/tv2"
+        android:id="@+id/tv1"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:background="#ff0000"
@@ -27,7 +27,7 @@
         />
 
     <TextView
-        android:id="@+id/tv3"
+        android:id="@+id/tv2"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#ee00ee"
@@ -37,7 +37,7 @@
         />
 
     <TextView
-        android:id="@+id/tv4"
+        android:id="@+id/tv3"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#44ff33"
@@ -48,10 +48,11 @@
         />
 
     <TextView
+        android:id="@+id/tv4"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#ff00ff"
-        android:text="Hello,MatchParent"
+        android:text="Hello,MatchParent1"
         android:textColor="#ffffff"
         android:textSize="20sp"
         android:visibility="invisible"

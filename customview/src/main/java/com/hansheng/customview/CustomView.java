@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 
 /**
  * Created by hansheng on 2016/7/4.
+ * 每个View都包含一个ViewGroup.LayoutParams类或者其派生类，LayoutParams中包含了View和它的父View之间的关系，而View大小正是View和它的父View共同决定的。
  */
 public class CustomView extends ViewGroup{
 
@@ -55,6 +56,7 @@ public class CustomView extends ViewGroup{
             if(child.getVisibility()==GONE){
                 continue;
             }
+//            Log.d(TAG, "onMeasure: i=:" + i + ",width1=:" + child.getMeasuredWidth() + ",height1=:" + child.getMeasuredHeight());
             //根据LayoutParams,给子View生成MeasureSpec规则
             LayoutParams lp=child.getLayoutParams();
             int widthSpec=0;
@@ -75,6 +77,7 @@ public class CustomView extends ViewGroup{
             }else {
                 heightSpec=MeasureSpec.makeMeasureSpec(lp.height,MeasureSpec.EXACTLY);
             }
+
             child.measure(widthSpec,heightSpec);
             //把所有的子View的高度加起来,就是高度
             height+=child.getMeasuredHeight();
