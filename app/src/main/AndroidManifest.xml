@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:name=".StudyApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".OkHttp.OkHttpActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,6 +32,7 @@
         <service android:name=".service.MyService"
             android:process=":remote"
             />
+        <activity android:name=".OkHttp.OkHttpPostActivity"/>
 
     </application>
 
