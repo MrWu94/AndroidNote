@@ -3,14 +3,12 @@ package com.hansheng.studynote.Retrofit.service;
 import com.hansheng.studynote.Retrofit.entity.User;
 import com.hansheng.studynote.Retrofit.entity.UsersResponse;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
-import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;

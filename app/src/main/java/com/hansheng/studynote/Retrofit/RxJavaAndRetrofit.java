@@ -8,15 +8,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hansheng.studynote.R;
+import com.hansheng.studynote.Retrofit.entity.Gank;
+import com.hansheng.studynote.Retrofit.entity.GankManager;
 import com.hansheng.studynote.Retrofit.entity.HttpResult;
 import com.hansheng.studynote.Retrofit.entity.MoiveEntity;
 import com.hansheng.studynote.Retrofit.entity.Subject;
 import com.hansheng.studynote.Retrofit.entity.User;
 import com.hansheng.studynote.Retrofit.entity.User.ItemsBean;
 import com.hansheng.studynote.Retrofit.service.SeApiManager;
-import com.hansheng.studynote.RxJava.RxJavaActivity;
-
-import org.apache.http.HttpResponse;
 
 import java.util.List;
 
@@ -31,6 +30,8 @@ import retrofit2.http.Query;
 import rx.Observable;
 import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
+import rx.functions.Action1;
+import rx.functions.Func1;
 import rx.schedulers.Schedulers;
 
 /**
@@ -71,7 +72,7 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
     public void onClick(){
 //        getMoive3();
 //        HttpMethods.getInstance().getTopMovie1(new ProgressSubscriber<List<Subject>>(getTopMoiveOnNext,RxJavaAndRetrofit.this),0,10);
-        getUser();
+       getGank();
     }
     public interface MovieService {
         @GET("top250")
@@ -199,6 +200,38 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
             }
         };
         SeApiManager.getInstance().getUser(subscriber3,2);
+
+    }
+
+    public void getGank(){
+
+        GankManager.GankManager().getGankDatas("Android",30,1)
+                .filter(new Func1<Gank, Boolean>() {
+                    @Override
+                    public Boolean call(Gank gank) {
+                        return !gank.error;
+                    }
+                })
+                .map(new Func1<Gank, List<Gank.GankInfo>>() {
+                    @Override
+                    public List<Gank.GankInfo> call(Gank gank) {
+                        return gank.results;
+                    }
+                })
+                .subscribeOn(Schedulers.io())
+                .observeOn(Schedulers.io())
+                .subscribe(new Action1<List<Gank.GankInfo>>() {
+                    @Override
+                    public void call(List<Gank.GankInfo> gankInfos) {
+                        Gank.GankInfo gank = gankInfos.get(0);
+                        resultTV.setText(gank.toString());
+                    }
+                }, new Action1<Throwable>() {
+                    @Override
+                    public void call(Throwable throwable) {
+
+                    }
+                });
 
     }
 
