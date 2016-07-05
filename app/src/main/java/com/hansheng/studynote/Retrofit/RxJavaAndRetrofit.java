@@ -11,6 +11,9 @@ import com.hansheng.studynote.R;
 import com.hansheng.studynote.Retrofit.entity.HttpResult;
 import com.hansheng.studynote.Retrofit.entity.MoiveEntity;
 import com.hansheng.studynote.Retrofit.entity.Subject;
+import com.hansheng.studynote.Retrofit.entity.User;
+import com.hansheng.studynote.Retrofit.entity.User.ItemsBean;
+import com.hansheng.studynote.Retrofit.service.SeApiManager;
 import com.hansheng.studynote.RxJava.RxJavaActivity;
 
 import org.apache.http.HttpResponse;
@@ -47,6 +50,8 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
     Subscriber<HttpResult<List<Subject>>> subscriber1;
     Subscriber<List<Subject>> subscriber2;
 
+    Subscriber<User> subscriber3;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +70,8 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
     @OnClick(R.id.click_me_BN)
     public void onClick(){
 //        getMoive3();
-        HttpMethods.getInstance().getTopMovie1(new ProgressSubscriber<List<Subject>>(getTopMoiveOnNext,RxJavaAndRetrofit.this),0,10);
+//        HttpMethods.getInstance().getTopMovie1(new ProgressSubscriber<List<Subject>>(getTopMoiveOnNext,RxJavaAndRetrofit.this),0,10);
+        getUser();
     }
     public interface MovieService {
         @GET("top250")
@@ -170,6 +176,29 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
             }
         };
         HttpMethods.getInstance().getTopMovie1(subscriber2,0,10);
+
+    }
+
+    public void getUser(){
+        subscriber3=new Subscriber<User>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(User user) {
+                List<ItemsBean> item=user.getItems();
+                ItemsBean itemsBean=item.get(0);
+                resultTV.setText(itemsBean.getAge());
+            }
+        };
+        SeApiManager.getInstance().getUser(subscriber3,2);
 
     }
 
