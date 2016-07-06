@@ -224,7 +224,7 @@ public class RxJavaAndRetrofit extends AppCompatActivity {
                     @Override
                     public void call(List<Gank.GankInfo> gankInfos) {
                         Gank.GankInfo gank = gankInfos.get(0);
-                        resultTV.setText(gank.toString());
+                        resultTV.setText(gank.getUrl());
                     }
                 }, new Action1<Throwable>() {
                     @Override
