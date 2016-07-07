@@ -1,1 +1,1 @@
-include ':app', ':customview', ':network', ':pattern', ':animation', ':java'
+include ':app', ':customview', ':network', ':pattern', ':animation', ':java', ':daogenerator'

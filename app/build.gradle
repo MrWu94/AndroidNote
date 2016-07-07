@@ -26,6 +26,11 @@ android {
     packagingOptions {
         exclude 'META-INF/services/javax.annotation.processing.Processor'
     }
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
 }
 repositories {
     jcenter()
@@ -48,6 +53,8 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
     compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'org.greenrobot:greendao:2.2.0'
     provided 'org.projectlombok:lombok:1.16.6'
     compile files('libs/universal-image-loader-1.9.4.jar')
 }
