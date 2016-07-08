@@ -7,8 +7,6 @@ import de.greenrobot.daogenerator.Schema;
 public class DaoGeneratorDemo {
 
 
-
-
     public static void main(String... args) throws Exception {
         Schema schema=new Schema(1,"com.hansheng.greendao");
 
@@ -16,8 +14,6 @@ public class DaoGeneratorDemo {
         new DaoGenerator().generateAll(schema,"C:\\Users\\hansheng\\Desktop\\StudyNote\\app\\src\\main\\java-gen");
 
     }
-
-
 
     private static void addNote(Schema schema){
 

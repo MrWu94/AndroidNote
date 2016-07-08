@@ -11,11 +11,10 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
 
-import com.hansheng.greendao.DaoMaster;
-import com.hansheng.greendao.DaoSession;
 import com.hansheng.greendao.Note;
 import com.hansheng.greendao.NoteDao;
 import com.hansheng.studynote.R;
+import com.hansheng.studynote.StudyApplication;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -30,24 +29,24 @@ import de.greenrobot.dao.query.QueryBuilder;
  */
 public class NoteActivity extends ListActivity {
 
-    private SQLiteDatabase db;
+//    private SQLiteDatabase db;
     private EditText editText;
-    private DaoMaster daoMaster;
-    private DaoSession daoSession;
+//    private DaoMaster daoMaster;
+//    private DaoSession daoSession;
     private Cursor cursor;
     public static final String TAG="NoteActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note);
-    // 官方推荐将获取 DaoMaster 对象的方法放到 Application 层，这样将避免多次创建生成 Session 对象
-        setupDatabase();
+//    // 官方推荐将获取 DaoMaster 对象的方法放到 Application 层，这样将避免多次创建生成 Session 对象
+//        setupDatabase();
 
         getNoteDao();
 
         String textcolumn=NoteDao.Properties.Text.columnName;
         String orderBy=textcolumn;
-        cursor=db.query(getNoteDao().getTablename(),getNoteDao().getAllColumns(),null,null,null,null,orderBy);
+        cursor=getDb().query(getNoteDao().getTablename(),getNoteDao().getAllColumns(),null,null,null,null,orderBy);
         String[] from={textcolumn,NoteDao.Properties.Comment.columnName};
         int[] to={android.R.id.text1,android.R.id.text2};
 
@@ -57,16 +56,20 @@ public class NoteActivity extends ListActivity {
         editText= (EditText) findViewById(R.id.editTextNote);
     }
 
-    private void setupDatabase() {
+//    private void setupDatabase() {
+//
+//        DaoMaster.DevOpenHelper helper=new DaoMaster.DevOpenHelper(this,"note-db",null);
+//        db=helper.getWritableDatabase();
+//        daoMaster=new DaoMaster(db);
+//        daoSession=daoMaster.newSession();
+//    }
 
-        DaoMaster.DevOpenHelper helper=new DaoMaster.DevOpenHelper(this,"note-db",null);
-        db=helper.getWritableDatabase();
-        daoMaster=new DaoMaster(db);
-        daoSession=daoMaster.newSession();
+    private NoteDao getNoteDao(){
+        return ((StudyApplication)this.getApplicationContext()).getDaoSession().getNoteDao();
     }
 
-    public NoteDao getNoteDao() {
-        return daoSession.getNoteDao();
+    private SQLiteDatabase getDb(){
+        return ((StudyApplication)this.getApplicationContext()).getDb();
     }
     /**
      * Button 点击的监听事件
