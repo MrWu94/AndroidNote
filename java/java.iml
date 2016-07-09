@@ -29,5 +29,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="org.apache.http.legacy" level="project" />
     <orderEntry type="library" exported="" name="Volley" level="project" />
+    <orderEntry type="library" exported="" name="java.java" level="project" />
   </component>
 </module>
