@@ -15,7 +15,7 @@ public class RxNba {
 
     public static void main(String... args){
 
-            getTeams("2016-01-09");
+        getTeams("2016-01-09");
         getNews("news");
     }
 

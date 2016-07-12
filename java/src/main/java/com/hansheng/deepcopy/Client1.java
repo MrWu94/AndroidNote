@@ -20,7 +20,24 @@ package com.hansheng.deepcopy;
  * 若变量为 String 字符串，则拷贝其地址引用。但是在修改时，它会从字符串池中重新生成一个新的字符串，原有字符串对象保持不变。
  */
 public class Client1 {
+
+    public static void getClone(){
+        int x=2,y;
+        y=x;
+        x=1;
+        System.out.println(y==x);
+
+        String str1="hansheng",str2;
+        str2=str1;
+        str1="hanming";
+        System.out.println(str1.equals(str2));
+
+    }
+
+
     public static void main(String[] args) {
+        getClone();
+
         //写封邮件
         Email email = new Email("请参加会议", "请与今天12:30到二会议室参加会议...");
 
