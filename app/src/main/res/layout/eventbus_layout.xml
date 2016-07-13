@@ -10,13 +10,13 @@
     <fragment
         android:id="@+id/item_list"
         android:layout_width="0dip"
-        android:name="com.hansheng.studynote.eventbus.event.ItemListFragment"
+        android:name="com.hansheng.studynote.eventbus.event.MyEvent.MyItemListFragment"
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
     <fragment
         android:id="@+id/item_detail_container"
-        android:name="com.hansheng.studynote.eventbus.event.ItemDetailFragment"
+        android:name="com.hansheng.studynote.eventbus.event.MyEvent.MyListDetailFragment"
         android:layout_width="0dip"
         android:layout_height="match_parent"
         android:layout_weight="2" />

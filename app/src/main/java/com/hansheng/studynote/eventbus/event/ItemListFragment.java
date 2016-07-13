@@ -19,7 +19,7 @@ public class ItemListFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        //双重判断的方式，防止并发的问题，还能极大的提高效率。
         EventBus.getDefault().register(this);
 
     }

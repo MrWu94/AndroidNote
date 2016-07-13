@@ -8,6 +8,7 @@ import com.hansheng.studynote.R;
 
 /**
  * Created by hansheng on 2016/7/13.
+ *
  */
 public class EventBusActivity extends AppCompatActivity {
     @Override
