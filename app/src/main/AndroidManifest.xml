@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:name=".StudyApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".eventbus.event.EventBusActivity">
+        <activity android:name=".RecyclerView.RecyclerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
