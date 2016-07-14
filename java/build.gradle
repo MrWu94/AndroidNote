@@ -4,4 +4,5 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile files('libs/org.apache.http.legacy.jar')
     compile files('libs/Volley.jar')
+    compile files('libs/jsoup-1.7.3.jar')
 }

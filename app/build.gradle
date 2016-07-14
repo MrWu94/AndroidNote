@@ -58,4 +58,5 @@ dependencies {
     compile 'org.greenrobot:greendao:2.2.0'
     provided 'org.projectlombok:lombok:1.16.6'
     compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/autolayout.jar')
 }
