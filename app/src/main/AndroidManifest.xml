@@ -12,13 +12,16 @@
         android:supportsRtl="true"
         android:name=".StudyApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecyclerView.RecyclerActivity">
+        <activity android:name=".WebService.WebServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".WebService.CityActivity"/>
+        <activity android:name=".WebService.WeatherActivity"/>
         <service android:name=".service.MsgService">
             <!--<intent-filter>-->
                 <!--<action android:name="com.hansheng.studynote.service.MSG_ACTION"/>-->

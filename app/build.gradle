@@ -59,4 +59,5 @@ dependencies {
     provided 'org.projectlombok:lombok:1.16.6'
     compile files('libs/universal-image-loader-1.9.4.jar')
     compile files('libs/autolayout.jar')
+    compile files('libs/ksoap2-android.jar')
 }
