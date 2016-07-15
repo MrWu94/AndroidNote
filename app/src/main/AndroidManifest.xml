@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:name=".StudyApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".WebService.WebServiceActivity">
+        <activity android:name=".listview.sortlistview.SortActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
