@@ -1,0 +1,28 @@
+<resources>
+    <declare-styleable name="ValueBar">
+        <!-- The height or (thickness) of the bar -->
+        <attr name="barHeight" format="dimension" />
+        <!-- Radius of the circle indicator -->
+        <attr name="circleRadius" format="dimension" />
+        <!-- Amount of space to the right of the bar, before the max value label-->
+        <attr name="spaceAfterBar" format="dimension" />
+        <!-- Text size of the value displayed inside the circle indicator -->
+        <attr name="circleTextSize" format="dimension" />
+        <!-- Text size of the max value label -->
+        <attr name="maxValueTextSize" format="dimension" />
+        <!-- Text size of the label, displayed above the bar -->
+        <attr name="labelTextSize" format="dimension" />
+        <!-- Color of the label text -->
+        <attr name="labelTextColor" format="color" />
+        <!-- Color of the max value label text -->
+        <attr name="maxValueTextColor" format="color" />
+        <!-- Color of the text inside the circle indicator -->
+        <attr name="circleTextColor" format="color" />
+        <!-- Base color of the bar (the portion that is not filled) -->
+        <attr name="baseColor" format="color" />
+        <!-- Fill color of the bar -->
+        <attr name="fillColor" format="color" />
+        <!-- Text to use for the label -->
+        <attr name="labelText" format="string" />
+    </declare-styleable>
+</resources>

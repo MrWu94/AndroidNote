@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">CustomView</string>
+    <string name="app_name">Custom Views</string>
+    <string name="valueSelector_label">VALUE</string>
+    <string name="valueBarLabel">CURRENT VALUE</string>
 </resources>

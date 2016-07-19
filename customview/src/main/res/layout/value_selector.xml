@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/valueSelector_margin_top"
+        android:textSize="@dimen/valueSelector_text"
+        android:text="0"
+        android:enabled="false"
+        android:background="@null"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/valueTextView" />
+
+    <TextView
+        android:id="@+id/valueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/valueSelector_label_text"
+        android:text="@string/valueSelector_label"
+        android:layout_below="@+id/valueTextView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:src="@drawable/valueselect_minus_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/valueSelector_button_hMargin"
+        android:layout_marginBottom="@dimen/valueSelector_button_hMargin"
+        android:layout_marginRight="@dimen/valueSelector_button_insideMargin"
+        android:id="@+id/minusButton"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/valueLabel" />
+
+    <ImageView
+        android:src="@drawable/valueselect_plus_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/valueSelector_button_hMargin"
+        android:layout_marginBottom="@dimen/valueSelector_button_hMargin"
+        android:layout_marginLeft="@dimen/valueSelector_button_insideMargin"
+        android:id="@+id/plusButton"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/valueLabel" />
+
+</merge>
