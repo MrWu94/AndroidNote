@@ -28,6 +28,11 @@ public class MusicService extends Service {
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.yanyuan);
         //设置可以重复播放
         mediaPlayer.setLooping(true);
+
+//        //set uri
+//        Uri trackUri = ContentUris.withAppendedId(
+//                android.provider.MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
+//                currSong);
     }
 
     @Override

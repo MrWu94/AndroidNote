@@ -7,4 +7,8 @@
     <dimen name="valueSelector_hMargin">0dp</dimen>
 
     <dimen name="updateButtonMargin">40dp</dimen>
+    <dimen name="row_height">72dp</dimen>
+    <dimen name="image_padding">4dp</dimen>
+    <dimen name="image_size">48dp</dimen>
+    <dimen name="activity_vertical_inner_margin">56dp</dimen>
 </resources>
