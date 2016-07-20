@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:name=".StudyApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".custonview.BarActivity">
+        <activity android:name=".music.MusicServiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,6 +36,22 @@
             android:process=":remote"
             />
         <activity android:name=".OkHttp.OkHttpPostActivity"/>
+
+        <receiver
+            android:name=".widget.MyAppWidgetProvider"
+            android:icon="@drawable/ic_launcher" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider_info" >
+            </meta-data>
+
+            <intent-filter>
+                <action android:name="com.example.action.CLICK" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".music.MusicService"/>
 
     </application>
 

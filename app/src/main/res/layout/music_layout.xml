@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Andy's blog!"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="音乐播放服务"/>
+    <Button
+        android:id="@+id/startMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启音乐播放服务"/>
+    <Button
+        android:id="@+id/stopMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止音乐播放服务"/>
+    <Button
+        android:id="@+id/bindMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定音乐播放服务"/>
+    <Button
+        android:id="@+id/unbindMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解除 ——绑定音乐播放服务"/>
+</LinearLayout>

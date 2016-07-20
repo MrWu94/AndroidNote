@@ -30,5 +30,6 @@
     <orderEntry type="library" exported="" name="jsoup-1.7.3" level="project" />
     <orderEntry type="library" exported="" name="org.apache.http.legacy" level="project" />
     <orderEntry type="library" exported="" name="Volley" level="project" />
+    <orderEntry type="library" exported="" name="java.java" level="project" />
   </component>
 </module>
