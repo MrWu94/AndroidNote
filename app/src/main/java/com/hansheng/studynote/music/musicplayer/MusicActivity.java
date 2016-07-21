@@ -25,7 +25,6 @@ import java.util.Comparator;
  */
 public class MusicActivity extends AppCompatActivity  implements MediaController.MediaPlayerControl{
 
-
     //song list variables
     private ArrayList<Song> songList;
     private ListView songView;
@@ -285,5 +284,6 @@ public class MusicActivity extends AppCompatActivity  implements MediaController
         musicSrv=null;
         super.onDestroy();
     }
+
 
 }

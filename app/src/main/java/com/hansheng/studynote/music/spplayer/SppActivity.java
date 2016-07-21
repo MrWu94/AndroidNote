@@ -103,7 +103,9 @@ public class SppActivity extends AppCompatActivity {
 
             @Override
             public void onResponse(Call<List<Track>> call, Response<List<Track>> response) {
-                loadTracks((List<Track>) call);
+                List<Track> tracks=response.body();
+                System.out.println("--------------"+tracks.toString());
+                loadTracks(tracks);
             }
 
             @Override
