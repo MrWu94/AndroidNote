@@ -32,6 +32,24 @@ import java.util.UUID;
 
 /**
  * Created by hansheng on 2016/7/21.
+ * 一、简略介绍Bluetooth开发使用到的类
+ * <p/>
+ * 1、BluetoothAdapter，蓝牙适配器，可判断蓝牙设备是否可用等功能。
+ * 常用方法列举如下：
+ * cancelDiscovery() ，取消搜索过程，在进行蓝牙设备搜索时，如果调用该方法会停止搜索。（搜索过程会持续12秒）
+ * disable()关闭蓝牙，也就是我们常说的禁用蓝牙。
+ * enable()打开蓝牙，这个方法打开蓝牙但不会弹出提示，正常流程操作下，我们会让系统提示用户是否打开蓝牙设备。如下两行代码可轻松搞定。
+ * <p/>
+ * Intent enabler=new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+ * startActivityForResult(enabler,reCode);
+ * getRemoteDevice(String address)根据蓝牙地址获取远程蓝牙设备
+ * listenUsingRfcommWithServiceRecord(String name,UUID uuid)根据名称，UUID创建并返回
+ * 2.BluetoothDevice看名字就知道，这个类描述了一个蓝牙设备
+ * createRfcommSocketToServiceRecord(UUIDuuid)根据UUID创建并返回一个BluetoothSocket
+ * 这个方法也是我们获取BluetoothDevice的目的——创建BluetoothSocket
+ * 这个类其他的方法，如getAddress(),getName(),同BluetoothAdapter
+ * 这个类有几个隐藏方法，涉及到蓝牙的自动配对，setPin,createBond,cancelPairingUserInput,等方法（需要通过java的反射，调用这几个隐藏方法）
+ *
  */
 public class BluetoothAct extends AppCompatActivity implements AdapterView.OnItemClickListener {
 

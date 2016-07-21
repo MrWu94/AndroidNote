@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:name=".StudyApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".bluetooth.BluetoothAct">
+        <activity android:name=".bluetooth.bluetooth.BluetoothActivity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
