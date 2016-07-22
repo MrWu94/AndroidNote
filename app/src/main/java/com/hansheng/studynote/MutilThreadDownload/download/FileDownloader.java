@@ -17,6 +17,36 @@ import java.util.regex.Pattern;
 
 /**
  * Created by hansheng on 2016/7/21.
+ * 所谓断点续传，也就是要从文件已经下载的地方开始继续下载。在以前版本的 HTTP 协议是不支持断点的，HTTP/1.1
+ * 开始就支持了。一般断点下载时才用到 Range 和 Content-Range 实体头。
+ * 　　Range
+ * 　　用于请求头中，指定第一个字节的位置和最后一个字节的位置，一般格式：
+ * 　　Range:(unit=first byte pos)-[last byte pos]
+ * 　　Content-Range
+ * 　　用于响应头，指定整个实体中的一部分的插入位置，他也指示了整个实体的长度。在服务器向客户返回一个部分响应，它必须描述响应覆盖的范围和整个实体长度。一般格式：
+ * 　　Content-Range: bytes (unit first byte pos) - [last byte pos]/[entity legth]
+ * 　　请求下载整个文件:
+ * GET /test.rar HTTP/1.1
+ * Connection: close
+ * Host: 116.1.219.219
+ * Range: bytes=0-801 //一般请求下载整个文件是bytes=0- 或不用这个头
+ * 　　一般正常回应
+ * HTTP/1.1 200 OK
+ * Content-Length: 801
+ * Content-Type: application/octet-stream
+ * Content-Range: bytes 0-800/801 //801:文件总大小
+ * If-Range = “If-Range” “:” ( entity-tag | HTTP-date )
+ * <p/>
+ * IF-Range头部需配合Range，如果没有Range参数，则If-Range会被视为无效。
+ * <p/>
+ * 如果If-Range匹配上，那么客户端已经存在的部分是有效的，服务器将返回缺失部分，也就是Range里指定的，然后返回206（Partial content)，
+ * 否则证明客户端的部分已无效（可能已经更改），那么服务器将整个实体内容全部返回给客户端，同时返回200OK
+ * <p/>
+ * 1. 如果不满足If-None-Match,也就是任何一个Etag匹配了，那服务器就不会产生该请求的响应（412返回）。
+ * 除非判断其它条件如If-Modified-Since不成立(也就是since的时间后内容没有更改)，那server根据不同的请求方式发出不同的响应头，如果是GET或HEAD请求，
+ * 这种情况就要响应304 Not modified，顺便带上cache相关的头信息，特别是匹配上的Etag; 如果是其它请求方式，那就响应412Precondition Failed了
+ * <p/>
+ * 2.如果If-None-Match成立，也就是一个Etag也没匹配，那服务器会忽略任何其它诸如If-Modified-Since的条件，就不能再产生304的响应头了
  */
 public class FileDownloader {
 

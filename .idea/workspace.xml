@@ -38,25 +38,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ce80d1-a582-4816-9d41-ff9035f3d481" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/MutilThreadActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/db/DBOpenHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/download/DownloadProgressListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/download/DownloadThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/download/FileDownloader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/download/FileService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/mutil_main.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/util/Player.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/animation/animation.iml" afterPath="$PROJECT_DIR$/animation/animation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customview/customview.iml" afterPath="$PROJECT_DIR$/customview/customview.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daogenerator/daogenerator.iml" afterPath="$PROJECT_DIR$/daogenerator/daogenerator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pattern/pattern.iml" afterPath="$PROJECT_DIR$/pattern/pattern.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/MutilThreadActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/MutilThreadActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/download/FileDownloader.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/download/FileDownloader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/mutil_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/mutil_main.xml" />
     </list>
     <ignored path="StudyNote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,8 +105,8 @@
         <option value="valueResourceFile" />
         <option value="resourceFile" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -5988,7 +5979,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/music/MusicServiceActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/music/MusicService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/music/musicplayer/Song.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/music/musicplayer/MusicController.java" />
@@ -6034,11 +6024,12 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/DownloadProgressListener.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/DownloadThread.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/FileDownloader.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/mutil_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/MutilThreadActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/download/FileDownloader.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/mutil_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/MutilThreadActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/util/Player.java" />
       </list>
     </option>
   </component>
@@ -6282,8 +6273,20 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="studynote" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MutilThreadDownload" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -6871,12 +6874,6 @@
       <option name="number" value="Default" />
       <updated>1466305848763</updated>
     </task>
-    <task id="LOCAL-00003" summary="更新ImageLoader的简单实现">
-      <created>1467199370229</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1467199370229</updated>
-    </task>
     <task id="LOCAL-00004" summary="解决ListView加载乱序问题">
       <created>1467212078078</created>
       <option name="number" value="00004" />
@@ -7165,7 +7162,13 @@
       <option name="project" value="LOCAL" />
       <updated>1469108621877</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="add MutilThreadDown">
+      <created>1469157773313</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1469157773313</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -7293,7 +7296,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="更新解析News的api" />
     <MESSAGE value="Update greendao use" />
     <MESSAGE value="learn BlockQueue concurrent" />
     <MESSAGE value="add deepcopy" />
@@ -7318,7 +7320,8 @@
     <MESSAGE value="add Bluetooth chat" />
     <MESSAGE value="add Bluetooth model" />
     <MESSAGE value="add Bluetooth" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Bluetooth" />
+    <MESSAGE value="add MutilThreadDown" />
+    <option name="LAST_COMMIT_MESSAGE" value="add MutilThreadDown" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -7349,7 +7352,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/MutilThreadActivity.java</url>
-          <line>184</line>
+          <line>236</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -7365,13 +7368,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/AndroidSDK/sources/android-23/android/bluetooth/BluetoothClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/AndroidSDK/sources/android-23/android/bluetooth/BluetoothDevice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -7475,6 +7471,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="106" column="50" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -7704,13 +7703,13 @@
         <state vertical-scroll-proportion="-1.2753456">
           <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3956#3957#0" expanded="true" />
-            <element signature="e#3987#3988#0" expanded="true" />
-            <element signature="e#4072#4073#0" expanded="true" />
-            <element signature="e#4101#4102#0" expanded="true" />
-            <element signature="e#4207#4208#0" expanded="true" />
-            <element signature="e#4240#4241#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3956#3957#0" expanded="false" />
+            <element signature="e#3987#3988#0" expanded="false" />
+            <element signature="e#4072#4073#0" expanded="false" />
+            <element signature="e#4101#4102#0" expanded="false" />
+            <element signature="e#4207#4208#0" expanded="false" />
+            <element signature="e#4240#4241#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -7720,7 +7719,7 @@
         <state vertical-scroll-proportion="-0.5760369">
           <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -7731,17 +7730,6 @@
           <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/mutil_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5547264">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
@@ -7757,7 +7745,7 @@
         <state vertical-scroll-proportion="0.48156682">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -7770,37 +7758,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/download/FileDownloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.172811">
+          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2262#2280#0" expanded="true" />
+            <element signature="e#9687#9703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/mutil_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8756219">
+          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/inject/ViewInjectUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5483871">
+        <state vertical-scroll-proportion="1.498848">
           <caret line="62" column="52" selection-start-line="62" selection-start-column="52" selection-end-line="62" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/MutilThreadActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/util/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.172811">
+          <caret line="124" column="5" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1790#1806#0" expanded="true" />
-            <element signature="e#2014#2028#0" expanded="true" />
-            <element signature="e#4157#4177#0" expanded="true" />
-            <element signature="e#5777#6084#0" expanded="true" />
-            <element signature="e#6083#6084#0" expanded="true" />
+            <element signature="e#1148#1431#0" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#1456#1877#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#2542#2543#0" expanded="true" />
+            <element signature="e#2577#2578#0" expanded="true" />
+            <element signature="e#2979#2980#0" expanded="true" />
+            <element signature="e#3031#3032#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/download/FileDownloader.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/MutilThreadDownload/MutilThreadActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.670507">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="18" selection-end-column="36" />
+        <state vertical-scroll-proportion="-0.6175115">
+          <caret line="90" column="34" selection-start-line="90" selection-start-column="34" selection-end-line="90" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#975#993#0" expanded="true" />
-            <element signature="e#8400#8416#0" expanded="true" />
+            <element signature="e#1945#1961#0" expanded="true" />
+            <element signature="e#2169#2183#0" expanded="true" />
+            <element signature="e#4600#4620#0" expanded="true" />
+            <element signature="e#5222#5440#0" expanded="true" />
+            <element signature="e#5439#5440#0" expanded="true" />
+            <element signature="e#6759#7098#0" expanded="true" />
+            <element signature="e#7097#7098#0" expanded="true" />
           </folding>
         </state>
       </provider>
