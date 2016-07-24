@@ -15,4 +15,6 @@
     <color name="blue">#0000FF</color>
     <color name="navy">#354361</color>
     <color name="black">#000000</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="app_color">#ff6cb506</color>
 </resources>

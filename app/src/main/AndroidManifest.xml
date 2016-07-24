@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:name=".StudyApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".MutilThreadDownload.MutilThreadActivity">
+        <activity android:name=".Note.activity.NoteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,6 +37,7 @@
 
         </activity>
         <activity android:name=".bluetooth.ChatActivity"/>
+        <activity android:name=".Note.activity.EditNoteActivity"/>
 
         <activity android:name=".WebService.CityActivity"/>
         <activity android:name=".WebService.WeatherActivity"/>

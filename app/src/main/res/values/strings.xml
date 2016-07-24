@@ -30,4 +30,18 @@
     <string name="fileaddress2">http://abv.cn/music/光辉岁月.mp3</string>
     <!-- <string name="fileaddress">http://www.winrar.com.cn/download/wrar380sc.exe</string> -->
     <string name="fileaddress">http://nchc.dl.sourceforge.net/project/sevenzip/7-Zip/9.20/7z920.exe</string>
+
+
+
+    <string name="clean">"Clean all data"</string>
+    <string name="about">About</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure">Are you sure to delete？</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancle</string>
+    <string name="title">please input the title</string>
+    <string name="content">please input the content</string>
+    <string name="add_picture">Add picture</string>
+    <string name="exit">press again to exit</string>
+    <string name="empty">no notes yet</string>
 </resources>

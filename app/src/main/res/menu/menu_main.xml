@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_clean"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="清除所有数据"/>
+    <!--<item android:id="@+id/action_color"-->
+    <!--app:showAsAction="never"-->
+    <!--android:title="主题选择"/>-->
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="@string/about"/>
+</menu>

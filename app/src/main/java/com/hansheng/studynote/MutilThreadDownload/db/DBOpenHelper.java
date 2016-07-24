@@ -22,7 +22,8 @@ public class DBOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // 创建filedownlog表
-        db.execSQL("CREATE TABLE IF NOT EXISTS filedownlog (id integer primary key autoincrement, downpath varchar(100), threadid INTEGER, downlength INTEGER)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS filedownlog (id integer primary key autoincrement, " +
+                "downpath varchar(100), threadid INTEGER, downlength INTEGER)");
     }
 
     @Override
