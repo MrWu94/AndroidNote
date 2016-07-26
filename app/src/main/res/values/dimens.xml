@@ -11,4 +11,7 @@
     <dimen name="image_padding">4dp</dimen>
     <dimen name="image_size">48dp</dimen>
     <dimen name="activity_vertical_inner_margin">56dp</dimen>
+
+    <dimen name="tablet_list_width">300dp</dimen>
+    <dimen name="phone_list_height">200dp</dimen>
 </resources>
