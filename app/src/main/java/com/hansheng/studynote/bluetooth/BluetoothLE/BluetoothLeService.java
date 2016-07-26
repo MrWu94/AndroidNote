@@ -21,6 +21,22 @@ import java.util.UUID;
 
 /**
  * Created by hansheng on 2016/7/24.
+ * Android中进行蓝牙开发需要使用到的类的执行过程是：
+ * <p/>
+ * 1、使用BluetoothAdapter.startLeScan来扫描低功耗蓝牙设备
+ * <p/>
+ * 2、在扫描到设备的回调函数中会得到BluetoothDevice对象，并使用BluetoothAdapter.stopLeScan停止扫描
+ * <p/>
+ * 3、使用BluetoothDevice.connectGatt来获取到BluetoothGatt对象
+ * <p/>
+ * 4、执行BluetoothGatt.discoverServices，这个方法是异步操作，在回调函数onServicesDiscovered中得到status，
+ * 通过判断status是否等于BluetoothGatt.GATT_SUCCESS来判断查找Service是否成功
+ * <p/>
+ * 5、如果成功了，则通过BluetoothGatt.getService来获取BluetoothGattService
+ * <p/>
+ * 6、接着通过BluetoothGattService.getCharacteristic获取BluetoothGattCharacteristic
+ * <p/>
+ * 7、然后通过BluetoothGattCharacteristic.getDescriptor获取BluetoothGattDescriptor
  */
 public class BluetoothLeService extends Service {
     private final static String TAG = BluetoothLeService.class.getSimpleName();
@@ -127,7 +143,7 @@ public class BluetoothLeService extends Service {
             final byte[] data = characteristic.getValue();
             if (data != null && data.length > 0) {
                 final StringBuilder stringBuilder = new StringBuilder(data.length);
-                for(byte byteChar : data)
+                for (byte byteChar : data)
                     stringBuilder.append(String.format("%02X ", byteChar));
                 intent.putExtra(EXTRA_DATA, new String(data) + "\n" + stringBuilder.toString());
             }
@@ -186,11 +202,10 @@ public class BluetoothLeService extends Service {
      * Connects to the GATT server hosted on the Bluetooth LE device.
      *
      * @param address The device address of the destination device.
-     *
      * @return Return true if the connection is initiated successfully. The connection result
-     *         is reported asynchronously through the
-     *         {@code BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt, int, int)}
-     *         callback.
+     * is reported asynchronously through the
+     * {@code BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt, int, int)}
+     * callback.
      */
     public boolean connect(final String address) {
         if (mBluetoothAdapter == null || address == null) {
@@ -269,7 +284,7 @@ public class BluetoothLeService extends Service {
      * Enables or disables notification on a give characteristic.
      *
      * @param characteristic Characteristic to act on.
-     * @param enabled If true, enable notification.  False otherwise.
+     * @param enabled        If true, enable notification.  False otherwise.
      */
     public void setCharacteristicNotification(BluetoothGattCharacteristic characteristic,
                                               boolean enabled) {

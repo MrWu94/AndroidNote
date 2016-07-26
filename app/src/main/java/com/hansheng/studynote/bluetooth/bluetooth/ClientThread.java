@@ -11,6 +11,7 @@ import java.util.UUID;
 
 /**
  * Created by hansheng on 2016/7/21.
+ * 通用唯一识别码（英语：Universally Unique Identifier，简称UUID）
  */
 public class ClientThread extends Thread {
 

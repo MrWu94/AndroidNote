@@ -26,6 +26,29 @@ import java.util.ArrayList;
 
 /**
  * Created by hansheng on 2016/7/24.
+ * 　标准蓝牙的的开发和BLE不同。标准蓝牙连接里有两个角色一个是客户端一个是服务器，当客户端搜索到蓝牙服务器后并与之配对后，
+ * 才能通过UUID（这个是唯一的，服务器端必须与客户端一致）建立socket，然后使用流像文件读写和网络通信那样传输数据就行了。
+ * 在BLE里，变成了中心设备（central）和外围设备（peripheral），中心设备就是你的手机，外围设备就是智能手环一类的东西。
+ * 开发BLE的应用都得遵守Generic Attribute Profile (GATT)，一个BLE蓝牙设备包含多个service，每个service
+ * 又包含多个characteristic。每个characteristic有一个value和多个descriptor，通过characteristic中心设备与外围设备进行通信。
+ * descriptor顾名思义，包含了BLE设备的一些信息。不同service、characteristic和descriptor都有各自己唯一的UUID。想要跟BLE设备通信，
+ * 首先通过UUID获取目标服务，然后再通过UUID获取characteristic，charateristic起着载体的作用，通过writeCharacteristic()和
+ * readCharacteristic()，可以写入和读出信息。每个characteristic都有一些自己的属性，其中在property里，说明了该characteristic的属性
+ * ，例如READ|WRITE|WRITE_NO_RESPONSE|NOTIFY。
+ * <p/>
+ * <p/>
+ * <p/>
+ * 当连接上BLE设备后，调用discoveryServices()发现服务，通过SERVICE_UUID获取目标service，如果service不为空，
+ * 再通过CHARACTERISTIC_UUID获取characteristic，借助characteristic写入指定值与BLE设备进行通信。这里要注意的是characteristic接收的是一个byte数组，
+ * 而且读写的方法都是异步的。调用bluetoothGatt.readCharacteristic(characteristic)可读取BLE设备返回的值。
+ * bluetoothGatt的writeCharacteristic()方法会触发BluetoothGattCallback里的onCharacteristicWrite(),相应的，
+ * bluetoothGatt的readCharacteristic()方法会触发onCharacteristicRead()。
+ * <p/>
+ * 　　对中心设备与外围设备的传输数据的处理发生在onCharacteristicChanged()里，当characteristic写入了正确的数值后，会激活BLE设备，不时地返回数据。
+ * <p/>
+ * 　　当不知道BLE设备的service和characteristic的对应的UUID时，可以在回调函数里的onServicesDiscovered()方法里，
+ * 通过BluetoothGatt的getServices()获得该设备所有的service，然后再调用service的getUuid()得到其UUID，同理通过service的getCharacteristics()
+ * 可以得到每个service所有的characteristic和其UUID。然后一个个不厌其烦的尝试，找到正确的service和characteristic
  */
 public class DeviceScanActivity extends ListActivity {
     private LeDeviceListAdapter mLeDeviceListAdapter;
@@ -144,6 +167,7 @@ public class DeviceScanActivity extends ListActivity {
         startActivity(intent);
     }
 
+    //    如果只是要扫描到特定类型的设备，则使用接口 startLeScan(UUID[], BluetoothAdapter.LeScanCallback)，通过UUID来查找设备。
     private void scanLeDevice(final boolean enable) {
         if (enable) {
             // Stops scanning after a pre-defined scan period.
