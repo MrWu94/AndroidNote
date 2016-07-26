@@ -49,6 +49,13 @@ import java.util.ArrayList;
  * 　　当不知道BLE设备的service和characteristic的对应的UUID时，可以在回调函数里的onServicesDiscovered()方法里，
  * 通过BluetoothGatt的getServices()获得该设备所有的service，然后再调用service的getUuid()得到其UUID，同理通过service的getCharacteristics()
  * 可以得到每个service所有的characteristic和其UUID。然后一个个不厌其烦的尝试，找到正确的service和characteristic
+ * <p/>
+ * <p/>
+ * 接收数据：
+ * 现在，本地的代理组件知道了传感器所提供的服务，我们可以开始使用这些服务了。为了使用它们，我们首先需要获得服务，然后是该服务所包含的特征，最后是特征的描述符。
+ * 一个GATT服务表现为一个 BluetoothGattService 对象，我们需要通过适当的UUID从 BluetoothGatt 实例中获得；
+ * 一个GATT特征表示为一个 BluetoothGattCharacteristic  对象，我们可以通过适当的UUID从BluetoothGattService 中得到；
+ * 一个GATT描述符表现为一个 BluetoothGattDescriptor 对象，我们可以通过适当的UUID从BluetoothGattCharacteristic对象中获得：
  */
 public class DeviceScanActivity extends ListActivity {
     private LeDeviceListAdapter mLeDeviceListAdapter;

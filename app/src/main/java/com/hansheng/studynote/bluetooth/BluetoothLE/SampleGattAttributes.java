@@ -4,6 +4,10 @@ import java.util.HashMap;
 
 /**
  * Created by hansheng on 2016/7/24.
+ * 从 UUID_HUMIDITY_DATA  特征中读取数据一件简单的事，只需调用gatt.readCharacteristic(humidityCharacteristic) 方法，
+ * 并在BluetoothGattCallback  的实现类上复写onReadCharacteristic  方法(再次说明，这是一个异步执行的操作，所以可以在UI线程上调用
+ * readCharacteristic() 方法）。这样一次性的操作是没什么问题的，但我们应用程序要不断监测温度和湿度值，并将其报告给用户。相比注册监
+ * 听特征值的发生，通过调用readCharacteristic() 定期轮询会更有效
  */
 public class SampleGattAttributes {
 

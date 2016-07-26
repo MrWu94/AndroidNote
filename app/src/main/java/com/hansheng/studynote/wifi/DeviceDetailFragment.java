@@ -33,6 +33,9 @@ import java.net.Socket;
 
 /**
  * Created by hansheng on 2016/7/26.
+ * 在这个代码片段中实现的 WifiP2pManager.ActionListener 只会在初始化成功或失败时通知你。要
+ * 监听连接状态的变更，需要实现 WifiP2pManager.ConnectionInfoListener 接口。其回调函数 onConnectionInfoAvailable()将
+ * 会在连接状态改变时通知你。对于多个设备连接一个设备的情况（比如，多于3个玩家的游戏，或者聊天软件），其中一个设备将会被指定为“群主
  */
 public class DeviceDetailFragment extends Fragment implements WifiP2pManager.ConnectionInfoListener {
 
@@ -67,6 +70,10 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
         mContentView.findViewById(R.id.btn_connect).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                /***连接一个对等点
+                 为了连接一个对等点，需要先创建一个新的 WifiP2pConfig 对象，
+                 然后从代表你想连接的设备的 WifiP2pDevice 中拷贝数据进去。再调用 connect() 方法。
+                 */
                 WifiP2pConfig config = new WifiP2pConfig();
                 config.deviceAddress = device.deviceAddress;
                 config.wps.setup = WpsInfo.PBC;
@@ -121,18 +128,24 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
                 : getResources().getString(R.string.no)));
 
         // InetAddress from WifiP2pInfo struct.
+
+        // InetAddress在WifiP2pInfo结构体中。
         view = (TextView) mContentView.findViewById(R.id.device_info);
         view.setText("Group Owner IP - " + info.groupOwnerAddress.getHostAddress());
 
         // After the group negotiation, we assign the group owner as the file
         // server. The file server is single threaded, single connection server
         // socket.
+        //组群协商后，就可以确定群主。
         if (info.groupFormed && info.isGroupOwner) {
             new FileServerAsyncTask(getActivity(), mContentView.findViewById(R.id.status_text))
                     .execute();
+            //针对群主做某些任务。
+            //一种常用的做法是，创建一个服务器线程并接收连接请求。
         } else if (info.groupFormed) {
             // The other device acts as the client. In this case, we enable the
             // get file button.
+            //其他设备都作为客户端。在这种情况下，你会希望创建一个客户端线程来连接群主。
             mContentView.findViewById(R.id.btn_start_client).setVisibility(View.VISIBLE);
             ((TextView) mContentView.findViewById(R.id.status_text)).setText(getResources()
                     .getString(R.string.client_text));
@@ -141,6 +154,7 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
         // hide the connect button
         mContentView.findViewById(R.id.btn_connect).setVisibility(View.GONE);
     }
+
     /**
      * Updates the UI with device data
      *
@@ -155,6 +169,7 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
         view.setText(device.toString());
 
     }
+
     /**
      * Clears the UI fields after a disconnect or direct mode disable operation.
      */
@@ -171,11 +186,12 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
         mContentView.findViewById(R.id.btn_start_client).setVisibility(View.GONE);
         this.getView().setVisibility(View.GONE);
     }
+
     /**
      * A simple server socket that accepts connection and writes some data on
      * the stream.
      */
-    public static class FileServerAsyncTask extends AsyncTask<Void,Void,String>{
+    public static class FileServerAsyncTask extends AsyncTask<Void, Void, String> {
 
         private Context context;
 
@@ -184,14 +200,15 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
             this.statusText = (TextView) statusText;
         }
 
-        private  TextView statusText;
+        private TextView statusText;
+
         @Override
         protected String doInBackground(Void... params) {
 
             try {
-                ServerSocket serverSocket=new ServerSocket(8998);
+                ServerSocket serverSocket = new ServerSocket(8998);
                 Log.d(WiFiDirectActivity.TAG, "Server: Socket opened");
-                Socket client=serverSocket.accept();
+                Socket client = serverSocket.accept();
                 Log.d(WiFiDirectActivity.TAG, "Server: connection done");
                 final File f = new File(Environment.getExternalStorageDirectory() + "/"
                         + context.getPackageName() + "/wifip2pshared-" + System.currentTimeMillis()
@@ -220,14 +237,15 @@ public class DeviceDetailFragment extends Fragment implements WifiP2pManager.Con
 
         @Override
         protected void onPostExecute(String result) {
-            if(result!=null){
+            if (result != null) {
                 statusText.setText("File copied - " + result);
-                Intent intent=new Intent();
+                Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 context.startActivity(intent);
             }
         }
     }
+
     public static boolean copyFile(InputStream inputStream, OutputStream out) {
         byte buf[] = new byte[1024];
         int len;

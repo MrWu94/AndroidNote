@@ -21,6 +21,16 @@ import java.util.UUID;
 
 /**
  * Created by hansheng on 2016/7/24.
+ * <p/>
+ * 通用属性描述[Generic Attribute Profile](GATT)-GATT是为通过BLE链接发送和接收的短数据（属性值）而做的一个规范描述。
+ * 属性协议[Attribute Protocol](ATT)-GATT是建立在ATT之上的。它们一起指的是GATT/ATT(类似于TCP/IP的概念)。
+ * ATT对在BLE设备上的运行进行优化。为此，它使用尽可能少的字节。每个属性都是由一个全局唯一标识符唯一地标识（UUID），这是一个字符串ID，
+ * 一个标准的128位格式，用于唯一标识信息。这里的attributes(属性)的传输被ATT格式化为characteristics和services。
+ * 特征[Characteristic]-一个characteristic包含一个唯一的值和0到n个描述数来描述characteristic的值。一个characteristic可以被看作一个数据类型，或者一个类。
+ * 描述符[Descriptor]-Descriptor被定义为一些属性用来描述一个characteristic的值。例如，一个描述符可能特指为一个只有人才可以读的描述，
+ * characteristic的值的一个可接受的范围。或者是characteristic的一个测量单元。
+ * 服务[Service]-一个服务是一个characteristic的一个集合。例如，你可以有一个服务叫“心率监测”，包括“心率测量的特点。
+ * 你可以在bluetooth.org找到一个现有的基于profiles和services的GATT的列表。
  * Android中进行蓝牙开发需要使用到的类的执行过程是：
  * <p/>
  * 1、使用BluetoothAdapter.startLeScan来扫描低功耗蓝牙设备

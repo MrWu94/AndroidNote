@@ -24,6 +24,8 @@ import java.util.List;
 
 /**
  * Created by hansheng on 2016/7/26.
+ * 获取对等点列表
+ * 获取对等点的列表并进行处理，首先实现 WifiP2pManager.PeerListListener 接口，它提供了Wi-Fi Direct检测到的对等点信息。
  */
 public class DeviceListFragment extends ListFragment implements WifiP2pManager.PeerListListener {
 
@@ -44,8 +46,10 @@ public class DeviceListFragment extends ListFragment implements WifiP2pManager.P
         if (progressDialog != null && progressDialog.isShowing()) {
             progressDialog.dismiss();
         }
+        //旧的不去，新的不来
         peers.clear();
         peers.addAll(peerList.getDeviceList());
+        //如果AdapterView可以处理该数据，则把变更通知它。比如，如果你有可用对等点的ListView，那就发起一次更新。
         ((WiFiPeerListAdapter) getListAdapter()).notifyDataSetChanged();
         if (peers.size() == 0) {
             Log.d(WiFiDirectActivity.TAG, "No devices found");

@@ -207,10 +207,14 @@ public class WiFiDirectActivity extends AppCompatActivity implements WifiP2pMana
 
     @Override
     public void cancelDisconnect() {
-         /*
+        /**
          * A cancel abort request by user. Disconnect i.e. removeGroup if
          * already connected. Else, request WifiP2pManager to abort the ongoing
          * request
+         * 初始化对等点的搜索
+         使用Wi-Fi Direct搜索附近的设备，需要调用 discoverPeers()方法。其参数如下：
+         WifiP2pManager.Channel 是在你初始化对等网络的mManager时收到的。
+         WifiP2pManager.ActionListener 的一个实例，实现了系统在查找成功或失败时会调用的方法。
          */
         if (manager != null) {
             final DeviceListFragment fragment = (DeviceListFragment) getFragmentManager().findFragmentById(R.id.frag_list);
