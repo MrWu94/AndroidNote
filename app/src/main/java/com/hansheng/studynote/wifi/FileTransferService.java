@@ -16,6 +16,20 @@ import java.net.Socket;
 
 /**
  * Created by hansheng on 2016/7/26.
+ * 2P架构介绍
+ * <p/>
+ * P2P架构中定义了三个组件，一个设备，两种角色。这三个组件分别是：
+ * <p/>
+ * P2P Device：它是P2P架构中角色的实体，读者可把它当做一个Wi-Fi设备。
+ * P2P Group Owner(GO)：P2P网络建立时会产生一个Group。
+ * P2P Group Client(GC)：
+ * 在组建P2P Group（即P2P Network）之前，智能终端都是一个一个的P2P Device。
+ * 当这些P2P Device设备之间完成P2P协商后，那么其中将有一个并且只能有一个Device来扮演GO的角色，而其他Device来扮演GC的角色。
+ * Wifi_Direct的大致配对流程如下：
+ * <p/>
+ * a. WifiP2pManager.discoverPeers()开始扫描设备
+ * b. 获取扫描到的设备，选择其中一个设备进行连接配对WifiP2pManager.connect
+ * c. 配对成功后，根据WifiP2pInfo.isGroupOwner和WifiP2pInfo.groupOwnerAddress进行连接。
  */
 public class FileTransferService extends IntentService {
     /**
@@ -34,6 +48,7 @@ public class FileTransferService extends IntentService {
     public FileTransferService(String name) {
         super(name);
     }
+
     public FileTransferService() {
         super("FileTransferService");
     }
