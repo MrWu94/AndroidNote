@@ -130,6 +130,7 @@ public class GPSTracker extends Service implements LocationListener {
         Toast.makeText(mContext, "Gps is turned on!! ",
                 Toast.LENGTH_SHORT).show();
 
+
     }
 
     @Override
