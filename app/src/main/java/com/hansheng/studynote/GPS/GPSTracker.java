@@ -116,10 +116,31 @@ public class GPSTracker extends Service implements LocationListener {
     public void onLocationChanged(Location location) {
         String msg = "New Latitude: " + location.getLatitude()
                 + "New Longitude: " + location.getLongitude();
-
+        // 当GPS定位信息发生改变时，更新位置
+        updateView(location);
         Toast.makeText(mContext, msg, Toast.LENGTH_LONG).show();
     }
-
+    private void updateView(Location location) {
+        if (location != null) {
+            StringBuffer sb = new StringBuffer();
+            sb.append("实时的位置信息：\n经度：");
+            sb.append(location.getLongitude());
+            sb.append("\n纬度：");
+            sb.append(location.getLatitude());
+            sb.append("\n高度：");
+            sb.append(location.getAltitude());
+            sb.append("\n速度：");
+            sb.append(location.getSpeed());
+            sb.append("\n方向：");
+            sb.append(location.getBearing());
+            sb.append("\n精度：");
+            sb.append(location.getAccuracy());
+            Toast.makeText(mContext, sb, Toast.LENGTH_LONG).show();
+        } else {
+            // 如果传入的Location对象为空则清空EditText
+            Toast.makeText(mContext, "no change", Toast.LENGTH_LONG).show();
+        }
+    }
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {
 
