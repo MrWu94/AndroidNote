@@ -12,6 +12,7 @@ public class ThreadPoolExecutorTest {
     public static void main(String[] args) {
         // TODO Auto-generated method stub
         //创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。
+
         //ExecutorService cachedThreadPool=Executors.newCachedThreadPool();
         //	创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。
         ExecutorService cachedThreadPool = Executors.newFixedThreadPool(3);
