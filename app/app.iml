@@ -146,8 +146,8 @@
     <orderEntry type="library" exported="" name="appcompat-v7-23.4.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="espresso-core-2.2.2" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="exposed-instrumentation-api-publish-0.5" level="project" />
-    <orderEntry type="library" exported="" name="retrofit-2.0.0-beta4" level="project" />
     <orderEntry type="library" exported="" name="gson-2.4" level="project" />
+    <orderEntry type="library" exported="" name="retrofit-2.0.0-beta4" level="project" />
     <orderEntry type="library" exported="" name="adapter-rxjava-2.0.0-beta4" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="rules-0.5" level="project" />
     <orderEntry type="library" exported="" name="ksoap2-android" level="project" />
@@ -156,8 +156,8 @@
     <orderEntry type="library" exported="" name="rxandroid-1.1.0" level="project" />
     <orderEntry type="library" exported="" name="universal-image-loader-1.9.4" level="project" />
     <orderEntry type="library" exported="" name="crawler4j-4.1-jar-with-dependencies" level="project" />
-    <orderEntry type="library" exported="" name="rxjava-1.1.0" level="project" />
     <orderEntry type="library" exported="" name="eventbus-3.0.0" level="project" />
+    <orderEntry type="library" exported="" name="rxjava-1.1.0" level="project" />
     <orderEntry type="library" exported="" name="cardview-v7-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="greendao-2.2.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="javawriter-2.1.1" level="project" />
