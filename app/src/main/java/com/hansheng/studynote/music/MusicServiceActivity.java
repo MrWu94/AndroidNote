@@ -17,6 +17,7 @@ import com.hansheng.studynote.R;
 
 /**
  * Created by hansheng on 2016/7/20.
+ *
  */
 public class MusicServiceActivity extends AppCompatActivity{
 
