@@ -122,18 +122,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ce80d1-a582-4816-9d41-ff9035f3d481" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/RunnableAndThreadDifference/MyThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/RunnableAndThreadDifference/MyThread1.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/WaitAndSleepDifference/ThreadTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/animation/animation.iml" afterPath="$PROJECT_DIR$/animation/animation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/network.iml" afterPath="$PROJECT_DIR$/network/network.iml" />
     </list>
     <ignored path="StudyNote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -236,11 +230,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyThread1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyThread1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/RunnableAndThreadDifference/MyThread1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35971224">
+            <state vertical-scroll-proportion="0.0">
               <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreadTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/WaitAndSleepDifference/ThreadTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8093525">
+              <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -6166,7 +6170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/row_devices.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/action_items.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/bluetooth/bluetooth/ClientThread.java" />
@@ -6217,6 +6220,7 @@
         <option value="$PROJECT_DIR$/java/src/main/java/com/hansheng/string/Inverse.java" />
         <option value="$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/RunnableAndThreadDifference/MyThread.java" />
         <option value="$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/RunnableAndThreadDifference/MyThread1.java" />
+        <option value="$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/WaitAndSleepDifference/ThreadTest.java" />
       </list>
     </option>
   </component>
@@ -6523,63 +6527,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RunnableAndThreadDifference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyThread1.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hansheng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="thread" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RunnableAndThreadDifference" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyThread.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hansheng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="string" />
+              <option name="myItemId" value="WaitAndSleepDifference" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -6626,27 +6574,7 @@
       <recent name="com.hansheng.studynote.listview" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RunnableDemo">
-    <configuration default="false" name="MutilThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.hansheng.thread.share.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.hansheng.thread.share.MutilThread" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="java" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ThreadTest">
     <configuration default="false" name="SequenceA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -6715,6 +6643,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.hansheng.thread.RunnableAndThreadDifference.RunnableDemo" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ThreadTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hansheng.thread.WaitAndSleepDifference.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hansheng.thread.WaitAndSleepDifference.ThreadTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -7000,19 +6948,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Android Application.app" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MutilThread" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SequenceA" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SequenceB" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ThreadDemo" />
-      <item index="5" class="java.lang.String" itemvalue="Application.RunnableDemo" />
+      <item index="1" class="java.lang.String" itemvalue="Application.SequenceA" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SequenceB" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ThreadDemo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.RunnableDemo" />
+      <item index="5" class="java.lang.String" itemvalue="Application.ThreadTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.RunnableDemo" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ThreadDemo" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SequenceB" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SequenceA" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MutilThread" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ThreadTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RunnableDemo" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ThreadDemo" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SequenceB" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SequenceA" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
@@ -7038,12 +6986,6 @@
       <created>1466305848763</created>
       <option name="number" value="Default" />
       <updated>1466305848763</updated>
-    </task>
-    <task id="LOCAL-00031" summary="add  my simple EventBus">
-      <created>1468401642602</created>
-      <option name="number" value="00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1468401642602</updated>
     </task>
     <task id="LOCAL-00032" summary="add RecyclerView">
       <created>1468415183771</created>
@@ -7333,7 +7275,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470317741648</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="add Thread and Runnable Difference">
+      <created>1470494893093</created>
+      <option name="number" value="00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1470494893093</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -7533,13 +7481,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/ThreadPoolExecutorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04496403">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/surfaceview.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -7907,8 +7848,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/RunnableAndThreadDifference/MyThread1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35971224">
+        <state vertical-scroll-proportion="0.0">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/com/hansheng/thread/WaitAndSleepDifference/ThreadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8093525">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
           <folding />
         </state>
       </provider>
