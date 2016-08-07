@@ -17,6 +17,7 @@ package com.hansheng.thread.WaitAndSleepDifference;
  * 使用this.wait(2000)方法时，secondMethod()方法被执行后也锁定了该对象的机锁，执行到this.wait(2000)时，
  * 该方法会休眠2S并释当前持有的锁，此时该线程的同步方法会被执行（因为secondMethod持有的锁，已经被wait()所释放），
  * 因此输出的结果为：number+100;
+ *
  */
 public class ThreadTest implements Runnable {
     int number = 10;
