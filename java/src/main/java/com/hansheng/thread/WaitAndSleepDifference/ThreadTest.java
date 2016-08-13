@@ -15,7 +15,6 @@ package com.hansheng.thread.WaitAndSleepDifference;
  * sleep在阻塞线程的同时，并持有该对象锁，所以该对象的其他同步线程（secondMethod()）无法执行，直到
  * synchronized block执行完毕（sleep休眠完毕），secondMethod()方法才可以执行，因此输出结果为number*200+100；
  * 使用this.wait(2000)方法时，secondMethod()方法被执行后也锁定了该对象的机锁，执行到this.wait(2000)时，
- *
  * 该方法会休眠2S并释当前持有的锁，此时该线程的同步方法会被执行（因为secondMethod持有的锁，已经被wait()所释放），
  * 因此输出的结果为：number+100;
  *
