@@ -31,6 +31,12 @@ import java.util.UUID;
  * characteristic的值的一个可接受的范围。或者是characteristic的一个测量单元。
  * 服务[Service]-一个服务是一个characteristic的一个集合。例如，你可以有一个服务叫“心率监测”，包括“心率测量的特点。
  * 你可以在bluetooth.org找到一个现有的基于profiles和services的GATT的列表。
+ * <p/>
+ * 当连接上BLE设备后，调用discoveryServices()发现服务，通过SERVICE_UUID获取目标service，如果service不为空，
+ * 再通过CHARACTERISTIC_UUID获取characteristic，借助characteristic写入指定值与BLE设备进行通信。这里要注意的是characteristic接收的是一个byte数组，
+ * 而且读写的方法都是异步的。调用bluetoothGatt.readCharacteristic(characteristic)可读取BLE设备返回的值。bluetoothGatt的writeCharacteristic()
+ * 方法会触发BluetoothGattCallback里的onCharacteristicWrite(),相应的，bluetoothGatt的readCharacteristic()方法会触发onCharacteristicRead()。
+ * <p/>
  * Android中进行蓝牙开发需要使用到的类的执行过程是：
  * <p/>
  * 1、使用BluetoothAdapter.startLeScan来扫描低功耗蓝牙设备

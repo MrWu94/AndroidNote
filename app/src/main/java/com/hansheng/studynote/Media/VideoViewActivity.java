@@ -43,7 +43,7 @@ public class VideoViewActivity extends AppCompatActivity {
         mVideoView = (VideoView) findViewById(R.id.surface_view);
 
         mPath = (EditText) findViewById(R.id.path);
-        mPath.setText("http://weibo.com/p/230444afcc2eec6a17b317ff0313da79cd4699");
+        mPath.setText("http://2449.vod.myqcloud.com/2449_22ca37a6ea9011e5acaaf51d105342e3.f20.mp4");
 
         mPlay = (ImageButton) findViewById(R.id.play);
         mPause = (ImageButton) findViewById(R.id.pause);

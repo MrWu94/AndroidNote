@@ -27,6 +27,31 @@ import java.util.List;
 
 /**
  * Created by hansheng on 2016/7/24.
+ * - 角色支持 : Android 手机只能作为 主设备 (central role), 开发者开发的 APP 可以使用其提供的 API 接口, 用于 发现设备, 遍历服务 (services),
+ * 读写服务中的特性 (characteristics).
+ * <p/>
+ * -- 传统蓝牙对比 : 与传统的蓝牙对比, 蓝牙低功耗方案 (Bluetooth Low Energy) 是出于更低的电量消耗考虑而设计的. 这可以使 Android 应用可以与 BLE 设备进行交流,
+ * 这些设备需要很低的电量,如 近距离传感器, 心率测量设备, 健康设备 等等.
+ * Android 设备 与 BLE 设备互动时, 设备的角色 和 职责 :
+ * <p/>
+ * -- 中心设备 和 外围设备 : 这个角色体系适用于 BLE 连接. 中心设备角色 可以扫描, 查找广播. 外围设备角色 发送广播.
+ * <p/>
+ * -- GATT 服务器 和 GATT 客户端 : 这个决定了两个设备之间, 一旦建议连接后, 如何进行互相通信.
+ * <p/>
+ * (2) 中心设备 和 外围设备
+ * BLE 连接需要两种设备都存在 : 为了理解其中的区别, 想象一下 你有一个 Android 设备 和 一个激活的 智能腕表蓝牙设备. 手机支持作为 中心设备 角色,
+ * 智能腕表 蓝牙设备支持作为外围设备角色, 为了建立 BLE 连接, 只有外围设备 或者 只有 中心设备 都不能建立 BLE连接.
+ * GATT 服务器 和 GATT 客户端 简介 :
+ * <p/>
+ * -- GATT 服务器 和 GATT 客户端 角色不是固定的 : 一旦手机 和 智能腕表 设备建立了 BLE 连接, 它们开始互相交换 GATT 元数据. 根据它们之间传输的数据类型,
+ * 其中的一个会扮演 GATT 服务器的角色.
+ * <p/>
+ * -- 角色改变示例 : 如果 智能腕表 设备想要向手机报告传感器数据, 那么智能腕表必须当做 GATT 服务器. 如果智能腕表 想要从手机上接受更新数据,
+ * 那么 Android 手机就是 GATT 服务器.
+ * <p/>
+ * -- 手机 和 设备 都可以作为 GATT 服务器 和 客户端 : 在本文档中使用的示例代码, 在 Android 设备上运行的 Android APP 就是 GATT 客户端,
+ * BLE 外围设备就是 GATT 服务器. Android APP 从 GATT 服务器上获取数据,
+ * 服务器的 BLE "heart rate monitor (心率监测)" 支持 "Heart Rate Profile (心率规范 - 一种 BLE 蓝牙标准规范)". Android APP 也可以作为 GATT 服务器;
  */
 public class DeviceControlActivity extends AppCompatActivity {
 
@@ -197,7 +222,7 @@ public class DeviceControlActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch(item.getItemId()) {
+        switch (item.getItemId()) {
             case R.id.menu_connect:
                 mBluetoothLeService.connect(mDeviceAddress);
                 return true;
@@ -273,12 +298,12 @@ public class DeviceControlActivity extends AppCompatActivity {
                 this,
                 gattServiceData,
                 android.R.layout.simple_expandable_list_item_2,
-                new String[] {LIST_NAME, LIST_UUID},
-                new int[] { android.R.id.text1, android.R.id.text2 },
+                new String[]{LIST_NAME, LIST_UUID},
+                new int[]{android.R.id.text1, android.R.id.text2},
                 gattCharacteristicData,
                 android.R.layout.simple_expandable_list_item_2,
-                new String[] {LIST_NAME, LIST_UUID},
-                new int[] { android.R.id.text1, android.R.id.text2 }
+                new String[]{LIST_NAME, LIST_UUID},
+                new int[]{android.R.id.text1, android.R.id.text2}
         );
         mGattServicesList.setAdapter(gattServiceAdapter);
     }
