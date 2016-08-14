@@ -42,7 +42,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
        >
-        <activity android:name=".contact.ContactActivity"
+        <activity android:name=".bluetooth.BluetoothLE.DeviceScanActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
