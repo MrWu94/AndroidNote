@@ -80,6 +80,7 @@ public class BluetoothLeService extends Service {
 
     public final static UUID UUID_HEART_RATE_MEASUREMENT =
             UUID.fromString(SampleGattAttributes.HEART_RATE_MEASUREMENT);
+   // 特性改变回调: 一但特性开启了改变通知监听, 如果特性发生了改变, 就会回调 BluetoothGattCallback 接口中的onCharacteristicChanged() 方法.
 
     // Implements callback methods for GATT events that the app cares about.  For example,
     // connection change and services discovered.
@@ -128,6 +129,13 @@ public class BluetoothLeService extends Service {
             broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
         }
     };
+
+    /**
+     * - 广播发送 : 当一个特定的回调被触发, 它调用适当的broadcastUpdate() 帮助方法, 将其当做一个 Action 操作传递出去.
+     * <p/>
+     * -- 注意蓝牙心率: 这部分的数据解析 与 蓝牙心率测量 是一起被执行的.
+     */
+
 
     private void broadcastUpdate(final String action) {
         final Intent intent = new Intent(action);

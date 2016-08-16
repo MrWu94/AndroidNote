@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <!--允许应用程序改变网络状态-->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>

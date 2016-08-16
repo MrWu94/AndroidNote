@@ -52,6 +52,56 @@ import java.util.List;
  * -- 手机 和 设备 都可以作为 GATT 服务器 和 客户端 : 在本文档中使用的示例代码, 在 Android 设备上运行的 Android APP 就是 GATT 客户端,
  * BLE 外围设备就是 GATT 服务器. Android APP 从 GATT 服务器上获取数据,
  * 服务器的 BLE "heart rate monitor (心率监测)" 支持 "Heart Rate Profile (心率规范 - 一种 BLE 蓝牙标准规范)". Android APP 也可以作为 GATT 服务器;
+ * <p/>
+ * 查找 BLE 设备 :
+ * <p/>
+ * -- 查找方法参数 : 为了搜索到BLE 设备, 调用 BluetoothAdapter 的 startLeScan() 方法,
+ * 该方法需要一个 BluetoothAdapter.LeScanCallback 类型的参数. 你必须实现这个 LeScanCallback 接口, 因为 BLE 蓝牙设备扫描结果在这个接口中返回.
+ * <p/>
+ * -- 查找策略 : 蓝牙搜索是非常耗电的, 你需要遵守以下的 中断策略 和 不循环策略.
+ * <p/>
+ * -- 中断策略 : 只要一发现蓝牙设备, 马上中断扫描.
+ * <p/>
+ * -- 不循环策略 : 不要循环扫描, 设置一个扫描的最大时间限制. 一个设备在之前可用, 继续扫描可能会使设备不可用, 此外继续扫描会持续浪费电池电量.
+ * 查找特定 BLE 设备 :
+ * <p/>
+ * -- 方法调用 : 查找特定类型的外围设备, 可以调用下面的方法, 这个方法需要提供一个 UUID 对象数组, 这个 UUID 数组是 APP 支持的 GATT 服务的特殊标识.
+ * 扫描回调接口 :
+ * -- 接口作用 : BluetoothAdapter.LeScanCallback 实现类, 在这个实现类的接口中返回 BLE 设备扫描结果;
+ * 设备扫描类型
+ * 设备扫描类型 : 蓝牙设备扫描 在同一个时间扫描时, 只能扫描 BLE 设备 或者 SPP 设备中的一种, 不能同时扫描两种设备.
+ * 连接指定 BluetoothDevice 蓝牙设备
+ * <p/>
+ * <p/>
+ * 连接指定设备 :
+ * <p/>
+ * -- 连接到 GATT 服务 : 与 BLE 设备交互的第一步是 连接到 BLE 设备中的 GATT 服务.
+ * <p/>
+ * -- 实现方法 : 调用 BluetoothDevice 的 connectGatt() 方法可以连接到 BLE 设备的 GATT 服务.
+ * <p/>
+ * -- 参数解析 : connectGatt() 方法需要三个参数, 参数一 Context 上下文对象,
+ * 参数二 boolean autoConnect 是否自动连接扫描到的蓝牙设备, 参数三 BluetoothGattCallback 接口实现类.
+ * 获取 BluetoothGatt 对象 : 调用 connectGatt() 方法可以连接到 BLE 设备上的 GATT 服务, 返回一个 BluetoothGatt 实例对象,
+ * 你可以使用这个对象去 管理 GATT 客户端操作.
+ * <p/>
+ * -- GATT 客户端操作 : Android APP 可以调用 GATT Client (客户端). BluetoothGattCallback 可以用于传递结果到 GATT 客户端,
+ * 如 连接状态 和 更进一步的 GATT Client 操作.
+ * BLE 蓝牙数据交互 :
+ * <p/>
+ * -- 界面 : 在下面的示例中, BLE 应用提供了一个 Activity 界面, 该 Activity 界面用于 连接, 展示数据, 展示 GATT 服务 和 设备支持的特性.
+ * <p/>
+ * -- BLE 蓝牙服务类 : 基于用户的输入, 这个 Activity 界面可以与一个 BluetoothLeService 的服务进行交流, 该交流的本质就是
+ * BLE 设备的 GATT 服务 与 Android 的 BLE API 进行交流.
+ * - 广播发送 : 当一个特定的回调被触发, 它调用适当的broadcastUpdate() 帮助方法, 将其当做一个 Action 操作传递出去.
+ * <p/>
+ * -- 注意蓝牙心率: 这部分的数据解析 与 蓝牙心率测量 是一起被执行的.
+ * <p/>
+ * 读取 BLE 属性
+ * 读写属性简介 :
+ * <p/>
+ * -- 读写属性前提 : Android 应用连接到了 设备中的GATT 服务, 并且发现了 各种服务 (特性集合), 可以读写其中的属性.
+ * <p/>
+ * -- 读写属性代码示例: 遍历服务 (特性集合) 和 特性, 将其展示在 UI 界面中.
  */
 public class DeviceControlActivity extends AppCompatActivity {
 
