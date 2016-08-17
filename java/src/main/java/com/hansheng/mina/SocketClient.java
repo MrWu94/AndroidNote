@@ -17,19 +17,32 @@ public class SocketClient {
     }
 
     private void start() {
-        BufferedReader inputReader;
-        BufferedWriter writer;
+        BufferedReader inputReader = null;
+        BufferedWriter writer = null;
+        Socket socket = null;
         try {
-            Socket socket = new Socket("127.0.0.1", 9123);
-            writer=new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+            socket = new Socket("127.0.0.1", 9123);
+            writer = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             inputReader = new BufferedReader(new InputStreamReader(System.in));
             String inputContent;
 
             while (!(inputContent = inputReader.readLine()).equals("bye")) {
                 System.out.println(inputContent);
+                writer.write(inputContent+"\n");
+                writer.flush();
             }
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+
+            try {
+                inputReader.close();
+                socket.close();
+                writer.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 }
