@@ -5,6 +5,8 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.hansheng.greendao.DaoMaster;
 import com.hansheng.greendao.DaoSession;
+import com.hansheng.hanshenghttpclient.net.HanShengClientConfig;
+import com.hansheng.hanshenghttpclient.net.HanShengHttpClient;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
@@ -22,6 +24,9 @@ public class StudyApplication extends Application {
         super.onCreate();
 
         setupDatabase();
+
+        HanShengClientConfig clientConfig=new HanShengClientConfig(getApplicationContext());
+        HanShengHttpClient.init(clientConfig);
         //创建默认的ImageLoader配置参数
         ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(this)
                 .writeDebugLogs() //打印log信息

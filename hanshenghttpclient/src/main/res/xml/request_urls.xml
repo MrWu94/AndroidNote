@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<url>
+    <Node
+        expires="0"
+        key="testGet"
+        netType="GET"
+        url="http://nbaplus.sinaapp.com/api/v1.0/blogs/update" />
+</url>

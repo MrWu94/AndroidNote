@@ -26,6 +26,8 @@ import java.util.List;
  * Created by hansheng on 2016/7/26.
  * 获取对等点列表
  * 获取对等点的列表并进行处理，首先实现 WifiP2pManager.PeerListListener 接口，它提供了Wi-Fi Direct检测到的对等点信息。
+ *
+ * 用于探测（discover）对等设备（peers）、向对等设备发起请求（request）以及建立连接（connect）的方法定义在类WifiP2pManager中
  */
 public class DeviceListFragment extends ListFragment implements WifiP2pManager.PeerListListener {
 
