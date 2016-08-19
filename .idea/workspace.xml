@@ -132,10 +132,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9ce80d1-a582-4816-9d41-ff9035f3d481" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/network.iml" afterPath="$PROJECT_DIR$/network/network.iml" />
     </list>
     <ignored path="StudyNote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -7676,12 +7673,6 @@
       <option name="number" value="Default" />
       <updated>1466305848763</updated>
     </task>
-    <task id="LOCAL-00046" summary="add customview  valuebar">
-      <created>1468933720834</created>
-      <option name="number" value="00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1468933720834</updated>
-    </task>
     <task id="LOCAL-00047" summary="add MusicPlayer">
       <created>1469004670114</created>
       <option name="number" value="00047" />
@@ -7970,7 +7961,13 @@
       <option name="project" value="LOCAL" />
       <updated>1471522229733</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="add Node Structure">
+      <created>1471614629691</created>
+      <option name="number" value="00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1471614629691</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -8098,7 +8095,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" add MutilShare" />
     <MESSAGE value=" add ThreadLocal" />
     <MESSAGE value=" add ThreadLocal and description" />
     <MESSAGE value=" add media format" />
@@ -8123,7 +8119,8 @@
     <MESSAGE value="add custom TextLineCodecFactory" />
     <MESSAGE value="add SoundPool" />
     <MESSAGE value="add custom HttpClient framework" />
-    <option name="LAST_COMMIT_MESSAGE" value="add custom HttpClient framework" />
+    <MESSAGE value="add Node Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Node Structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
