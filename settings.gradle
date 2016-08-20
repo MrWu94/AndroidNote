@@ -1,1 +1,1 @@
-include ':app', ':customview', ':network', ':pattern', ':animation', ':java', ':daogenerator', ':hanshenghttpclient'
+include ':app', ':customview', ':network', ':pattern', ':animation', ':java', ':daogenerator', ':hanshenghttpclient', ':simplenet'

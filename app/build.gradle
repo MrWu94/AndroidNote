@@ -88,6 +88,7 @@ dependencies {
     compile files('libs/androidsvg-1.2.1.jar')
     compile 'com.eftimoff:android-pathview:1.0.8@aar'
     compile project(':hanshenghttpclient')
+    compile project(':simplenet')
 }
 
 
