@@ -1,5 +1,7 @@
 package com.hanshenghanshengeventgbus.bus.demo;
 
+import android.widget.BaseExpandableListAdapter;
+
 import com.hanshenghanshengeventgbus.bus.Bus;
 
 import java.util.concurrent.CountDownLatch;
@@ -24,7 +26,11 @@ public class MainApp {
 
         final EventDemo1 demo1=new EventDemo1();
 
+        final BusEventDemo demo2=new EventDemo3();
+
+
         bus.register(demo1);
+        demo2.start(bus);
 
         final CountDownLatch countDownLatch=new CountDownLatch(1);
 
@@ -39,6 +45,10 @@ public class MainApp {
                     bus.post(new SomeEvent3());
                     Thread.sleep(500);
                     bus.post(new SomeEvent2());
+                    Thread.sleep(200);
+                    bus.post(new DemoEvent1());
+                    demo2.stop(bus);
+
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
