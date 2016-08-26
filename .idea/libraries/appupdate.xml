@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="appupdate">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/appupdate.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
