@@ -86,6 +86,6 @@
 
     <string name="btn_start"> Start </string>
     <string name="btn_stop"> Stop </string>
-
+    <string name="empty_cache">缓存为空.</string>
     <string name="cleaned">清理垃圾 (<xliff:g id="memory">%1$s</xliff:g>)</string>
 </resources>
