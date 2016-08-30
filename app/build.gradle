@@ -6,8 +6,9 @@ android {
 
     defaultConfig {
         applicationId "com.hansheng.studynote"
-        minSdkVersion 19
+        minSdkVersion 18
         targetSdkVersion 23
+        multiDexEnabled true
         versionCode 1
         versionName "1.0"
         //ADD THIS LINE:
@@ -34,6 +35,10 @@ android {
             java.srcDirs = ['src/main/java', 'src/main/java-gen']
         }
     }
+    dexOptions {
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
 
 
 
@@ -55,6 +60,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.jakewharton:butterknife:6.0.0'
     compile project(':customview')
     compile project(':animation')
     compile files('libs/org.apache.http.legacy.jar')
@@ -90,6 +96,11 @@ dependencies {
     compile project(':hanshenghttpclient')
     compile project(':simplenet')
     compile files('libs/appupdate.jar')
+
+    compile 'com.github.castorflex.smoothprogressbar:library-circular:1.0.0'
+    configurations {
+        all*.exclude  module: 'android'
+    }
 }
 
 

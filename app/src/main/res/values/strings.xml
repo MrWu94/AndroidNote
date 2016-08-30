@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:xliff="http://schemas.android.com/tools">
     <string name="app_name">StudyNote</string>
     <string name="hello_world">滑动</string>
 
@@ -67,7 +67,8 @@
     <string name="menu_stop">Stop</string>
     <string name="input">input</string>
     <string name="send">send</string>
-
+    <string name="scanning">扫描中…</string>
+    <string name="scanning_m_of_n">扫描中 %1$d/%2$d</string>
 
     <string name="enable_p2p_button">P2P On/Off</string>
     <string name="discover_peers_button">Discover</string>
@@ -85,4 +86,6 @@
 
     <string name="btn_start"> Start </string>
     <string name="btn_stop"> Stop </string>
+
+    <string name="cleaned">清理垃圾 (<xliff:g id="memory">%1$s</xliff:g>)</string>
 </resources>

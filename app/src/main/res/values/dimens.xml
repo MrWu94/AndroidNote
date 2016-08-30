@@ -11,7 +11,11 @@
     <dimen name="image_padding">4dp</dimen>
     <dimen name="image_size">48dp</dimen>
     <dimen name="activity_vertical_inner_margin">56dp</dimen>
-
+    <dimen name="text_size_large">16sp</dimen>
     <dimen name="tablet_list_width">300dp</dimen>
     <dimen name="phone_list_height">200dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_right">10dp</dimen>
+    <dimen name="text_size_middle">14sp</dimen>
+    <dimen name="footer_height">60dp</dimen>
 </resources>
