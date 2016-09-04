@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.hansheng.studynote"
-        minSdkVersion 18
+        minSdkVersion 21
         targetSdkVersion 23
         multiDexEnabled true
         versionCode 1

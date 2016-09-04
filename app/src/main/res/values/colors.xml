@@ -31,4 +31,7 @@
     <color name="gplus_color_2">#f4b400</color>
     <color name="gplus_color_3">#427fed</color>
     <color name="gplus_color_4">#b23424</color>
+    <color name="none_received">#999999</color>
+    <color name="start_received">#00FF00</color>
+    <color name="stop_received">#FF0000</color>
 </resources>
