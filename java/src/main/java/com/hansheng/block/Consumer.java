@@ -19,17 +19,17 @@ public class Consumer implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("启动消费者线程");
+        System.out.println("?????????????");
         Random r=new Random();
         boolean isRunning=true;
 
         while (isRunning){
-            System.out.println("正在从队列中获取数据");
+            System.out.println("?????????????????");
             try {
                 String data=queue.poll(2, TimeUnit.SECONDS);
                 if(null!=data){
-                    System.out.println("拿到数据"+data);
-                    System.out.println("正在消费数据"+data);
+                    System.out.println("???????"+data);
+                    System.out.println("????????????"+data);
                     Thread.sleep(r.nextInt(DEFAULT_RANGE_FOR_SLEEP));
                 }
                 else{
@@ -40,7 +40,7 @@ public class Consumer implements Runnable {
                 Thread.currentThread().interrupt();
             }
             finally {
-                System.out.println("退出消费者线程");
+                System.out.println("????????????");
             }
         }
 
