@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 
 /**
  * Created by hansheng on 2016/6/29.
+ * Service和Activity通信
  */
 public class MsgService extends Service {
 

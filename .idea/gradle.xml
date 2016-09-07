@@ -20,7 +20,21 @@
             <option value="$PROJECT_DIR$/simplenet" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/animation" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/customview" />
+            <option value="$PROJECT_DIR$/daogenerator" />
+            <option value="$PROJECT_DIR$/hanshengeventgbus" />
+            <option value="$PROJECT_DIR$/hanshenghttpclient" />
+            <option value="$PROJECT_DIR$/java" />
+            <option value="$PROJECT_DIR$/network" />
+            <option value="$PROJECT_DIR$/pattern" />
+            <option value="$PROJECT_DIR$/simplenet" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>

@@ -1,6 +1,5 @@
 package com.hansheng.studynote.service;
 
-import android.app.ProgressDialog;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +9,6 @@ import android.content.pm.ResolveInfo;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ServiceCompat;
-import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -28,7 +25,7 @@ import java.util.List;
 public class ServiceActivity extends AppCompatActivity {
 
     private MsgService msgService;
-    private int progress=0;
+    private int progress = 0;
     private ProgressBar mProgressBar;
     private Button mButton;
 
@@ -37,10 +34,10 @@ public class ServiceActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.service_layout);
 
-        mProgressBar= (ProgressBar) findViewById(R.id.progressBar1);
-        mButton= (Button) findViewById(R.id.button1);
-        Intent intent=new Intent(this,MsgService.class);
-        bindService(intent,conn, Context.BIND_AUTO_CREATE);
+        mProgressBar = (ProgressBar) findViewById(R.id.progressBar1);
+        mButton = (Button) findViewById(R.id.button1);
+        Intent intent = new Intent(this, MsgService.class);
+        bindService(intent, conn, Context.BIND_AUTO_CREATE);
 
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,12 +48,15 @@ public class ServiceActivity extends AppCompatActivity {
         });
 
 
-
     }
-    ServiceConnection conn=new ServiceConnection() {
+
+    ServiceConnection conn = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-            msgService=((MsgService.MsgBinder)service).getService();
+            /**
+             *
+             同过IBinder获取得到service中的MSGBinder class并可以通过这个类中返回得到此service的实例*/
+            msgService = ((MsgService.MsgBinder) service).getService();
             //注册回调接口来接收下载进度的变化
             msgService.setOnProgressListener(new OnProgressListener() {
 
@@ -79,8 +79,8 @@ public class ServiceActivity extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while(progress<MsgService.MAX_PROGRESS){
-                    progress=msgService.getProgress();
+                while (progress < MsgService.MAX_PROGRESS) {
+                    progress = msgService.getProgress();
                     mProgressBar.setProgress(progress);
                     try {
                         Thread.sleep(1000);
@@ -91,6 +91,7 @@ public class ServiceActivity extends AppCompatActivity {
             }
         }).start();
     }
+
     @Override
     protected void onDestroy() {
         unbindService(conn);
