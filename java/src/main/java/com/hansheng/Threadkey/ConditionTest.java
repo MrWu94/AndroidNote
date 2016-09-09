@@ -13,21 +13,21 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ConditionTest {
 
-    private static Lock lock=new ReentrantLock();
+    private static Lock lock = new ReentrantLock();
 
-    private static Condition condition=lock.newCondition();
+    private static Condition condition = lock.newCondition();
 
-    public static void main(String... args){
-        ThreadA ta=new ThreadA("ta");
+    public static void main(String... args) {
+        ThreadA ta = new ThreadA("ta");
         lock.lock();
         try {
-            System.out.println(Thread.currentThread().getName()+" start ta");
+            System.out.println(Thread.currentThread().getName() + " start ta");
             ta.start();
 
-            System.out.println(Thread.currentThread().getName()+" block");
+            System.out.println(Thread.currentThread().getName() + " block");
             condition.await();    // 等待
 
-            System.out.println(Thread.currentThread().getName()+" continue");
+            System.out.println(Thread.currentThread().getName() + " continue");
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
@@ -35,18 +35,19 @@ public class ConditionTest {
         }
     }
 
-    static class ThreadA extends Thread{
+    static class ThreadA extends Thread {
 
         public ThreadA(String ta) {
-           super(ta);
+            super(ta);
         }
 
         @Override
         public void run() {
             lock.lock();
-            try{System.out.println(Thread.currentThread().getName()+" wake others");
-                condition.signal();}
-            finally {
+            try {
+                System.out.println(Thread.currentThread().getName() + " wake others");
+                condition.signal();
+            } finally {
                 lock.unlock();
             }
 

@@ -15,25 +15,27 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS"/>
-    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
-    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <!--允许应用程序改变网络状态-->
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <!-- Declare this required feature if you want to make the app available to BLE-capable
     devices only.  If you want to make your app available to devices that don't support BLE,
     you should omit this in the manifest.  Instead, determine BLE capability by using
     PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE) -->
 
     <!-- Google Play filtering -->
-    <uses-feature android:name="android.hardware.wifi.direct" android:required="true"/>
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="true" />
 
     <uses-feature
         android:name="android.hardware.bluetooth_le"
@@ -45,9 +47,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-       >
-        <activity android:name=".customview.XfermodeActivity"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".fragment.MenuActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,10 +57,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".vector.LActivity"/>
+        <activity android:name=".fragment.SoundActivity" />
+        <activity android:name=".fragment.DisplayActivity" />
+        <activity android:name=".vector.LActivity" />
         <!-- Used for transferring files  after a successful connection -->
-        <service android:enabled="true" android:name=".wifi.FileTransferService" />
-        <receiver android:name=".alarm.AlarmReceiver"/>
+        <service
+            android:name=".wifi.FileTransferService"
+            android:enabled="true" />
+        <receiver android:name=".alarm.AlarmReceiver" />
 
         <service
             android:name=".Socket.chat.TCPServerService"
@@ -67,7 +73,7 @@
 
         <service
             android:name=".Messager.MessagerService"
-            android:process=":remote" >
+            android:process=":remote">
             <intent-filter>
                 <action android:name="com.hansheng.MessengerService.launch" />
             </intent-filter>
@@ -83,9 +89,9 @@
 
         </activity>
 
-        <activity android:name=".bluetooth.BluetoothLE.DeviceControlActivity"
-            android:theme="@style/AppTheme"
-            />
+        <activity
+            android:name=".bluetooth.BluetoothLE.DeviceControlActivity"
+            android:theme="@style/AppTheme" />
 
         <service
             android:name=".bluetooth.BluetoothLE.BluetoothLeService"
@@ -128,11 +134,12 @@
 
         <service android:name=".music.MusicService" />
         <service android:name=".music.musicplayer.MusicService1" />
-        <service android:name=".systemclean.service.CleanerService"
-            android:exported="false"
-            />
-        <service android:name=".systemclean.service.CoreService"
-            android:exported="false"/>
+        <service
+            android:name=".systemclean.service.CleanerService"
+            android:exported="false" />
+        <service
+            android:name=".systemclean.service.CoreService"
+            android:exported="false" />
 
     </application>
 

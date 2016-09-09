@@ -11,13 +11,13 @@ import java.util.concurrent.Future;
 /**
  * Created by hansheng on 16-9-5.
  */
-public class CallableDemo{
-    public static void main(String[] args){
+public class CallableDemo {
+    public static void main(String[] args) {
         ExecutorService executorService = Executors.newCachedThreadPool();
         List<Future<String>> resultList = new ArrayList<Future<String>>();
 
         //创建10个任务并执行
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             //使用ExecutorService执行Callable类型的任务，并将结果保存在future变量中
             Future<String> future = executorService.submit(new TaskWithResult(i));
             //将任务执行结果存储到List中
@@ -25,15 +25,15 @@ public class CallableDemo{
         }
 
         //遍历任务的结果
-        for (Future<String> fs : resultList){
-            try{
-                while(!fs.isDone());//Future返回如果没有完成，则一直循环等待，直到Future返回完成
+        for (Future<String> fs : resultList) {
+            try {
+                while (!fs.isDone()) ;//Future返回如果没有完成，则一直循环等待，直到Future返回完成
                 System.out.println(fs.get());     //打印各个线程（任务）执行的结果
-            }catch(InterruptedException e){
+            } catch (InterruptedException e) {
                 e.printStackTrace();
-            }catch(ExecutionException e){
+            } catch (ExecutionException e) {
                 e.printStackTrace();
-            }finally{
+            } finally {
                 //启动一次顺序关闭，执行以前提交的任务，但不接受新任务
                 executorService.shutdown();
             }
@@ -44,7 +44,7 @@ public class CallableDemo{
 class TaskWithResult implements Callable<String> {
     private int id;
 
-    public TaskWithResult(int id){
+    public TaskWithResult(int id) {
         this.id = id;
     }
 

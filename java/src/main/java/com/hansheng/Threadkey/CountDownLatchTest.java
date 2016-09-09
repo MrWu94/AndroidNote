@@ -9,10 +9,8 @@ import java.util.concurrent.Executors;
  * 和ReadWriteLock.ReadLock一样，CountDownLatch的本质也是一个"共享锁"
  * CountDownLatch是一个同步辅助类，在完成一组正在其他线程中执行的操作之前，它允许一个或多个线程一直等待。
  * 构造方法参数指定了计数的次数
- countDown方法，当前线程调用此方法，则计数减一
- awaint方法，调用此方法会一直阻塞当前线程，直到计时器的值为0
- *
- *
+ * countDown方法，当前线程调用此方法，则计数减一
+ * awaint方法，调用此方法会一直阻塞当前线程，直到计时器的值为0
  */
 
 // 一个CountDouwnLatch实例是不能重复使用的，也就是说它是一次性的，锁一经被打开就不能再关闭使用了，如果想重复使用，请考虑使用CyclicBarrier。

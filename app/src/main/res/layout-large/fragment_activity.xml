@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    tools:context=".MainActivity"
+>
+
+    <fragment
+        android:id="@+id/left_fragment"
+        android:name="com.hansheng.studynote.fragment.MenuFragment"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+    />
+
+    <FrameLayout
+        android:id="@+id/details_layout"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+    />
+
+</LinearLayout>

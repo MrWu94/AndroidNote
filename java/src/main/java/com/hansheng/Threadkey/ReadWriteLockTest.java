@@ -34,9 +34,11 @@ public class ReadWriteLockTest {
         }
     }
 }
+
 class Data {
     private int data;// 共享数据
     private ReadWriteLock rwl = new ReentrantReadWriteLock();
+
     public void set(int data) {
         rwl.writeLock().lock();// 取到写锁
         try {
@@ -52,6 +54,7 @@ class Data {
             rwl.writeLock().unlock();// 释放写锁
         }
     }
+
     public void get() {
         rwl.readLock().lock();// 取到读锁
         try {
