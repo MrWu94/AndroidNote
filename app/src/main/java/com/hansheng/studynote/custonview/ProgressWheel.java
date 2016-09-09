@@ -76,8 +76,8 @@ public class ProgressWheel extends View {
      */
     public ProgressWheel(Context context, AttributeSet attrs) {
         super(context, attrs);
-        parseAttributes(context.obtainStyledAttributes(attrs,
-                R.styleable.ProgressWheel));
+//        parseAttributes(context.obtainStyledAttributes(attrs,
+//                R.styleable.ProgressWheel));
     }
 
     /*
@@ -231,29 +231,29 @@ public class ProgressWheel extends View {
      * @param a the attributes to parse
      */
     private void parseAttributes(TypedArray a) {
-        barWidth = (int) a.getDimension(R.styleable.ProgressWheel_pwBarWidth, barWidth);
-        rimWidth = (int) a.getDimension(R.styleable.ProgressWheel_pwRimWidth, rimWidth);
-        spinSpeed = (int) a.getDimension(R.styleable.ProgressWheel_pwSpinSpeed, spinSpeed);
-        barLength = (int) a.getDimension(R.styleable.ProgressWheel_pwBarLength, barLength);
-
-        delayMillis = a.getInteger(R.styleable.ProgressWheel_pwDelayMillis, delayMillis);
-        if (delayMillis < 0) { delayMillis = 10; }
-
-        // Only set the text if it is explicitly defined
-        if (a.hasValue(R.styleable.ProgressWheel_pwText)) {
-            setText(a.getString(R.styleable.ProgressWheel_pwText));
-        }
-
-        barColor = a.getColor(R.styleable.ProgressWheel_pwBarColor, barColor);
-        textColor = a.getColor(R.styleable.ProgressWheel_pwTextColor, textColor);
-        rimColor = a.getColor(R.styleable.ProgressWheel_pwRimColor, rimColor);
-        circleColor = a.getColor(R.styleable.ProgressWheel_pwCircleColor, circleColor);
-        contourColor = a.getColor(R.styleable.ProgressWheel_pwContourColor, contourColor);
-
-        textSize = (int) a.getDimension(R.styleable.ProgressWheel_pwTextSize, textSize);
-        contourSize = a.getDimension(R.styleable.ProgressWheel_pwContourSize, contourSize);
-
-        a.recycle();
+//        barWidth = (int) a.getDimension(R.styleable.ProgressWheel_pwBarWidth, barWidth);
+//        rimWidth = (int) a.getDimension(R.styleable.ProgressWheel_pwRimWidth, rimWidth);
+//        spinSpeed = (int) a.getDimension(R.styleable.ProgressWheel_pwSpinSpeed, spinSpeed);
+//        barLength = (int) a.getDimension(R.styleable.ProgressWheel_pwBarLength, barLength);
+//
+//        delayMillis = a.getInteger(R.styleable.ProgressWheel_pwDelayMillis, delayMillis);
+//        if (delayMillis < 0) { delayMillis = 10; }
+//
+//        // Only set the text if it is explicitly defined
+//        if (a.hasValue(R.styleable.ProgressWheel_pwText)) {
+//            setText(a.getString(R.styleable.ProgressWheel_pwText));
+//        }
+//
+//        barColor = a.getColor(R.styleable.ProgressWheel_pwBarColor, barColor);
+//        textColor = a.getColor(R.styleable.ProgressWheel_pwTextColor, textColor);
+//        rimColor = a.getColor(R.styleable.ProgressWheel_pwRimColor, rimColor);
+//        circleColor = a.getColor(R.styleable.ProgressWheel_pwCircleColor, circleColor);
+//        contourColor = a.getColor(R.styleable.ProgressWheel_pwContourColor, contourColor);
+//
+//        textSize = (int) a.getDimension(R.styleable.ProgressWheel_pwTextSize, textSize);
+//        contourSize = a.getDimension(R.styleable.ProgressWheel_pwContourSize, contourSize);
+//
+//        a.recycle();
     }
 
     //----------------------------------

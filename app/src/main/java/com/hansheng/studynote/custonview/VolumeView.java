@@ -74,13 +74,13 @@ public class VolumeView extends View {
 
     public VolumeView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.LearningView, defStyleAttr,0);
-
-        textColor = a.getColor(R.styleable.LearningView_titleColor, Color.RED);
-        textSize = a.getDimensionPixelSize(R.styleable.LearningView_titleSize, (int) TypedValue.applyDimension(
-                TypedValue.COMPLEX_UNIT_SP, 30, getResources().getDisplayMetrics()));
-
-        a.recycle();
+//        TypedArray a = context.getTheme().obtainStyledAttributes(attrs, R.styleable.LearningView, defStyleAttr,0);
+//
+//        textColor = a.getColor(R.styleable.LearningView_titleColor, Color.RED);
+//        textSize = a.getDimensionPixelSize(R.styleable.LearningView_titleSize, (int) TypedValue.applyDimension(
+//                TypedValue.COMPLEX_UNIT_SP, 30, getResources().getDisplayMetrics()));
+//
+//        a.recycle();
         init();
     }
 

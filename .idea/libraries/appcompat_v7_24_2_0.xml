@@ -9,6 +9,10 @@
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+<<<<<<< Updated upstream
+=======
+      <root url="jar://$USER_HOME$/Android/Sdk/extras/android/m2repository/com/android/support/appcompat-v7/24.2.0/appcompat-v7-24.2.0-sources.jar!/" />
+>>>>>>> Stashed changes
       <root url="jar://E:/AndroidSDK/extras/android/m2repository/com/android/support/appcompat-v7/24.2.0/appcompat-v7-24.2.0-sources.jar!/" />
     </SOURCES>
   </library>
