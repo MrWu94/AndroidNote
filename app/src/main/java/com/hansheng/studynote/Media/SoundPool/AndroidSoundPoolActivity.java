@@ -3,7 +3,6 @@ package com.hansheng.studynote.Media.SoundPool;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
@@ -23,7 +22,7 @@ public class AndroidSoundPoolActivity extends AppCompatActivity {
     AudioManager audioManager;
     int counter;
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sound_activity);
 

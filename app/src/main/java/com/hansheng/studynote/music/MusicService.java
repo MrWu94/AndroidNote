@@ -4,7 +4,6 @@ import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -56,7 +55,6 @@ public class MusicService extends Service {
     }
 
     //其他对象通过bindService 方法通知该Service时该方法被调用
-    @Nullable
     @Override
     public IBinder onBind(Intent intent) {
         Toast.makeText(this, "MusicSevice onBind()"
