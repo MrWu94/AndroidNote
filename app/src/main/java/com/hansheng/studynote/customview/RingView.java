@@ -63,6 +63,7 @@ public class RingView extends View {
     private OnProgerssChange mOnProgerssChange;
     Path pathPoint=new Path();
 
+
     public RingView(Context context) {
         this(context, null);
     }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F00"
+            android:text="TextView1"
+            android:textSize="23sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/mainTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00F"
+            android:text="TextView2"
+            android:textSize="23sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/mainBtn1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView2为VISIBLE"
+        android:onClick="mianOnClickListener"/>
+
+    <Button
+        android:id="@+id/mainBtn2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView2为INVISIBLE"
+        android:onClick="mianOnClickListener"/>
+
+    <Button
+        android:id="@+id/mainBtn3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView2为GONE"
+        android:onClick="mianOnClickListener"/>
+</LinearLayout>
