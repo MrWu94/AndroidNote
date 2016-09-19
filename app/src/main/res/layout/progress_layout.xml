@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hansheng.studynote.customview.ProgressBarView
+        android:id="@+id/progressbar_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <com.hansheng.studynote.customview.ProgressDotLineView
+        android:id="@+id/progress_dotline"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+
+</LinearLayout>
