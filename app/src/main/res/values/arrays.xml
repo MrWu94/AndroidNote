@@ -47,4 +47,18 @@
         <item>~夏先生</item>
     </string-array>
 
+    <string-array name="city">
+        　　
+        <item>丰台区</item>
+        　　
+        <item>石景山区</item>
+        　　
+        <item>海淀区</item>
+        　　
+        <item>漳州市</item>
+        　　
+        <item>朝阳区</item>
+        　　
+    </string-array>
+
 </resources>
