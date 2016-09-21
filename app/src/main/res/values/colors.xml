@@ -3,7 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <item name="title_bg" type="color" >#FF2c5aa9</item>
+    <item name="title_bg" type="color">#FF2c5aa9</item>
+    <color name="mp.theme.dark_blue.colorAccent">#DDF9FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="mp.theme.dark_blue.background">#3C5F78</color>
+    <color name="mp.theme.dark_blue.gradientColor">#507E9F</color>
+
 
     <color name="white">#FFFFFF</color>
     <color name="yellow">#FFFF00</color>

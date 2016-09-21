@@ -1,17 +1,29 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style> <style name="SwipeBackLayout">
-    <item name="edge_size">50dip</item>
-    <item name="shadow_left">@drawable/shadow_left</item>
-    <item name="shadow_right">@drawable/shadow_right</item>
-    <item name="shadow_bottom">@drawable/shadow_bottom</item>
-</style>
+
+
+
+
+    </style>
+
+
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+
+    <style name="MP.Theme.TextAppearance.Light.Toolbar.Title" parent="toolbar">
+        <item name="android:textColor">@color/mp.theme.dark_blue.colorAccent</item>
+    </style>
+
+    <style name="toolbar">
+        <item name="android:textSize">18sp</item>
+    </style>
 
 
 </resources>

@@ -18,4 +18,8 @@
     <dimen name="margin_right">10dp</dimen>
     <dimen name="text_size_middle">14sp</dimen>
     <dimen name="footer_height">60dp</dimen>
+    <dimen name="mp.divider.xlarge">24dp</dimen>
+    <dimen name="mp.margin.large">16dp</dimen>
+
+
 </resources>

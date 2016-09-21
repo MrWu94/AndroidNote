@@ -32,7 +32,6 @@
     <string name="fileaddress">http://nchc.dl.sourceforge.net/project/sevenzip/7-Zip/9.20/7z920.exe</string>
 
 
-
     <string name="clean">"Clean all data"</string>
     <string name="about">About</string>
     <string name="delete">Delete</string>
@@ -107,4 +106,15 @@
     <string name="timing">Timing:</string>
     <string name="delay">Delay:</string>
     <string name="deadline">Deadline:</string>
+    <string-array name="mp_main_titles">
+        <item>@string/mp.fragment.title.play_list</item>
+        <item>@string/mp.fragment.title.music</item>
+        <item>@string/mp.fragment.title.local_files</item>
+        <item>@string/mp.fragment.title.settings</item>
+    </string-array>    <string name="mp.fragment.title.play_list">Play List</string>
+    <string name="mp.fragment.title.music">Music</string>
+    <string name="mp.fragment.title.local_files">Local Files</string>
+    <string name="mp.fragment.title.settings">Settings</string>
+
+
 </resources>

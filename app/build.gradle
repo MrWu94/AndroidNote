@@ -2,12 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "23.0.3"
+    buildToolsVersion "24.0.2"
 
     defaultConfig {
         applicationId "com.hansheng.studynote"
         minSdkVersion 18
-        targetSdkVersion 24
+        targetSdkVersion 22
         multiDexEnabled true
         versionCode 1
         versionName "1.0"
@@ -41,7 +41,6 @@ android {
     }
 
 
-
 }
 // The sample build uses multiple directories to
 // keep boilerplate and common code separate from
@@ -60,6 +59,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.2.0'
     compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
     compile 'com.jakewharton:butterknife:6.0.0'
     compile project(':customview')
     compile project(':animation')
@@ -99,7 +99,7 @@ dependencies {
 
     compile 'com.github.castorflex.smoothprogressbar:library-circular:1.0.0'
     configurations {
-        all*.exclude  module: 'android'
+        all*.exclude module: 'android'
     }
 }
 
