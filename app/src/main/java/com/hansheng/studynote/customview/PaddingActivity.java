@@ -11,9 +11,12 @@ import com.hansheng.studynote.R;
  */
 
 public class PaddingActivity extends AppCompatActivity{
+    private ArcProgress arcProgress;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.padding_layout);
+        arcProgress= (ArcProgress) findViewById(R.id.arc_process);
+        arcProgress.setProgress(50);
     }
 }

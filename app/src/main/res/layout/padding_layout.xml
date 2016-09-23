@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.hansheng.studynote.customview.ViewPadding
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+  <com.hansheng.studynote.customview.ArcProgress
+      android:id="@+id/arc_process"
+      android:layout_width="270dp"
+      android:layout_height="270dp"
+      custom:arc_bottom_text="点击加速"
+      custom:arc_bottom_text_size="18sp"
+      custom:arc_progress="10"
+      custom:arc_stroke_width="10dip"
+      custom:arc_text_color="#ffffff"
+      custom:arc_text_size="80sp"/>
 
 </LinearLayout>

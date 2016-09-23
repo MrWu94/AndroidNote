@@ -32,6 +32,8 @@
         <item>@color/gplus_color_3</item>
         <item>@color/gplus_color_4</item>
     </integer-array>
+
+    <color name="primary_text">#212121</color>
     <color name="gplus_color_1">#3e802f</color>
     <color name="gplus_color_2">#f4b400</color>
     <color name="gplus_color_3">#427fed</color>
@@ -39,4 +41,6 @@
     <color name="none_received">#999999</color>
     <color name="start_received">#00FF00</color>
     <color name="stop_received">#FF0000</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
 </resources>

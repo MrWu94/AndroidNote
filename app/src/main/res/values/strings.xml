@@ -116,5 +116,9 @@
     <string name="mp.fragment.title.local_files">Local Files</string>
     <string name="mp.fragment.title.settings">Settings</string>
 
+    <string name="book_title_1">失控</string>
+    <string name="book_description_1">作者: [美] 凯文·凯利 \n副标题: 全人类的最终命运和结局 \n出版年: 2010-12 \n页数: 707 \n定价: 88.00元 </string>
+
+
 
 </resources>
