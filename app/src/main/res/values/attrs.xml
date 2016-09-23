@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="MarqueeViewStyle">
-        <attr name="mvInterval" format="integer|reference"/>
-        <attr name="mvAnimDuration" format="dimension|reference"/>
-        <attr name="mvTextSize" format="dimension|reference"/>
-        <attr name="mvTextColor" format="color|reference"/>
+        <attr name="mvInterval" format="integer|reference" />
+        <attr name="mvAnimDuration" format="dimension|reference" />
+        <attr name="mvTextSize" format="dimension|reference" />
+        <attr name="mvTextColor" format="color|reference" />
         <attr name="mvGravity">
-            <enum name="left" value="0"/>
-            <enum name="center" value="1"/>
-            <enum name="right" value="2"/>
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
         </attr>
 
     </declare-styleable>
@@ -64,5 +64,46 @@
     <attr name="SwipeBackLayoutStyle" format="reference" />
     <declare-styleable name="Themes">
         <attr name="waveViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer" />
+        <attr name="progress_max" format="integer" />
+
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+
+        <attr name="progress_text_offset" format="dimension" />
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes1">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ArcProgress">
+        <attr name="arc_progress" format="integer" />
+        <attr name="arc_angle" format="float" />
+        <attr name="arc_stroke_width" format="dimension" />
+        <attr name="arc_max" format="integer" />
+        <attr name="arc_unfinished_color" format="color" />
+        <attr name="arc_finished_color" format="color" />
+        <attr name="arc_text_size" format="dimension" />
+        <attr name="arc_text_color" format="color" />
+        <attr name="arc_suffix_text" format="string" />
+        <attr name="arc_suffix_text_size" format="dimension" />
+        <attr name="arc_suffix_text_padding" format="dimension" />
+        <attr name="arc_bottom_text" format="string" />
+        <attr name="arc_bottom_text_size" format="dimension" />
     </declare-styleable>
 </resources>

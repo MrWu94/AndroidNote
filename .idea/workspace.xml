@@ -6,38 +6,20 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="344ee989-d1d0-4067-9d91-a7fa12286bca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/book1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/SpanActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/ArcProgress.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/Utils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/material/BaseActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/material/NewsActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/material/Updatable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/vectordrawable.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_cardview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_news_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/elevation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/include_toolbar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/span_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="344ee989-d1d0-4067-9d91-a7fa12286bca" name="Default" comment="add  custom progress for ValueAnimatior">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/Test.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/NumberProgressBar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/OnProgressBarListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/animation/animation.iml" afterPath="$PROJECT_DIR$/animation/animation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/PaddingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/PaddingActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/padding_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/padding_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daogenerator/daogenerator.iml" afterPath="$PROJECT_DIR$/daogenerator/daogenerator.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hanshengeventgbus/hanshengeventgbus.iml" afterPath="$PROJECT_DIR$/hanshengeventgbus/hanshengeventgbus.iml" />
     </list>
     <ignored path="StudyNote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -212,17 +194,131 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ArcProgress.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NumberProgressBar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/NumberProgressBar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1082">
+              <caret line="180" column="8" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4251#4252#0" expanded="true" />
+                <element signature="e#4286#4287#0" expanded="true" />
+                <element signature="e#6356#6357#0" expanded="true" />
+                <element signature="e#6394#6395#0" expanded="true" />
+                <element signature="e#12247#12248#0" expanded="true" />
+                <element signature="e#12280#12281#0" expanded="true" />
+                <element signature="e#12411#12412#0" expanded="true" />
+                <element signature="e#12443#12444#0" expanded="true" />
+                <element signature="e#12484#12485#0" expanded="true" />
+                <element signature="e#12525#12526#0" expanded="true" />
+                <element signature="e#12564#12565#0" expanded="true" />
+                <element signature="e#12603#12604#0" expanded="true" />
+                <element signature="e#12635#12636#0" expanded="true" />
+                <element signature="e#12674#12675#0" expanded="true" />
+                <element signature="e#12701#12702#0" expanded="true" />
+                <element signature="e#12736#12737#0" expanded="true" />
+                <element signature="e#12778#12779#0" expanded="true" />
+                <element signature="e#12818#12819#0" expanded="true" />
+                <element signature="e#12862#12863#0" expanded="true" />
+                <element signature="e#12904#12905#0" expanded="true" />
+                <element signature="e#13647#13648#0" expanded="true" />
+                <element signature="e#13689#13690#0" expanded="true" />
+                <element signature="e#13744#13745#0" expanded="true" />
+                <element signature="e#13788#13789#0" expanded="true" />
+                <element signature="e#14145#14146#0" expanded="true" />
+                <element signature="e#14175#14176#0" expanded="true" />
+                <element signature="e#14367#14368#0" expanded="true" />
+                <element signature="e#14397#14398#0" expanded="true" />
+                <element signature="e#17391#17392#0" expanded="true" />
+                <element signature="e#17425#17426#0" expanded="true" />
+                <element signature="e#17501#17502#0" expanded="true" />
+                <element signature="e#17537#17538#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-555">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PaddingActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/PaddingActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding>
+                <element signature="e#870#1190#0" expanded="true" />
+                <element signature="e#972#1164#0" expanded="true" />
+                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="e#1189#1190#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="padding_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/padding_layout.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArcProgress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/ArcProgress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1216">
-              <caret line="365" column="25" selection-start-line="365" selection-start-column="25" selection-end-line="365" selection-end-column="25" />
+            <state relative-caret-position="-5222">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onMeasure#0;class#ArcProgress#0" expanded="false" />
                 <element signature="method#onSaveInstanceState#0;class#ArcProgress#0" expanded="false" />
                 <element signature="method#onRestoreInstanceState#0;class#ArcProgress#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RingView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/RingView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2478">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VolumnView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/VolumnView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1038">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -234,8 +330,8 @@
       <list>
         <option value="Class" />
         <option value="valueResourceFile" />
-        <option value="ASInterface" />
         <option value="layoutResourceFile_vertical" />
+        <option value="ASInterface" />
         <option value="ASClass" />
       </list>
     </option>
@@ -243,6 +339,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="fuqin &lt;shenghanming@gmail.com&gt;" />
         <option value="fuqin" />
       </list>
     </option>
@@ -8599,11 +8696,15 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/span_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/SpanActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/Utils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/padding_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/PaddingActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/ArcProgress.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/OnProgressBarListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/padding_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/PaddingActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/NumberProgressBar.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/Test.java" />
       </list>
     </option>
   </component>
@@ -8656,6 +8757,38 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudyNote" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudyNote" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -8733,7 +8866,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="customview" />
+              <option name="myItemId" value="Activity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -9091,7 +9224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1474457486660</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add  custom progress for ValueAnimatior">
+      <created>1474613704848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1474613704848</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -9111,12 +9251,12 @@
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.537797" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7451404" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -9192,64 +9332,23 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add viewpager and fragment" />
-    <option name="LAST_COMMIT_MESSAGE" value="add viewpager and fragment" />
+    <MESSAGE value="add  custom progress for ValueAnimatior" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  custom progress for ValueAnimatior" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/NumberProgressBar.java</url>
+          <line>314</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_pause.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/common_divider_large_horizontal.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/viewpager/PlayListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_main_nav_settings_selected.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_main_nav_settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_main_nav_music.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_main_nav_local_files_selected.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -9311,14 +9410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -9419,6 +9510,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -9440,6 +9532,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -9447,6 +9540,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -9467,6 +9561,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1196">
           <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1203#1355#0" expanded="false" />
+            <element signature="e#1354#1355#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -9538,7 +9637,7 @@
         <state relative-caret-position="237">
           <caret line="22" column="3" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -9562,44 +9661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="785">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/padding_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="48" column="34" selection-start-line="48" selection-start-column="34" selection-end-line="48" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/PaddingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Android/Sdk/sources/android-24/android/animation/ValueAnimator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -9608,15 +9669,161 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/OnProgressBarListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-24/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="11706" column="21" selection-start-line="11706" selection-start-column="21" selection-end-line="11706" selection-end-column="21" />
+          <folding>
+            <element signature="e#464958#464959#0" expanded="true" />
+            <element signature="e#464995#464996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Android/Sdk/sources/android-24/android/graphics/RectF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/ArcProgress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="365" column="25" selection-start-line="365" selection-start-column="25" selection-end-line="365" selection-end-column="25" />
+        <state relative-caret-position="-5222">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onMeasure#0;class#ArcProgress#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#ArcProgress#0" expanded="false" />
             <element signature="method#onRestoreInstanceState#0;class#ArcProgress#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/VolumnView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1038">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/RingView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2478">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="45" column="34" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/padding_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/PaddingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="e#870#1190#0" expanded="true" />
+            <element signature="e#972#1164#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1189#1190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/customview/NumberProgressBar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1082">
+          <caret line="180" column="8" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4251#4252#0" expanded="true" />
+            <element signature="e#4286#4287#0" expanded="true" />
+            <element signature="e#6356#6357#0" expanded="true" />
+            <element signature="e#6394#6395#0" expanded="true" />
+            <element signature="e#12247#12248#0" expanded="true" />
+            <element signature="e#12280#12281#0" expanded="true" />
+            <element signature="e#12411#12412#0" expanded="true" />
+            <element signature="e#12443#12444#0" expanded="true" />
+            <element signature="e#12484#12485#0" expanded="true" />
+            <element signature="e#12525#12526#0" expanded="true" />
+            <element signature="e#12564#12565#0" expanded="true" />
+            <element signature="e#12603#12604#0" expanded="true" />
+            <element signature="e#12635#12636#0" expanded="true" />
+            <element signature="e#12674#12675#0" expanded="true" />
+            <element signature="e#12701#12702#0" expanded="true" />
+            <element signature="e#12736#12737#0" expanded="true" />
+            <element signature="e#12778#12779#0" expanded="true" />
+            <element signature="e#12818#12819#0" expanded="true" />
+            <element signature="e#12862#12863#0" expanded="true" />
+            <element signature="e#12904#12905#0" expanded="true" />
+            <element signature="e#13647#13648#0" expanded="true" />
+            <element signature="e#13689#13690#0" expanded="true" />
+            <element signature="e#13744#13745#0" expanded="true" />
+            <element signature="e#13788#13789#0" expanded="true" />
+            <element signature="e#14145#14146#0" expanded="true" />
+            <element signature="e#14175#14176#0" expanded="true" />
+            <element signature="e#14367#14368#0" expanded="true" />
+            <element signature="e#14397#14398#0" expanded="true" />
+            <element signature="e#17391#17392#0" expanded="true" />
+            <element signature="e#17425#17426#0" expanded="true" />
+            <element signature="e#17501#17502#0" expanded="true" />
+            <element signature="e#17537#17538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-555">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

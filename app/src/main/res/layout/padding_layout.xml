@@ -16,4 +16,13 @@
       custom:arc_text_color="#ffffff"
       custom:arc_text_size="80sp"/>
 
+  <com.hansheng.studynote.customview.NumberProgressBar
+      android:id="@+id/numberbar1"
+      android:layout_width="wrap_content"
+      android:padding="20dp"
+      custom:progress_current="0"
+      style="@style/NumberProgressBar_Default"
+      android:layout_height="wrap_content"/>
+
+
 </LinearLayout>
