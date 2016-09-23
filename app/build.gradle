@@ -7,7 +7,7 @@ android {
     defaultConfig {
         applicationId "com.hansheng.studynote"
         minSdkVersion 18
-        targetSdkVersion 22
+        targetSdkVersion 24
         multiDexEnabled true
         versionCode 1
         versionName "1.0"
@@ -101,6 +101,8 @@ dependencies {
     configurations {
         all*.exclude module: 'android'
     }
+    compile 'com.github.ctiao:DanmakuFlameMaster:0.5.0'
+
 }
 
 

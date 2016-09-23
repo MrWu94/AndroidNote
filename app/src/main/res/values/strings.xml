@@ -118,7 +118,17 @@
 
     <string name="book_title_1">失控</string>
     <string name="book_description_1">作者: [美] 凯文·凯利 \n副标题: 全人类的最终命运和结局 \n出版年: 2010-12 \n页数: 707 \n定价: 88.00元 </string>
+    <string name="hide_danmaku">hide</string>
+    <string name="show_danmaku">show</string>
+    <string name="pause_danmaku">pause</string>
+    <string name="resume_danmaku">resume</string>
+    <string name="send_danmaku">发送一条(纯文字)</string>
+    <string name="send_danmaku_image_text">发送一条(图文)</string>
+    <string name="send_danmakus">定时发送</string>
+    <string name="cancel_sending_danmakus">取消定时</string>
 
+    <string name="release">release</string>
+    <string name="rotate">旋转屏幕</string>
 
 
 </resources>
