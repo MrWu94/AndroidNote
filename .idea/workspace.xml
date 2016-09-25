@@ -11,77 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="344ee989-d1d0-4067-9d91-a7fa12286bca" name="Default" comment="add  custom progress for ValueAnimatior">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/DanmakuFlameMaster_0_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/glide_3_7_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Adapter/Bean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Adapter/ListViewActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Adapter/ListViewAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Adapter/abslistview/EasyLVAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Adapter/abslistview/EasyLVHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Adapter/helper/DataHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Adapter/helper/ViewHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Adapter/recyclerview/EasyRVAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Adapter/recyclerview/EasyRVHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/dialog/DialogActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/dialog/progress/CustomDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/dialog/progress/ProgressCircularIndeterminate.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/glide/GlideActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/glide/GlideCircleTransform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/glide/GlideRoundTransform.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_listview.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/glide_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_list2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_custom_progress.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_pathview_1_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_pathview_1_0_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/cardview_v7_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/cardview_v7_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/floatingactionbutton_1_7_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/floatingactionbutton_1_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_library_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javax_inject_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javax_inject_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/library_circular_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/library_circular_1_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/rxandroid_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/rxandroid_1_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_24_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_24_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_24_2_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/animation/animation.iml" afterPath="$PROJECT_DIR$/animation/animation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customview/customview.iml" afterPath="$PROJECT_DIR$/customview/customview.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/daogenerator/daogenerator.iml" afterPath="$PROJECT_DIR$/daogenerator/daogenerator.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hanshengeventgbus/hanshengeventgbus.iml" afterPath="$PROJECT_DIR$/hanshengeventgbus/hanshengeventgbus.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hanshenghttpclient/hanshenghttpclient.iml" afterPath="$PROJECT_DIR$/hanshenghttpclient/hanshenghttpclient.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java/java.iml" afterPath="$PROJECT_DIR$/java/java.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/network/network.iml" afterPath="$PROJECT_DIR$/network/network.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pattern/pattern.iml" afterPath="$PROJECT_DIR$/pattern/pattern.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simplenet/simplenet.iml" afterPath="$PROJECT_DIR$/simplenet/simplenet.iml" />
     </list>
     <ignored path="StudyNote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -8582,11 +8517,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -8596,6 +8528,9 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane />
       </pane>
       <pane id="Scope" />
     </panes>
