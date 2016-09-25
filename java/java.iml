@@ -28,9 +28,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="jsoup-1.7.3" level="project" />
-    <orderEntry type="library" exported="" name="org.apache.http.legacy" level="project" />
-    <orderEntry type="library" exported="" name="Volley" level="project" />
-    <orderEntry type="library" exported="" name="slf4j-api-1.7.14" level="project" />
     <orderEntry type="library" exported="" name="mina-core-2.0.13" level="project" />
+    <orderEntry type="library" exported="" name="org.apache.http.legacy" level="project" />
+    <orderEntry type="library" exported="" name="slf4j-api-1.7.14" level="project" />
+    <orderEntry type="library" exported="" name="Volley" level="project" />
   </component>
 </module>

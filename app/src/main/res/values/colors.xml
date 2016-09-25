@@ -43,4 +43,7 @@
     <color name="stop_received">#FF0000</color>
     <color name="secondary_text">#727272</color>
     <color name="icons">#FFFFFF</color>
+
+    <color name="progress_left_color">#3F51B5</color>
+    <color name="progress_right_color">#95a5a6</color>
 </resources>
