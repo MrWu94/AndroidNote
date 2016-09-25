@@ -25,6 +25,7 @@ public class ListViewActivity  extends AppCompatActivity {
             new Bean(R.mipmap.ic_launcher, "测试6")
            );
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

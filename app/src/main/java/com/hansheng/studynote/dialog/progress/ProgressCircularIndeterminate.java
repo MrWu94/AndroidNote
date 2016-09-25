@@ -33,6 +33,7 @@ public class ProgressCircularIndeterminate extends View {
             invalidate();
         }
     };
+
     public ProgressCircularIndeterminate(Context context, AttributeSet attrs) {
         super(context, attrs);
 

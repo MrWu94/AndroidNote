@@ -4,6 +4,7 @@ package com.hansheng.studynote.Adapter;
  * Created by hansheng on 2016/9/24.
  */
 
+
 public class Bean {
     public int imgRes;
 

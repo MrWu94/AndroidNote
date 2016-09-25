@@ -18,10 +18,6 @@ import android.widget.TextView;
 import com.hansheng.studynote.Adapter.helper.ViewHelper;
 
 
-/**
- * @author yuyh.
- * @date 2016/7/21.
- */
 public class EasyLVHolder implements ViewHelper.AbsListView<EasyLVHolder> {
 
     /**

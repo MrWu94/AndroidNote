@@ -13,6 +13,7 @@ import com.hansheng.studynote.R;
  */
 public class CustomDialog extends Dialog {
 
+
     public CustomDialog(Context context) {
         super(context);
     }

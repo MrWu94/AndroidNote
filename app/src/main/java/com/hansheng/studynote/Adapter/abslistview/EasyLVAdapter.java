@@ -10,12 +10,7 @@ import com.hansheng.studynote.Adapter.helper.DataHelper;
 
 import java.util.List;
 
-/**
- * https://github.com/smuyyh/EasyAdapter
- *
- * @author yuyh.
- * @date 2016/7/21.
- */
+
 public abstract class EasyLVAdapter<T> extends BaseAdapter implements DataHelper<T> {
 
     protected Context mContext;

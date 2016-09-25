@@ -16,6 +16,7 @@ import com.hansheng.studynote.dialog.progress.CustomDialog;
  * Created by hansheng on 2016/9/24.
  */
 
+
 public class DialogActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button button;

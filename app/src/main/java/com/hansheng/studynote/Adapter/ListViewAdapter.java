@@ -18,6 +18,7 @@ public class ListViewAdapter extends EasyLVAdapter<Bean> {
         super(context, list, layoutIds);
     }
 
+
     @Override
     public void convert(EasyLVHolder holder, int position, final Bean bean) {
         holder.setText(R.id.tv, bean.name);

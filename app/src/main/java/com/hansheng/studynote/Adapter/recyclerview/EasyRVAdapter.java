@@ -11,12 +11,6 @@ import com.hansheng.studynote.Adapter.helper.DataHelper;
 
 import java.util.List;
 
-/**
- * https://github.com/smuyyh/EasyAdapter
- *
- * @author yuyh.
- * @date 2016/7/21.
- */
 public abstract class EasyRVAdapter<T> extends RecyclerView.Adapter<EasyRVHolder> implements DataHelper<T> {
 
     protected Context mContext;

@@ -8,7 +8,6 @@ import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.text.Spannable;
@@ -56,6 +55,7 @@ import master.flame.danmaku.danmaku.util.SystemClock;
 /**
  * Created by hansheng on 2016/9/22.
  */
+
 
 public class DanmuActivity extends Activity implements View.OnClickListener {
 

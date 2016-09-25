@@ -12,6 +12,7 @@ import com.hansheng.studynote.R;
  * Created by hansheng on 2016/9/24.
  */
 
+
 public class GlideActivity extends AppCompatActivity {
     private ImageView imageView;
     @Override

@@ -2,10 +2,7 @@ package com.hansheng.studynote.Adapter.helper;
 
 import java.util.List;
 
-/**
- * @author yuyh.
- * @date 2016/7/21.
- */
+
 public interface DataHelper<T> {
 
     boolean addAll(List<T> list);

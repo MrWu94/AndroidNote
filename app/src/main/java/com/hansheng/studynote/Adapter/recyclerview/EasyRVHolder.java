@@ -20,6 +20,7 @@ import com.hansheng.studynote.Adapter.helper.ViewHelper;
 import com.hansheng.studynote.glide.GlideCircleTransform;
 import com.hansheng.studynote.glide.GlideRoundTransform;
 
+
 public class EasyRVHolder extends RecyclerView.ViewHolder implements ViewHelper.RecyclerView<EasyRVHolder> {
 
     private SparseArray<View> mViews = new SparseArray<>();

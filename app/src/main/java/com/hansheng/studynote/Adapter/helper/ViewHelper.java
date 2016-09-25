@@ -9,10 +9,7 @@ import com.hansheng.studynote.Adapter.abslistview.EasyLVHolder;
 import com.hansheng.studynote.Adapter.recyclerview.EasyRVHolder;
 
 
-/**
- * @author yuyh.
- * @date 2016/7/21.
- */
+
 public interface ViewHelper {
 
     interface AbsListView<VH extends EasyLVHolder> {
