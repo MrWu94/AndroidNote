@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.1\19047bdb6a4fc00a44124f64ca98e88fc204e7e3\okhttp-3.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.1_6503b1b7381df415849f605d1489ba0f2439064e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.eftimoff\android-pathview\1.0.8\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -39,15 +30,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_57ec249e703b106c95dd17ae59b30d3ec8cb64a9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\hansheng\Desktop\StudyNote\app\libs\Volley.jar"
         jumboMode="true"
         optimize="true"
@@ -57,29 +39,11 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\libs\autolayout.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d84c5d3ad917ea9b043f57bd6596d5d6e486f4d6">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\2\autolayout_222ca96e66c3ad704aa2d87b2d4191dec8ed8296\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.4.0\f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2\picasso-2.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.4.0_159b3a522d306ea3554a3b9561fc7c120b69a7d1\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="417f19ed3707d22b242a24863ef20b1a825f04f4">
+        sha1="2b663fc5e16fa7927b7ba78977b355f2b0087267">
         <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_14cc4e8f777f1662d86c736ae819eaf6fd49fd3f\classes.dex" />
     </item>
     <item
@@ -90,15 +54,6 @@
         revision="24.0.2"
         sha1="de4f7404e2f58d8f6e83cb1e85d0c2d6c2987287">
         <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\systembartint-1.0.3_1c5ae3c7bc861cc2158a90e39ab11e2280ed8a80\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-7.0.1_7b3baf2863010287a8b36672b7b6a500951dfe0d\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -138,30 +93,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_a003f114753a990e7990b567e82a9df871649c15\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
         <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_8be30628a5933a15d62d9076e33971ecddbe97e3\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_72162fc6a1d0704bf367b78d4a4382a40eeba17b\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -192,24 +129,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.jiechic.library\xUtils\2.6.14\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="fe75606aa9485cd20177894c204291a79a0cc7ab">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jiechic.library-xUtils-2.6.14_9b7b80295b619d0a8708af56be68c5b3c37ff4a7\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\libs\ksoap2-android.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="aa6e8d9b65f13e7aff4c0e45f67ca8686998b9e2">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\2\ksoap2-android_efbeb2c2cfa7b7540539eb3ad6f14786ff6ed5e2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"
         jumboMode="true"
         optimize="true"
@@ -237,15 +156,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0-beta4\739e00dea1f0ac04fdb9b6160d667e23cc50a791\retrofit-2.0.0-beta4.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="739e00dea1f0ac04fdb9b6160d667e23cc50a791">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.0-beta4_1659a8a451bac15a3fe7a550aa5b21f8ac19373a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -255,48 +165,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\StudyNote\simplenet\unspecified\jars\libs\org.apache.http.legacy.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="49bc2d83ccb0cfe1dbc853e3ba80db0f950ed96d">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\8\org.apache.http.legacy_5943fcdc27e590f79ab3e9d93c699f0cae74554a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-3.0.0_64aed1fa76030ecc4ba1a8ade2addf12ba5cbb5b\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="9cc2b56898519a9dadeec5a9b556435de9bc2448">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_cd964488421a424f4ebe61129cc9081466339ad6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
         <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_6cb7296e586670ec2b265c794a6da6c77e15841f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_bac32ad946f5263eae9eca16a7b94d7fc0c9a42e\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -336,15 +210,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.0_43ef38b4344bcc64d367c01d4ab28392494ef43e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -354,30 +219,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.7.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="8b87d18f72cdc3cbefff2264fcb90b4b46f7f58e">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.getbase-floatingactionbutton-1.7.0_b21cccc42e1784118240173bc11173c7e93651de\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.0-beta4\de5935a367ba5e343e9df786ac8fc0c7d52b5f0c\converter-gson-2.0.0-beta4.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
         sha1="de5935a367ba5e343e9df786ac8fc0c7d52b5f0c">
         <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.0-beta4_16fa71f8b917ea2dc46cb5d463b10554e4053e20\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.github.castorflex.smoothprogressbar\library-circular\1.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.2"
-        sha1="e3dfc7e44f8fde989ba4e8a5fdde34d9a32447c6">
-        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.castorflex.smoothprogressbar-library-circular-1.0.0_92fb075671bc9a10553d797d02cb62e4a3a1223e\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -432,6 +279,168 @@
         revision="24.0.2"
         sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
         <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_72a211794208a5cf6555fd03408728b74b1b1e14\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.3.1\19047bdb6a4fc00a44124f64ca98e88fc204e7e3\okhttp-3.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="19047bdb6a4fc00a44124f64ca98e88fc204e7e3">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.3.1_6503b1b7381df415849f605d1489ba0f2439064e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_57ec249e703b106c95dd17ae59b30d3ec8cb64a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\libs\autolayout.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d84c5d3ad917ea9b043f57bd6596d5d6e486f4d6">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\2\autolayout_222ca96e66c3ad704aa2d87b2d4191dec8ed8296\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.4.0\f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2\picasso-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f36d2d4e3a36b3259aaf9d004d29b4cdc6c1bfb2">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\picasso-2.4.0_159b3a522d306ea3554a3b9561fc7c120b69a7d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.jakewharton\butterknife\7.0.1\d5d13ea991eab0252e3710e5df3d6a9d4b21d461\butterknife-7.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\butterknife-7.0.1_7b3baf2863010287a8b36672b7b6a500951dfe0d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_a003f114753a990e7990b567e82a9df871649c15\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_72162fc6a1d0704bf367b78d4a4382a40eeba17b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.jiechic.library\xUtils\2.6.14\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fe75606aa9485cd20177894c204291a79a0cc7ab">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jiechic.library-xUtils-2.6.14_9b7b80295b619d0a8708af56be68c5b3c37ff4a7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\libs\ksoap2-android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="aa6e8d9b65f13e7aff4c0e45f67ca8686998b9e2">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\2\ksoap2-android_efbeb2c2cfa7b7540539eb3ad6f14786ff6ed5e2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.github.bumptech.glide\glide\3.7.0\9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4\glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\glide-3.7.0_1f8b2977c8ed14aa8ebb809bc1ea0a74c7794e7f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0-beta4\739e00dea1f0ac04fdb9b6160d667e23cc50a791\retrofit-2.0.0-beta4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="739e00dea1f0ac04fdb9b6160d667e23cc50a791">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.0-beta4_1659a8a451bac15a3fe7a550aa5b21f8ac19373a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\StudyNote\simplenet\unspecified\jars\libs\org.apache.http.legacy.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="49bc2d83ccb0cfe1dbc853e3ba80db0f950ed96d">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\8\org.apache.http.legacy_5943fcdc27e590f79ab3e9d93c699f0cae74554a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\.gradle\caches\modules-2\files-2.1\org.greenrobot\eventbus\3.0.0\ddd99896e9569eaababbe81b35d80e1b91c4ad85\eventbus-3.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ddd99896e9569eaababbe81b35d80e1b91c4ad85">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\eventbus-3.0.0_64aed1fa76030ecc4ba1a8ade2addf12ba5cbb5b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ff136e9c8fabd82fcfcaf2180bc29b2677dda47">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_cd964488421a424f4ebe61129cc9081466339ad6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_bac32ad946f5263eae9eca16a7b94d7fc0c9a42e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.0_43ef38b4344bcc64d367c01d4ab28392494ef43e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.7.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8b87d18f72cdc3cbefff2264fcb90b4b46f7f58e">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.getbase-floatingactionbutton-1.7.0_b21cccc42e1784118240173bc11173c7e93651de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\exploded-aar\com.github.castorflex.smoothprogressbar\library-circular\1.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e3dfc7e44f8fde989ba4e8a5fdde34d9a32447c6">
+        <dex dex="C:\Users\hansheng\Desktop\StudyNote\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.github.castorflex.smoothprogressbar-library-circular-1.0.0_92fb075671bc9a10553d797d02cb62e4a3a1223e\classes.dex" />
     </item>
 
 </items>

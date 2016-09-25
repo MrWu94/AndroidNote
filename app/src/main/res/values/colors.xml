@@ -46,4 +46,8 @@
 
     <color name="progress_left_color">#3F51B5</color>
     <color name="progress_right_color">#95a5a6</color>
+    <color name="transparentBlack">#6D000000</color>
+
+    <color name="darkgrey">#949494</color>
+
 </resources>
