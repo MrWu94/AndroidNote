@@ -68,7 +68,7 @@ public class ConfirmDialogFragment extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        if (mIsCustomDialog) {
+        if (!mIsCustomDialog) {
 
 
             AlertDialog dialog = new AlertDialog.Builder(getActivity()).setTitle(mTitle == null ? getString(R.string.app_name) : mTitle).setMessage(message == null ? " " : message)
@@ -97,7 +97,7 @@ public class ConfirmDialogFragment extends DialogFragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (!mIsCustomDialog) {
+        if (mIsCustomDialog) {
             View view = inflater.inflate(R.layout.dialog_custom_progress, container, false);
             //启用窗体的扩展特性。
             getDialog().requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -107,7 +107,6 @@ public class ConfirmDialogFragment extends DialogFragment {
         }
 
     }
-
 
 
     @Override

@@ -52,8 +52,11 @@ public class DialogActivity extends AppCompatActivity implements View.OnClickLis
 
 
     public void showCustomDialogFragment() {
-        ConfirmDialogFragment confirmDialogFragment=new ConfirmDialogFragment();
-        confirmDialogFragment.show(getFragmentManager(),"log");
+//        ConfirmDialogFragment confirmDialogFragment=new ConfirmDialogFragment();
+//        confirmDialogFragment.show(getFragmentManager(),"log");
+
+       DialogFactory factory= new DialogFactory(getFragmentManager());
+        factory.showConfirmDialog("确定","取消",true,null);
 
     }
 
