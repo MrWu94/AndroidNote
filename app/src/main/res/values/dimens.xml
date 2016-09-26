@@ -5,7 +5,7 @@
 
     <dimen name="valueSelector_height">100dp</dimen>
     <dimen name="valueSelector_hMargin">0dp</dimen>
-
+    <dimen name="textSize">128sp</dimen>
     <dimen name="updateButtonMargin">40dp</dimen>
     <dimen name="row_height">72dp</dimen>
     <dimen name="image_padding">4dp</dimen>

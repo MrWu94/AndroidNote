@@ -120,5 +120,11 @@
     <string name="book_description_1">作者: [美] 凯文·凯利 \n副标题: 全人类的最终命运和结局 \n出版年: 2010-12 \n页数: 707 \n定价: 88.00元 </string>
     <string name="downloaded">&#160;%s %%</string>
 
+    <string name="item_about">about</string>
+    <string name="hide_fragment">Hide Fragment</string>
+    <string name="show_fragment">Show Fragment</string>
+    <item name="tag_async_image_view_position" type="id"/>
+    <string name="activity_title">FlipView Demo By Aphid Mobile</string>
+
 
 </resources>
