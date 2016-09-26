@@ -1,6 +1,7 @@
 package com.hansheng.studynote.dialog;
 
 import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.dialog.progress.CustomDialog;
@@ -17,7 +19,7 @@ import com.hansheng.studynote.dialog.progress.CustomDialog;
  */
 
 
-public class DialogActivity extends AppCompatActivity implements View.OnClickListener {
+public class DialogActivity extends AppCompatActivity implements View.OnClickListener, DialogFragmentDemo.LoginInputListener {
 
     private Button button;
     private Button button1;
@@ -39,7 +41,7 @@ public class DialogActivity extends AppCompatActivity implements View.OnClickLis
         int id = view.getId();
         switch (id) {
             case R.id.dialog_btn:
-               showMyDialog();
+                showCustomDialogFragment();
                 break;
             case R.id.dialog_button:
                 customDialog();
@@ -49,8 +51,21 @@ public class DialogActivity extends AppCompatActivity implements View.OnClickLis
     }
 
 
-    private void showMyDialog(){
-        new MyDialogHint(this,R.style.MyDialog1).show();
+    public void showCustomDialogFragment() {
+        ConfirmDialogFragment confirmDialogFragment=new ConfirmDialogFragment();
+        confirmDialogFragment.show(getFragmentManager(),"log");
+
+    }
+
+
+    public void showDialogFragment() {
+        DialogFragmentDemo dialogFragmentDemo = new DialogFragmentDemo();
+        dialogFragmentDemo.show(getFragmentManager(), "loginDialog");
+    }
+
+
+    private void showMyDialog() {
+        new MyDialogHint(this, R.style.MyDialog1).show();
     }
 
     private void customDialog() {
@@ -95,4 +110,11 @@ public class DialogActivity extends AppCompatActivity implements View.OnClickLis
     }
 
 
+    @Override
+    public void onLoginInputComplete(String username, String password) {
+        Toast.makeText(this, "帐号：" + username + ",  密码 :" + password,
+                Toast.LENGTH_SHORT).show();
+
+
+    }
 }
