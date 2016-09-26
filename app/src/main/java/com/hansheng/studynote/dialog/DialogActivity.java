@@ -39,13 +39,18 @@ public class DialogActivity extends AppCompatActivity implements View.OnClickLis
         int id = view.getId();
         switch (id) {
             case R.id.dialog_btn:
-                dialog();
+               showMyDialog();
                 break;
             case R.id.dialog_button:
                 customDialog();
                 break;
         }
 
+    }
+
+
+    private void showMyDialog(){
+        new MyDialogHint(this,R.style.MyDialog1).show();
     }
 
     private void customDialog() {

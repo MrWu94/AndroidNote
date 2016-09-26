@@ -2,6 +2,7 @@ package com.hansheng.studynote.ImageCompressandScale;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -14,11 +15,16 @@ import com.hansheng.studynote.R;
  */
 public class ImageActivity extends AppCompatActivity {
     private ImageView imageView;
+    private ImageView image;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_layout);
         imageView= (ImageView) findViewById(R.id.image_view);
+        image= (ImageView) findViewById(R.id.imagecustom);
+
+
+
         Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.bitmap);
         imageView.setImageBitmap(ImageUtils.compressImage(bitmap));
 }

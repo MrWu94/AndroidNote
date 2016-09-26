@@ -21,56 +21,56 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/rotate" />
+            />
 
         <Button
             android:id="@+id/btn_hide"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/hide_danmaku" />
+           />
 
         <Button
             android:id="@+id/btn_show"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/show_danmaku" />
+            />
 
         <Button
             android:id="@+id/btn_pause"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/pause_danmaku" />
+          />
 
         <Button
             android:id="@+id/btn_resume"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/resume_danmaku" />
+           />
 
         <Button
             android:id="@+id/btn_send"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/send_danmaku" />
+           />
 
         <Button
             android:id="@+id/btn_send_image_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/send_danmaku_image_text" />
+            />
 
         <Button
             android:id="@+id/btn_send_danmakus"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/send_danmakus" />
+            />
     </LinearLayout>
 
 </FrameLayout>

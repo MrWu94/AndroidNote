@@ -32,6 +32,9 @@
         <item>@color/gplus_color_3</item>
         <item>@color/gplus_color_4</item>
     </integer-array>
+    <color name="text_color_context">#666666</color><!-- 字体颜色  标题灰色 -->
+    <color name="window_gray">#f4f4f4</color>
+
 
     <color name="primary_text">#212121</color>
     <color name="gplus_color_1">#3e802f</color>

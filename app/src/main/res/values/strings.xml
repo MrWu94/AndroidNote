@@ -125,6 +125,8 @@
     <string name="show_fragment">Show Fragment</string>
     <item name="tag_async_image_view_position" type="id"/>
     <string name="activity_title">FlipView Demo By Aphid Mobile</string>
+    <string name="cancel_sending_danmakus">发送弹幕</string>
+    <string name="send_danmakus">取消弹幕</string>
 
 
 </resources>

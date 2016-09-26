@@ -65,5 +65,21 @@
         <item name="android:windowEnterAnimation">@anim/menu_bottombar_in</item>
         <item name="android:windowExitAnimation">@anim/menu_bottombar_out</item>
     </style>
+    <style name="TextStyle_context">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/text_color_context</item>
+    </style>
+    <!--对话框style-->
+    <style name="MyDialog1" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bj_hint</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+        <item name="android:backgroundDimAmount">0.6</item><!-- 灰度 -->
+    </style>
+
+
 
 </resources>
