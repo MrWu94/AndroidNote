@@ -10,6 +10,11 @@ import android.widget.TextView;
 
 /**
  * Created by hansheng on 16-9-29.
+ * 封装ViewHolder
+ 只看getView，其他方法都一样；首先调用ViewHolder的get方法，如果convertView为null，new一个ViewHolder实例，通过使用mInflater.
+ inflate加载布局，然后new一个HashMap用于存储View，最后setTag(this)； 如果存在那么直接getTag最后通过getView(id)获取控件
+ ，如果存在则直接返回，否则调用findViewById，返回存储，返回。
+
  */
 
 public class AdapterHolder {
@@ -59,6 +64,10 @@ public class AdapterHolder {
 
     /**
      * 通过控件的Id获取对于的控件，如果没有则加入views
+     * 首先是判断converView是否空，然后载入item布局，然后ViewHolder挨个初始化控件，然后通过tag保存holder，最后设置View的显示。
+     步棸都知道了，那么我们慢慢来观察：ViewHolder一定是包含了item子控件的一个静态类。那么我们就干脆把item所有的子控件都
+     放到ViewHolder里面，但是既然我们要通用，item肯定不是固定的，这就没办法把ViewHolder写的像上面的那种属性的形式。
+     这里我们使用一个键值对来存储Map<id, view>全部的控件，这样就可以在需要的时候直接通过id来找到对应的子View了。
      *
      * @param viewId
      * @return

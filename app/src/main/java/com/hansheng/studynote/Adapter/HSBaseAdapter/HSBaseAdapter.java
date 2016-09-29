@@ -69,6 +69,15 @@ public abstract class HSBaseAdapter<T> extends BaseAdapter implements
         }
     }
 
+    /**
+     * 最终的封装
+     * 再仔细观察，第一行的ViewHolder.get()和最后一行的return方法肯定也是不变的，果断进一步封装。
+     * 那么就完全可以是只需要抽出getView中可变的部分————通过ViewHolder把View找到，通过Item设置值；这一块单独写出来了。
+     * 那么我们写一个方法就叫convert()来做这件事。至此代码简化到这样，剩下的已经不需要单独写一个Adapter了，
+     * 直接Activity匿名内部类足够了。
+     */
+
+
     @Override
     public long getItemId(int position) {
         return position;
