@@ -29,6 +29,7 @@ public class MyBaseAdapterActivity extends AppCompatActivity {
         showListView();
     }
 
+
     /**
      * 显示ListView
      */
