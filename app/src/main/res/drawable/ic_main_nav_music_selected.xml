@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-        android:width="24dp"
-        android:height="24dp"
-        android:viewportWidth="24"
-        android:viewportHeight="24">
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="24"
+    android:viewportWidth="24">
 
     <group
         android:translateX="-240.000000"
         android:translateY="-35.000000">
-        <group
-            android:translateY="24.000000">
+        <group android:translateY="24.000000">
             <group
                 android:translateX="240.000000"
                 android:translateY="11.000000">
                 <path
                     android:name="Bounds"
-                    android:fillColor="#FFFFFF"
                     android:fillAlpha="0.12"
-                    android:pathData="M 12 0 C 18.627416998 0 24 5.37258300203 24 12 C 24 18.627416998 18.627416998 24 12 24 C 5.37258300203 24 0 18.627416998 0 12 C 0 5.37258300203 5.37258300203 0 12 0 Z"/>
+                    android:fillColor="#FFFFFF"
+                    android:pathData="M 12 0 C 18.627416998 0 24 5.37258300203 24 12 C 24 18.627416998 18.627416998 24 12 24 C 5.37258300203 24 0 18.627416998 0 12 C 0 5.37258300203 5.37258300203 0 12 0 Z" />
                 <path
                     android:name="Combined-Shape"
                     android:fillColor="#FFFFFF"
@@ -36,7 +35,7 @@ M11.4919133,5.01361076 C11.4919133,5.01361076 12.3361558,4.91476704
 15.9816295,9.28207411 15.9816295,9.28207411 C15.9816295,9.28207411
 15.8426433,8.51903142 15.4759831,7.83623552 C15.2316643,7.38126432
 14.8074281,6.94410424 14.5444893,6.85730641 C13.7549268,6.59666659
-13.083491,6.72377657 13.083491,6.72377657 L11.4919133,5.01361076 Z"/>
+13.083491,6.72377657 13.083491,6.72377657 L11.4919133,5.01361076 Z" />
             </group>
         </group>
     </group>
