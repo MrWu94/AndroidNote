@@ -1,13 +1,12 @@
 package com.hansheng.block;
 
 import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingDeque;
 
 /**
  * Created by hansheng on 16-9-28.
- * 从执行结果中可以看出，由于队列中元素的数量限制在了20个，因此添加20个元素后，其他元素便在队列外阻塞等待，程序并没有终止。
+ * 从执行结果中可以看出，由于队列中元素的数量限制在了20个，因此添加20个元素后，其他元素便在队列外阻塞等待
+ * ，程序并没有终止。
  */
 
 public class BlockingQueueTest {
