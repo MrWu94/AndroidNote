@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hansheng.studynote.diapatchTouchEvent.test.RootView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_margin="20dp"
+    android:background="#4E5268">
+
+    <com.hansheng.studynote.diapatchTouchEvent.test.ViewGroupA
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#95C3FA">
+
+        <com.hansheng.studynote.diapatchTouchEvent.test.View1
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:background="#BDDA66" />
+
+    </com.hansheng.studynote.diapatchTouchEvent.test.ViewGroupA>
+
+    <com.hansheng.studynote.diapatchTouchEvent.test.View2
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:background="#BDDA66" />
+</com.hansheng.studynote.diapatchTouchEvent.test.RootView>
+
