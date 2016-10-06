@@ -19,6 +19,7 @@ import java.util.TimerTask;
 
 public class ClipDrawableActivity extends AppCompatActivity {
     private ImageView view=null;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
