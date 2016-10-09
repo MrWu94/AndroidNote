@@ -1,6 +1,5 @@
 package com.hansheng.studynote.customview;
 
-
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -19,17 +18,12 @@ import android.view.View;
 import com.hansheng.studynote.R;
 
 
+
 /**
- * Created by hansheng on 11/6/14.
- * RequestLayout：
- * 当view确定自身已经不再适合现有的区域时，该view本身调用这个方法要求parent view重新调用他的
- * onMeasure onLayout来对重新设置自己位置。
- * <p>
- * 特别的当view的layoutparameter发生改变，并且它的值还没能应用到view上，这时候适合调用这个方法。
- * 也就是当通过getLayoutParrms().width = XXX的时候，我们需要重新调用RequestLayout
- * <p>
- * invalidate：View类调用迫使view重画。
+ * Created by hansheng on 16-9-23.
  */
+
+
 public class ArcProgress extends View {
     private Paint paint;
     protected Paint textPaint;

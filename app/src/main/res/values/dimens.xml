@@ -23,10 +23,15 @@
 
     <dimen name="card_margin">5dp</dimen>
     <dimen name="btn_fab_size">56dp</dimen>
-    <dimen name="btn_fab_margins">10dp</dimen>>
-    <dimen name="square_size_normal">50dp</dimen>
-    <dimen name="square_size_expanded">100dp</dimen>
+    <dimen name="btn_fab_margins">10dp</dimen>
+    <dimen name="default_radius">80dp</dimen>
 
+    <color name="default_circular_color">#4c99d9</color>
+    <color name="default_circular_progress_color">#ffffff</color>
+    <dimen name="default_circular_width">3.5dp</dimen>
+    <dimen name="edge">10dp</dimen>
+    <dimen name="default_text_size">50sp</dimen>
+    <dimen name="text_size_huge">20sp</dimen>
 
 
 </resources>

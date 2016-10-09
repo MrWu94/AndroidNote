@@ -127,15 +127,10 @@
     <string name="activity_title">FlipView Demo By Aphid Mobile</string>
     <string name="cancel_sending_danmakus">发送弹幕</string>
     <string name="send_danmakus">取消弹幕</string>
-    <string name="intro_message">intro</string>
-    <string name="additional_message">additional</string>
-
-    <string name="scene">Scene</string>
-    <string name="scene_1">1</string>
-    <string name="scene_2">2</string>
-    <string name="scene_3">3</string>
-    <string name="scene_4">4</string>
-    <string name="hello">Hello!</string>
+    <string name="start">开始下载</string>
+    <string name="reset">重置</string>
+    <string name="show_error">下载错误</string>
+    <string name="custom_font">cutsom_font</string>
 
 
 </resources>

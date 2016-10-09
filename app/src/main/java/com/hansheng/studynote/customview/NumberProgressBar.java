@@ -187,7 +187,7 @@ public class NumberProgressBar extends View {
         mReachedBarColor = attributes.getColor(R.styleable.NumberProgressBar_progress_reached_color, default_reached_color);
         mUnreachedBarColor = attributes.getColor(R.styleable.NumberProgressBar_progress_unreached_color, default_unreached_color);
         mTextColor = attributes.getColor(R.styleable.NumberProgressBar_progress_text_color, default_text_color);
-        mTextSize = attributes.getDimension(R.styleable.NumberProgressBar_progress_text_size, default_text_size);
+        mTextSize = attributes.getDimension(R.styleable.NumberProgressBar_progress_text_size1, default_text_size);
 
         mReachedBarHeight = attributes.getDimension(R.styleable.NumberProgressBar_progress_reached_bar_height, default_reached_bar_height);
         mUnreachedBarHeight = attributes.getDimension(R.styleable.NumberProgressBar_progress_unreached_bar_height, default_unreached_bar_height);

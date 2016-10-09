@@ -76,7 +76,7 @@
         <attr name="progress_reached_bar_height" format="dimension" />
         <attr name="progress_unreached_bar_height" format="dimension" />
 
-        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_size1" format="dimension" />
         <attr name="progress_text_color" format="color" />
 
         <attr name="progress_text_offset" format="dimension" />
@@ -138,5 +138,15 @@
         <attr name="android:foregroundInsidePadding" />
         <attr name="android:foregroundGravity" />
     </declare-styleable>
+
+    <declare-styleable name="FreshDownloadView">
+        <attr name="circular_radius" format="dimension" />
+        <attr name="circular_color" format="color" />
+        <attr name="circular_progress_color" format="color" />
+        <attr name="circular_width" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+    </declare-styleable>
+
+
 
 </resources>

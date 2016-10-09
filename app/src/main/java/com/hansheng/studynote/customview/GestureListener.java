@@ -6,7 +6,8 @@ import android.view.MotionEvent;
 
 /**
  * Created by hansheng on 2016/9/11.
- * 很多时候我们并不需要获取用户手势操作的原始数据，而是仅仅想判断手势操作所属的类型，那么我们可以在处理触摸操作的类中实现 OnTouchListener 接口。
+ * 很多时候我们并不需要获取用户手势操作的原始数据，而是仅仅想判断手势操作所属的类型，那么我们可以在处理触摸操作
+ * 的类中实现 OnTouchListener 接口。
  * 接口 OnTouchListener 需要实现的方法：
  * onDown(MotionEvent event) 手指落下
  * onFling(MotionEvent event) 手指划过（快速）
