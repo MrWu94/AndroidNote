@@ -131,6 +131,11 @@
     <string name="reset">重置</string>
     <string name="show_error">下载错误</string>
     <string name="custom_font">cutsom_font</string>
+    <string name="scene">scene1</string>
+    <string name="scene_1">scene2\\</string>
+    <string name="scene_2">scene3</string>
+    <string name="scene_3">scene5</string>
+    <string name="scene_4">scene5</string>
 
 
 </resources>

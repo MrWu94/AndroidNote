@@ -4,18 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/transition_square"
-        android:layout_width="@dimen/square_size_normal"
-        android:layout_height="@dimen/square_size_normal"
-        android:background="#990000"
-        android:gravity="center"/>
+
 
     <ImageView
         android:id="@+id/transition_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/transition_square"
+
         android:src="@drawable/ic_launcher"/>
 
     <ImageView
