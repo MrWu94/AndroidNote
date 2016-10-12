@@ -95,7 +95,7 @@ dependencies {
     compile 'com.eftimoff:android-pathview:1.0.8@aar'
     compile project(':hanshenghttpclient')
     compile project(':simplenet')
-    compile files('libs/appupdate.jar')
+
 
     compile 'com.github.castorflex.smoothprogressbar:library-circular:1.0.0'
     configurations {

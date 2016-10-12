@@ -15,12 +15,14 @@ public class ReentrantloackTest implements Runnable {
         System.out.println(Thread.currentThread().getId());
         set();
         lock.unlock();
+        System.out.println("unlock");
     }
 
     private void set() {
         lock.lock();
         System.out.println(Thread.currentThread().getId());
         lock.unlock();
+        System.out.println("set unlock");
 
     }
 
