@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.hansheng.studynote"
-        minSdkVersion 18
+        minSdkVersion 19
         targetSdkVersion 24
         multiDexEnabled true
         versionCode 1
@@ -73,6 +73,7 @@ dependencies {
     compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
     compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
     compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'org.greenrobot:greendao:2.2.0'

@@ -1,6 +1,7 @@
 package com.hansheng.studynote.OkHttp;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
 
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -14,6 +15,7 @@ import okhttp3.Response;
 public class PostExample {
     public static final MediaType JSON
             = MediaType.parse("application/json; charset=utf-8");
+
 
     OkHttpClient client=new OkHttpClient();
     String post(String url,String json) throws IOException {

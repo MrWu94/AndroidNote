@@ -359,10 +359,13 @@ public class ArcProgress extends View {
                     (getWidth() - textPaint.measureText(getBottomText())) / 2.0f,
                     bottomTextBaseline, textPaint);
         }
+        if (currentProgress >= progress) {
+            animateFinish = true;
+        }
         if (!animateFinish) {
-//            currentProgress++;
             invalidate();
         }
+
     }
 
     @Override

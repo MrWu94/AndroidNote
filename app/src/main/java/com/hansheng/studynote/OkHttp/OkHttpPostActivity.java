@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.hansheng.studynote.R;
 
 import java.io.IOException;
+import java.net.URL;
 import java.util.concurrent.ExecutionException;
 
 import okhttp3.FormBody;
@@ -25,6 +26,7 @@ import retrofit2.http.FormUrlEncoded;
  * Created by hansheng on 2016/7/4.
  */
 public class OkHttpPostActivity extends AppCompatActivity{
+
     TextView output;
     Button bsend;
     EditText etName, etPass;

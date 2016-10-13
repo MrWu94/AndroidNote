@@ -89,17 +89,17 @@ public class BasicTransitionFragment extends Fragment implements RadioGroup.OnCh
                 break;
             }
             case R.id.select_scene_4: {
-
-                // Alternatively, transition can be invoked dynamically without a Scene.
-                // For this, we first call TransitionManager.beginDelayedTransition().
-                TransitionManager.beginDelayedTransition(mSceneRoot);
-                // Then, we can just change view properties as usual.
-                View square = mSceneRoot.findViewById(R.id.transition_square);
-                ViewGroup.LayoutParams params = square.getLayoutParams();
-                int newSize = getResources().getDimensionPixelSize(R.dimen.square_size_expanded);
-                params.width = newSize;
-                params.height = newSize;
-                square.setLayoutParams(params);
+//
+//                // Alternatively, transition can be invoked dynamically without a Scene.
+//                // For this, we first call TransitionManager.beginDelayedTransition().
+//                TransitionManager.beginDelayedTransition(mSceneRoot);
+//                // Then, we can just change view properties as usual.
+//                View square = mSceneRoot.findViewById(R.id.transition_square);
+//                ViewGroup.LayoutParams params = square.getLayoutParams();
+//                int newSize = getResources().getDimensionPixelSize(R.dimen.square_size_expanded);
+//                params.width = newSize;
+//                params.height = newSize;
+//                square.setLayoutParams(params);
 
                 break;
             }
