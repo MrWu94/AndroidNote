@@ -4,7 +4,7 @@ public class LoopVolatile  implements Runnable{
 	private static volatile int value=0;
 
 	public void run() {
-		// TODO Auto-generated method stub
+
 		int count=0;
 		while(count<1000){
 			value++;
