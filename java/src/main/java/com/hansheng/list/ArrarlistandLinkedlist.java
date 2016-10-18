@@ -22,6 +22,10 @@ import java.util.Random;
  * 2) 相对于ArrayList，LinkedList插入是更快的。因为LinkedList不像ArrayList一样，不需要改变数组的大小，也
  * 不需要在数组装满的时候要将所有的数据重新装入一个新的数组，这是ArrayList最坏的一种情况，时间复杂度是O(n)，而LinkedList
  * 中插入或删除的时间复杂度仅为O(1)。ArrayList在插入数据时还需要更新索引（除了插入数组的尾部）。
+ * <p>
+ * ArrayList: 内部采用数组存储元素，支持高效随机访问，支持动态调整大小
+ * <p>
+ * LinkedList: 内部采用链表来存储元素，支持快速插入/删除元素，但不支持高效地随机访问
  */
 
 public class ArrarlistandLinkedlist {

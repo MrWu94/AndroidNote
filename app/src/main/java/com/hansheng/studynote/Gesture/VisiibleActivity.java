@@ -25,6 +25,7 @@ public class VisiibleActivity extends AppCompatActivity {
      */
     private TextView mainTV2 = null;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

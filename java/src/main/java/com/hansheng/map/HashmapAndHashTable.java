@@ -31,6 +31,10 @@ import java.util.Set;
  * 2.如果键重复,后面添加的键值将会复盖前面的键
  * 打印顺序:
  * 按先进后出的顺序
+ * <p>
+ * HashTable是线程安全的，而HashMap不是
+ * <p>
+ * HashMap中允许存在null键和null值，而HashTable中不允许
  */
 
 public class HashmapAndHashTable {
