@@ -49,7 +49,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".webview.WebViewActivity"
+            android:name=".webview.WebhighActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -72,6 +72,8 @@
             android:name=".Socket.chat.TCPServerService"
             android:process=":remote" />
         <activity android:name=".Activity.SecondActivity" />
+        <activity android:name=".webview.ShowWebViewActivity"/>
+        <activity android:name=".webview.WithPhotoWebViewActivity"/>
 
 
         <service

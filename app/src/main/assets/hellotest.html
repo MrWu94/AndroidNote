@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jaydenxiao遇上了webview</title>
+    <script>
+function sayHello() {
+alert("我是无参无返回toast")
+ }
+
+function alertMessage(message) {
+ alert(message)
+  }
+
+function toastMessage(message) {
+window.control.toastMessage(message)
+}
+
+function sumToJava(number1, number2){
+window.control.onSumResult(number1 + number2)
+}
+
+function sumToJava2(number1, number2) {
+return number1 + number2;
+}
+
+
+
+    </script>
+</head>
+<body>
+<button type="button" id="button" onclick="toastMessage('js调用了android方法')">js访问android中方法
+</button>
+</body>
+</html>

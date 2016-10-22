@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/wb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Android2JsNoParmNoResult"
+            android:text="android调用js无参无返回值函数" />
+
+        <Button
+            android:id="@+id/bt_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_one"
+            android:onClick="Android2JsHaveParmNoResult"
+            android:text="android调用js有参无返回值函数" />
+
+        <Button
+            android:id="@+id/bt_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_one"
+            android:onClick="Android2JsHaveParmHaveResult"
+            android:text="android调用js有参有返回值函数（4.4之前）" />
+
+        <Button
+            android:id="@+id/bt_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bt_one"
+            android:onClick="Android2JsHaveParmHaveResult2"
+            android:text="android调用js有参有返回值函数（4.4之后）" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_photo"
+            android:onClick="clickPhoto"
+            android:text="获取网页图片进行放大" />
+    </LinearLayout>
+
+
+</RelativeLayout>
