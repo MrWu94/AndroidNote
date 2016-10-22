@@ -53,6 +53,8 @@ public class HashmapAndHashTable {
         hashMap.put("cn", "中国");
         hashMap.put("us", "米国");
         hashMap.put("en", "英国");
+        hashMap.put("","");
+
 
         System.out.println(hashMap);
         System.out.println("cn" + hashMap.get("cn"));
