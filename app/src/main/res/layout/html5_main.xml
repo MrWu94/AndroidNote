@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/host"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edt_url"
+        android:layout_marginBottom="9dp"
+        android:text="https://"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edt_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/host"
+        android:hint="请输入您的网址"
+        android:imeActionLabel="搜索"
+        android:imeOptions="actionSearch"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_sreach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edt_url"
+        android:layout_marginRight="10dp"
+        android:text="搜索" />
+
+</RelativeLayout>

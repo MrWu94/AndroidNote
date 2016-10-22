@@ -25,6 +25,22 @@ import java.lang.reflect.Field;
 
 /**
  * Created by hansheng on 16-10-22.
+ * * 1.js与android的交互
+ * 2.android调用js无参无返回值函数
+ * 3.android调用js有参无返回值函数
+ * 4.android调用js有参有返回值函数（4.4之前）
+ * 5.android调用js有参有返回值函数（4.4之后）
+ * 独立的web进程，与主进程隔开
+ * 这个方法被运用于类似qq，微信这样的超级app中，这也是解决任何webview内存问题屡试不爽的方法
+ * 对于封装的webactivity，在manifest.xml中设置
+ * <activity android:name=".webview.WebViewActivity" android:launchMode="singleTop" android:process=":remote" android:screenOrientation="unspecified" />
+ * 然后在关闭webactivity时销毁进程
+ *
+ * @Overrideprotected void onDestroy() {
+ * super.onDestroy();
+ * System.exit(0);
+ * }
+ *
  */
 
 public class WebhighActivity extends AppCompatActivity {
@@ -199,7 +215,7 @@ public class WebhighActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        if(mWebView!=null) {
+        if (mWebView != null) {
             mWebView.setVisibility(View.GONE);
             mWebView.removeAllViews();
             mWebView.destroy();

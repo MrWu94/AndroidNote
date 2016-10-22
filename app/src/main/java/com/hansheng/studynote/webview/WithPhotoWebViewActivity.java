@@ -15,6 +15,7 @@ import com.hansheng.studynote.R;
 
 /**
  * Created by hansheng on 16-10-22.
+
  */
 
 public class WithPhotoWebViewActivity extends AppCompatActivity {
@@ -30,7 +31,7 @@ public class WithPhotoWebViewActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        pg= (ProgressBar) findViewById(R.id.pg);
+        pg = (ProgressBar) findViewById(R.id.pg);
         pg.setVisibility(View.VISIBLE);
         mWebView = (WebView) findViewById(R.id.wb);
         // 启用javascript
@@ -44,11 +45,11 @@ public class WithPhotoWebViewActivity extends AppCompatActivity {
         mWebView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                WebView.HitTestResult result= mWebView.getHitTestResult();
+                WebView.HitTestResult result = mWebView.getHitTestResult();
                 if (result != null) {
                     int type = result.getType();
                     if (type == WebView.HitTestResult.IMAGE_TYPE || type == WebView.HitTestResult.SRC_IMAGE_ANCHOR_TYPE) {
-                        String  imgurl = result.getExtra();
+                        String imgurl = result.getExtra();
                         Toast.makeText(WithPhotoWebViewActivity.this, imgurl, Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -61,7 +62,7 @@ public class WithPhotoWebViewActivity extends AppCompatActivity {
     @JavascriptInterface
     public void openImage(String img) {
         System.out.println(img);
-       ShowWebViewActivity.startAction(this,img);
+        ShowWebViewActivity.startAction(this, img);
         System.out.println(img);
     }
 
@@ -80,6 +81,7 @@ public class WithPhotoWebViewActivity extends AppCompatActivity {
                 "})()");
 
     }
+
     // 监听
     private class MyWebViewClient extends WebViewClient {
         @Override
@@ -130,9 +132,10 @@ public class WithPhotoWebViewActivity extends AppCompatActivity {
         }
         return super.onKeyDown(keyCode, event);
     }
+
     @Override
     protected void onDestroy() {
-        if(mWebView !=null) {
+        if (mWebView != null) {
             mWebView.setVisibility(View.GONE);
             mWebView.removeAllViews();
             mWebView.destroy();

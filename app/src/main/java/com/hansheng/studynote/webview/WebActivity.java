@@ -29,6 +29,30 @@ import com.hansheng.studynote.R;
  * Created by hansheng on 16-10-22.
  * 一般浏览器会将缓存记录及缓存文件存在本地 Cache 文件夹中。Android 下 App 如果使用 Webview，
  * 缓存的文件记录及文件内容会存在当前 app 的 data 目录中。
+ * <p>
+ * if (NetStatusUtil.isConnected(getApplicationContext())) {
+ * webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);//根据cache-control决定是否从网络上取数据。
+ * } else {
+ * webSettings.setCacheMode(WebSettings.LOAD_CACHE_ELSE_NETWORK);//没网，则从本地获取，即离线加载
+ * }
+ * <p>
+ * webSettings.setDomStorageEnabled(true); // 开启 DOM storage API 功能
+ * webSettings.setDatabaseEnabled(true);   //开启 database storage API 功能
+ * webSettings.setAppCacheEnabled(true);//开启 Application Caches 功能
+ * <p>
+ * String cacheDirPath = getFilesDir().getAbsolutePath() + APP_CACAHE_DIRNAME;
+ * webSettings.setAppCachePath(cacheDirPath); //设置  Application Caches 缓存目录
+ * <p>
+ * WebViewClient就是帮助WebView处理各种通知、请求事件的。
+ * 打开网页时不调用系统浏览器， 而是在本WebView中显示：
+ * <p>
+ * mWebView.setWebViewClient(new WebViewClient(){
+ *
+ * @Override public boolean shouldOverrideUrlLoading(WebView view, String url) {
+ * view.loadUrl(url);
+ * return true;
+ * }
+ * });
  */
 public class WebActivity extends AppCompatActivity {
 
