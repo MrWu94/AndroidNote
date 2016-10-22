@@ -60,6 +60,7 @@ public class NetStatusUtil {
                 case ConnectivityManager.TYPE_MOBILE:
                     switch (ni.getSubtype()) {
                         case TelephonyManager.NETWORK_TYPE_GPRS: // 联通2g
+
                         case TelephonyManager.NETWORK_TYPE_CDMA: // 电信2g
                         case TelephonyManager.NETWORK_TYPE_EDGE: // 移动2g
                         case TelephonyManager.NETWORK_TYPE_1xRTT:

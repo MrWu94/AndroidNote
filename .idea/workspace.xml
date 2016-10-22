@@ -11,24 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="344ee989-d1d0-4067-9d91-a7fa12286bca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/Html5Activity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/Html5MainActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/Html5WebView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/NetStatusUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/html5_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/BasicJsAppInterface.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/BasicJsAppInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/ShowWebViewActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/ShowWebViewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/WebActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/WebActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/WebhighActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/WebhighActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/WithPhotoWebViewActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/WithPhotoWebViewActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/NetStatusUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/NetStatusUtil.java" />
     </list>
     <ignored path="StudyNote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -233,8 +217,8 @@
       <file leaf-file-name="NetStatusUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/NetStatusUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+            <state relative-caret-position="457">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -8875,11 +8859,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/BasicJsAppInterface.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/html5_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_web.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/NetStatusUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/Html5Activity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/Html5WebView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/Html5MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/NetStatusUtil.java" />
       </list>
     </option>
   </component>
@@ -9705,7 +9689,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477119398070</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add  Html5 for webview&#10;&#10;&#10;">
+      <created>1477121934999</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1477121934999</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -9829,7 +9820,8 @@
     <MESSAGE value="add  Theme and style&#10;&#10;" />
     <MESSAGE value="add  webview 调用参数&#10;&#10;" />
     <MESSAGE value="add  solve webview lead mamory&#10;&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add  solve webview lead mamory&#10;&#10;&#10;" />
+    <MESSAGE value="add  Html5 for webview&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  Html5 for webview&#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -10292,8 +10284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/NetStatusUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+        <state relative-caret-position="457">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
