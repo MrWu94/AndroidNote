@@ -29,6 +29,7 @@ public class ServiceActivity extends AppCompatActivity {
     private ProgressBar mProgressBar;
     private Button mButton;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +39,7 @@ public class ServiceActivity extends AppCompatActivity {
         mButton = (Button) findViewById(R.id.button1);
         Intent intent = new Intent(this, MsgService.class);
         bindService(intent, conn, Context.BIND_AUTO_CREATE);
+
 
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override

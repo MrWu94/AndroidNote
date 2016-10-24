@@ -1,7 +1,6 @@
 package com.hansheng.studynote.service;
 
 
-
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -17,12 +16,14 @@ import com.hansheng.studynote.R;
 
 /**
  * Created by hansheng on 2016/6/29.
+ * 一个组件可以绑定到一个服务与它交互，甚至执行进程间通信(IPC)。例如，一个服务可能处理网络通信、
+ * 播放音乐、计时操作或与一个内容提供者交互，都在后台执行。
  */
 public class MyService extends Service {
 
-    public static final String TAG="MyService";
+    public static final String TAG = "MyService";
 
-    private MyBinder myBinder=new MyBinder();
+    private MyBinder myBinder = new MyBinder();
 
     @Override
     public void onCreate() {
@@ -38,15 +39,15 @@ public class MyService extends Service {
         Log.d(TAG, "onCreate() executed");
     }
 
-    MyAIDLService.Stub mBinder=new MyAIDLService.Stub(){
+    MyAIDLService.Stub mBinder = new MyAIDLService.Stub() {
         @Override
         public int plus(int a, int b) throws RemoteException {
-            return a+b;
+            return a + b;
         }
 
         @Override
         public String toUpperCase(String str) throws RemoteException {
-            if(str!=null){
+            if (str != null) {
                 return str.toUpperCase();
             }
             return null;
@@ -83,7 +84,7 @@ public class MyService extends Service {
     }
 
     class MyBinder extends Binder {
-        public void startDownload(){
+        public void startDownload() {
             Log.d("TAG", "startDownload() executed");
 
             new Thread(new Runnable() {
