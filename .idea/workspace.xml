@@ -11,34 +11,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="344ee989-d1d0-4067-9d91-a7fa12286bca" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/Book.aidl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/BookManager.aidl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/IMyInterface.aidl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/AIDLActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/AIDLService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/MyAIDLActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/MyService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Application/AppActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/Book.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_appindexing_8_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_base_8_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_basement_8_4_0.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/screenoriention/BaseAcitivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/screenoriention/ScreenChangeActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/animation/animation.iml" afterPath="$PROJECT_DIR$/animation/animation.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Messager/MessengerActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Messager/MessengerActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/dialog/BaseDialogFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/dialog/BaseDialogFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/MsgService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/MsgService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/MyService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/MyService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/ServiceActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/ServiceActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hanshengeventgbus/hanshengeventgbus.iml" afterPath="$PROJECT_DIR$/hanshengeventgbus/hanshengeventgbus.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hanshenghttpclient/hanshenghttpclient.iml" afterPath="$PROJECT_DIR$/hanshenghttpclient/hanshenghttpclient.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customview/customview.iml" afterPath="$PROJECT_DIR$/customview/customview.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simplenet/simplenet.iml" afterPath="$PROJECT_DIR$/simplenet/simplenet.iml" />
     </list>
     <ignored path="StudyNote.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -221,48 +206,18 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-499">
-              <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+            <state relative-caret-position="529">
+              <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IMyInterface.aidl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/IMyInterface.aidl">
+      <file leaf-file-name="ScreenChangeActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/screenoriention/ScreenChangeActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BookManager.aidl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/BookManager.aidl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MsgService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/MsgService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AIDLActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/AIDLActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+            <state relative-caret-position="-95">
+              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -270,36 +225,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Book.aidl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/Book.aidl">
+      <file leaf-file-name="BaseAcitivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/screenoriention/BaseAcitivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="-3">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AIDLService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/AIDLService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyAIDLActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/MyAIDLActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -8820,8 +8751,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/java/src/main/java/com/hansheng/reflect/reflectdeom/ICompany.java" />
-        <option value="$PROJECT_DIR$/java/src/main/java/com/hansheng/reflect/reflectdeom/ProgramMonkey.java" />
         <option value="$PROJECT_DIR$/java/src/main/java/com/hansheng/reflect/reflectdeom/Reflectdemo.java" />
         <option value="$PROJECT_DIR$/java/src/main/java/com/hansheng/list/listdemo.java" />
         <option value="$PROJECT_DIR$/java/src/main/java/com/hansheng/map/HashmapAndHashSet.java" />
@@ -8856,7 +8785,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/Html5WebView/NetStatusUtil.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/ServiceActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/dialog/BaseDialogFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Application/AppActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/MsgService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Messager/MessengerActivity.java" />
@@ -8870,7 +8798,10 @@
         <option value="$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/BookManager.aidl" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/AIDLService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/MyAIDLActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/screenoriention/BaseAcitivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/screenoriention/ScreenChangeActivity.java" />
       </list>
     </option>
   </component>
@@ -8905,12 +8836,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches">
-        <subPane />
-      </pane>
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -8929,158 +8854,6 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aidl" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="aidl" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="studynote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="studynote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="studynote" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AIDL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StudyNote" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -9092,6 +8865,12 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
+      </pane>
+      <pane id="Scratches">
+        <subPane />
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
       <pane id="ProjectPane">
         <subPane />
@@ -9738,7 +9517,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477131052432</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add  AIDL for experience&#10;&#10;&#10;&#10;">
+      <created>1477309417534</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1477309417534</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -9752,7 +9538,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -9777,8 +9563,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31965443" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498615" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1900277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1900277" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -9789,6 +9574,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="FIR.im" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -9863,7 +9649,8 @@
     <MESSAGE value="add  webview 调用参数&#10;&#10;" />
     <MESSAGE value="add  solve webview lead mamory&#10;&#10;&#10;" />
     <MESSAGE value="add  Html5 for webview&#10;&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add  Html5 for webview&#10;&#10;&#10;" />
+    <MESSAGE value="add  AIDL for experience&#10;&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add  AIDL for experience&#10;&#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -9897,20 +9684,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/WebViewActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/webview/BasicJsAppInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_web.xml">
       <provider editor-type-id="android-designer2">
         <state />
@@ -9925,12 +9698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="e#693#694#0" expanded="false" />
-            <element signature="e#730#731#0" expanded="false" />
-            <element signature="e#3332#3333#0" expanded="false" />
-            <element signature="e#3388#3389#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -9938,9 +9705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -9948,10 +9712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1403">
           <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
-          <folding>
-            <element signature="e#1108#1109#0" expanded="false" />
-            <element signature="e#1151#1152#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -9962,7 +9722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -9970,7 +9729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="621">
           <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -9978,9 +9736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
-          <folding>
-            <element signature="e#2581#2582#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -9988,7 +9743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -9996,10 +9750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#1324#1520#0" expanded="false" />
-            <element signature="e#1519#1520#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -10007,9 +9757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -10020,7 +9767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10028,7 +9774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10039,18 +9784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10058,7 +9791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10078,7 +9810,7 @@
         <state relative-caret-position="641">
           <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -10087,7 +9819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1220">
           <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10095,7 +9826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2738">
           <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10103,7 +9833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-875">
           <caret line="62" column="34" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10111,7 +9840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10119,7 +9847,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="733">
           <caret line="78" column="11" selection-start-line="78" selection-start-column="11" selection-end-line="78" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10127,7 +9854,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10135,7 +9861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-46">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10144,32 +9869,32 @@
         <state relative-caret-position="-2531">
           <caret line="266" column="18" selection-start-line="266" selection-start-column="18" selection-end-line="266" selection-end-column="18" />
           <folding>
-            <element signature="e#3165#3166#0" expanded="true" />
-            <element signature="e#3202#3203#0" expanded="true" />
-            <element signature="e#3267#3268#0" expanded="true" />
-            <element signature="e#3311#3312#0" expanded="true" />
-            <element signature="e#3366#3367#0" expanded="true" />
-            <element signature="e#3405#3406#0" expanded="true" />
-            <element signature="e#3462#3463#0" expanded="true" />
-            <element signature="e#3507#3508#0" expanded="true" />
-            <element signature="e#3559#3560#0" expanded="true" />
-            <element signature="e#3604#3605#0" expanded="true" />
-            <element signature="e#3677#3678#0" expanded="true" />
-            <element signature="e#3726#3727#0" expanded="true" />
-            <element signature="e#3797#3798#0" expanded="true" />
-            <element signature="e#3844#3845#0" expanded="true" />
-            <element signature="e#3909#3910#0" expanded="true" />
-            <element signature="e#3958#3959#0" expanded="true" />
-            <element signature="e#6163#6164#0" expanded="true" />
-            <element signature="e#6203#6204#0" expanded="true" />
-            <element signature="e#6251#6252#0" expanded="true" />
-            <element signature="e#6292#6293#0" expanded="true" />
-            <element signature="e#6339#6340#0" expanded="true" />
-            <element signature="e#6381#6382#0" expanded="true" />
-            <element signature="e#6432#6433#0" expanded="true" />
-            <element signature="e#6478#6479#0" expanded="true" />
-            <element signature="e#6641#6642#0" expanded="true" />
-            <element signature="e#6692#6693#0" expanded="true" />
+            <element signature="e#3165#3166#0" expanded="false" />
+            <element signature="e#3202#3203#0" expanded="false" />
+            <element signature="e#3267#3268#0" expanded="false" />
+            <element signature="e#3311#3312#0" expanded="false" />
+            <element signature="e#3366#3367#0" expanded="false" />
+            <element signature="e#3405#3406#0" expanded="false" />
+            <element signature="e#3462#3463#0" expanded="false" />
+            <element signature="e#3507#3508#0" expanded="false" />
+            <element signature="e#3559#3560#0" expanded="false" />
+            <element signature="e#3604#3605#0" expanded="false" />
+            <element signature="e#3677#3678#0" expanded="false" />
+            <element signature="e#3726#3727#0" expanded="false" />
+            <element signature="e#3797#3798#0" expanded="false" />
+            <element signature="e#3844#3845#0" expanded="false" />
+            <element signature="e#3909#3910#0" expanded="false" />
+            <element signature="e#3958#3959#0" expanded="false" />
+            <element signature="e#6163#6164#0" expanded="false" />
+            <element signature="e#6203#6204#0" expanded="false" />
+            <element signature="e#6251#6252#0" expanded="false" />
+            <element signature="e#6292#6293#0" expanded="false" />
+            <element signature="e#6339#6340#0" expanded="false" />
+            <element signature="e#6381#6382#0" expanded="false" />
+            <element signature="e#6432#6433#0" expanded="false" />
+            <element signature="e#6478#6479#0" expanded="false" />
+            <element signature="e#6641#6642#0" expanded="false" />
+            <element signature="e#6692#6693#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -10178,7 +9903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10186,7 +9910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10194,7 +9917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10202,7 +9924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-141">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10218,7 +9939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10226,7 +9946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10234,7 +9953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10242,7 +9960,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10250,23 +9967,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-899">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/IMyInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/IMyInterface.java" />
     <entry file="file://$PROJECT_DIR$/app/build/generated/source/aidl/debug/com/hansheng/studynote/service/MyAIDLService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1426">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10274,10 +9982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#1994#2116#0" expanded="true" />
-            <element signature="e#2115#2116#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -10286,23 +9990,23 @@
         <state relative-caret-position="0">
           <caret line="0" column="38" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#369#370#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#791#792#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1408#1409#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#213#214#0" expanded="false" />
+            <element signature="e#240#241#0" expanded="false" />
+            <element signature="e#280#281#0" expanded="false" />
+            <element signature="e#312#313#0" expanded="false" />
+            <element signature="e#341#342#0" expanded="false" />
+            <element signature="e#369#370#0" expanded="false" />
+            <element signature="e#408#409#0" expanded="false" />
+            <element signature="e#442#443#0" expanded="false" />
+            <element signature="e#748#749#0" expanded="false" />
+            <element signature="e#791#792#0" expanded="false" />
+            <element signature="e#853#854#0" expanded="false" />
+            <element signature="e#898#899#0" expanded="false" />
+            <element signature="e#956#957#0" expanded="false" />
+            <element signature="e#980#981#0" expanded="false" />
+            <element signature="e#1408#1409#0" expanded="false" />
+            <element signature="e#1471#1472#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -10311,13 +10015,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#405#597#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -10325,18 +10022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-87">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-499">
-          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -10356,6 +10041,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/MsgService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#908#909#0" expanded="false" />
+            <element signature="e#1441#1442#0" expanded="false" />
+            <element signature="e#1479#1480#0" expanded="false" />
+            <element signature="e#1565#1566#0" expanded="false" />
+            <element signature="e#1611#1612#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/AIDLActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/AIDLService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/MyAIDLActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/aidl/com/hansheng/studynote/service/BookManager.aidl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -10364,38 +10095,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/service/MsgService.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/AIDLService.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="27" column="59" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="529">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/AIDLActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/screenoriention/BaseAcitivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-3">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/AIDL/MyAIDLActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/hansheng/studynote/Activity/screenoriention/ScreenChangeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state relative-caret-position="-95">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
