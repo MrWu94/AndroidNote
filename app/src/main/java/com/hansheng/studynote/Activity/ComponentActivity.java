@@ -32,7 +32,6 @@ public class ComponentActivity extends AppCompatActivity {
                 // 方式一
                 // ComponentName comp=new
                 // ComponentName(MainActivity.this,SecondActivity.class);
-
                 // 方式二：第一个参数为当前应用的包名。第二个参数为跳转组件的类路径
 
                 String arr[]=getResources().getStringArray(R.array.city);
