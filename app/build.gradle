@@ -6,12 +6,12 @@ android {
     buildToolsVersion globalConfiguration.AndroidBuildToolsVersion
 
     defaultConfig {
-        applicationId "com.hansheng.studynote"
-        minSdkVersion 19
-        targetSdkVersion 24
+        applicationId globalConfiguration.applicationId
+        minSdkVersion globalConfiguration.AndridMinSdkVersion
+        targetSdkVersion globalConfiguration.AndroidTargetSdkVersion
         multiDexEnabled true
-        versionCode 1
-        versionName "1.0"
+        versionCode globalConfiguration.versionCode
+        versionName globalConfiguration.versionName
         //ADD THIS LINE:
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -65,8 +65,9 @@ repositories {
 def SUPPORT_VERSION = "24.2.0"
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:' + SUPPORT_VERSION
+    def googleDependencies = rootProject.ext.goodleDependencies
+    def otherDependencies = rootProject.ext.otherDependdencies
+    compile googleDependencies.appcompat_v7
     compile 'com.android.support:recyclerview-v7:' + SUPPORT_VERSION
     compile 'com.android.support:design:' + SUPPORT_VERSION
     compile 'com.jakewharton:butterknife:6.0.0'
