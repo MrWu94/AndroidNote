@@ -28,6 +28,12 @@ android {
         disable 'InvalidPackage'
         abortOnError false
     }
+//    提示：如果要从增量构建中永久跳过lint检查，可以将其添加到build.gradle中：
+    tasks.whenTaskAdded { task ->
+        if (task.name.equals("lint")) {
+            task.enabled = false
+        }
+    }
 
     packagingOptions {
         exclude 'META-INF/services/javax.annotation.processing.Processor'
