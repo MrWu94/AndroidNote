@@ -1,9 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    def globalConfiguration = rootProject.ext
-    compileSdkVersion globalConfiguration.compileSdkVersion
-    buildToolsVersion globalConfiguration.buildToolsVersion
+    def globalConfiguration = rootProject.ext.android
+    compileSdkVersion globalConfiguration.AndroidCompileSdkVersion
+    buildToolsVersion globalConfiguration.AndroidBuildToolsVersion
 
     defaultConfig {
         applicationId "com.hansheng.studynote"
