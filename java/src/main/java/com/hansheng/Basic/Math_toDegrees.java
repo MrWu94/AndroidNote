@@ -23,5 +23,7 @@ public class Math_toDegrees {
         System.out.println("Math.floor(" + num + ")=" + Math.floor(num));
         System.out.println("Math.round(" + num + ")=" + Math.round(num));
         System.out.println("Math.ceil(" + num + ")=" + Math.ceil(num));
+        
+
     }
 }
