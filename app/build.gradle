@@ -1,17 +1,17 @@
 apply plugin: 'com.android.application'
 
 android {
-    def globalConfiguration = rootProject.ext
-    compileSdkVersion globalConfiguration.compileSdkVersion
-    buildToolsVersion globalConfiguration.buildToolsVersion
+    def globalConfiguration = rootProject.ext.android
+    compileSdkVersion globalConfiguration.AndroidCompileSdkVersion
+    buildToolsVersion globalConfiguration.AndroidBuildToolsVersion
 
     defaultConfig {
-        applicationId "com.hansheng.studynote"
-        minSdkVersion 19
-        targetSdkVersion 24
+        applicationId globalConfiguration.applicationId
+        minSdkVersion globalConfiguration.AndridMinSdkVersion
+        targetSdkVersion globalConfiguration.AndroidTargetSdkVersion
         multiDexEnabled true
-        versionCode 1
-        versionName "1.0"
+        versionCode globalConfiguration.versionCode
+        versionName globalConfiguration.versionName
         //ADD THIS LINE:
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -27,6 +27,12 @@ android {
     lintOptions {
         disable 'InvalidPackage'
         abortOnError false
+    }
+//    提示：如果要从增量构建中永久跳过lint检查，可以将其添加到build.gradle中：
+    tasks.whenTaskAdded { task ->
+        if (task.name.equals("lint")) {
+            task.enabled = false
+        }
     }
 
     packagingOptions {
@@ -65,8 +71,9 @@ repositories {
 def SUPPORT_VERSION = "24.2.0"
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:' + SUPPORT_VERSION
+    def googleDependencies = rootProject.ext.goodleDependencies
+    def otherDependencies = rootProject.ext.otherDependdencies
+    compile googleDependencies.appcompat_v7
     compile 'com.android.support:recyclerview-v7:' + SUPPORT_VERSION
     compile 'com.android.support:design:' + SUPPORT_VERSION
     compile 'com.jakewharton:butterknife:6.0.0'
