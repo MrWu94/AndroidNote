@@ -2,15 +2,20 @@ package com.hansheng.studynote.Activity;
 
 import android.content.ComponentName;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.Toast;
 
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.customview.TestButton;
+
+import static android.R.attr.resource;
 
 /**
  * Created by hansheng on 16-9-20.
@@ -44,6 +49,9 @@ public class ComponentActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
 
     }
 }

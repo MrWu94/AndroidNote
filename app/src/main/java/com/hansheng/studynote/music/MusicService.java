@@ -11,6 +11,7 @@ import com.hansheng.studynote.R;
 
 /**
  * Created by hansheng on 2016/7/20.
+ *
  */
 public class MusicService extends Service {
 
@@ -24,7 +25,7 @@ public class MusicService extends Service {
         Toast.makeText(this, "MusicSevice onCreate()"
                 , Toast.LENGTH_SHORT).show();
         Log.e(TAG, "MusicSerice onCreate()");
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.yanyuan);
+//        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.yanyuan);
         //设置可以重复播放
         mediaPlayer.setLooping(true);
 

@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#FF00AA00"
+        android:text="@string/text_zoom" />
+
+    <ZoomButton
+        android:id="@+id/zoom_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:src="@drawable/btn_pause"/>
+
+
+    <TextView
+        android:id="@+id/tv_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#FF0000AA"
+        android:text="@string/text_com" />
+
+    <ImageButton
+        android:id="@+id/btn_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:src="@drawable/btn_pause"/>
+
+</LinearLayout>
