@@ -24,5 +24,6 @@ public class SecondActivity extends AppCompatActivity {
         // 显示ComponentName对象的包名、类名
         editText.setText("组件包名：" + comp.getPackageName() + "\n组件类名为："
                 + comp.getClassName());
+
     }
 }

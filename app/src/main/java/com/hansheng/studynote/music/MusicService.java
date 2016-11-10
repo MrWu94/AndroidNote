@@ -7,8 +7,6 @@ import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.hansheng.studynote.R;
-
 /**
  * Created by hansheng on 2016/7/20.
  *
