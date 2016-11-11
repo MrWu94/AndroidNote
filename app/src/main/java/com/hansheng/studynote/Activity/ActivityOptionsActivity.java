@@ -16,6 +16,7 @@ import com.hansheng.studynote.R;
  */
 
 public class ActivityOptionsActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
