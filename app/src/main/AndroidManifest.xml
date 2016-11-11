@@ -50,7 +50,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Activity.TextureViewActivity"
+            android:name=".Gallery.HorizontalScrollViewAcrtivity"
             android:label="@string/app_name"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             >
@@ -141,6 +141,7 @@
             android:process=":remote" />
 
         <activity android:name=".OkHttp.OkHttpPostActivity" />
+
 
         <receiver
             android:name=".widget.MyAppWidgetProvider"
