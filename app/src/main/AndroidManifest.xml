@@ -50,7 +50,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Gallery.HorizontalScrollViewAcrtivity"
+            android:name=".Activity.DarteTimeDialogActivity"
             android:label="@string/app_name"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             >
