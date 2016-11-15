@@ -120,6 +120,10 @@ dependencies {
     // Image
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile files('libs/android-5.0.2_r1-sources.jar')
+    compile files('libs/android-support-v7-appcompat.jar')
+    compile files('libs/android-support-v7-recyclerview.jar')
+    compile files('libs/android-support-v7-cardview.jar')
+    compile files('libs/android-support-v4.jar')
 }
 
 
