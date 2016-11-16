@@ -33,6 +33,7 @@ public class ActivityM extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activitymanager_layout);
 
+
         tvAvailMem = (TextView)findViewById(R.id.tvAvailMemory) ;
         btProcessInfo =(Button)findViewById(R.id.btProcessInfo);
         //跳转到显示进程信息界面

@@ -1,0 +1,600 @@
+CURRENT STATS:
+  * com.android.smspush / u0a93 / v22:
+           TOTAL: 100% (1.7MB-1.7MB-1.7MB/1.3MB-1.3MB-1.3MB over 4)
+          Imp Fg: 100% (1.7MB-1.7MB-1.7MB/1.3MB-1.3MB-1.3MB over 4)
+  * com.dream.service / 1000 / v1:
+           TOTAL: 100% (2.1MB-2.1MB-2.1MB/1.6MB-1.6MB-1.6MB over 4)
+         Service: 100% (2.1MB-2.1MB-2.1MB/1.6MB-1.6MB-1.6MB over 4)
+  * com.dream.siri / u0a17 / v1:
+           TOTAL: 100% (1.7MB-1.7MB-1.7MB/1.3MB-1.3MB-1.3MB over 4)
+      Persistent: 100% (1.7MB-1.7MB-1.7MB/1.3MB-1.3MB-1.3MB over 4)
+  * com.dream.studyAndExamManager / u0a17 / v1:
+           TOTAL: 100% (6.1MB-6.1MB-6.1MB/5.4MB-5.4MB-5.4MB over 4)
+         Service: 100% (6.1MB-6.1MB-6.1MB/5.4MB-5.4MB-5.4MB over 4)
+  * com.dream.powersave / u0a17 / v1:
+           TOTAL: 100% (4.4MB-4.5MB-4.6MB/3.9MB-4.0MB-4.1MB over 4)
+         Service: 100% (4.4MB-4.5MB-4.6MB/3.9MB-4.0MB-4.1MB over 4)
+  * com.dream.tutorsplanpush / u0a91 / v160312003:
+           TOTAL: 100% (10MB-10MB-10MB/9.0MB-9.2MB-9.4MB over 4)
+         Service: 100% (10MB-10MB-10MB/9.0MB-9.2MB-9.4MB over 4)
+  * com.qualcomm.display / 1000 / v1:
+           TOTAL: 100% (1.6MB-1.6MB-1.6MB/1.2MB-1.2MB-1.2MB over 4)
+         Service: 100% (1.6MB-1.6MB-1.6MB/1.2MB-1.2MB-1.2MB over 4)
+  * com.dream.personalinfo / u0a71 / v1:
+           TOTAL: 100% (2.4MB-2.4MB-2.4MB/1.9MB-1.9MB-1.9MB over 4)
+         Service: 100% (2.4MB-2.4MB-2.4MB/1.9MB-1.9MB-1.9MB over 4)
+  * com.qualcomm.qti.carrierconfigure / 1000 / v22:
+           TOTAL: 100% (1.7MB-1.7MB-1.7MB/1.3MB-1.3MB-1.3MB over 4)
+         Service: 100% (1.7MB-1.7MB-1.7MB/1.3MB-1.3MB-1.3MB over 4)
+  * com.qualcomm.qcrilmsgtunnel / 1001 / v22:
+           TOTAL: 100% (2.1MB-2.1MB-2.1MB/1.6MB-1.6MB-1.6MB over 4)
+          Imp Fg: 100% (2.1MB-2.1MB-2.1MB/1.6MB-1.6MB-1.6MB over 4)
+  * com.dream.ota.update / u0a38 / v204:
+           TOTAL: 100% (7.0MB-7.2MB-7.3MB/6.2MB-6.3MB-6.4MB over 4)
+         Service: 100% (7.0MB-7.2MB-7.3MB/6.2MB-6.3MB-6.4MB over 4)
+  * com.qualcomm.telephony / 1000 / v22:
+           TOTAL: 100% (2.2MB-2.2MB-2.2MB/1.7MB-1.7MB-1.7MB over 4)
+         Service: 100% (2.2MB-2.2MB-2.2MB/1.7MB-1.7MB-1.7MB over 4)
+  * com.android.systemui / u0a44 / v1:
+           TOTAL: 100% (3.2MB-3.3MB-3.3MB/2.5MB-2.5MB-2.5MB over 4)
+         Service: 100% (3.2MB-3.3MB-3.3MB/2.5MB-2.5MB-2.5MB over 4)
+  * com.qcom.gsma.services.nfc:remote / u0a49 / v22:
+           TOTAL: 100% (1.9MB-1.9MB-1.9MB/1.4MB-1.4MB-1.4MB over 4)
+         Service: 100% (1.9MB-1.9MB-1.9MB/1.4MB-1.4MB-1.4MB over 4)
+  * com.quicinc.cne.CNEService / 1000 / v22:
+           TOTAL: 100% (5.4MB-5.5MB-5.5MB/4.8MB-4.8MB-4.8MB over 4)
+      Persistent: 100% (5.4MB-5.5MB-5.5MB/4.8MB-4.8MB-4.8MB over 4)
+  * com.android.systemui / u0a17 / v22:
+           TOTAL: 100% (84MB-85MB-85MB/81MB-81MB-81MB over 4)
+      Persistent: 100% (84MB-85MB-85MB/81MB-81MB-81MB over 4)
+  * com.dream.launcherprovider / 1000 / v1:
+           TOTAL: 100% (1.8MB-1.8MB-1.8MB/1.3MB-1.3MB-1.3MB over 4)
+          Imp Fg: 100% (1.8MB-1.8MB-1.8MB/1.3MB-1.3MB-1.3MB over 4)
+  * com.dream.forcerest / u0a44 / v1:
+           TOTAL: 100% (1.7MB-1.7MB-1.7MB/1.2MB-1.2MB-1.2MB over 4)
+      Persistent: 100% (1.7MB-1.7MB-1.7MB/1.2MB-1.2MB-1.2MB over 4)
+  * system / 1000 / v22:
+           TOTAL: 100% (69MB-74MB-78MB/64MB-70MB-74MB over 4)
+      Persistent: 100% (69MB-74MB-78MB/64MB-70MB-74MB over 4)
+  * com.qualcomm.qti.services.secureui:sui_service / 1000 / v1:
+           TOTAL: 100% (2.0MB-2.0MB-2.0MB/1.5MB-1.5MB-1.5MB over 4)
+      Persistent: 100% (2.0MB-2.0MB-2.0MB/1.5MB-1.5MB-1.5MB over 4)
+  * com.android.phone / 1001 / v22:
+           TOTAL: 100% (29MB-29MB-29MB/26MB-26MB-26MB over 4)
+      Persistent: 100% (29MB-29MB-29MB/26MB-26MB-26MB over 4)
+  * com.dream.launcher / u0a10 / v12:
+           TOTAL: 100% (55MB-58MB-61MB/51MB-54MB-57MB over 10)
+             Top: 100% (55MB-58MB-61MB/51MB-54MB-57MB over 10)
+  * com.dream.weather / u0a101 / v1:
+           TOTAL: 100% (36MB-37MB-38MB/33MB-34MB-35MB over 4)
+         Service: 100% (36MB-37MB-38MB/33MB-34MB-35MB over 4)
+  * com.qualcomm.qti.gesture / 1000 / v22:
+           TOTAL: 100% (2.7MB-2.7MB-2.7MB/2.1MB-2.1MB-2.1MB over 4)
+      Persistent: 100% (2.7MB-2.7MB-2.7MB/2.1MB-2.1MB-2.1MB over 4)
+  * com.dream.usagemonitor / 1000 / v1:
+           TOTAL: 100% (2.4MB-2.5MB-2.5MB/2.0MB-2.0MB-2.0MB over 4)
+         Service: 100% (2.4MB-2.5MB-2.5MB/2.0MB-2.0MB-2.0MB over 4)
+  * com.qualcomm.qti.modemtestmode / 1000 / v22:
+           TOTAL: 100% (3.2MB-3.2MB-3.2MB/2.5MB-2.5MB-2.5MB over 4)
+         Service: 100% (3.2MB-3.2MB-3.2MB/2.5MB-2.5MB-2.5MB over 4)
+  * com.dream.appstore / u0a23 / v1:
+           TOTAL: 100% (4.1MB-4.3MB-4.5MB/3.4MB-3.6MB-3.8MB over 4)
+         Service: 100% (4.1MB-4.3MB-4.5MB/3.4MB-3.6MB-3.8MB over 4)
+  * org.simalliance.openmobileapi.service:remote / 1027 / v5:
+           TOTAL: 100% (3.6MB-3.6MB-3.6MB/3.0MB-3.0MB-3.0MB over 4)
+         Service: 100% (3.6MB-3.6MB-3.6MB/3.0MB-3.0MB-3.0MB over 4)
+  * com.android.inputmethod.latin / u0a58 / v22:
+           TOTAL: 100% (20MB-20MB-20MB/19MB-19MB-19MB over 4)
+          Imp Bg: 100% (20MB-20MB-20MB/19MB-19MB-19MB over 4)
+  * com.dream.phonemanager / 1000 / v1:
+           TOTAL: 100% (3.0MB-3.0MB-3.0MB/2.5MB-2.5MB-2.5MB over 4)
+         Service: 100% (3.0MB-3.0MB-3.0MB/2.5MB-2.5MB-2.5MB over 4)
+  * com.UCMobile:push / u0a107 / v604:
+           TOTAL: 0.01%
+         Service: 0.01%
+        (Cached): 74% (7.6MB-7.6MB-7.6MB/5.4MB-5.4MB-5.4MB over 2)
+  * com.UCMobile / u0a107 / v604:
+        (Cached): 100% (7.7MB-7.7MB-7.7MB/5.5MB-5.5MB-5.5MB over 3)
+  * com.qualcomm.qti.vtremoteservice / 1001 / v1:
+        (Cached): 100% (1.6MB-1.6MB-1.6MB/1.2MB-1.2MB-1.2MB over 3)
+  * android.process.media / u0a7 / v800:
+        (Cached): 100% (4.6MB-4.6MB-4.6MB/3.8MB-3.8MB-3.8MB over 3)
+  * com.koushikdutta.vysor / u0a111 / v1477720800:
+        (Cached): 100% (22MB-22MB-22MB/21MB-21MB-21MB over 3)
+  * com.dream.calculator / u0a35 / v100:
+        (Cached): 100% (8.1MB-8.1MB-8.1MB/6.7MB-6.7MB-6.7MB over 3)
+  * com.qualcomm.qti.lunarinfo / u0a62 / v22:
+        (Cached): 100% (1.8MB-1.8MB-1.8MB/1.3MB-1.3MB-1.3MB over 3)
+  * com.android.contacts / u0a4 / v22:
+        (Cached): 100% (5.2MB-5.2MB-5.2MB/4.4MB-4.4MB-4.4MB over 3)
+  * com.android.settings / 1000 / v22:
+      (Last Act): 100% (41MB-41MB-41MB/38MB-38MB-38MB over 3)
+  * com.android.mms / u0a12 / v22:
+        (Cached): 100% (8.5MB-8.8MB-9.2MB/7.4MB-7.7MB-8.1MB over 3)
+  * system:ui / 1000 / v22:
+        (Cached): 100% (5.6MB-5.6MB-5.6MB/4.4MB-4.4MB-4.4MB over 3)
+  * com.borqs.videocall / u0a104 / v1:
+        (Cached): 100% (3.1MB-3.1MB-3.1MB/2.3MB-2.3MB-2.3MB over 3)
+
+Run time Stats:
+  SOff/Norm: +33m48s34ms (running)
+       Mod : +12m0s414ms
+      TOTAL: +45m48s448ms
+
+Memory usage:
+  Kernel : 168MB (16 samples)
+  Native : 96MB (16 samples)
+  Persist: 202MB (32 samples)
+  Top    : 58MB (10 samples)
+  ImpFg  : 5.6MB (12 samples)
+  ImpBg  : 20MB (4 samples)
+  Service: 97MB (140 samples)
+  Receivr: 17 (3 samples)
+  LastAct: 41MB (6 samples)
+  CchAct : 30MB (12 samples)
+  CchEmty: 44MB (52 samples)
+  Cached : 741MB (16 samples)
+  Free   : 367MB (16 samples)
+  TOTAL  : 1.8GB
+  ServRst: 241 (4 samples)
+
+          Start time: 2016-11-04 15:19:18
+  Total elapsed time: +45m48s477ms (partial) libart.so
+
+AGGREGATED OVER LAST 24 HOURS:
+  * system / 1000 / v22:
+           TOTAL: 100% (53MB-71MB-79MB/48MB-66MB-74MB over 94)
+      Persistent: 100% (53MB-71MB-79MB/48MB-66MB-74MB over 94)
+  * com.android.systemui / u0a17 / v22:
+           TOTAL: 100% (65MB-85MB-102MB/61MB-79MB-95MB over 94)
+      Persistent: 100% (65MB-85MB-102MB/61MB-79MB-95MB over 94)
+  * com.android.inputmethod.latin / u0a58 / v22:
+           TOTAL: 100% (7.8MB-10MB-20MB/6.4MB-8.8MB-19MB over 97)
+          Imp Fg: 0.03%
+          Imp Bg: 100% (7.8MB-10MB-20MB/6.4MB-8.8MB-19MB over 97)
+  * com.quicinc.cne.CNEService / 1000 / v22:
+           TOTAL: 100% (4.0MB-6.8MB-9.7MB/3.3MB-6.2MB-9.0MB over 94)
+      Persistent: 100% (4.0MB-6.8MB-9.7MB/3.3MB-6.2MB-9.0MB over 94)
+  * com.dream.forcerest / u0a44 / v1:
+           TOTAL: 100% (1.6MB-1.7MB-1.7MB/1.2MB-1.2MB-1.2MB over 94)
+      Persistent: 100% (1.6MB-1.7MB-1.7MB/1.2MB-1.2MB-1.2MB over 94)
+  * com.dream.siri / u0a17 / v1:
+           TOTAL: 100% (1.7MB-1.8MB-1.8MB/1.3MB-1.3MB-1.3MB over 94)
+      Persistent: 100% (1.7MB-1.8MB-1.8MB/1.3MB-1.3MB-1.3MB over 94)
+  * com.qualcomm.qti.gesture / 1000 / v22:
+           TOTAL: 100% (2.5MB-2.8MB-2.9MB/1.9MB-2.2MB-2.3MB over 94)
+      Persistent: 100% (2.5MB-2.8MB-2.9MB/1.9MB-2.2MB-2.3MB over 94)
+  * com.qualcomm.qti.services.secureui:sui_service / 1000 / v1:
+           TOTAL: 100% (2.0MB-2.1MB-2.1MB/1.5MB-1.5MB-1.6MB over 94)
+      Persistent: 100% (2.0MB-2.1MB-2.1MB/1.5MB-1.5MB-1.6MB over 94)
+  * com.android.phone / 1001 / v22:
+           TOTAL: 100% (26MB-27MB-29MB/23MB-24MB-26MB over 94)
+      Persistent: 100% (26MB-27MB-29MB/23MB-24MB-26MB over 94)
+  * com.android.smspush / u0a93 / v22:
+           TOTAL: 100% (1.6MB-1.7MB-1.8MB/1.3MB-1.3MB-1.3MB over 97)
+          Imp Fg: 100% (1.6MB-1.7MB-1.8MB/1.3MB-1.3MB-1.3MB over 97)
+  * com.qualcomm.telephony / 1000 / v22:
+           TOTAL: 100% (2.1MB-2.2MB-2.3MB/1.7MB-1.7MB-1.8MB over 83)
+         Service: 100% (2.1MB-2.2MB-2.3MB/1.7MB-1.7MB-1.8MB over 83)
+  * com.dream.appstore / u0a23 / v1:
+           TOTAL: 100% (2.3MB-5.5MB-8.0MB/1.8MB-4.8MB-7.2MB over 83)
+         Service: 100% (2.3MB-5.5MB-8.0MB/1.8MB-4.8MB-7.2MB over 83)
+  * com.qualcomm.qti.carrierconfigure / 1000 / v22:
+           TOTAL: 100% (1.6MB-1.7MB-1.8MB/1.2MB-1.3MB-1.3MB over 83)
+         Service: 100% (1.6MB-1.7MB-1.8MB/1.2MB-1.3MB-1.3MB over 83)
+  * com.dream.service / 1000 / v1:
+           TOTAL: 100% (2.0MB-2.2MB-2.2MB/1.5MB-1.6MB-1.6MB over 83)
+         Service: 100% (2.0MB-2.2MB-2.2MB/1.5MB-1.6MB-1.6MB over 83)
+  * com.android.systemui / u0a44 / v1:
+           TOTAL: 100% (3.0MB-3.8MB-4.5MB/2.2MB-3.0MB-3.8MB over 83)
+         Service: 100% (3.0MB-3.8MB-4.5MB/2.2MB-3.0MB-3.8MB over 83)
+  * com.dream.launcherprovider / 1000 / v1:
+           TOTAL: 100% (1.6MB-1.8MB-1.9MB/1.3MB-1.3MB-1.4MB over 89)
+          Imp Fg: 26% (1.8MB-1.8MB-1.9MB/1.3MB-1.3MB-1.4MB over 34)
+         Service: 74% (1.6MB-1.8MB-1.8MB/1.3MB-1.3MB-1.3MB over 55)
+  * com.qcom.gsma.services.nfc:remote / u0a49 / v22:
+           TOTAL: 100% (1.8MB-1.9MB-2.0MB/1.3MB-1.4MB-1.4MB over 83)
+         Service: 100% (1.8MB-1.9MB-2.0MB/1.3MB-1.4MB-1.4MB over 83)
+  * com.qualcomm.qti.modemtestmode / 1000 / v22:
+           TOTAL: 100% (2.1MB-2.6MB-3.3MB/1.4MB-1.9MB-2.5MB over 83)
+         Service: 100% (2.1MB-2.6MB-3.3MB/1.4MB-1.9MB-2.5MB over 83)
+  * com.qualcomm.qcrilmsgtunnel / 1001 / v22:
+           TOTAL: 100% (2.1MB-2.2MB-2.2MB/1.6MB-1.6MB-1.7MB over 97)
+          Imp Fg: 100% (2.1MB-2.2MB-2.2MB/1.6MB-1.6MB-1.7MB over 97)
+  * com.dream.powersave / u0a17 / v1:
+           TOTAL: 100% (2.0MB-6.1MB-13MB/1.5MB-5.6MB-12MB over 81)
+         Service: 100% (2.0MB-6.1MB-13MB/1.5MB-5.6MB-12MB over 81)
+  * com.qualcomm.display / 1000 / v1:
+           TOTAL: 100% (1.5MB-1.6MB-1.7MB/1.1MB-1.2MB-1.2MB over 83)
+         Service: 100% (1.5MB-1.6MB-1.7MB/1.1MB-1.2MB-1.2MB over 83)
+  * org.simalliance.openmobileapi.service:remote / 1027 / v5:
+           TOTAL: 100% (3.4MB-3.6MB-3.7MB/2.8MB-3.0MB-3.0MB over 83)
+         Service: 100% (3.4MB-3.6MB-3.7MB/2.8MB-3.0MB-3.0MB over 83)
+  * com.dream.studyAndExamManager / u0a17 / v1:
+           TOTAL: 100% (4.5MB-5.8MB-6.4MB/3.8MB-5.1MB-5.7MB over 83)
+         Service: 100% (4.5MB-5.8MB-6.4MB/3.8MB-5.1MB-5.7MB over 83)
+  * com.dream.tutorsplanpush / u0a91 / v160312003:
+           TOTAL: 100% (6.8MB-11MB-14MB/5.9MB-9.6MB-13MB over 83)
+         Service: 100% (6.8MB-11MB-14MB/5.9MB-9.6MB-13MB over 83)
+  * com.dream.ota.update / u0a38 / v204:
+           TOTAL: 99% (4.3MB-6.8MB-9.9MB/3.5MB-5.9MB-8.9MB over 82)
+         Service: 99% (4.3MB-6.8MB-9.9MB/3.5MB-5.9MB-8.9MB over 82)
+        (Cached): 0.94% (1.7MB-1.7MB-1.7MB/1.3MB-1.3MB-1.3MB over 1)
+  * com.android.settings / 1000 / v22:
+           TOTAL: 89% (31MB-70MB-81MB/28MB-66MB-79MB over 256)
+             Top: 89% (31MB-70MB-81MB/28MB-66MB-79MB over 256)
+      (Last Act): 6.9% (41MB-45MB-51MB/38MB-42MB-48MB over 7)
+        (Cached): 0.81% (46MB-46MB-46MB/43MB-43MB-43MB over 1)
+  * com.dream.weather / u0a101 / v1:
+           TOTAL: 76% (11MB-17MB-39MB/9.1MB-16MB-36MB over 56)
+             Top: 0.03% (28MB-28MB-28MB/26MB-26MB-26MB over 1)
+         Service: 76% (11MB-17MB-39MB/9.1MB-16MB-36MB over 55)
+  * com.android.defcontainer / u0a5 / v22:
+           TOTAL: 68% (7.3MB-7.3MB-7.3MB/6.7MB-6.7MB-6.7MB over 188)
+             Top: 68% (7.3MB-7.3MB-7.3MB/6.7MB-6.7MB-6.7MB over 188)
+          Imp Fg: 0.04%
+        (Cached): 22% (2.9MB-3.0MB-3.1MB/2.4MB-2.4MB-2.4MB over 23)
+  * com.koushikdutta.vysor / u0a111 / v1477720800:
+           TOTAL: 68% (15MB-15MB-15MB/13MB-13MB-13MB over 46)
+         Service: 68% (15MB-15MB-15MB/13MB-13MB-13MB over 46)
+      (Last Act): 0.75% (26MB-26MB-26MB/24MB-24MB-24MB over 1)
+        (Cached): 6.5% (22MB-22MB-22MB/21MB-21MB-21MB over 6)
+  * com.dream.theme / 1000 / v22:
+           TOTAL: 68% (47MB-48MB-48MB/40MB-40MB-40MB over 46)
+         Service: 68% (47MB-48MB-48MB/40MB-40MB-40MB over 46)
+  * com.dream.usagemonitor / 1000 / v1:
+           TOTAL: 32% (1.8MB-2.2MB-2.5MB/1.4MB-1.7MB-2.0MB over 37)
+         Service: 32% (1.8MB-2.2MB-2.5MB/1.4MB-1.7MB-2.0MB over 37)
+        (Cached): 30% (1.6MB-1.7MB-1.8MB/1.2MB-1.2MB-1.3MB over 16)
+  * com.dream.phonemanager / 1000 / v1:
+           TOTAL: 32% (2.9MB-3.0MB-3.1MB/2.5MB-2.5MB-2.5MB over 37)
+         Service: 32% (2.9MB-3.0MB-3.1MB/2.5MB-2.5MB-2.5MB over 37)
+  * com.dream.personalinfo / u0a71 / v1:
+           TOTAL: 31% (2.3MB-2.4MB-2.4MB/1.8MB-1.9MB-1.9MB over 36)
+         Service: 31% (2.3MB-2.4MB-2.4MB/1.8MB-1.9MB-1.9MB over 36)
+        (Cached): 0.04% (2.3MB-2.3MB-2.3MB/1.9MB-1.9MB-1.9MB over 1)
+  * com.dream.launcher / u0a10 / v12:
+           TOTAL: 26% (47MB-68MB-84MB/42MB-64MB-79MB over 87)
+             Top: 26% (47MB-68MB-84MB/42MB-64MB-79MB over 87)
+          (Home): 5.2% (44MB-48MB-54MB/41MB-44MB-50MB over 8)
+  * cn.dream.android.appstore / u0a114 / v442:
+           TOTAL: 5.2% (5.8MB-160MB-240MB/4.8MB-135MB-189MB over 28)
+             Top: 4.8% (5.8MB-168MB-240MB/4.8MB-141MB-189MB over 25)
+         Service: 0.37% (67MB-92MB-111MB/59MB-84MB-104MB over 3)
+  * com.dream.calculator / u0a35 / v100:
+           TOTAL: 0.26% (40MB-40MB-40MB/38MB-38MB-38MB over 2)
+             Top: 0.26% (40MB-40MB-40MB/38MB-38MB-38MB over 2)
+        (Cached): 6.9% (8.0MB-9.5MB-14MB/6.7MB-8.1MB-12MB over 8)
+  * saulmm.myapplication / u0a113 / v1:
+           TOTAL: 0.11% (49MB-49MB-49MB/46MB-46MB-46MB over 1)
+             Top: 0.11% (49MB-49MB-49MB/46MB-46MB-46MB over 1)
+        (Cached): 20% (16MB-17MB-22MB/13MB-14MB-19MB over 18)
+  * com.UCMobile / u0a107 / v604:
+           TOTAL: 0.08%
+         Service: 0.08%
+        (Cached): 97% (6.6MB-7.6MB-9.1MB/4.6MB-5.9MB-8.1MB over 63)
+  * com.dream.mediaplayer / u0a63 / v1:
+           TOTAL: 0.07% (3.4MB-3.4MB-3.4MB/2.6MB-2.6MB-2.6MB over 1)
+         Service: 0.07% (3.4MB-3.4MB-3.4MB/2.6MB-2.6MB-2.6MB over 1)
+        (Cached): 2.4% (1.9MB-1.9MB-1.9MB/1.4MB-1.4MB-1.5MB over 2)
+  * com.android.calendar / u0a27 / v22:
+           TOTAL: 0.06% (4.5MB-4.5MB-4.5MB/3.9MB-3.9MB-3.9MB over 1)
+         Service: 0.05% (4.5MB-4.5MB-4.5MB/3.9MB-3.9MB-3.9MB over 1)
+      (Last Act): 0.65% (14MB-14MB-14MB/12MB-12MB-12MB over 1)
+        (Cached): 49% (4.3MB-5.8MB-14MB/3.7MB-4.9MB-12MB over 29)
+  * cn.dream.android.appstore:leakcanary / u0a114 / v442:
+           TOTAL: 0.04%
+         Service: 0.04%
+        (Cached): 2.8% (23MB-23MB-24MB/19MB-20MB-20MB over 3)
+  * com.android.providers.calendar / u0a1 / v22:
+           TOTAL: 0.03%
+         Service: 0.03%
+      (Last Act): 0.65% (2.7MB-2.7MB-2.7MB/2.1MB-2.1MB-2.1MB over 1)
+        (Cached): 68% (2.6MB-2.9MB-3.1MB/2.1MB-2.3MB-2.4MB over 39)
+  * system:ui / 1000 / v22:
+           TOTAL: 0.03%
+             Top: 0.03%
+        (Cached): 9.1% (5.2MB-5.5MB-5.6MB/4.0MB-4.3MB-4.4MB over 13)
+  * com.UCMobile:push / u0a107 / v604:
+           TOTAL: 0.01%
+         Service: 0.01%
+        (Cached): 86% (7.3MB-8.2MB-11MB/5.2MB-6.1MB-9.4MB over 49)
+  * com.android.printspooler / u0a75 / v1:
+           TOTAL: 0.01%
+          Imp Fg: 0.01%
+        (Cached): 0.03%
+  * com.android.mms / u0a12 / v22:
+        (Cached): 41% (6.2MB-8.5MB-12MB/5.1MB-7.4MB-11MB over 32)
+  * android.process.acore / u0a4 / v22:
+        (Cached): 48% (5.9MB-6.0MB-6.3MB/5.2MB-5.2MB-5.4MB over 39)
+  * android.process.media / u0a7 / v800:
+        (Cached): 56% (4.3MB-4.5MB-4.6MB/3.7MB-3.8MB-3.8MB over 44)
+  * com.cyanogenmod.filemanager / u0a26 / v104:
+        (Cached): 67% (5.4MB-5.4MB-5.5MB/4.7MB-4.8MB-4.9MB over 36)
+  * com.android.contacts / u0a4 / v22:
+        (Cached): 41% (5.1MB-5.2MB-5.2MB/4.3MB-4.4MB-4.4MB over 28)
+  * com.android.email / u0a39 / v7008110:
+        (Cached): 2.4% (6.9MB-6.9MB-6.9MB/6.0MB-6.0MB-6.0MB over 1)
+  * com.qualcomm.qti.lunarinfo / u0a62 / v22:
+        (Cached): 49% (1.7MB-1.8MB-1.9MB/1.3MB-1.3MB-1.3MB over 32)
+  * com.borqs.videocall / u0a104 / v1:
+        (Cached): 20% (3.0MB-3.1MB-3.2MB/2.1MB-2.3MB-2.3MB over 19)
+  * com.android.musicfx / u0a13 / v10400:
+        (Cached): 25% (1.6MB-3.1MB-3.2MB/1.2MB-2.5MB-2.7MB over 25)
+  * com.android.gallery3d / u0a47 / v40030:
+        (Cached): 91% (3.1MB-9.3MB-13MB/2.6MB-7.9MB-11MB over 57)
+  * cn.classone.biaoge / u0a83 / v6:
+        (Cached): 38% (6.6MB-6.6MB-6.6MB/4.1MB-4.2MB-4.2MB over 18)
+  * com.qualcomm.location.XT / 1000 / v1:
+        (Cached): 0.01%
+  * cn.classone.biaoge:remote / u0a83 / v6:
+        (Cached): 38% (7.6MB-10MB-13MB/5.1MB-7.8MB-11MB over 18)
+  * com.qualcomm.qti.vtremoteservice / 1001 / v1:
+        (Cached): 20% (1.4MB-1.6MB-1.7MB/0.99MB-1.2MB-1.2MB over 20)
+  * com.android.exchange / u0a41 / v500065:
+        (Cached): 0.02%
+  * com.qualcomm.timeservice / 1000 / v22:
+        (Cached): 40% (1.5MB-1.6MB-1.6MB/1.1MB-1.1MB-1.1MB over 19)
+  * com.android.cellbroadcastreceiver / u0a2 / v22:
+        (Cached): 10% (1.7MB-1.8MB-1.9MB/1.3MB-1.3MB-1.3MB over 6)
+  * com.android.dialer / u0a6 / v22:
+        (Cached): 0.02%
+  * com.android.timerswitch / 1000 / v22:
+        (Cached): 2.3% (1.9MB-1.9MB-1.9MB/1.5MB-1.5MB-1.5MB over 1)
+  * com.android.keychain / 1000 / v22:
+        (Cached): 2.2% (3.0MB-3.0MB-3.0MB/2.4MB-2.4MB-2.4MB over 1)
+  * com.readboy.clock / u0a81 / v2:
+        (Cached): 4.6% (2.0MB-2.0MB-2.1MB/1.5MB-1.6MB-1.6MB over 4)
+  * com.android.onetimeinitializer / u0a14 / v22:
+        (Cached): 0.02%
+  * com.qcom.gsma.services.nfc / u0a49 / v22:
+        (Cached): 0.02%
+  * org.simalliance.openmobileapi.service / 1027 / v5:
+        (Cached): 0.78% (1.6MB-1.6MB-1.6MB/1.1MB-1.1MB-1.1MB over 1)
+  * com.android.managedprovisioning / u0a11 / v22:
+        (Cached): 0.02%
+  * com.qualcomm.telephony / 1001 / v1:
+        (Cached): 2.4% (1.6MB-1.6MB-1.6MB/1.1MB-1.1MB-1.1MB over 1)
+  * com.svox.pico / u0a74 / v1:
+        (Cached): 22% (1.6MB-1.6MB-1.6MB/1.1MB-1.2MB-1.2MB over 23)
+  * com.qualcomm.factory / 1000 / v6:
+        (Cached): 0.02%
+  * com.quicinc.wipoweragent / u0a96 / v1:
+        (Cached): 2.4% (1.5MB-1.5MB-1.5MB/1.1MB-1.1MB-1.1MB over 1)
+
+Run time Stats:
+  SOff/Norm: +22h8m46s441ms
+       Mod : +22m1s251ms
+  SOn /Norm: +20m7s665ms
+       Mod : +414ms
+      TOTAL: +22h50m55s771ms
+
+Memory usage:
+  Kernel : 168MB (108 samples)
+  Native : 96MB (108 samples)
+  Persist: 199MB (1504 samples)
+  Top    : 95MB (1171 samples)
+  ImpFg  : 4.4MB (1542 samples)
+  ImpBg  : 9.5MB (277 samples)
+  Service: 115MB (3953 samples)
+  Receivr: 1.1KB (2050 samples)
+  Home   : 2.6MB (16 samples)
+  LastAct: 3.2MB (103 samples)
+  CchAct : 12MB (96 samples)
+  CchEmty: 50MB (1122 samples)
+  Cached : 624MB (108 samples)
+  Free   : 423MB (108 samples)
+  TOTAL  : 1.8GB
+  ServRst: 1.9KB (556 samples)
+
+          Start time: 2016-10-25 22:24:31
+  Total elapsed time: +22h51m0s780ms (partial) libart.so
+
+AGGREGATED OVER LAST 3 HOURS:
+  * com.android.inputmethod.latin / u0a58 / v22:
+           TOTAL: 100% (7.8MB-15MB-20MB/6.4MB-13MB-19MB over 25)
+          Imp Fg: 0.15%
+          Imp Bg: 100% (7.8MB-15MB-20MB/6.4MB-13MB-19MB over 25)
+  * org.simalliance.openmobileapi.service:remote / 1027 / v5:
+           TOTAL: 100% (3.5MB-3.6MB-3.7MB/2.9MB-3.0MB-3.0MB over 22)
+         Service: 100% (3.5MB-3.6MB-3.7MB/2.9MB-3.0MB-3.0MB over 22)
+  * com.qualcomm.qcrilmsgtunnel / 1001 / v22:
+           TOTAL: 100% (2.1MB-2.1MB-2.2MB/1.6MB-1.6MB-1.6MB over 25)
+          Imp Fg: 100% (2.1MB-2.1MB-2.2MB/1.6MB-1.6MB-1.6MB over 25)
+  * com.dream.forcerest / u0a44 / v1:
+           TOTAL: 100% (1.6MB-1.7MB-1.7MB/1.2MB-1.2MB-1.2MB over 24)
+      Persistent: 100% (1.6MB-1.7MB-1.7MB/1.2MB-1.2MB-1.2MB over 24)
+  * com.dream.service / 1000 / v1:
+           TOTAL: 100% (2.0MB-2.1MB-2.2MB/1.5MB-1.6MB-1.6MB over 22)
+         Service: 100% (2.0MB-2.1MB-2.2MB/1.5MB-1.6MB-1.6MB over 22)
+  * com.quicinc.cne.CNEService / 1000 / v22:
+           TOTAL: 100% (4.3MB-4.9MB-5.5MB/3.6MB-4.2MB-4.8MB over 24)
+      Persistent: 100% (4.3MB-4.9MB-5.5MB/3.6MB-4.2MB-4.8MB over 24)
+  * com.qcom.gsma.services.nfc:remote / u0a49 / v22:
+           TOTAL: 100% (1.8MB-1.9MB-2.0MB/1.4MB-1.4MB-1.4MB over 22)
+         Service: 100% (1.8MB-1.9MB-2.0MB/1.4MB-1.4MB-1.4MB over 22)
+  * com.android.smspush / u0a93 / v22:
+           TOTAL: 100% (1.6MB-1.7MB-1.8MB/1.3MB-1.3MB-1.3MB over 25)
+          Imp Fg: 100% (1.6MB-1.7MB-1.8MB/1.3MB-1.3MB-1.3MB over 25)
+  * com.dream.tutorsplanpush / u0a91 / v160312003:
+           TOTAL: 100% (7.5MB-9.6MB-11MB/6.3MB-8.6MB-9.9MB over 22)
+         Service: 100% (7.5MB-9.6MB-11MB/6.3MB-8.6MB-9.9MB over 22)
+  * com.dream.powersave / u0a17 / v1:
+           TOTAL: 100% (3.2MB-3.9MB-4.6MB/2.7MB-3.4MB-4.1MB over 22)
+         Service: 100% (3.2MB-3.9MB-4.6MB/2.7MB-3.4MB-4.1MB over 22)
+  * system / 1000 / v22:
+           TOTAL: 100% (63MB-69MB-78MB/59MB-64MB-74MB over 24)
+      Persistent: 100% (63MB-69MB-78MB/59MB-64MB-74MB over 24)
+  * com.qualcomm.qti.services.secureui:sui_service / 1000 / v1:
+           TOTAL: 100% (2.0MB-2.0MB-2.1MB/1.5MB-1.5MB-1.5MB over 24)
+      Persistent: 100% (2.0MB-2.0MB-2.1MB/1.5MB-1.5MB-1.5MB over 24)
+  * com.dream.phonemanager / 1000 / v1:
+           TOTAL: 100% (2.9MB-3.0MB-3.1MB/2.5MB-2.5MB-2.5MB over 22)
+         Service: 100% (2.9MB-3.0MB-3.1MB/2.5MB-2.5MB-2.5MB over 22)
+  * com.dream.appstore / u0a23 / v1:
+           TOTAL: 100% (3.2MB-4.8MB-6.8MB/2.5MB-4.1MB-6.0MB over 22)
+         Service: 100% (3.2MB-4.8MB-6.8MB/2.5MB-4.1MB-6.0MB over 22)
+  * com.dream.ota.update / u0a38 / v204:
+           TOTAL: 100% (5.8MB-6.6MB-7.3MB/5.0MB-5.8MB-6.4MB over 22)
+         Service: 100% (5.8MB-6.6MB-7.3MB/5.0MB-5.8MB-6.4MB over 22)
+  * com.dream.studyAndExamManager / u0a17 / v1:
+           TOTAL: 100% (5.0MB-5.5MB-6.1MB/4.2MB-4.7MB-5.4MB over 22)
+         Service: 100% (5.0MB-5.5MB-6.1MB/4.2MB-4.7MB-5.4MB over 22)
+  * com.android.systemui / u0a44 / v1:
+           TOTAL: 100% (3.1MB-3.2MB-3.3MB/2.4MB-2.4MB-2.5MB over 22)
+         Service: 100% (3.1MB-3.2MB-3.3MB/2.4MB-2.4MB-2.5MB over 22)
+  * com.dream.usagemonitor / 1000 / v1:
+           TOTAL: 100% (2.2MB-2.3MB-2.5MB/1.7MB-1.9MB-2.0MB over 22)
+         Service: 100% (2.2MB-2.3MB-2.5MB/1.7MB-1.9MB-2.0MB over 22)
+  * com.dream.personalinfo / u0a71 / v1:
+           TOTAL: 100% (2.3MB-2.4MB-2.4MB/1.9MB-1.9MB-1.9MB over 22)
+         Service: 100% (2.3MB-2.4MB-2.4MB/1.9MB-1.9MB-1.9MB over 22)
+  * com.dream.launcherprovider / 1000 / v1:
+           TOTAL: 100% (1.6MB-1.7MB-1.8MB/1.3MB-1.3MB-1.3MB over 24)
+          Imp Fg: 70% (1.8MB-1.8MB-1.8MB/1.3MB-1.3MB-1.3MB over 16)
+         Service: 30% (1.6MB-1.7MB-1.7MB/1.3MB-1.3MB-1.3MB over 8)
+  * com.qualcomm.qti.carrierconfigure / 1000 / v22:
+           TOTAL: 100% (1.7MB-1.7MB-1.8MB/1.3MB-1.3MB-1.3MB over 22)
+         Service: 100% (1.7MB-1.7MB-1.8MB/1.3MB-1.3MB-1.3MB over 22)
+  * com.android.phone / 1001 / v22:
+           TOTAL: 100% (27MB-28MB-29MB/24MB-25MB-26MB over 24)
+      Persistent: 100% (27MB-28MB-29MB/24MB-25MB-26MB over 24)
+  * com.android.systemui / u0a17 / v22:
+           TOTAL: 100% (66MB-80MB-97MB/63MB-76MB-92MB over 24)
+      Persistent: 100% (66MB-80MB-97MB/63MB-76MB-92MB over 24)
+  * com.dream.siri / u0a17 / v1:
+           TOTAL: 100% (1.7MB-1.7MB-1.8MB/1.3MB-1.3MB-1.3MB over 24)
+      Persistent: 100% (1.7MB-1.7MB-1.8MB/1.3MB-1.3MB-1.3MB over 24)
+  * com.qualcomm.display / 1000 / v1:
+           TOTAL: 100% (1.5MB-1.6MB-1.6MB/1.1MB-1.1MB-1.2MB over 22)
+         Service: 100% (1.5MB-1.6MB-1.6MB/1.1MB-1.1MB-1.2MB over 22)
+  * com.qualcomm.qti.gesture / 1000 / v22:
+           TOTAL: 100% (2.6MB-2.7MB-2.7MB/2.0MB-2.1MB-2.1MB over 24)
+      Persistent: 100% (2.6MB-2.7MB-2.7MB/2.0MB-2.1MB-2.1MB over 24)
+  * com.qualcomm.telephony / 1000 / v22:
+           TOTAL: 100% (2.1MB-2.2MB-2.2MB/1.7MB-1.7MB-1.7MB over 22)
+         Service: 100% (2.1MB-2.2MB-2.2MB/1.7MB-1.7MB-1.7MB over 22)
+  * com.qualcomm.qti.modemtestmode / 1000 / v22:
+           TOTAL: 100% (3.1MB-3.2MB-3.3MB/2.4MB-2.5MB-2.5MB over 22)
+         Service: 100% (3.1MB-3.2MB-3.3MB/2.4MB-2.5MB-2.5MB over 22)
+  * com.dream.launcher / u0a10 / v12:
+           TOTAL: 70% (47MB-63MB-78MB/42MB-59MB-73MB over 39)
+             Top: 70% (47MB-63MB-78MB/42MB-59MB-73MB over 39)
+          (Home): 30% (44MB-48MB-54MB/41MB-44MB-50MB over 8)
+  * com.android.settings / 1000 / v22:
+           TOTAL: 51% (31MB-38MB-81MB/28MB-35MB-79MB over 31)
+             Top: 51% (31MB-38MB-81MB/28MB-35MB-79MB over 31)
+      (Last Act): 40% (41MB-45MB-51MB/38MB-42MB-48MB over 7)
+        (Cached): 4.7% (46MB-46MB-46MB/43MB-43MB-43MB over 1)
+  * com.dream.weather / u0a101 / v1:
+           TOTAL: 43% (28MB-35MB-39MB/26MB-33MB-36MB over 10)
+             Top: 0.17% (28MB-28MB-28MB/26MB-26MB-26MB over 1)
+          Imp Fg: 0.03%
+         Service: 43% (33MB-36MB-39MB/30MB-33MB-36MB over 9)
+  * cn.dream.android.appstore / u0a114 / v442:
+           TOTAL: 31% (5.8MB-160MB-240MB/4.8MB-135MB-189MB over 28)
+             Top: 28% (5.8MB-168MB-240MB/4.8MB-141MB-189MB over 25)
+          Imp Fg: 0.02%
+         Service: 2.2% (67MB-92MB-111MB/59MB-84MB-104MB over 3)
+      Service Rs: 0.01%
+      (Last Act): 0.01%
+  * com.dream.calculator / u0a35 / v100:
+           TOTAL: 1.5% (40MB-40MB-40MB/38MB-38MB-38MB over 2)
+             Top: 1.5% (40MB-40MB-40MB/38MB-38MB-38MB over 2)
+        (Cached): 41% (8.0MB-9.5MB-14MB/6.7MB-8.1MB-12MB over 8)
+  * com.UCMobile / u0a107 / v604:
+           TOTAL: 0.30%
+         Service: 0.29%
+        Receiver: 0.01%
+        (Cached): 95% (6.8MB-8.1MB-9.1MB/4.7MB-6.7MB-8.1MB over 20)
+  * cn.dream.android.appstore:leakcanary / u0a114 / v442:
+           TOTAL: 0.21%
+         Service: 0.21%
+        (Cached): 16% (23MB-23MB-24MB/19MB-20MB-20MB over 3)
+  * com.android.providers.calendar / u0a1 / v22:
+           TOTAL: 0.10%
+          Imp Fg: 0.01%
+         Service: 0.09%
+      (Last Act): 3.8% (2.7MB-2.7MB-2.7MB/2.1MB-2.1MB-2.1MB over 1)
+        (Cached): 22% (2.6MB-2.7MB-2.7MB/2.1MB-2.1MB-2.1MB over 5)
+  * system:ui / 1000 / v22:
+           TOTAL: 0.09%
+             Top: 0.09%
+        (Cached): 53% (5.2MB-5.5MB-5.6MB/4.1MB-4.3MB-4.4MB over 12)
+  * com.android.calendar / u0a27 / v22:
+           TOTAL: 0.08%
+             Top: 0.01%
+         Service: 0.07%
+      (Last Act): 3.9% (14MB-14MB-14MB/12MB-12MB-12MB over 1)
+        (Cached): 22% (4.3MB-12MB-14MB/3.7MB-10MB-12MB over 5)
+  * com.android.defcontainer / u0a5 / v22:
+           TOTAL: 0.07%
+          Imp Fg: 0.07%
+        (Cached): 60% (2.9MB-3.0MB-3.1MB/2.4MB-2.4MB-2.4MB over 12)
+  * com.UCMobile:push / u0a107 / v604:
+           TOTAL: 0.03%
+         Service: 0.03%
+        (Cached): 61% (7.4MB-7.6MB-8.8MB/5.2MB-5.6MB-7.8MB over 8)
+  * com.android.mms / u0a12 / v22:
+           TOTAL: 0.01%
+         Service: 0.01%
+        (Cached): 49% (6.2MB-7.4MB-9.2MB/5.1MB-6.4MB-8.1MB over 14)
+  * com.koushikdutta.vysor / u0a111 / v1477720800:
+           TOTAL: 0.01%
+             Top: 0.01%
+      (Last Act): 4.4% (26MB-26MB-26MB/24MB-24MB-24MB over 1)
+        (Cached): 38% (22MB-22MB-22MB/21MB-21MB-21MB over 6)
+  * android.process.acore / u0a4 / v22:
+        (Cached): 75% (5.9MB-6.0MB-6.1MB/5.2MB-5.2MB-5.3MB over 15)
+  * com.qualcomm.qti.lunarinfo / u0a62 / v22:
+        (Cached): 51% (1.7MB-1.8MB-1.8MB/1.3MB-1.3MB-1.3MB over 12)
+  * android.process.media / u0a7 / v800:
+        (Cached): 96% (4.3MB-4.5MB-4.6MB/3.7MB-3.8MB-3.8MB over 21)
+  * com.android.contacts / u0a4 / v22:
+        (Cached): 49% (5.1MB-5.2MB-5.2MB/4.3MB-4.4MB-4.4MB over 11)
+  * com.borqs.videocall / u0a104 / v1:
+        (Cached): 53% (3.0MB-3.1MB-3.1MB/2.2MB-2.3MB-2.3MB over 13)
+  * com.qualcomm.qti.vtremoteservice / 1001 / v1:
+        (Cached): 53% (1.6MB-1.6MB-1.7MB/1.2MB-1.2MB-1.2MB over 13)
+  * com.android.gallery3d / u0a47 / v40030:
+        (Cached): 60% (3.1MB-3.2MB-3.3MB/2.6MB-2.7MB-2.8MB over 12)
+  * com.android.timerswitch / 1000 / v22:
+        (Cached): 13% (1.9MB-1.9MB-1.9MB/1.5MB-1.5MB-1.5MB over 1)
+  * com.android.cellbroadcastreceiver / u0a2 / v22:
+        (Cached): 14% (1.7MB-1.7MB-1.7MB/1.3MB-1.3MB-1.3MB over 1)
+  * com.android.musicfx / u0a13 / v10400:
+        (Cached): 60% (3.2MB-3.2MB-3.2MB/2.6MB-2.7MB-2.7MB over 12)
+  * com.qualcomm.timeservice / 1000 / v22:
+        (Cached): 13% (1.5MB-1.5MB-1.5MB/1.1MB-1.1MB-1.1MB over 1)
+  * com.svox.pico / u0a74 / v1:
+        (Cached): 60% (1.6MB-1.6MB-1.6MB/1.2MB-1.2MB-1.2MB over 13)
+  * saulmm.myapplication / u0a113 / v1:
+        (Cached): 47% (16MB-16MB-16MB/13MB-13MB-13MB over 8)
+
+Run time Stats:
+  SOff/Norm: +3h16m48s143ms
+       Mod : +19m58s931ms
+  SOn /Norm: +15m59s156ms
+       Mod : +414ms
+      TOTAL: +3h52m46s644ms
+
+Memory usage:
+  Kernel : 169MB (61 samples)
+  Native : 96MB (61 samples)
+  Persist: 191MB (384 samples)
+  Top    : 114MB (237 samples)
+  ImpFg  : 5.2MB (291 samples)
+  ImpBg  : 14MB (50 samples)
+  Service: 76MB (989 samples)
+  Receivr: 2.1KB (356 samples)
+  Home   : 15MB (16 samples)
+  LastAct: 19MB (44 samples)
+  CchAct : 15MB (61 samples)
+  CchEmty: 54MB (356 samples)
+  Cached : 652MB (61 samples)
+  Free   : 421MB (61 samples)
+  TOTAL  : 1.8GB
+  ServRst: 9.9KB (33 samples)
+
+          Start time: 2016-11-04 12:17:08
+  Total elapsed time: +3h52m46s645ms (partial) libart.so

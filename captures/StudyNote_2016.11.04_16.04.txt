@@ -1,0 +1,899 @@
+ACTIVITY MANAGER PENDING INTENTS (dumpsys activity intents)
+  * PendingIntentRecord{eedf746 android broadcastIntent}
+  * PendingIntentRecord{22cdcd07 com.dream.ota.update startService}
+  * PendingIntentRecord{20829e34 android broadcastIntent}
+  * PendingIntentRecord{3409645d android broadcastIntent}
+  * PendingIntentRecord{18241d2 com.dream.weather startActivity}
+  * PendingIntentRecord{ef032a3 android broadcastIntent}
+  * PendingIntentRecord{18c569a0 com.dream.weather startActivity}
+  * PendingIntentRecord{3fce959 android broadcastIntent}
+  * PendingIntentRecord{159ea91e com.android.phone broadcastIntent}
+  * PendingIntentRecord{374955ff com.dream.tutorsplanpush broadcastIntent}
+  * PendingIntentRecord{24a77fcc android broadcastIntent}
+  * PendingIntentRecord{809c215 com.android.calendar broadcastIntent}
+  * PendingIntentRecord{1688392a com.android.providers.calendar broadcastIntent}
+  * PendingIntentRecord{39e7531b android broadcastIntent}
+  * PendingIntentRecord{4b2ccb8 android broadcastIntent}
+  * PendingIntentRecord{8d16a91 android broadcastIntent}
+  * PendingIntentRecord{cc8bdf6 com.dream.mediaplayer broadcastIntent}
+  * PendingIntentRecord{3d9e05f7 android broadcastIntent}
+  * PendingIntentRecord{3623fc64 android startActivity}
+  * PendingIntentRecord{1d911ecd android broadcastIntent}
+  * PendingIntentRecord{2dbac382 com.qualcomm.location broadcastIntent}
+  * PendingIntentRecord{18a30a93 android startActivity}
+  * PendingIntentRecord{2b567ad0 android broadcastIntent}
+  * PendingIntentRecord{1a1ddac9 android broadcastIntent}
+  * PendingIntentRecord{37d595ce android broadcastIntent}
+  * PendingIntentRecord{4e9bcef com.android.systemui broadcastIntent}
+  * PendingIntentRecord{1ef073fc com.UCMobile startService}
+  * PendingIntentRecord{20a05a85 android broadcastIntent}
+  * PendingIntentRecord{7b940da com.dream.weather startService}
+  * PendingIntentRecord{3e3f390b android broadcastIntent}
+  * PendingIntentRecord{2dced3e8 android broadcastIntent}
+  * PendingIntentRecord{13111a01 android broadcastIntent}
+  * PendingIntentRecord{31fa90a6 android startActivity}
+  * PendingIntentRecord{26265ae7 android startActivity}
+  * PendingIntentRecord{23b14694 cn.dream.android.appstore startActivity}
+  * PendingIntentRecord{2074553d com.android.inputmethod.latin broadcastIntent}
+  * PendingIntentRecord{2daf1132 android broadcastIntent}
+  * PendingIntentRecord{973be83 android broadcastIntent}
+  * PendingIntentRecord{26a63800 android broadcastIntent}
+
+ACTIVITY MANAGER BROADCAST STATE (dumpsys activity broadcasts)
+  Historical broadcasts [foreground]:
+  #0: BroadcastRecord{29d60839 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #1: BroadcastRecord{1bb90e7e u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #2: BroadcastRecord{23a9bfdf u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #3: BroadcastRecord{2d36d42c u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #4: BroadcastRecord{3b05eef5 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #5: BroadcastRecord{36d3948a u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #6: BroadcastRecord{3c147afb u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #7: BroadcastRecord{2b530718 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #8: BroadcastRecord{13138571 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #9: BroadcastRecord{385e6f56 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #10: BroadcastRecord{38a5cbd7 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #11: BroadcastRecord{21fd7cc4 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #12: BroadcastRecord{388a07ad u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #13: BroadcastRecord{3dea2ae2 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #14: BroadcastRecord{2914e73 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #15: BroadcastRecord{3db7a130 u-1 android.intent.action.SCREEN_OFF}
+    act=android.intent.action.SCREEN_OFF flg=0x50000010
+  #16: BroadcastRecord{156c71a9 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #17: BroadcastRecord{3b84132e u-1 android.intent.action.SCREEN_ON}
+    act=android.intent.action.SCREEN_ON flg=0x50000010
+  #18: BroadcastRecord{18a85ecf u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #19: BroadcastRecord{2fada05c u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #20: BroadcastRecord{16f17f65 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #21: BroadcastRecord{6c2343a u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #22: BroadcastRecord{2b7618eb u-1 android.intent.action.SCREEN_OFF}
+    act=android.intent.action.SCREEN_OFF flg=0x50000010
+  #23: BroadcastRecord{2da26648 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #24: BroadcastRecord{cfface1 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #25: BroadcastRecord{68f5a06 u-1 android.intent.action.SCREEN_ON}
+    act=android.intent.action.SCREEN_ON flg=0x50000010
+  #26: BroadcastRecord{1f1b58c7 u-1 android.intent.action.SCREEN_OFF}
+    act=android.intent.action.SCREEN_OFF flg=0x50000010
+  #27: BroadcastRecord{49b9ef4 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #28: BroadcastRecord{569361d u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #29: BroadcastRecord{13b71092 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=homekey}]
+  #30: BroadcastRecord{eeaba63 u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=homekey}]
+  #31: BroadcastRecord{2a4db660 u-1 android.intent.action.TIME_SET}
+    act=android.intent.action.TIME_SET flg=0x34000010
+  #32: BroadcastRecord{1ee81719 u-1 android.intent.action.TIME_SET}
+    act=android.intent.action.TIME_SET flg=0x34000010
+  #33: BroadcastRecord{1631a3de u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #34: BroadcastRecord{2ec499bf u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=homekey}]
+  #35: BroadcastRecord{3947d88c u-1 android.intent.action.CLOSE_SYSTEM_DIALOGS}
+    act=android.intent.action.CLOSE_SYSTEM_DIALOGS flg=0x50000010 (has extras)
+    extras: Bundle[{reason=homekey}]
+  #36: BroadcastRecord{fda0bd5 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #37: BroadcastRecord{2b301fea u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #38: BroadcastRecord{263312db u-1 android.intent.action.SCREEN_ON}
+    act=android.intent.action.SCREEN_ON flg=0x50000010
+  #39: BroadcastRecord{3dff178 u-1 android.intent.action.CONFIGURATION_CHANGED}
+    act=android.intent.action.CONFIGURATION_CHANGED flg=0x70000010
+  #40: BroadcastRecord{1cbc9051 u-1 android.intent.action.SCREEN_OFF}
+    act=android.intent.action.SCREEN_OFF flg=0x50000010
+  #41: BroadcastRecord{1fe850b6 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #42: BroadcastRecord{14601b7 u-1 android.intent.action.CONFIGURATION_CHANGED}
+    act=android.intent.action.CONFIGURATION_CHANGED flg=0x70000010
+  #43: BroadcastRecord{29dead24 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #44: BroadcastRecord{3a68e08d u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #45: BroadcastRecord{d20c242 u-1 android.intent.action.SCREEN_ON}
+    act=android.intent.action.SCREEN_ON flg=0x50000010
+  #46: BroadcastRecord{132f0253 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #47: BroadcastRecord{1ceb7790 u-1 android.intent.action.SCREEN_OFF}
+    act=android.intent.action.SCREEN_OFF flg=0x50000010
+  #48: BroadcastRecord{180ff889 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #49: BroadcastRecord{1f7cc08e u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000014 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  ...
+
+  Historical broadcasts [background]:
+  #0: BroadcastRecord{269d70af u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=77, scale=100, temperature=338, voltage=4129, invalid_charger=0}]
+  #1: BroadcastRecord{3fb87cbc u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=77, scale=100, temperature=338, voltage=4127, invalid_charger=0}]
+  #2: BroadcastRecord{cf69445 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=76, scale=100, temperature=339, voltage=4121, invalid_charger=0}]
+  #3: BroadcastRecord{1888579a u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=76, scale=100, temperature=340, voltage=4077, invalid_charger=0}]
+  #4: BroadcastRecord{17da68cb u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=76, scale=100, temperature=340, voltage=4094, invalid_charger=0}]
+  #5: BroadcastRecord{beea8a8 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=75, scale=100, temperature=340, voltage=4106, invalid_charger=0}]
+  #6: BroadcastRecord{25f12fc1 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=75, scale=100, temperature=340, voltage=4124, invalid_charger=0}]
+  #7: BroadcastRecord{14845366 u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #8: BroadcastRecord{34a4c6a7 u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #9: BroadcastRecord{2ad9a754 u0 com.android.server.action.NETWORK_STATS_POLL}
+    act=com.android.server.action.NETWORK_STATS_POLL flg=0x14 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #10: BroadcastRecord{ea006fd u-1 com.android.server.action.NETWORK_STATS_UPDATED}
+    act=com.android.server.action.NETWORK_STATS_UPDATED flg=0x40000010
+  #11: BroadcastRecord{20f23ff2 u0 android.net.ConnectivityService.action.PKT_CNT_SAMPLE_INTERVAL_ELAPSED}
+    act=android.net.ConnectivityService.action.PKT_CNT_SAMPLE_INTERVAL_ELAPSED flg=0x14 pkg=android (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #12: BroadcastRecord{3dcd2643 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=74, scale=100, temperature=339, voltage=4102, invalid_charger=0}]
+  #13: BroadcastRecord{2cd3e4c0 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=74, scale=100, temperature=338, voltage=4077, invalid_charger=0}]
+  #14: BroadcastRecord{126b15f9 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=74, scale=100, temperature=338, voltage=4085, invalid_charger=0}]
+  #15: BroadcastRecord{2fe0693e u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #16: BroadcastRecord{2691e39f u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #17: BroadcastRecord{b728cec u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=73, scale=100, temperature=339, voltage=4050, invalid_charger=0}]
+  #18: BroadcastRecord{313e18b5 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=73, scale=100, temperature=339, voltage=4067, invalid_charger=0}]
+  #19: BroadcastRecord{33f5db4a u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=72, scale=100, temperature=339, voltage=4066, invalid_charger=0}]
+  #20: BroadcastRecord{2dbb1abb u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #21: BroadcastRecord{22718bd8 u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #22: BroadcastRecord{4048b31 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=72, scale=100, temperature=340, voltage=4054, invalid_charger=0}]
+  #23: BroadcastRecord{313e6216 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=72, scale=100, temperature=340, voltage=4066, invalid_charger=0}]
+  #24: BroadcastRecord{2c76a797 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=71, scale=100, temperature=340, voltage=4061, invalid_charger=0}]
+  #25: BroadcastRecord{b5f8d84 u0 com.UCMobile.intent.action.COMMAND}
+    act=com.UCMobile.intent.action.COMMAND flg=0x10 pkg=com.UCMobile (has extras)
+    extras: Bundle[mParcelledData.dataSize=108]
+  #26: BroadcastRecord{2ce5a96d u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #27: BroadcastRecord{eb689a2 u0 android.net.ConnectivityService.action.PKT_CNT_SAMPLE_INTERVAL_ELAPSED}
+    act=android.net.ConnectivityService.action.PKT_CNT_SAMPLE_INTERVAL_ELAPSED flg=0x14 pkg=android (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #28: BroadcastRecord{36f42633 u0 com.android.server.action.NETWORK_STATS_POLL}
+    act=com.android.server.action.NETWORK_STATS_POLL flg=0x14 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #29: BroadcastRecord{809fdf0 u-1 com.android.server.action.NETWORK_STATS_UPDATED}
+    act=com.android.server.action.NETWORK_STATS_UPDATED flg=0x40000010
+  #30: BroadcastRecord{f406f69 u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #31: BroadcastRecord{34979dee u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=71, scale=100, temperature=340, voltage=4047, invalid_charger=0}]
+  #32: BroadcastRecord{2ac0f28f u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=71, scale=100, temperature=340, voltage=4061, invalid_charger=0}]
+  #33: BroadcastRecord{27a9091c u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=70, scale=100, temperature=343, voltage=4037, invalid_charger=0}]
+  #34: BroadcastRecord{b679925 u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #35: BroadcastRecord{363aafa u0 android.net.ConnectivityService.action.PKT_CNT_SAMPLE_INTERVAL_ELAPSED}
+    act=android.net.ConnectivityService.action.PKT_CNT_SAMPLE_INTERVAL_ELAPSED flg=0x14 pkg=android (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #36: BroadcastRecord{6e428ab u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=70, scale=100, temperature=350, voltage=4025, invalid_charger=0}]
+  #37: BroadcastRecord{12cb9b08 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=70, scale=100, temperature=350, voltage=4030, invalid_charger=0}]
+  #38: BroadcastRecord{3a1da2a1 u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #39: BroadcastRecord{2fb17cc6 u0 android.intent.action.PACKAGE_RESTARTED}
+    act=android.intent.action.PACKAGE_RESTARTED dat=package:cn.dream.android.appstore flg=0x10 (has extras)
+    extras: Bundle[{android.intent.extra.UID=10114, android.intent.extra.user_handle=0}]
+  #40: BroadcastRecord{29baa487 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=69, scale=100, temperature=355, voltage=4007, invalid_charger=0}]
+  #41: BroadcastRecord{2a035fb4 u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #42: BroadcastRecord{23d0c7dd u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #43: BroadcastRecord{eb89f52 u0 android.net.ConnectivityService.action.PKT_CNT_SAMPLE_INTERVAL_ELAPSED}
+    act=android.net.ConnectivityService.action.PKT_CNT_SAMPLE_INTERVAL_ELAPSED flg=0x14 pkg=android (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #44: BroadcastRecord{10930223 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=69, scale=100, temperature=356, voltage=4011, invalid_charger=0}]
+  #45: BroadcastRecord{2350c320 u-1 android.location.HIGH_POWER_REQUEST_CHANGE}
+    act=android.location.HIGH_POWER_REQUEST_CHANGE flg=0x10
+  #46: BroadcastRecord{2f9704d9 u-1 android.location.HIGH_POWER_REQUEST_CHANGE}
+    act=android.location.HIGH_POWER_REQUEST_CHANGE flg=0x10
+  #47: BroadcastRecord{1f9d5e9e u0 null}
+    flg=0x14 (has extras)
+    targetComp: {com.dream.tutorsplanpush/cn.jpush.android.service.AlarmReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #48: BroadcastRecord{35099d7f u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=, icon-small=17303154, health=2, status=2, plugged=2, present=true, level=69, scale=100, temperature=369, voltage=4004, invalid_charger=0}]
+  #49: BroadcastRecord{124ef14c u0 com.android.inputmethod.latin.personalization.DICT_DECAY}
+    act=com.android.inputmethod.latin.personalization.DICT_DECAY flg=0x14 (has extras)
+    targetComp: {com.android.inputmethod.latin/com.android.inputmethod.latin.personalization.DictionaryDecayBroadcastReciever}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  ...
+
+  Sticky broadcasts for user -1:
+  * Sticky action android.intent.action.SERVICE_STATE
+  * Sticky action android.intent.action.ACTION_DEFAULT_SMS_SUBSCRIPTION_CHANGED
+  * Sticky action android.net.wifi.WIFI_STATE_CHANGED
+  * Sticky action android.net.wifi.p2p.CONNECTION_STATE_CHANGE
+  * Sticky action android.net.conn.TETHER_STATE_CHANGED
+  * Sticky action android.media.ACTION_SCO_AUDIO_STATE_UPDATED
+  * Sticky action android.net.wifi.p2p.THIS_DEVICE_CHANGED
+  * Sticky action android.intent.action.BATTERY_CHANGED
+  * Sticky action android.intent.action.ACTION_DEFAULT_SUBSCRIPTION_CHANGED
+  * Sticky action android.intent.action.ACTION_DEFAULT_VOICE_SUBSCRIPTION_CHANGED
+  * Sticky action android.net.conn.CONNECTIVITY_CHANGE
+  * Sticky action android.intent.action.ANY_DATA_STATE
+  * Sticky action android.provider.Telephony.SPN_STRINGS_UPDATED
+  * Sticky action android.net.nsd.STATE_CHANGED
+  * Sticky action android.hardware.usb.action.USB_STATE
+  * Sticky action android.net.wifi.RSSI_CHANGED
+  * Sticky action android.net.wifi.STATE_CHANGE
+  * Sticky action android.intent.action.SIM_STATE_CHANGED
+  * Sticky action android.intent.action.SIG_STR
+  * Sticky action android.media.INTERNAL_RINGER_MODE_CHANGED_ACTION
+  * Sticky action android.net.wifi.supplicant.STATE_CHANGE
+  * Sticky action android.net.wifi.p2p.PERSISTENT_GROUPS_CHANGED
+  * Sticky action android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE
+  * Sticky action android.media.SCO_AUDIO_STATE_CHANGED
+  * Sticky action android.os.UpdateLock.UPDATE_LOCK_CHANGED
+  * Sticky action android.media.MASTER_MUTE_CHANGED_ACTION
+  * Sticky action wifi_scan_available
+  * Sticky action android.net.wifi.p2p.STATE_CHANGED
+  * Sticky action android.intent.action.HDMI_PLUGGED
+  * Sticky action android.media.RINGER_MODE_CHANGED
+
+  Sticky broadcasts for user 0:
+  * Sticky action com.android.music.queuechanged
+  * Sticky action com.dream.mediaplayer.queuechanged
+  * Sticky action com.dream.mediaplayer.metachanged
+  * Sticky action com.android.ims.IMS_SERVICE_UP
+  * Sticky action com.android.music.metachanged
+
+ACTIVITY MANAGER CONTENT PROVIDERS (dumpsys activity providers)
+  Published single-user content providers (by class):
+  * ContentProviderRecord{5ea1595 u0 com.android.providers.telephony/.TelephonyProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    singleton=true
+    authority=telephony
+  * ContentProviderRecord{1d7cc6aa u0 com.android.providers.telephony/.HbpcdLookupProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    singleton=true
+    authority=hbpcd_lookup
+  * ContentProviderRecord{2424929b u0 com.android.providers.settings/.SettingsProvider}
+    proc=ProcessRecord{339fb243 2137:system/1000}
+    singleton=true
+    authority=settings
+    16 connections, 0 external handles
+      -> 3663:com.android.systemui/u0a17 s1/1 u0/0 +7h11m59s102ms
+      -> 4406:com.android.inputmethod.latin/u0a58 s1/1 u0/0 +7h11m55s543ms
+      -> 4637:com.android.phone/1001 s1/1 u0/0 +7h11m55s268ms
+      -> 5613:com.dream.usagemonitor/1000 s1/1 u0/0 +7h11m51s424ms
+      -> 5636:com.dream.service/1000 s1/1 u0/0 +7h11m51s335ms
+      -> 5819:com.android.systemui/u0a44 s1/1 u0/0 +7h11m50s206ms
+      -> 6261:com.dream.launcher/u0a10 s1/1 u0/0 +7h11m46s109ms
+      -> 6548:com.dream.studyAndExamManager/u0a17 s1/1 u0/0 +7h11m35s794ms
+      -> 6858:com.dream.tutorsplanpush/u0a91 s1/1 u0/0 +7h11m31s782ms
+      -> 9818:system:ui/1000 s1/1 u0/0 +2h3m2s667ms
+      -> 10625:com.android.settings/1000 s1/1 u0/0 +1h53m49s86ms
+      -> 10802:com.android.mms/u0a12 s1/1 u0/0 +1h53m28s345ms
+      -> 13774:com.dream.weather/u0a101 s1/1 u0/0 +1h39m10s463ms
+      -> 14343:com.koushikdutta.vysor/u0a111 s1/1 u0/0 +1h38m38s758ms
+      -> 15909:com.dream.calculator/u0a35 s1/1 u0/0 +1h37m24s229ms
+      -> 27244:com.UCMobile:push/u0a107 s1/1 u0/0 +32m53s33ms
+  * ContentProviderRecord{71fd638 u0 com.android.providers.telephony/.MmsProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    singleton=true
+    authority=mms
+  * ContentProviderRecord{23237611 u0 com.android.providers.telephony/.MmsSmsProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    singleton=true
+    authority=mms-sms
+  * ContentProviderRecord{2638a376 u0 com.android.providers.telephony/.SmsProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    singleton=true
+    authority=sms
+
+  Published user 0 content providers (by class):
+  * ContentProviderRecord{2b2fbd77 u0 com.android.mms/.SuggestionsProvider}
+    proc=ProcessRecord{30181de4 10802:com.android.mms/u0a12}
+    authority=com.android.mms.SuggestionsProvider
+  * ContentProviderRecord{15b8624d u0 com.android.inputmethod.latin/com.android.inputmethod.dictionarypack.DictionaryProvider}
+    proc=ProcessRecord{2038102 4406:com.android.inputmethod.latin/u0a58}
+    authority=com.android.inputmethod.dictionarypack.aosp
+  * ContentProviderRecord{3658ba13 u0 com.dream.ota.update/com.dream.ota.downloader.DataProvider}
+    proc=ProcessRecord{2a2b3450 6833:com.dream.ota.update/u0a38}
+    authority=com.readboy.downloader
+  * ContentProviderRecord{2435d649 u0 com.android.mms/.MessageTemplateProvider}
+    proc=ProcessRecord{30181de4 10802:com.android.mms/u0a12}
+    authority=com.android.mms.MessageTemplateProvider
+  * ContentProviderRecord{17acab4e u0 com.android.phone/.IccProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    authority=icc
+  * ContentProviderRecord{3d0ae46f u0 com.android.settings/android.support.v4.content.FileProvider}
+    proc=ProcessRecord{2c17457c 10625:com.android.settings/1000}
+    authority=com.android.settings.files
+  * ContentProviderRecord{16fc8e05 u0 com.android.providers.media/.MediaProvider}
+    proc=ProcessRecord{19ac2e5a 10775:android.process.media/u0a7}
+    authority=media
+  * ContentProviderRecord{180b588b u0 com.dream.powersave/.data.PowerSaveModeProvider}
+    proc=ProcessRecord{38513d68 6436:com.dream.powersave/u0a17}
+    authority=power_save_mode
+  * ContentProviderRecord{21bd0581 u0 com.android.contacts/android.support.v4.content.FileProvider}
+    proc=ProcessRecord{37eed626 10749:com.android.contacts/u0a4}
+    authority=com.android.contacts.files
+  * ContentProviderRecord{1d54f267 u0 com.UCMobile/.main.UCContentProvider}
+    proc=ProcessRecord{1b0c814 10865:com.UCMobile/u0a107}
+    authority=com.UCMobile.main.UCContentProvider
+  * ContentProviderRecord{28b378bd u0 com.dream.appstore/.provider.MyProvider}
+    proc=ProcessRecord{22622eb2 5319:com.dream.appstore/u0a23}
+    authority=com.dream.appstore
+  * ContentProviderRecord{1db44e03 u0 com.android.providers.telephony/.BlacklistMessageProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    authority=blacklist_message
+  * ContentProviderRecord{2edc5180 u0 com.dream.studyAndExamManager/com.dream.notes.data.NotesProvider}
+    proc=ProcessRecord{1da3e3b9 6548:com.dream.studyAndExamManager/u0a17}
+    authority=dream_notes
+  * ContentProviderRecord{284083fe u0 com.android.providers.telephony/.BlacklistProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    authority=blacklist
+  * ContentProviderRecord{2023c75f u0 com.android.providers.media/.MediaDocumentsProvider}
+    proc=ProcessRecord{19ac2e5a 10775:android.process.media/u0a7}
+    authority=com.android.providers.media.documents
+  * ContentProviderRecord{287505ac u0 com.dream.weather/.provider.CommonProvider}
+    proc=ProcessRecord{33b03906 13774:com.dream.weather/u0a101}
+    authority=com.dream.weather.provider
+  * ContentProviderRecord{30960275 u0 com.android.providers.downloads/.DownloadProvider}
+    proc=ProcessRecord{19ac2e5a 10775:android.process.media/u0a7}
+    authority=downloads
+  * ContentProviderRecord{1ce20a u0 com.qualcomm.qti.lunarinfo/.LunarInfoProvider}
+    proc=ProcessRecord{36e77a7b 26232:com.qualcomm.qti.lunarinfo/u0a62}
+    launchingApp=ProcessRecord{36e77a7b 26232:com.qualcomm.qti.lunarinfo/u0a62}
+    authority=com.qualcomm.qti.lunarinfo
+  * ContentProviderRecord{1e02d098 u0 com.android.mms/.TempFileProvider}
+    proc=ProcessRecord{30181de4 10802:com.android.mms/u0a12}
+    authority=mms_temp_file
+  * ContentProviderRecord{105150f1 u0 com.android.settings/.search.SettingsSearchIndexablesProvider}
+    proc=ProcessRecord{2c17457c 10625:com.android.settings/1000}
+    authority=com.android.settings
+  * ContentProviderRecord{4af14d6 u0 com.android.providers.telephony/.MmsSmsSyncProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    authority=mms-sync
+  * ContentProviderRecord{a694357 u0 com.qualcomm.qti.phonefeature/.FeatureProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    authority=com.qualcomm.qti.phonefeature.FEATURE_PROVIDER
+  * ContentProviderRecord{2da05e44 u0 com.android.providers.telephony/.SecretlistProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    launchingApp=ProcessRecord{598e315 4637:com.android.phone/1001}
+    authority=secretlist
+  * ContentProviderRecord{36990b2d u0 com.android.providers.telephony/.CdmaCallOptionProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    authority=cdma
+  * ContentProviderRecord{325fa862 u0 com.dream.studyAndExamManager/.data.StudyModeProvider}
+    proc=ProcessRecord{1da3e3b9 6548:com.dream.studyAndExamManager/u0a17}
+    authority=study_mode
+  * ContentProviderRecord{35d4bdf3 u0 com.android.phone/.PhoneSearchIndexablesProvider}
+    proc=ProcessRecord{598e315 4637:com.android.phone/1001}
+    authority=com.android.phone
+  * ContentProviderRecord{1a671ab0 u0 com.dream.personalinfo/com.dream.provider.PersonalProvider}
+    proc=ProcessRecord{3c282d29 7257:com.dream.personalinfo/u0a71}
+    launchingApp=ProcessRecord{3c282d29 7257:com.dream.personalinfo/u0a71}
+    authority=com.dream.personal.personalProvider
+    1 connections, 0 external handles
+      -> 6833:com.dream.ota.update/u0a38 s1/1 u0/1 +6h58m55s910ms
+  * ContentProviderRecord{3193e8ae u0 com.dream.launcher/com.wld.home.LauncherProvider}
+    proc=ProcessRecord{1173464f 6261:com.dream.launcher/u0a10}
+    authority=com.wld.home.settings
+  * ContentProviderRecord{3d9b31dc u0 com.android.providers.downloads/.DownloadStorageProvider}
+    proc=ProcessRecord{19ac2e5a 10775:android.process.media/u0a7}
+    authority=com.android.providers.downloads.documents
+  * ContentProviderRecord{306d72e5 u0 com.dream.launcherprovider/.LauncherProvider}
+    proc=ProcessRecord{39b9e1ba 5864:com.dream.launcherprovider/1000}
+    launchingApp=ProcessRecord{39b9e1ba 5864:com.dream.launcherprovider/1000}
+    authority=com.dream.launcher_provider
+    2 connections, 0 external handles
+      -> 5819:com.android.systemui/u0a44 s0/0 u1/1 +7h11m50s551ms
+      -> 6261:com.dream.launcher/u0a10 s0/0 u1/1 +7h11m45s726ms
+
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{6c7f86b u0 com.android.bluetooth/.hid.HidService}
+    app=null
+    created=-7h11m57s647ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothInputDevice -> 3663:com.android.systemui/u0a17
+  * ServiceRecord{39953932 u0 com.dream.forcerest/.ForceRestService}
+    app=ProcessRecord{1e978fc8 5819:com.android.systemui/u0a44}
+    created=-7h11m50s749ms started=true connections=0
+  * ServiceRecord{3194e6cd u0 com.dream.service/.miniscreen.MiniScreenService}
+    app=ProcessRecord{31075861 5636:com.dream.service/1000}
+    created=-7h11m51s385ms started=true connections=0
+  * ServiceRecord{118c11e3 u0 com.qualcomm.qti.phonefeature/.FeatureService}
+    app=ProcessRecord{598e315 4637:com.android.phone/1001}
+    created=-7h11m35s290ms started=true connections=0
+  * ServiceRecord{20bbc071 u0 com.dream.weather/.widget.WeatherWidgetService}
+    app=ProcessRecord{33b03906 13774:com.dream.weather/u0a101}
+    created=-1h39m10s483ms started=true connections=0
+  * ServiceRecord{15e6c274 u0 com.qualcomm.location/com.qualcomm.lib.location.osagent.OsAgent}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m55s169ms started=true connections=0
+  * ServiceRecord{3a3ca34d u0 org.codeaurora.ims/.ImsService}
+    app=ProcessRecord{598e315 4637:com.android.phone/1001}
+    created=-7h11m54s580ms started=true connections=0
+  * ServiceRecord{346ae11d u0 com.dream.weather/com.baidu.location.f}
+    app=ProcessRecord{33b03906 13774:com.dream.weather/u0a101}
+    created=-1h39m10s54ms started=false connections=1
+    Connections:
+       -> 13774:com.dream.weather/u0a101
+       -> 13774:com.dream.weather/u0a101
+  * ServiceRecord{12d6da47 u0 com.qualcomm.location/.LocationService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m55s169ms started=true connections=0
+  * ServiceRecord{bc64bde u0 com.qualcomm.qti.modemtestmode/.MbnSystemService}
+    app=ProcessRecord{27cde0c7 5930:com.qualcomm.qti.modemtestmode/1000}
+    created=-7h11m50s66ms started=true connections=0
+  * ServiceRecord{32c0703c u0 com.android.systemui/.keyguard.KeyguardService}
+    app=ProcessRecord{298d1bc4 3663:com.android.systemui/u0a17}
+    created=-7h11m55s100ms started=false connections=1
+    Connections:
+       -> 2137:system/1000
+  * ServiceRecord{10eb80b3 u0 com.android.systemui/.ImageWallpaper}
+    app=ProcessRecord{298d1bc4 3663:com.android.systemui/u0a17}
+    created=-7h11m56s102ms started=false connections=1
+    Connections:
+      act=android.service.wallpaper.WallpaperService -> 2137:system/1000
+  * ServiceRecord{d1a4644 u0 com.dream.studyAndExamManager/.service.MyService}
+    app=ProcessRecord{1da3e3b9 6548:com.dream.studyAndExamManager/u0a17}
+    created=-7h11m35s817ms started=true connections=0
+  * ServiceRecord{2139edac u0 com.dream.phonemanager/.service.CoreService}
+    app=ProcessRecord{19145f86 6415:com.dream.phonemanager/1000}
+    created=-7h11m38s576ms started=true connections=0
+  * ServiceRecord{1dfb3aa3 u0 com.dsi.ant.server/.AntService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m51s863ms started=true connections=0
+  * ServiceRecord{655fca3 u0 com.android.inputmethod.latin/.LatinIME}
+    app=ProcessRecord{2038102 4406:com.android.inputmethod.latin/u0a58}
+    created=-7h11m56s85ms started=false connections=1
+    Connections:
+      act=android.view.InputMethod -> 2137:system/1000
+  * ServiceRecord{3dba34b8 u0 com.qualcomm.qti.carrierconfigure/.StartActivityReceiver$RegistTriggerService}
+    app=ProcessRecord{a6bb047 5591:com.qualcomm.qti.carrierconfigure/1000}
+    created=-7h11m51s587ms started=true connections=0
+  * ServiceRecord{70cbcd6 u0 org.simalliance.openmobileapi.service/.SmartcardService}
+    app=ProcessRecord{1d79e074 6525:org.simalliance.openmobileapi.service:remote/1027}
+    created=-7h11m36s125ms started=true connections=0
+  * ServiceRecord{3d00199d u0 com.android.bluetooth/.hfpclient.HeadsetClientService}
+    app=null
+    created=-7h11m57s650ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothHeadsetClient -> 3663:com.android.systemui/u0a17
+  * ServiceRecord{86c332 u0 com.qualcomm.location/.GeoFenceService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m55s976ms started=false connections=1
+    Connections:
+      pkg=com.qualcomm.location -> 2137:system/1000
+  * ServiceRecord{cde0334 u0 com.qualcomm.location/.nlp.NlpProxyService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m54s958ms started=false connections=1
+    Connections:
+      act=com.android.location.service.v3.NetworkLocationProvider pkg=com.qualcomm.location -> 2137:system/1000
+  * ServiceRecord{2d46ee12 u0 com.android.bluetooth/.a2dp.A2dpSinkService}
+    app=null
+    created=-7h11m57s656ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothA2dpSink -> 3663:com.android.systemui/u0a17
+  * ServiceRecord{395cb67a u0 com.qualcomm.qti.vtremoteservice/.VTRemoteService}
+    app=ProcessRecord{17a909e3 9510:com.qualcomm.qti.vtremoteservice/1001}
+    created=-2h3m10s357ms started=false connections=1
+    Connections:
+       -> 9461:com.borqs.videocall/u0a104
+  * ServiceRecord{1c8e8fe0 u0 com.android.bluetooth/.avrcp.AvrcpControllerService}
+    app=null
+    created=-7h11m57s654ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothAvrcpController -> 3663:com.android.systemui/u0a17
+  * ServiceRecord{375161eb u0 com.qualcomm.location/.xtwifi.XTWiFiLocationProvider}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m54s811ms started=false connections=1
+    Connections:
+      act=com.qualcomm.location.service.v2.NetworkLocationProvider pkg=com.qualcomm.location -> 2137:system/1000
+  * ServiceRecord{3fc9b299 u0 com.android.bluetooth/.a2dp.A2dpService}
+    app=null
+    created=-7h11m57s658ms started=false connections=2
+    Connections:
+      act=android.bluetooth.IBluetoothA2dp -> 3663:com.android.systemui/u0a17
+      act=android.bluetooth.IBluetoothA2dp -> 2137:system/1000
+  * ServiceRecord{211ebb2e u0 com.qcom.gsma.services.nfc/.GsmaService}
+    app=ProcessRecord{18a1d95e 5907:com.qcom.gsma.services.nfc:remote/u0a49}
+    created=-7h11m50s408ms started=true connections=0
+  * ServiceRecord{20c65f19 u0 com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService}
+    app=ProcessRecord{9d8613f 5982:com.qualcomm.qcrilmsgtunnel/1001}
+    created=-7h11m50s162ms started=true connections=3
+    Connections:
+       -> 5930:com.qualcomm.qti.modemtestmode/1000
+       -> 4637:com.android.phone/1001
+       -> 4637:com.android.phone/1001
+  * ServiceRecord{207c98f1 u0 com.qualcomm.svi/.SVIService}
+    app=ProcessRecord{147cca0c 6482:com.qualcomm.display/1000}
+    created=-7h11m36s210ms started=true connections=0
+  * ServiceRecord{1fd14eff u0 org.codeaurora.btmultisim/.BluetoothDsdaService}
+    app=ProcessRecord{598e315 4637:com.android.phone/1001}
+    created=-7h11m54s952ms started=false connections=1
+    Connections:
+      act=org.codeaurora.btmultisim.IBluetoothDsdaService -> 2137:system/1000
+  * ServiceRecord{3e3424bd u0 com.android.systemui/.SystemUIService}
+    app=ProcessRecord{298d1bc4 3663:com.android.systemui/u0a17}
+    created=-7h11m59s356ms started=true connections=0
+  * ServiceRecord{680f62c u0 android/.hardware.location.GeofenceHardwareService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m55s952ms started=false connections=1
+    Connections:
+       -> 2137:system/1000
+  * ServiceRecord{24e9f186 u0 com.qualcomm.location/.LBSSystemMonitorService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m55s170ms started=true connections=0
+  * ServiceRecord{1c39e464 u0 com.dream.usagemonitor/.net.DataUsageService}
+    app=ProcessRecord{ff9df55 5613:com.dream.usagemonitor/1000}
+    created=-7h11m51s479ms started=true connections=0
+  * ServiceRecord{365442d7 u0 com.dream.ota.update/.UpdateService}
+    app=ProcessRecord{2a2b3450 6833:com.dream.ota.update/u0a38}
+    created=-6h58m56s163ms started=true connections=0
+  * ServiceRecord{16f90407 u0 com.dream.tutorsplanpush/cn.jpush.android.service.PushService}
+    app=ProcessRecord{2e2d6a 6858:com.dream.tutorsplanpush/u0a91}
+    created=-7h11m31s879ms started=true connections=0
+  * ServiceRecord{3a7cd40a u0 com.android.server.telecom/.BluetoothPhoneService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m55s289ms started=true connections=0
+  * ServiceRecord{1aba9ba3 u0 com.qualcomm.location/.ulp.UlpService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m54s956ms started=false connections=1
+    Connections:
+      act=com.android.location.service.FusedLocationProvider pkg=com.qualcomm.location -> 2137:system/1000
+  * ServiceRecord{1eccb3e7 u0 com.android.smspush/.WapPushManager}
+    app=ProcessRecord{2f7bd25b 4909:com.android.smspush/u0a93}
+    created=-7h11m54s933ms started=false connections=4
+    Connections:
+      act=com.android.internal.telephony.IWapPushManager -> 4637:com.android.phone/1001
+      act=com.android.internal.telephony.IWapPushManager -> 4637:com.android.phone/1001
+      act=com.android.internal.telephony.IWapPushManager -> 4637:com.android.phone/1001
+      act=com.android.internal.telephony.IWapPushManager -> 4637:com.android.phone/1001
+  * ServiceRecord{2554d3d5 u0 com.qualcomm.qti.modemtestmode/.MbnTestService}
+    app=ProcessRecord{598e315 4637:com.android.phone/1001}
+    created=-7h11m50s60ms started=false connections=1
+    Connections:
+       -> 5930:com.qualcomm.qti.modemtestmode/1000
+  * ServiceRecord{388d653e u0 android/com.android.internal.backup.LocalTransportService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m59s711ms started=false connections=1
+    Connections:
+      act=android.backup.TRANSPORT_HOST -> 2137:system/1000
+  * ServiceRecord{b1cca75 u0 com.dream.powersave/.service.MyService}
+    app=ProcessRecord{38513d68 6436:com.dream.powersave/u0a17}
+    created=-7h11m37s877ms started=true connections=0
+  * ServiceRecord{3f3b2728 u0 com.dream.appstore/.PushSmsService}
+    app=ProcessRecord{22622eb2 5319:com.dream.appstore/u0a23}
+    created=-7h11m52s969ms started=true connections=0
+  * ServiceRecord{3f327af8 u0 com.android.bluetooth/.map.BluetoothMapService}
+    app=null
+    created=-7h11m57s641ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothMap -> 3663:com.android.systemui/u0a17
+  * ServiceRecord{38f0c2e4 u0 com.android.phone/.TelephonyDebugService}
+    app=ProcessRecord{598e315 4637:com.android.phone/1001}
+    created=-7h11m54s589ms started=true connections=0
+  * ServiceRecord{1d3ea74e u0 com.android.server.telecom/.TelecomService}
+    app=ProcessRecord{339fb243 2137:system/1000}
+    created=-7h11m59s423ms started=false connections=1
+    Connections:
+      act=com.android.ITelecomService -> 2137:system/1000
+  * ServiceRecord{39e1e5ae u0 com.qualcomm.simcontacts/.SimContactsService}
+    app=ProcessRecord{1dc61bd1 5163:com.qualcomm.telephony/1000}
+    created=-7h11m53s682ms started=true connections=0
+  * ServiceRecord{1e79b636 u0 com.android.bluetooth/.pan.PanService}
+    app=null
+    created=-7h11m57s639ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothPan -> 3663:com.android.systemui/u0a17
+  * ServiceRecord{3230d32d u0 com.qualcomm.qti.services.secureui/.SecureUIService}
+    app=ProcessRecord{331b3937 4615:com.qualcomm.qti.services.secureui:sui_service/1000}
+    created=-7h11m35s786ms started=true connections=0
+
+ACTIVITY MANAGER RECENT TASKS (dumpsys activity recents)
+  Recent tasks:
+  * Recent #0: TaskRecord{5904ea4 #1615 A=com.android.settings U=0 sz=3}
+  * Recent #1: TaskRecord{d3fa40d #1620 A=cn.dream.android.appstore U=0 sz=0}
+  * Recent #2: TaskRecord{3722ffc2 #1603 A=com.dream.launcher U=0 sz=1}
+  * Recent #3: TaskRecord{35e031d3 #1622 I=android/com.android.internal.app.ResolverActivity U=0 sz=0}
+  * Recent #4: TaskRecord{1bd5b110 #1618 A=com.dream.calculator U=0 sz=1}
+  * Recent #5: TaskRecord{384f7409 #1617 A=com.koushikdutta.vysor U=0 sz=1}
+  * Recent #6: TaskRecord{3725560e #1614 A=com.dream.weather U=0 sz=1}
+  * Recent #7: TaskRecord{37f2182f #1612 I=com.android.settings/.Settings$WifiSettingsActivity U=0 sz=1}
+  * Recent #8: TaskRecord{38ccce3c #1610 A=android.task.calendar U=0 sz=1}
+  * Recent #9: TaskRecord{147247c5 #1608 A=com.android.systemui U=0 sz=1}
+
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+Display #0 (activities from top to bottom):
+  Stack #0:
+    Task id #1603
+      TaskRecord{3722ffc2 #1603 A=com.dream.launcher U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x13000000 cmp=com.dream.launcher/com.wld.home.Launcher }
+        Hist #0: ActivityRecord{25927a8f u0 com.dream.launcher/com.wld.home.Launcher t1603}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x13000000 cmp=com.dream.launcher/com.wld.home.Launcher }
+          ProcessRecord{1173464f 6261:com.dream.launcher/u0a10}
+    Task id #1608
+      TaskRecord{147247c5 #1608 A=com.android.systemui U=0 sz=1}
+      Intent { act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity }
+        Hist #0: ActivityRecord{81b2f93 u0 com.android.systemui/.recents.RecentsActivity t1608}
+          Intent { act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity }
+          ProcessRecord{298d1bc4 3663:com.android.systemui/u0a17}
+
+    Running activities (most recent first):
+      TaskRecord{3722ffc2 #1603 A=com.dream.launcher U=0 sz=1}
+        Run #1: ActivityRecord{25927a8f u0 com.dream.launcher/com.wld.home.Launcher t1603}
+      TaskRecord{147247c5 #1608 A=com.android.systemui U=0 sz=1}
+        Run #0: ActivityRecord{81b2f93 u0 com.android.systemui/.recents.RecentsActivity t1608}
+
+  Stack #1:
+    Task id #1615
+      TaskRecord{5904ea4 #1615 A=com.android.settings U=0 sz=3}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings }
+        Hist #2: ActivityRecord{2a0788be u0 com.android.settings/.SubSettings$WifiSubSettings t1615}
+          Intent { act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings$WifiSubSettings (has extras) }
+          ProcessRecord{2c17457c 10625:com.android.settings/1000}
+        Hist #1: ActivityRecord{2dc2f7c3 u0 com.android.settings/.SubSettings$WifiSubSettings t1615}
+          Intent { act=android.intent.action.MAIN cmp=com.android.settings/.SubSettings$WifiSubSettings (has extras) }
+          ProcessRecord{2c17457c 10625:com.android.settings/1000}
+        Hist #0: ActivityRecord{36afabcb u0 com.android.settings/.Settings t1615}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings bnds=[810,1021][1080,1321] }
+          ProcessRecord{2c17457c 10625:com.android.settings/1000}
+
+    Task id #1618
+      TaskRecord{1bd5b110 #1618 A=com.dream.calculator U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.dream.calculator/.MainActivity }
+        Hist #0: ActivityRecord{3148d0ba u0 com.dream.calculator/.MainActivity t1618}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.dream.calculator/.MainActivity bnds=[540,421][810,721] }
+          ProcessRecord{de4c51a 15909:com.dream.calculator/u0a35}
+
+    Task id #1617
+      TaskRecord{384f7409 #1617 A=com.koushikdutta.vysor U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.koushikdutta.vysor/.StartActivity }
+        Hist #0: ActivityRecord{38992095 u0 com.koushikdutta.vysor/.StartActivity t1617}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.koushikdutta.vysor/.StartActivity bnds=[505,1021][775,1321] }
+          ProcessRecord{2a92084b 14343:com.koushikdutta.vysor/u0a111}
+
+    Task id #1614
+      TaskRecord{3725560e #1614 A=com.dream.weather U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.dream.weather/.MainActivity }
+        Hist #0: ActivityRecord{5736183 u0 com.dream.weather/.MainActivity t1614}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.dream.weather/.MainActivity bnds=[540,721][810,1021] }
+          ProcessRecord{33b03906 13774:com.dream.weather/u0a101}
+
+    Task id #1612
+      TaskRecord{37f2182f #1612 I=com.android.settings/.Settings$WifiSettingsActivity U=0 sz=1}
+      Intent { act=android.settings.WIFI_SETTINGS flg=0x14000000 cmp=com.android.settings/.Settings$WifiSettingsActivity }
+        Hist #0: ActivityRecord{39081b21 u0 com.android.settings/.Settings$WifiSettingsActivity t1612}
+          Intent { act=android.settings.WIFI_SETTINGS flg=0x14000000 cmp=com.android.settings/.Settings$WifiSettingsActivity }
+          ProcessRecord{2c17457c 10625:com.android.settings/1000}
+
+    Task id #1610
+      TaskRecord{38ccce3c #1610 A=android.task.calendar U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.calendar/.AllInOneActivity }
+        Hist #0: ActivityRecord{323f5b42 u0 com.android.calendar/.AllInOneActivity t1610}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.calendar/.AllInOneActivity bnds=[540,1021][810,1321] }
+
+    Running activities (most recent first):
+      TaskRecord{5904ea4 #1615 A=com.android.settings U=0 sz=3}
+        Run #6: ActivityRecord{2a0788be u0 com.android.settings/.SubSettings$WifiSubSettings t1615}
+        Run #5: ActivityRecord{2dc2f7c3 u0 com.android.settings/.SubSettings$WifiSubSettings t1615}
+        Run #4: ActivityRecord{36afabcb u0 com.android.settings/.Settings t1615}
+      TaskRecord{1bd5b110 #1618 A=com.dream.calculator U=0 sz=1}
+        Run #3: ActivityRecord{3148d0ba u0 com.dream.calculator/.MainActivity t1618}
+      TaskRecord{384f7409 #1617 A=com.koushikdutta.vysor U=0 sz=1}
+        Run #2: ActivityRecord{38992095 u0 com.koushikdutta.vysor/.StartActivity t1617}
+      TaskRecord{3725560e #1614 A=com.dream.weather U=0 sz=1}
+        Run #1: ActivityRecord{5736183 u0 com.dream.weather/.MainActivity t1614}
+      TaskRecord{37f2182f #1612 I=com.android.settings/.Settings$WifiSettingsActivity U=0 sz=1}
+        Run #0: ActivityRecord{39081b21 u0 com.android.settings/.Settings$WifiSettingsActivity t1612}
+
+  mFocusedStack=ActivityStack{13b69228 stackId=0, 2 tasks} mLastFocusedStack=ActivityStack{38349b41 stackId=1, 18 tasks}
+  mSleepTimeout=false
+  mCurTaskId=1622
+  mUserStackInFront={}
+  mActivityContainers={0=ActivtyContainer{0}A, 1=ActivtyContainer{1}A}
+
+ACTIVITY MANAGER RUNNING PROCESSES (dumpsys activity processes)
+  Isolated process list (sorted by uid):
+    Isolated # 0: ProcessRecord{afa18e6 3636:WebViewLoader-armeabi-v7a/1037}
+
+  Process LRU list (sorted by oom_adj, 42 total, non-act at 6, non-svc at 6):
+    PERS #41: pers  F/ /P  trm: 0 2137:system/1000 (fixed)
+    PERS #40: pers  F/ /P  trm: 0 3663:com.android.systemui/u0a17 (fixed)
+    PERS #39: pers  F/ /P  trm: 0 4478:com.quicinc.cne.CNEService/1000 (fixed)
+    PERS #38: pers  F/ /P  trm: 0 4517:com.dream.forcerest/u0a44 (fixed)
+    PERS #37: pers  F/ /P  trm: 0 4538:com.dream.siri/u0a17 (fixed)
+    PERS #36: pers  F/ /P  trm: 0 4590:com.qualcomm.qti.gesture/1000 (fixed)
+    PERS #35: pers  F/ /P  trm: 0 4615:com.qualcomm.qti.services.secureui:sui_service/1000 (fixed)
+    PERS #34: pers  F/ /P  trm: 0 4637:com.android.phone/1001 (fixed)
+    Proc #19: fore  F/ /IF trm: 0 5864:com.dream.launcherprovider/1000 (provider)
+        com.dream.launcherprovider/.LauncherProvider<=Proc{6261:com.dream.launcher/u0a10}
+    Proc # 1: fore  F/A/T  trm: 0 6261:com.dream.launcher/u0a10 (top-activity)
+    Proc #33: vis   F/ /IF trm: 0 4909:com.android.smspush/u0a93 (service)
+        com.android.smspush/.WapPushManager<=Proc{4637:com.android.phone/1001}
+    Proc #22: vis   F/ /IF trm: 0 5982:com.qualcomm.qcrilmsgtunnel/1001 (service)
+        com.qualcomm.qcrilmsgtunnel/.QcrilMsgTunnelService<=Proc{4637:com.android.phone/1001}
+    Proc # 2: prcp  B/ /IB trm: 0 4406:com.android.inputmethod.latin/u0a58 (service)
+        com.android.inputmethod.latin/.LatinIME<=Proc{2137:system/1000}
+    Proc # 6: svc   B/ /S  trm: 0 6858:com.dream.tutorsplanpush/u0a91 (started-services)
+    Proc # 0: prev  B/ /LA trm: 0 10625:com.android.settings/1000 (previous)
+    Proc #13: svcb  B/ /S  trm: 0 7257:com.dream.personalinfo/u0a71 (provider)
+        com.dream.personalinfo/com.dream.provider.PersonalProvider<=Proc{6833:com.dream.ota.update/u0a38}
+    Proc #11: svcb  B/ /S  trm: 0 6833:com.dream.ota.update/u0a38 (started-services)
+    Proc # 8: cch   B/ /CE trm: 0 10865:com.UCMobile/u0a107 (cch-empty)
+    Proc # 7: cch   B/ /CE trm: 0 27244:com.UCMobile:push/u0a107 (cch-empty)
+    Proc # 5: cch   B/ /S  trm: 0 13774:com.dream.weather/u0a101 (cch-started-ui-services)
+    Proc # 3: cch   B/ /CA trm: 0 15909:com.dream.calculator/u0a35 (cch-act)
+    Proc # 4: cch+1 B/ /CA trm: 0 14343:com.koushikdutta.vysor/u0a111 (cch-act)
+    Proc #14: cch+2 B/ /S  trm: 0 5319:com.dream.appstore/u0a23 (cch-started-services)
+    Proc #12: cch+2 B/ /S  trm: 0 5613:com.dream.usagemonitor/1000 (cch-started-services)
+    Proc #10: cch+2 B/ /CE trm: 0 9510:com.qualcomm.qti.vtremoteservice/1001 (service)
+        com.qualcomm.qti.vtremoteservice/.VTRemoteService<=Proc{9461:com.borqs.videocall/u0a104}
+    Proc # 9: cch+2 B/ /CE trm: 0 9461:com.borqs.videocall/u0a104 (cch-empty)
+    Proc #17: cch+4 B/ /CE trm: 0 10749:com.android.contacts/u0a4 (cch-empty)
+    Proc #16: cch+4 B/ /CE trm: 0 10775:android.process.media/u0a7 (cch-empty)
+    Proc #15: cch+4 B/ /CE trm: 0 10802:com.android.mms/u0a12 (cch-empty)
+    Proc #32: cch+6 B/ /S  trm: 0 5591:com.qualcomm.qti.carrierconfigure/1000 (cch-started-services)
+    Proc #31: cch+6 B/ /S  trm: 0 5636:com.dream.service/1000 (cch-started-services)
+    Proc #30: cch+6 B/ /S  trm: 0 5819:com.android.systemui/u0a44 (cch-started-services)
+    Proc #29: cch+6 B/ /S  trm: 0 5907:com.qcom.gsma.services.nfc:remote/u0a49 (cch-started-services)
+    Proc #28: cch+6 B/ /S  trm: 0 5930:com.qualcomm.qti.modemtestmode/1000 (cch-started-services)
+    Proc #27: cch+6 B/ /S  trm: 0 6415:com.dream.phonemanager/1000 (cch-started-services)
+    Proc #26: cch+6 B/ /S  trm: 0 6436:com.dream.powersave/u0a17 (cch-started-services)
+    Proc #25: cch+6 B/ /S  trm: 0 6482:com.qualcomm.display/1000 (cch-started-services)
+    Proc #24: cch+6 B/ /S  trm: 0 6525:org.simalliance.openmobileapi.service:remote/1027 (cch-started-services)
+    Proc #23: cch+6 B/ /S  trm: 0 6548:com.dream.studyAndExamManager/u0a17 (cch-started-services)
+    Proc #21: cch+6 B/ /S  trm: 0 5163:com.qualcomm.telephony/1000 (cch-started-services)
+    Proc #20: cch+6 B/ /CE trm: 0 26232:com.qualcomm.qti.lunarinfo/u0a62 (cch-empty)
+    Proc #18: cch+6 B/ /CE trm: 0 9818:system:ui/1000 (cch-empty)
+
+  mStartedUsers:
+    User #0: mState=RUNNING
+  mStartedUserArray: [0]
+  mUserLru: [0]
+  mHomeProcess: ProcessRecord{1173464f 6261:com.dream.launcher/u0a10}
+  mPreviousProcess: ProcessRecord{2c17457c 10625:com.android.settings/1000}
+  mConfiguration: {1.0 ?mcc?mnc zh_CN ?layoutDir sw360dp w360dp h567dp 480dpi nrml port finger -keyb/v/h -nav/h s.7 theme:0}
+  mWakefulness=Asleep
+  mSleeping=true mLockScreenShown=LOCK_SCREEN_SHOWN
+  mShuttingDown=false mRunningVoice=false mTestPssMode=false
