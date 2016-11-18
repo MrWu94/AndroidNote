@@ -18,6 +18,53 @@
 
 #代码中用到了反射，那需要把反射调用的类，变量，方法也设置成入口节点。只需要加上-keep就可以了
 #保护它们不被移除混淆
+#在android Manifest文件中的activity，service，provider， receiver，等都不能进行混淆。一些在xml中配置的view也不能进行混淆，
+
+#针对App的量身定制
+# 1.保留实体类和成员不被混淆
+# 　　对于实体，要保留它们的get和set方法，对于boolean型get方法有的命名是isXXX类型，不要遗漏
+
+# -keep class com.null.test.entities.** {
+#    //全部忽略
+#     *;
+# }
+# -keep class com.null.test.entities.** {
+#    //忽略get和set方法
+#    public void set*(***);
+#    public *** get*();
+#    public *** is*();
+# }
+# //以上两种任意一种都行
+# 一个项目中最好把所有的实体都放到同一个包下，这样针对包混淆就行了，避免了实体混淆遗漏而造成的崩溃
+# 2.内嵌类
+#　　内嵌类经常容易被混淆，结果调用的时候为空就崩溃了。最好的办法就是不用内嵌类(有点扯淡)，如果MainActivity中使用了，就用如下代码
+
+# -keep class com.null.test.MainActivity$* {
+#    *;
+#}
+# $这个符号就是用来分割内嵌类与其母体的标志
+
+#打包时忽略警告
+#　　当在导出时，发现很多could not reference class之类的warning信息，
+#如果确认app运行中和那些引用没有什么关系的话，就可以添加-dontwarn标签，
+#就不会在提示这些warning信息了。如-dontwarn org.apache.**。
+#使用annotation避免混淆
+
+
+#保留选项（配置不进行处理的内容）
+
+#-keep {Modifier} {class_specification} 保护指定的类文件和类的成员
+#-keepclassmembers {modifier} {class_specification} 保护指定类的成员，如果此类受到保护他们会保护的更好
+#-keepclasseswithmembers {class_specification} 保护指定的类和类的成员，但条件是所有指定的类和类成员是要存在。
+#-keepnames {class_specification} 保护指定的类和类的成员的名称（如果他们不会压缩步骤中删除）
+#-keepclassmembernames {class_specification} 保护指定的类的成员的名称（如果他们不会压缩步骤中删除）
+#-keepclasseswithmembernames {class_specification} 保护指定的类和类的成员的名称，如果所有指定的类成员出席（在压缩步骤之后）
+#-printseeds {filename} 列出类和类的成员-keep选项的清单，标准输出到给定的文件
+
+#如果项目在编译的时候报warn信息，那么你可以使用-keep或者-dontwarn保留warn的类。
+
+
+
 
 
   ##---------------Begin: proguard configuration common for all Android apps ----------
@@ -59,7 +106,7 @@
 -dontpreverify
 
 # 保留Annotation不混淆
--keepattributes *Annotation*,InnerClasses
+-keepattributes InnerClasses
 
 # 避免混淆泛型
 -keepattributes Signature
@@ -170,7 +217,7 @@
 }
 
 # 百度地图（jar包换成自己的版本，记得签名要匹配）
--libraryjars libs/baidumapapi_v2_1_3.jar
+#-libraryjars libs/baidumapapi_v2_1_3.jar
 -keep class com.baidu.** {*;}
 -keep class vi.com.** {*;}
 -keep class com.sinovoice.** {*;}
@@ -195,7 +242,6 @@
 }
 
 # EventBus
--keepattributes *Annotation*
 -keepclassmembers class ** {
     @org.greenrobot.eventbus.Subscribe <methods>;
 }
@@ -210,7 +256,6 @@
 -dontwarn com.alibaba.fastjson.**
 -keep class com.alibaba.fastjson.** { *; }
 -keepattributes Signature
--keepattributes *Annotation*
 
 # Fresco
 -keep class com.facebook.fresco.** {*;}
@@ -252,7 +297,7 @@
 }
 
 # Gson
--keepattributes Signature-keepattributes *Annotation*
+-keepattributes Signature-keepattributes
 -keep class sun.misc.Unsafe { *; }
 -keep class com.google.gson.stream.** { *; }
 # 使用Gson时需要配置Gson的解析对象及变量都不混淆。不然Gson会找不到变量。
@@ -334,7 +379,6 @@
 -keep public class * extends android.content.BroadcastReceiver
 -keep class com.tencent.android.tpush.**  {* ;}
 -keep class com.tencent.mid.**  {* ;}
--keepattributes *Annotation*
 
 # 新浪微博
 -keep class com.sina.weibo.sdk.* { *; }
@@ -380,3 +424,12 @@
 -keep class com.alipay.sdk.app.AuthTask{ public *;}
 -keep class com.alipay.mobilesecuritysdk.*
 -keep class com.ut.*
+
+-dontwarn com.caverock.**
+-dontwarn com.sleepycat.**
+-dontwarn org.**
+-dontwarn uk.org.**
+-dontwarn android.net.http.**
+-dontwarn edu.uci.**
+
+

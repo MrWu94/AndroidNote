@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
     <color name="transparency">#00000000</color>
 
-    <color name="btn_bg_s">#00c894</color>
-    <color name="btn_bg_e">#009b91</color>
     <color name="white">#ffffff</color>
     <color name="textColor">#4fd4d0</color>
     <color name="reg">#efeceb</color>

@@ -16,9 +16,19 @@ public class MyDialogFragment extends DialogFragment {
     private int timeHour;
     private int timeMinute;
 
-    public MyDialogFragment(Handler handler) {
-        this.handler = handler;
+    public static MyDialogFragment newInstance() {
+
+        Bundle args = new Bundle();
+        
+        MyDialogFragment fragment = new MyDialogFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
+    public MyDialogFragment(){}
+//
+//    public MyDialogFragment(Handler handler) {
+//        this.handler = handler;
+//    }
 
     private Handler handler;
 

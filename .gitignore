@@ -40,3 +40,5 @@ _sandbox
 *~
 *.bak
 
+/signing.properties
+/app/signing.properties

@@ -11,6 +11,7 @@ android {
         minSdkVersion globalConfiguration.AndridMinSdkVersion
         targetSdkVersion globalConfiguration.AndroidTargetSdkVersion
         multiDexEnabled true
+        resConfigs "zh"
         versionCode globalConfiguration.versionCode
         versionName globalConfiguration.versionName
         //ADD THIS LINE:
@@ -25,10 +26,16 @@ android {
             zipAlignEnabled true
             // 移除无用的resource文件
             shrinkResources true
+
             // 前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+
         }
     }
+
+
+
 
     lintOptions {
         disable 'InvalidPackage'
@@ -59,7 +66,46 @@ android {
         javaMaxHeapSize "4g"
     }
 
+    signingConfigs {
+        debug {
 
+        }
+        release {
+            //storeFile file("../yourapp.keystore")
+            //storePassword "your password"
+            //keyAlias "your alias"
+            //keyPassword "your password"
+
+            //setting your signing.properties
+            //first, add signing.properties to ./app/
+            //second, add property STORE_FILE, STORE_PASSWORD, KEY_ALIAS, KEY_PASSWORD
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+
+
+
+def propFile = project.rootProject.file('signing.properties');
+if (propFile.exists()) {
+    def Properties props = new Properties()
+    props.load(new FileInputStream(propFile))
+    if (props.containsKey('STORE_FILE') && props.containsKey('STORE_PASSWORD') &&
+            props.containsKey('KEY_ALIAS') && props.containsKey('KEY_PASSWORD')) {
+        android.signingConfigs.release.storeFile = file(props['STORE_FILE'])
+        android.signingConfigs.release.storePassword = props['STORE_PASSWORD']
+        android.signingConfigs.release.keyAlias = props['KEY_ALIAS']
+        android.signingConfigs.release.keyPassword = props['KEY_PASSWORD']
+    } else {
+        android.buildTypes.release.signingConfig = null
+    }
+} else {
+    android.buildTypes.release.signingConfig = null
 }
 // The sample build uses multiple directories to
 // keep boilerplate and common code separate from
@@ -121,8 +167,6 @@ dependencies {
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     //ADD THESE LINES:
     androidTestCompile 'com.android.support:support-annotations:' + SUPPORT_VERSION
-    androidTestCompile 'com.android.support.test:runner:0.4.1'
-    androidTestCompile 'com.android.support.test:rules:0.4.1'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     compile files('libs/crawler4j-4.1-jar-with-dependencies.jar')
     compile files('libs/crawler4j-4.2.jar')
@@ -138,10 +182,7 @@ dependencies {
     // Image
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile files('libs/android-5.0.2_r1-sources.jar')
-    compile files('libs/android-support-v7-appcompat.jar')
-    compile files('libs/android-support-v7-recyclerview.jar')
-    compile files('libs/android-support-v7-cardview.jar')
-    compile files('libs/android-support-v4.jar')
+
 }
 
 

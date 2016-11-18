@@ -52,5 +52,7 @@
     <color name="transparentBlack">#6D000000</color>
 
     <color name="darkgrey">#949494</color>
+    <color name="btn_bg_e">#949494</color>
+    <color name="btn_bg_s">#6D0000</color>
 
 </resources>

@@ -52,7 +52,7 @@ public class AlarmActivity extends FragmentActivity {
                 Bundle bundle = new Bundle();
                 bundle.putInt(MyConstants.HOUR, timeHour);
                 bundle.putInt(MyConstants.MINUTE, timeMinute);
-                MyDialogFragment fragment = new MyDialogFragment(new MyHandler());
+                MyDialogFragment fragment = new MyDialogFragment();
                 fragment.setArguments(bundle);
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
