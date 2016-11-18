@@ -51,6 +51,7 @@ public class BaseActivity extends AppCompatActivity {
             }else if(view instanceof ViewGroup){
                 setTypeface((ViewGroup)view, typeface);
             }
+
         }
     }
 }
