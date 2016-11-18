@@ -16,6 +16,29 @@
 #   public *;
 #}
 
+#代码中用到了反射，那需要把反射调用的类，变量，方法也设置成入口节点。只需要加上-keep就可以了
+#保护它们不被移除混淆
+
+
+  ##---------------Begin: proguard configuration common for all Android apps ----------
+  -optimizationpasses 5
+  -dontusemixedcaseclassnames
+  -dontskipnonpubliclibraryclasses
+  -dontskipnonpubliclibraryclassmembers
+  -dontpreverify
+  -verbose
+  -dump build/outputs/class_files.txt
+  -printseeds build/outputs/seeds.txt
+  -printusage build/outputs/unused.txt
+  -printmapping build/outputs/mapping.txt
+  -optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+  -allowaccessmodification
+  -keepattributes *Annotation*
+  -renamesourcefileattribute SourceFile
+  -keepattributes SourceFile,LineNumberTable
+  -repackageclasses ''
+
 # 代码混淆压缩比，在0~7之间，默认为5，一般不做修改
 -optimizationpasses 5
 
