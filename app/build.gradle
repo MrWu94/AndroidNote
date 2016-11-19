@@ -1,6 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
 
+//Groovy 的基本语法
+//方法调用
+//以上语句中的apply是一个方法，给它传递了一个参数plugin，plugin 的值
+//闭包
+//Groovy中花括号包含的部分成为一个闭包（Closure）。例如下面的代码
+//compileOptions 是一个 Method， 它的参数是一个闭包
 android {
     def globalConfiguration = rootProject.ext.android
     compileSdkVersion globalConfiguration.AndroidCompileSdkVersion
@@ -50,6 +57,12 @@ android {
 
     packagingOptions {
         exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
     }
     sourceSets {
         main {
@@ -132,6 +145,37 @@ task checkstyle(type: Checkstyle) {
     classpath = files()
 }
 
+
+task findbugs(type: FindBugs) {
+    ignoreFailures = false
+    effort = "max"
+    reportLevel = "high"
+    excludeFilter = new File("${project.rootDir}/config/quality/findbugs/findbugs-filter.xml")
+    classes = files("${project.rootDir}/app/build/classes")
+
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+
+    reports {
+        xml.enabled = false
+        html.enabled = true
+        xml {
+            destination "$project.buildDir/reports/findbugs/findbugs.xml"
+        }
+        html {
+            destination "$project.buildDir/reports/findbugs/findbugs.html"
+        }
+    }
+
+    classpath = files()
+}
+//Exclude可以设置不编译指定的模块
+
+//configurations {
+//    all*.exclude group: 'org.hamcrest', module: 'hamcrest-core'
+//}
+
 def SUPPORT_VERSION = "24.2.0"
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -182,6 +226,11 @@ dependencies {
     // Image
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile files('libs/android-5.0.2_r1-sources.jar')
+
+//    去掉重复依赖
+//    compile 'com.alibaba.fastjson.latest.integration' {
+//        exclude module: 'annotations', group: 'com.google.android'
+//    }
 
 }
 
