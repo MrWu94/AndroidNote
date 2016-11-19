@@ -37,6 +37,10 @@ android {
             // 前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
+            applicationIdSuffix 'release' // 设置release时的包名
+//            定义库的私有混淆
+//            consumerProguardFiles 'consumer-proguard-rules.pro'
+
 
         }
     }
@@ -94,6 +98,7 @@ android {
             //second, add property STORE_FILE, STORE_PASSWORD, KEY_ALIAS, KEY_PASSWORD
         }
     }
+//    设置java版本
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
@@ -144,14 +149,16 @@ task checkstyle(type: Checkstyle) {
     exclude '**/gen/**'
     classpath = files()
 }
-
+//findbugs 分析的是 class 文件，所以就从 classes 配置来找原因。发现 java 和 android 构建后的目录结构是不一样的
+//classes = files("$project.buildDir/intermediates/classes")    -----  android
+//classes = files("$project.buildDir/classes")                            -----  java
 
 task findbugs(type: FindBugs) {
     ignoreFailures = false
     effort = "max"
     reportLevel = "high"
     excludeFilter = new File("${project.rootDir}/config/quality/findbugs/findbugs-filter.xml")
-    classes = files("${project.rootDir}/app/build/classes")
+    classes = files("${project.rootDir}/app/build/intermediates/classes")
 
     source 'src'
     include '**/*.java'
@@ -227,11 +234,17 @@ dependencies {
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile files('libs/android-5.0.2_r1-sources.jar')
 
-//    去掉重复依赖
+//    去掉重复依赖,剔除整个组织的库
 //    compile 'com.alibaba.fastjson.latest.integration' {
 //        exclude module: 'annotations', group: 'com.google.android'
 //    }
-
+//    剔除某个库
+//    compile('com.android.support:appcompat-v7:23.2.0') {
+//        exclude group: 'com.android.support', module: 'support-annotations' // 写全称
+//        exclude group: 'com.android.support', module: 'support-compat'
+//        exclude group: 'com.android.support', module: 'support-v4'
+//        exclude group: 'com.android.support', module: 'support-vector-drawable'
+//    }
 }
 
 
