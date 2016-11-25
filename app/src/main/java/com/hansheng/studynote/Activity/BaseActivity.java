@@ -13,7 +13,7 @@ import android.widget.TextView;
  */
 
 public class BaseActivity extends AppCompatActivity {
-    public static Typeface typeface;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
 //
@@ -37,6 +37,8 @@ public class BaseActivity extends AppCompatActivity {
 //            }
 //        });
         super.onCreate(savedInstanceState);
+
+
     }
 
     public void setTypeface(ViewGroup root, Typeface typeface){

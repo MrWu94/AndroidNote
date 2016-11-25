@@ -78,6 +78,7 @@ android {
         }
 
     }
+    //开启gradle的增量编译，加快编译。
     dexOptions {
         preDexLibraries = false
         javaMaxHeapSize "4g"
