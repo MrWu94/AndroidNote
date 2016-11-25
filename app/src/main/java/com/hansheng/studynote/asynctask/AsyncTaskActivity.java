@@ -16,6 +16,15 @@ import java.util.Date;
 
 /**
  * Created by wfq on 2016/11/25.
+ * <p>
+ * <p>
+ * 关于AsyncTask存在一个这样广泛的误解，很多人认为一个在Activity中的AsyncTask会随着Activity的销毁而销毁。
+ * 然后事实并非如此。AsyncTask会一直执行doInBackground()方法直到方法执行结束。一旦上述方法结束，会依据情况进行不同的操作。
+ * <p>
+ * 如果cancel(boolean)调用了，则执行onCancelled(Result)方法
+ * 如果cancel(boolean)没有调用，则执行onPostExecute(Result)方法
+ * 如果我们的AsyncTask没有在Activity销毁时取消，这会导致AsyncTask崩溃，因为在onPostExecute(Result)方法中处理的视图已经不再存在。
+ * 在Activity中使用非静态匿名内部AsyncTask类，由于Java内部类的特点，AsyncTask内部类会持有外部类的隐式引用。
  *  在使用AsyncTask的过程中必须要遵守如下原则：
  * <p>
  * AsyncTask必须在UI线程中实例化；
@@ -41,6 +50,20 @@ import java.util.Date;
  * LinkedBlockingQueue<Runnable> blockingQueue = new LinkedBlockingQueue<Runnable>();
  * ExecutorService exec = new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS, blockingQueue);
  * new LoadTask().executeOnExecutor(1);
+ * 在1.6(Donut)之前:
+ * <p>
+ * 在第一版的AsyncTask，任务是串行调度。一个任务执行完成另一个才能执行。由于串行执行任务，使用多个AsyncTask可能会带来有些问题。
+ * 所以这并不是一个很好的处理异步（尤其是需要将结果作用于UI试图）操作的方法。
+ * <p>
+ * 从1.6到2.3(Gingerbread)
+ * <p>
+ * 后来Android团队决定让AsyncTask并行来解决1.6之前引起的问题，这个问题是解决了，新的问题又出现了。很多开发者实际上依赖
+ * 于顺序执行的行为。于是很多并发的问题蜂拥而至。
+ * <p>
+ * 3.0（Honeycomb）到现在
+ * <p>
+ * 好吧，开发者可能并不喜欢让AsyncTask并行，于是Android团队又把AsyncTask改成了串行。当然这一次的修改并没有完全禁止AsyncTask
+ * 并行。你可以通过设置executeOnExecutor(Executor)来实现多个AsyncTask并行。
  */
 
 public class AsyncTaskActivity extends AppCompatActivity {
