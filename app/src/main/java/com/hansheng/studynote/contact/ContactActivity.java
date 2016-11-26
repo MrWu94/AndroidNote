@@ -21,6 +21,7 @@ public class ContactActivity extends AppCompatActivity {
     public TextView outputText;
     // Request code for READ_CONTACTS. It can be any number > 0.
     private static final int PERMISSIONS_REQUEST_READ_CONTACTS = 100;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,8 @@ public class ContactActivity extends AppCompatActivity {
         fetchContacts();
     }
 
-    private void fetchContacts() {String phoneNumber = null;
+    private void fetchContacts() {
+        String phoneNumber = null;
         String email = null;
 
         Uri CONTENT_URI = ContactsContract.Contacts.CONTENT_URI;
@@ -41,7 +43,7 @@ public class ContactActivity extends AppCompatActivity {
         String Phone_CONTACT_ID = ContactsContract.CommonDataKinds.Phone.CONTACT_ID;
         String NUMBER = ContactsContract.CommonDataKinds.Phone.NUMBER;
 
-        Uri EmailCONTENT_URI =  ContactsContract.CommonDataKinds.Email.CONTENT_URI;
+        Uri EmailCONTENT_URI = ContactsContract.CommonDataKinds.Email.CONTENT_URI;
         String EmailCONTACT_ID = ContactsContract.CommonDataKinds.Email.CONTACT_ID;
         String DATA = ContactsContract.CommonDataKinds.Email.DATA;
 
@@ -53,24 +55,24 @@ public class ContactActivity extends AppCompatActivity {
             requestPermissions(new String[]{Manifest.permission.READ_CONTACTS}, PERMISSIONS_REQUEST_READ_CONTACTS);
             //After this point you wait for callback in onRequestPermissionsResult(int, String[], int[]) overriden method
         }
-        Cursor cursor = contentResolver.query(CONTENT_URI, null,null, null, null);
+        Cursor cursor = contentResolver.query(CONTENT_URI, null, null, null, null);
 
         // Loop for every contact in the phone
         if (cursor.getCount() > 0) {
 
             while (cursor.moveToNext()) {
 
-                String contact_id = cursor.getString(cursor.getColumnIndex( _ID ));
-                String name = cursor.getString(cursor.getColumnIndex( DISPLAY_NAME ));
+                String contact_id = cursor.getString(cursor.getColumnIndex(_ID));
+                String name = cursor.getString(cursor.getColumnIndex(DISPLAY_NAME));
 
-                int hasPhoneNumber = Integer.parseInt(cursor.getString(cursor.getColumnIndex( HAS_PHONE_NUMBER )));
+                int hasPhoneNumber = Integer.parseInt(cursor.getString(cursor.getColumnIndex(HAS_PHONE_NUMBER)));
 
                 if (hasPhoneNumber > 0) {
 
                     output.append("\n First Name:" + name);
 
                     // Query and loop for every phone number of the contact
-                    Cursor phoneCursor = contentResolver.query(PhoneCONTENT_URI, null, Phone_CONTACT_ID + " = ?", new String[] { contact_id }, null);
+                    Cursor phoneCursor = contentResolver.query(PhoneCONTENT_URI, null, Phone_CONTACT_ID + " = ?", new String[]{contact_id}, null);
 
                     while (phoneCursor.moveToNext()) {
                         phoneNumber = phoneCursor.getString(phoneCursor.getColumnIndex(NUMBER));
@@ -81,7 +83,7 @@ public class ContactActivity extends AppCompatActivity {
                     phoneCursor.close();
 
                     // Query and loop for every email of the contact
-                    Cursor emailCursor = contentResolver.query(EmailCONTENT_URI,	null, EmailCONTACT_ID+ " = ?", new String[] { contact_id }, null);
+                    Cursor emailCursor = contentResolver.query(EmailCONTENT_URI, null, EmailCONTACT_ID + " = ?", new String[]{contact_id}, null);
 
                     while (emailCursor.moveToNext()) {
 

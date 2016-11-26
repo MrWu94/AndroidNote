@@ -1,8 +1,5 @@
 package com.hansheng.studynote.ImageCompressandScale;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -23,9 +20,13 @@ public class ImageActivity extends AppCompatActivity {
         imageView= (ImageView) findViewById(R.id.image_view);
         image= (ImageView) findViewById(R.id.imagecustom);
 
-
-
-        Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.bitmap);
-        imageView.setImageBitmap(ImageUtils.compressImage(bitmap));
+        imageView.setImageDrawable(getResources().getDrawable(R.drawable.bitmap));
+        imageView.setBackgroundColor(getResources().getColor(R.color.app_color));
+        imageView.setAdjustViewBounds(true);
+        imageView.setScaleType(ImageView.ScaleType.CENTER);
+//        imageView.setForeground(getResources().getDrawable(R.drawable.bitmap));
+//        imageView.setAlpha(100);
+//        Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.bitmap);
+//        imageView.setImageBitmap(ImageUtils.compressImage(bitmap));
 }
 }

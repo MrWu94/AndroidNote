@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
+apply plugin: 'com.antfortune.freeline'
 
 //Groovy 的基本语法
 //方法调用

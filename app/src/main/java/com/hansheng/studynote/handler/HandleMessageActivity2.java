@@ -36,6 +36,7 @@ public class HandleMessageActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.handlermessage_layout);
 
+
         tvMes = (TextView) findViewById(R.id.tvMes);
         btn1 = (Button) findViewById(R.id.btnMessage1);
         btn2 = (Button) findViewById(R.id.btnMessage2);

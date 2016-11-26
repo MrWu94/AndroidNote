@@ -51,7 +51,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".asynctask.AsyncTaskActivity"
+            android:name=".asynctask.CursorLoaderActivity"
             android:label="@string/app_name"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             >
