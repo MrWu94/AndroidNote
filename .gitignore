@@ -6,6 +6,7 @@ bin/
 gen/
 out/
 build/
+freeline/
 
 # Local configuration file (sdk path, etc)
 local.properties
