@@ -54,6 +54,9 @@ public class VolleyDemo extends AppCompatActivity {
 
             }
         });
+
+
+
         JsonObjectRequest jsonObjectRequest=new JsonObjectRequest("http://m.weather.com.cn/data/101010100.html", null,
                 new Response.Listener<JSONObject>() {
                     @Override

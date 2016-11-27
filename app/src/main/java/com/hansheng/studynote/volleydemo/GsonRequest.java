@@ -48,4 +48,11 @@ public class GsonRequest<T> extends Request<T> {
     protected void deliverResponse(T t) {
         mListener.onResponse(t);
     }
+
+    /**
+     * Created by wfq on 2016/11/27.
+     */
+
+    public static class VolleryHttpsActivity {
+    }
 }
