@@ -54,5 +54,7 @@
     <color name="darkgrey">#949494</color>
     <color name="btn_bg_e">#949494</color>
     <color name="btn_bg_s">#6D0000</color>
+    <color name="pedo_actionbar_divider">#CECECE</color>
+    <color name="pedo_actionbar_bkg">#F8F8F8</color>
 
 </resources>
