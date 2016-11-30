@@ -10,7 +10,6 @@
         android:layout_height="fill_parent"
         android:text="green"
         android:textSize="@dimen/textSize"
-        android:background="@color/green"
         android:gravity="center"
         />
 

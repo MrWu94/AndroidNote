@@ -2,13 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#00ff00" >
+     >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is fragment 1111"
-        android:textColor="#000000"
+        android:text="This is fragment"
         android:textSize="25sp" />
 
 </LinearLayout>
