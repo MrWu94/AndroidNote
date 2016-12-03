@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.fragment.ListFragement.Fragment1;
 import com.hansheng.studynote.fragment.ListFragement.Fragment2;
+import com.hansheng.studynote.viewpager.fragmentpageradapter.MyFragmentPagerAdapter;
 import com.hansheng.studynote.viewpager.fragmentpagerstagepager.MyFragmentPagerAdapter2;
 
 import java.util.ArrayList;
@@ -50,14 +51,14 @@ public class PagerAdapterActivity extends FragmentActivity implements ViewPager.
         fragList = new ArrayList<Fragment>();
         fragList.add(new Fragment1());
         fragList.add(new Fragment2());
-        fragList.add(new Fragment1());
-        fragList.add(new Fragment2());
+//        fragList.add(new Fragment1());
+//        fragList.add(new Fragment2());
 
         //为ViewPager页卡设置标题
         titleList.add("第一页");
         titleList.add("第二页");
-        titleList.add("第三页");
-        titleList.add("第四页");
+//        titleList.add("第三页");
+//        titleList.add("第四页");
         //为PagerTabStrip设置一些属性
         tab.setBackgroundColor(Color.WHITE);
         tab.setDrawFullUnderline(false);
@@ -65,11 +66,11 @@ public class PagerAdapterActivity extends FragmentActivity implements ViewPager.
 
         pager = (ViewPager) findViewById(R.id.pager);
 //        MyPagerAdapter adapter = new MyPagerAdapter(viewList,titleList);
-//        MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getSupportFragmentManager(), fragList, titleList);
+        MyFragmentPagerAdapter adapter = new MyFragmentPagerAdapter(getSupportFragmentManager(), fragList, titleList);
 //        /**
 //         * 使用getSupportFragmentManager()该Activity必须继承FragmentActivity
 //         */
-        MyFragmentPagerAdapter2 adapter = new MyFragmentPagerAdapter2(getSupportFragmentManager(), fragList, titleList);
+//        MyFragmentPagerAdapter2 adapter = new MyFragmentPagerAdapter2(getSupportFragmentManager(), fragList, titleList);
         pager.setAdapter(adapter);
         pager.setOnPageChangeListener(this);
     }
