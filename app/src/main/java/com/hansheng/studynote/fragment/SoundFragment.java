@@ -13,10 +13,27 @@ import com.hansheng.studynote.R;
  */
 public class SoundFragment extends Fragment {
 
+    //三个一般必须重载的方法
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.sound_framgent, container, false);
-        return view;
+    public void onCreate(Bundle savedInstanceState) {
+        // TODO Auto-generated method stub
+        super.onCreate(savedInstanceState);
+        System.out.println("NewFragment--onCreate");
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        System.out.println("NewFragment--onCreateView");
+        return inflater.inflate(R.layout.sound_framgent, container, false);
+
+    }
+
+    @Override
+    public void onPause() {
+        // TODO Auto-generated method stub
+        super.onPause();
+        System.out.println("NewFragment--onPause");
     }
 
 }

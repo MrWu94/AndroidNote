@@ -22,6 +22,11 @@ import java.util.List;
  * 使用FragmentPagerAdapter 适配器时，创建好了的Fragment会一直在内存中，不会被销毁，但它的视图层次是会被销毁的，
  * 所以onCreate()方法只会被调用一次，而 onCreateView() 方法，每次Fragment从不可见到可见时会被调用，可以看到Fragment有一
  * 些生命周期回调方法 onPause()、onDestroy()等等
+ * FragmentPagerAdapter
+ * <p>
+ * 适合于 Fragment数量不多的情况。当某个页面不可见时，该页面对应的View可能会被销毁，但是所有的Fragment都会一直存在于内存中。
+ * 如果Fragment需要保存的状态较多时，
+ * 会导致占用内存较大，因此对于Fragment数量较多的情况，建议使用FragmentStatePagerAdapter。
  */
 
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {

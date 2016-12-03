@@ -50,4 +50,9 @@ public class MyFragmentPagerAdapter2 extends FragmentStatePagerAdapter {
         super.destroyItem(container, position, object);
     }
 
+    @Override
+    public int getItemPosition(Object object) {
+        return super.getItemPosition(object);
+    }
+
 }
