@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.hansheng.studynote.R;
 
 import java.io.IOException;
@@ -24,31 +25,32 @@ import okhttp3.Response;
 /**
  * Created by hansheng on 2016/7/4.
  */
-public class OkHttpActivity extends AppCompatActivity{
+public class OkHttpActivity extends AppCompatActivity {
     Button bstart, bpost;
     ImageView imageView;
     TextView tv;
     private final String url = "http://serviceapi.skholingua.com/images/skholingua_image.png";
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.okhttp_layout);
-        imageView = (ImageView)findViewById(R.id.Iview);
+        imageView = (ImageView) findViewById(R.id.Iview);
         tv = (TextView) findViewById(R.id.tvBytes);
-        bstart =(Button) findViewById(R.id.bStart);
+        bstart = (Button) findViewById(R.id.bStart);
 
         bstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                OkHttpHandler handler=new OkHttpHandler();
-                byte[] image=new byte[0];
+                OkHttpHandler handler = new OkHttpHandler();
+                byte[] image = new byte[0];
 
                 try {
-                    image=handler.execute(url).get();
-                    if(image!=null&&image.length>0){
-                        Bitmap bitmap= BitmapFactory.decodeByteArray(image,0,image.length);
+                    image = handler.execute(url).get();
+                    if (image != null && image.length > 0) {
+                        Bitmap bitmap = BitmapFactory.decodeByteArray(image, 0, image.length);
                         imageView.setImageBitmap(bitmap);
-                        tv.setText("Total btytes download: "+ image.length);
+                        tv.setText("Total btytes download: " + image.length);
                     }
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -62,7 +64,7 @@ public class OkHttpActivity extends AppCompatActivity{
         bpost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(OkHttpActivity.this,OkHttpPostActivity.class);
+                Intent i = new Intent(OkHttpActivity.this, OkHttpPostActivity.class);
                 startActivity(i);
             }
         });
@@ -70,18 +72,18 @@ public class OkHttpActivity extends AppCompatActivity{
 
     }
 
-    public class OkHttpHandler extends AsyncTask<String,Void,byte[]>{
-        OkHttpClient client=new OkHttpClient();
+    public class OkHttpHandler extends AsyncTask<String, Void, byte[]> {
+        OkHttpClient client = new OkHttpClient.Builder().addInterceptor(new StethoInterceptor()).build();
 
 
         @Override
         protected byte[] doInBackground(String... params) {
-            Request builder=new Request.Builder()
+            Request builder = new Request.Builder()
                     .url(params[0])
                     .build();
 
             try {
-                Response response=client.newCall(builder).execute();
+                Response response = client.newCall(builder).execute();
                 return response.body().bytes();
             } catch (IOException e) {
                 e.printStackTrace();

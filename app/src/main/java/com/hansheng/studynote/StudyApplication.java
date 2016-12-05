@@ -3,6 +3,7 @@ package com.hansheng.studynote;
 import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.facebook.stetho.Stetho;
 import com.hansheng.greendao.DaoMaster;
 import com.hansheng.greendao.DaoSession;
 import com.hansheng.hanshenghttpclient.net.HanShengClientConfig;
@@ -25,7 +26,7 @@ public class StudyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        Stetho.initializeWithDefaults(this);
         if (LeakCanary.isInAnalyzerProcess(this)) {
             // This process is dedicated to LeakCanary for heap analysis.
             // You should not init your app in this process.

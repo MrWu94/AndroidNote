@@ -13,7 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hansheng.studynote.R;
-import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 
 import org.xmlpull.v1.XmlPullParser;
 
@@ -33,12 +32,15 @@ import rx.schedulers.Schedulers;
 
 /**
  * Created by hansheng on 2016/6/30.
+ * 为了防止RxJava中subscription导致内存泄漏而诞生的，核心思想是通过监听Activity、
+ * Fragment的生命周期，来自动断开subscription以防止内存泄漏。
  */
-public class RxJavaActivity extends RxAppCompatActivity implements View.OnClickListener, View.OnTouchListener {
+public class RxJavaActivity extends BaseActivity implements View.OnClickListener, View.OnTouchListener {
     /**
      * 天气预报API地址
      */
-    private static final String WEATHRE_API_URL = "http://php.weather.sina.com.cn/xml.php?city=%s&password=DJOYnieT8234jlsK&day=0";
+    private static final String WEATHRE_API_URL =
+            "http://php.weather.sina.com.cn/xml.php?city=%s&password=DJOYnieT8234jlsK&day=0";
     private EditText cityET;
     private TextView queryTV;
     private TextView weatherTV;
@@ -203,9 +205,9 @@ public class RxJavaActivity extends RxAppCompatActivity implements View.OnClickL
                             subscriber.onError(e);
                         }
                     }
-                }).compose(this.<Weather>bindToLifecycle())
-                        .subscribeOn(Schedulers.newThread())    //让Observable运行在新线程中
-                        .observeOn(AndroidSchedulers.mainThread())   //让subscriber运行在主线程中
+                }).subscribeOn(Schedulers.newThread())    //让Observable运行在新线程中
+                        .observeOn(AndroidSchedulers.mainThread())//让subscriber运行在主线程中
+//                        .compose(bindUntilEvent(ActivityLifeCycleEvent.DESTROY))
                         .subscribe(new Subscriber<Weather>() {
                             @Override
                             public void onCompleted() {

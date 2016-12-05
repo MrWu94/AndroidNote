@@ -51,7 +51,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".fragment.fragmentadd.FragmentMainActivity"
+            android:name=".Activity.startActivityForActivity.StartActivityForActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name">
             <intent-filter>
@@ -81,8 +81,6 @@
             android:authorities="com.hansheng.contentprovider.myprovider"
             android:exported="true"/>
 
-
-
         <activity android:name=".Activity.SecondActivity" />
         <activity android:name=".webview.ShowWebViewActivity" />
         <activity android:name=".webview.WithPhotoWebViewActivity" />
@@ -94,6 +92,7 @@
         <service
             android:name=".AIDL.MyService"
             android:process="com.xu.remote" />
+        <activity android:name=".Activity.startActivityForActivity.OtherActivity"/>
 
         <service
             android:name=".AIDL.AIDLService"
