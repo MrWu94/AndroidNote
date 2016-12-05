@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.Window;
 
 import com.hansheng.studynote.R;
+import com.orhanobut.hawk.Hawk;
+
+import hugo.weaving.DebugLog;
+import timber.log.Timber;
 
 /**
  * Created by hansheng on 16-12-2.
@@ -24,13 +28,20 @@ public class FragmentMainActivity extends Activity {
 
     private FragmentOne fragmentOne;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.frag_main);
+        Timber.tag("LifeCycles");
+        Timber.d("Activity Created");
+
+        timeHawkInit();
+        timeHawkPut();
+        timeHawkGet();
+        timeHawkContains();
+        timeHawkCount();
+        timeHawkDelete();
 
         FragmentManager fm = getFragmentManager();
         FragmentTransaction tx = fm.beginTransaction();
@@ -39,6 +50,35 @@ public class FragmentMainActivity extends Activity {
             tx.add(R.id.id_content, new FragmentOne(), "ONE");
             tx.commit();
         }
+    }
+    @DebugLog
+    private void timeHawkDelete() {
+        Hawk.delete("name");
+        System.out.println("");
+    }
+    @DebugLog
+    private void timeHawkCount() {
+        System.out.println("count"+Hawk.count());
+    }
+
+    @DebugLog
+    private void timeHawkContains() {
+        System.out.println("contains"+Hawk.contains("name"));
+    }
+    @DebugLog
+    private void timeHawkGet() {
+        Hawk.get("name");
+    }
+    @DebugLog
+    private void timeHawkPut() {
+        Hawk.put("name","hansheng");
+    }
+    @DebugLog
+    private void timeHawkInit() {
+        long startTime= System.currentTimeMillis();
+        Hawk.init(this).build();
+        long endTime= System.currentTimeMillis();
+        System.out.println("Hawk.init: " + (endTime - startTime) + "ms");
     }
 
 }

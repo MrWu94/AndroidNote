@@ -9,6 +9,9 @@ import com.hansheng.hanshenghttpclient.net.HanShengClientConfig;
 import com.hansheng.hanshenghttpclient.net.HanShengHttpClient;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.squareup.leakcanary.LeakCanary;
+
+import timber.log.Timber;
 
 /**
  * Created by hansheng on 2016/6/29.
@@ -23,6 +26,13 @@ public class StudyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
+        }
+        LeakCanary.install(this);
+        initTimber();
         setupDatabase();
 
         HanShengClientConfig clientConfig=new HanShengClientConfig(getApplicationContext());
@@ -54,6 +64,14 @@ public class StudyApplication extends Application {
 //                .build();
 
 
+    }
+
+
+    private void initTimber() {
+        Timber.uprootAll();
+        if (BuildConfig.DEBUG) {
+            Timber.plant(new Timber.DebugTree());
+        }
     }
 
     private void setupDatabase() {

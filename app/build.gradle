@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
 apply plugin: 'com.antfortune.freeline'
+apply plugin: 'com.jakewharton.hugo'
 
 //Groovy 的基本语法
 //方法调用
@@ -219,8 +220,8 @@ dependencies {
     compile 'com.android.support:cardview-v7:' + SUPPORT_VERSION
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
     //ADD THESE LINES:
-    androidTestCompile 'com.android.support:support-annotations:' + SUPPORT_VERSION
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+//    androidTestCompile 'com.android.support:support-annotations:' + SUPPORT_VERSION
+//    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     compile files('libs/crawler4j-4.1-jar-with-dependencies.jar')
     compile files('libs/crawler4j-4.2.jar')
     compile files('libs/androidsvg-1.2.1.jar')
@@ -235,6 +236,22 @@ dependencies {
     // Image
     compile 'com.github.bumptech.glide:glide:3.7.0'
     compile files('libs/android-5.0.2_r1-sources.jar')
+
+
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+
+
+    compile 'com.jakewharton.timber:timber:4.3.1'
+
+    compile 'com.orhanobut:hawk:2.0.1'
+
+    // If you want to bind to Android-specific lifecycles
+    compile 'com.trello:rxlifecycle-android:1.0'
+
+// If you want pre-written Activities and Fragments you can subclass as providers
+    compile 'com.trello:rxlifecycle-components:1.0'
 
 //    去掉重复依赖,剔除整个组织的库
 //    compile 'com.alibaba.fastjson.latest.integration' {
