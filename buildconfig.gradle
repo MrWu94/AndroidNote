@@ -2,7 +2,7 @@
 ext {
     android = [
             AndroidBuildToolsVersion : "24.0.3",
-            AndridMinSdkVersion : 17,
+            AndridMinSdkVersion : 21,
             AndroidTargetSdkVersion : 24,
             AndroidCompileSdkVersion : 24,
             applicationId : "com.hansheng.studynote",
