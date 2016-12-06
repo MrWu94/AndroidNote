@@ -257,6 +257,9 @@ dependencies {
     compile 'com.facebook.stetho:stetho:1.4.1'
     compile 'com.facebook.stetho:stetho-okhttp3:1.4.1'
 
+    compile 'com.jakewharton.rxbinding:rxbinding:1.0.0'
+
+    compile 'io.realm:realm-android:0.84.1'
 //    去掉重复依赖,剔除整个组织的库
 //    compile 'com.alibaba.fastjson.latest.integration' {
 //        exclude module: 'annotations', group: 'com.google.android'

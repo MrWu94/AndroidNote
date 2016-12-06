@@ -1,16 +1,13 @@
 package com.hansheng.studynote.RxJava;
 
 
-import java.io.File;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import rx.Observable;
-import rx.Scheduler;
 import rx.Subscriber;
 import rx.Subscription;
-import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action0;
 import rx.functions.Action1;
 import rx.functions.Func0;
@@ -82,6 +79,7 @@ public class StudyRxJava {
     }
 
     public static void study() {
+
         Observable<String> myObserable = Observable.create(new Observable.OnSubscribe<String>() {
             @Override
             public void call(Subscriber<? super String> subscriber) {
@@ -89,8 +87,6 @@ public class StudyRxJava {
                 subscriber.onCompleted();
             }
         });
-
-
         Subscriber<String> mySubscriber = new Subscriber<String>() {
             @Override
             public void onCompleted() {
@@ -107,6 +103,7 @@ public class StudyRxJava {
                 System.out.println(s);
             }
         };
+
         myObserable.subscribe(mySubscriber);
     }
 
