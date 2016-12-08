@@ -29,13 +29,15 @@ android {
     }
     buildTypes {
         release {
+
+            // 不显示Log
+            //  buildConfigField "boolean", "LOG_DEBUG", "false"
             // 混淆
             minifyEnabled true
             // Zipalign优化
             zipAlignEnabled true
             // 移除无用的resource文件
             shrinkResources true
-
             // 前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
@@ -77,6 +79,7 @@ android {
                            'src/main/res/layout/fragment',
                            'src/main/res/'
             ]
+            jni.srcDirs = []
         }
 
     }
@@ -260,6 +263,8 @@ dependencies {
     compile 'com.jakewharton.rxbinding:rxbinding:1.0.0'
 
     compile 'io.realm:realm-android:0.84.1'
+
+    compile 'com.wanjian:sak:0.0.2'
 //    去掉重复依赖,剔除整个组织的库
 //    compile 'com.alibaba.fastjson.latest.integration' {
 //        exclude module: 'annotations', group: 'com.google.android'
