@@ -92,7 +92,6 @@ public class FutureDemo {
         });
 
         mExecutor.submit(futureTask);
-
         try {
             System.out.println("suture result from futureTask" + futureTask.get());
         } catch (InterruptedException e) {

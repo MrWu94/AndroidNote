@@ -22,8 +22,6 @@ public class ActivityOptionsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_options);
-
-
     }
     public void start(View view){
         Intent intent=new Intent(ActivityOptionsActivity.this,Test.class);
