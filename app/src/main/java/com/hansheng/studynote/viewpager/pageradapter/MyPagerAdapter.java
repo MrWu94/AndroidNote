@@ -29,7 +29,7 @@ public class MyPagerAdapter extends PagerAdapter {
     }
 
     /**
-     * view是否来自对象
+     * view是否来自同一对象
      */
     @Override
     public boolean isViewFromObject(View arg0, Object arg1) {
