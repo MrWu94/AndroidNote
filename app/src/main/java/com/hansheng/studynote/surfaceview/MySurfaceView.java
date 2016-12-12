@@ -15,6 +15,9 @@ import com.hansheng.studynote.R;
 
 /**
  * Created by hansheng on 2016/8/1.
+ * SurfaceHolder：surfaceholder是控制surface的一个抽象接口，它能够控制surface的尺寸和格式，
+ * 修改surface的像素，监视surface的变化等等，surfaceholder的典型应用就是用于surfaceview中。
+ * surfaceview通过getHolder()方法获得surfaceholder 实例，通过后者管理监听surface 的状态。
  */
 public class MySurfaceView extends SurfaceView implements Runnable, SurfaceHolder.Callback {
     /**
@@ -59,10 +62,11 @@ public class MySurfaceView extends SurfaceView implements Runnable, SurfaceHolde
      */
     @Override
     public void surfaceCreated(SurfaceHolder holder) {
-        t=new Thread(this);
-        flag=true;
+        t = new Thread(this);
+        flag = true;
         t.start();
     }
+
     /**
      * 当SurfaceView的视图发生改变的时候，调用此函数
      */
@@ -70,27 +74,29 @@ public class MySurfaceView extends SurfaceView implements Runnable, SurfaceHolde
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
 
     }
+
     /**
      * 当SurfaceView销毁的时候，调用此函数
      */
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
-        flag=false;
+        flag = false;
         mHolder.removeCallback(this);
     }
+
     /**
      * 当屏幕被触摸时调用
      */
     @Override
     public void run() {
-        while (flag){
-            synchronized (mHolder){
+        while (flag) {
+            synchronized (mHolder) {
                 try {
                     Thread.sleep(100);
                     Draw();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                }finally {
+                } finally {
                     if (mCanvas != null) {
                         // mHolder.unlockCanvasAndPost(mCanvas);//结束锁定画图，并提交改变。
 
@@ -103,8 +109,8 @@ public class MySurfaceView extends SurfaceView implements Runnable, SurfaceHolde
 
     private void Draw() {
         mCanvas = mHolder.lockCanvas(); // 获得画布对象，开始对画布画画 mCanvas=mHolder.lockCanvas();
-        if(mCanvas!=null){
-            Paint paint=new Paint(Paint.ANTI_ALIAS_FLAG);
+        if (mCanvas != null) {
+            Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
             paint.setColor(Color.BLUE);
             paint.setStrokeWidth(10);
             paint.setStyle(Paint.Style.FILL);
