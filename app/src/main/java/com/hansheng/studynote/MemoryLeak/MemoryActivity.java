@@ -29,6 +29,8 @@ import java.lang.ref.WeakReference;
  */
 
 public class MemoryActivity extends AppCompatActivity {
+
+    //正确的写法
     private final MyHandler mHandler = new MyHandler(this);
     private TextView mTextView;
 
@@ -48,6 +50,16 @@ public class MemoryActivity extends AppCompatActivity {
         }
     }
 
+    //错误的写法
+
+    private Handler mHandler1 = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            //...
+        }
+    };
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +76,7 @@ public class MemoryActivity extends AppCompatActivity {
 
 
     }
+
     private void loadData() {
         //...request
         Message message = Message.obtain();
@@ -135,6 +148,46 @@ public class MemoryActivity extends AppCompatActivity {
                 }
             }
         }.start();
+    }
+
+    /**
+     *单例模式非常受开发者的喜爱，不过使用的不恰当的话也会造成内存泄漏，由于单例的静态特性使得单例的生命周期和应用的生命周期一样长，
+     * 这就说明了如果一个对象已经不需要使用了，
+     * 而单例对象还持有该对象的引用，那么这个对象将不能被正常回收，这就导致了内存泄漏。
+     */
+
+    public static class AppManager {
+        private static AppManager instance;
+        private Context context;
+
+        private AppManager(Context context) {
+            this.context = context;
+        }
+
+        public static AppManager getInstance(Context context) {
+            if (instance != null) {
+                instance = new AppManager(context);
+            }
+            return instance;
+        }
+    }
+    /**
+     *正确写法
+     */
+
+
+    public static class AppManager1 {
+        private static AppManager instance;
+        private Context context;
+        private AppManager1(Context context) {
+            this.context = context.getApplicationContext();
+        }
+        public static AppManager getInstance(Context context) {
+            if (instance != null) {
+                instance = new AppManager(context);
+            }
+            return instance;
+        }
     }
 
 
