@@ -18,11 +18,44 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        container.removeView(mViewList.get(position));
+//        container.removeView(mViewList.get(position));
     }
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
+
+
+//        try {
+//            if (mViewList.get(position).getParent() == null) {
+//                ((ViewPager) container).addView(mViewList.get(position), 0);
+//            }
+//        } catch (Exception e) {
+//            // TODO Auto-generated catch block
+//            e.printStackTrace();
+//        }
+
+//        ViewGroup parent = (ViewGroup) container.getParent();
+//        if (parent != null) {
+//            parent.removeAllViews();
+//        }
+//        container.addView(mViewList.get(position));
+//        return mViewList.get(position);
+
+//        position %= mViewList.size();
+//        if (position<0){
+//            position = mViewList.size()+position;
+//        }
+//        View view = mViewList.get(position);
+//        //如果View已经在之前添加到了一个父组件，则必须先remove，否则会抛出IllegalStateException。
+//        ViewParent vp =view.getParent();
+//        if (vp!=null){
+//            ViewGroup parent = (ViewGroup)vp;
+//            parent.removeView(view);
+//        }
+//        container.addView(view);
+//        //add listeners here if necessary
+//        return view;
+
         container.addView(mViewList.get(position));
         return (mViewList.get(position));
     }

@@ -11,7 +11,7 @@ import com.hansheng.studynote.viewpager.pageradapterrefresh.adapter.FSPagerAdapt
 import java.util.LinkedList;
 import java.util.List;
 
-public class FSPagerAdapterActivity extends AppCompatActivity {
+public class   FSPagerAdapterActivity extends AppCompatActivity {
     private ViewPager mContentVP;
 
     private FSPagerAdapter mPagerAdapter;

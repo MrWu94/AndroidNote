@@ -1,11 +1,16 @@
 package com.hansheng.studynote.Activity;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.hansheng.studynote.R;
+
+import java.lang.ref.WeakReference;
 
 /**
  * Created by hansheng on 16-11-10.
@@ -17,6 +22,9 @@ import com.hansheng.studynote.R;
 
 public class UpdateUIActivity extends AppCompatActivity {
     private TextView textView;
+
+    private MyHandler handler=new MyHandler(this);
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,5 +36,17 @@ public class UpdateUIActivity extends AppCompatActivity {
                 textView.setText("hansheng");
             }
         }).start();
+    }
+
+    private static class MyHandler extends Handler {
+        private WeakReference<Context> context;
+        public MyHandler(Context context) {
+            this.context=new WeakReference<Context>(context);
+        }
+
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+        }
     }
 }

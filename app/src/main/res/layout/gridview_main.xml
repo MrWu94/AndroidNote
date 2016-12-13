@@ -5,6 +5,7 @@
     android:background="#D4D3D3"
     android:orientation="vertical">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
@@ -24,4 +25,14 @@
             android:gravity="center"
             android:orientation="horizontal" />
     </RelativeLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tianjia"
+        android:text="添加"
+        />
+
+
 </LinearLayout>

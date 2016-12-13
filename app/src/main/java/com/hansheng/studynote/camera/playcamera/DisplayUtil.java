@@ -54,8 +54,8 @@ public class DisplayUtil {
      */
     public static float getScreenRate(Context context){
         Point P = getScreenMetrics(context);
-        float H = P.y;
         float W = P.x;
+        float H = P.y;
         return (H/W);
     }
 }
