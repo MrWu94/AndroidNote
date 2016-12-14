@@ -16,6 +16,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    task releaseMyLib(type: Copy, dependsOn: ['build']) {
+        from( 'build/intermediates/bundles/release/')
+        into( 'build/libs')
+        include('classes.jar')
+        rename('classes.jar', 'my-lib.jar')
+    }
 }
 
 dependencies {
