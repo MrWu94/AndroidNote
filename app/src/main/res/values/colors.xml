@@ -9,7 +9,9 @@
     <color name="mp.theme.dark_blue.background">#3C5F78</color>
     <color name="mp.theme.dark_blue.gradientColor">#507E9F</color>
 
-
+    <color name="alpha_10_black">#1A000000</color>
+    <color name="alpha_20_black">#33000000</color>
+    <color name="main_color">#3F51B5</color>
     <color name="white">#FFFFFF</color>
     <color name="yellow">#FFFF00</color>
     <color name="red">#FF0000</color>
@@ -25,6 +27,7 @@
     <color name="app_color">#ff6cb506</color>
     <color name="status_bar_color">#FF000000</color>
     <color name="layout_border_color">#FF111111</color>
+    <color name="primary_text_white">#deffffff</color>
     <color name="green_6a">#FF2c5aa9</color>
     <integer-array name="gplus_colors">
         <item>@color/gplus_color_1</item>

@@ -2,7 +2,6 @@ package com.hansheng.studynote.SystemUI;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.hansheng.studynote.R;
@@ -11,7 +10,7 @@ import com.hansheng.studynote.R;
  * Created by hansheng on 16-12-15.
  */
 
-public class SystemUiActivity extends AppCompatActivity implements View.OnClickListener {
+public class SystemUiActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +27,7 @@ public class SystemUiActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.btn_bar_tab).setOnClickListener(this);
         findViewById(R.id.btn_collapsing).setOnClickListener(this);
         findViewById(R.id.btn_bottom_sheets).setOnClickListener(this);
-
     }
-
     @Override
     public void onClick(View v) {
         int viewId = v.getId();
@@ -77,4 +74,6 @@ public class SystemUiActivity extends AppCompatActivity implements View.OnClickL
         }
 
     }
+
+
 }

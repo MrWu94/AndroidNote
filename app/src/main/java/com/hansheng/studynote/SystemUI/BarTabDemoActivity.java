@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
@@ -17,7 +16,7 @@ import com.hansheng.studynote.SystemUI.fragment.AuthorInfoFragment;
 /**
  * Created by hansheng on 16-12-15.
  */
-public class BarTabDemoActivity extends AppCompatActivity {
+public class BarTabDemoActivity extends BaseActivity {
 
     private Fragment[] mFragmentArrays = new Fragment[3];
     private String[] mTabTitles = new String[3];
@@ -30,7 +29,6 @@ public class BarTabDemoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bar_tab_demo);
-
         mToolBar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolBar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

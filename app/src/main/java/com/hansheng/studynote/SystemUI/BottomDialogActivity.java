@@ -2,7 +2,6 @@ package com.hansheng.studynote.SystemUI;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -14,7 +13,7 @@ import com.hansheng.studynote.SystemUI.adapter.RecyclerItemAdapter;
  * Created by hansheng on 16-12-15.
  */
 
-public class BottomDialogActivity extends AppCompatActivity implements View.OnClickListener {
+public class BottomDialogActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
