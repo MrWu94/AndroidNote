@@ -1,10 +1,17 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <!--隐藏原本的ActionBar-->
+
+        <!--隐藏可以通过修改我们继承的主题为：Theme.AppCompat.Light.NoActionBar,当然也可以通过设置以下属性完成：-->
         <!--<item name="windowActionBar">false</item>-->
         <!--<item name="windowNoTitle">true</item>-->
+
+        <!--colorPrimary 对应ActionBar的颜色。-->
+        <!--colorPrimaryDark对应状态栏的颜色-->
+        <!--colorAccent 对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色。-->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>

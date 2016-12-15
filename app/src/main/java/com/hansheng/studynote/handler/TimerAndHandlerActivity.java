@@ -18,10 +18,22 @@ import java.util.TimerTask;
  * 相比起Timer方式的定时器占用1192B，Handler的方式占用资源会小很多，只有1/60。
  * <p>
  * 所以Handler的方式比较节省内存。
+ * <p>
+ * 在Activity由前台转后台过程中，线程是一直在运行的，但是当Activity转入前台时会重新定义Runnable runnable；
+ * 也就是说此时从message queue移除的runnable与原先加入message queue中的runnable并非是同一个对象。
+ * 如果把runnable定义为静态的则removeCallbacks不会失效,对于静态变量在内存中只有一个拷贝（节省内存），
+ * JVM只为静态分配一次内存，在加载类的过程中完成静态变量的内存分配
  */
 
 public class TimerAndHandlerActivity extends AppCompatActivity {
     int mCount = 0;
+    static Handler handler = new Handler();
+    static Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            handler.postDelayed(runnable, 1000);
+        }
+    };
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,6 +43,18 @@ public class TimerAndHandlerActivity extends AppCompatActivity {
 //        startTimer();
 
     }
+
+
+    public void sTimer() {
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+
+            }
+        }, 0, 100);
+
+    }
+
 
     private void startTimer() {
         Timer timer = new Timer();
