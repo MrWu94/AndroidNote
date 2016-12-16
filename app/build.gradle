@@ -49,6 +49,11 @@ android {
         }
     }
 
+    //显示依赖包的存储路径
+    task showMeCache << {
+        configurations.compile.each { println it }
+    }
+
 
 
 
