@@ -29,16 +29,23 @@ public class FragmentOne extends Fragment implements View.OnClickListener {
         fragment.setArguments(args);
         return fragment;
     }
+    private View view;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_one, container, false);
+        view = inflater.inflate(R.layout.fragment_one, container, false);
         mBtn = (Button) view.findViewById(R.id.one);
         if (savedInstanceState == null) {
         }
         mBtn.setOnClickListener(this);
         return view;
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        view=null;
     }
 
     @Override

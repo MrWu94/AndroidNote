@@ -10,7 +10,6 @@ import com.hansheng.studynote.R;
 import com.orhanobut.hawk.Hawk;
 
 import hugo.weaving.DebugLog;
-import timber.log.Timber;
 
 /**
  * Created by hansheng on 16-12-2.
@@ -33,15 +32,15 @@ public class FragmentMainActivity extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.frag_main);
-        Timber.tag("LifeCycles");
-        Timber.d("Activity Created");
-
-        timeHawkInit();
-        timeHawkPut();
-        timeHawkGet();
-        timeHawkContains();
-        timeHawkCount();
-        timeHawkDelete();
+//        Timber.tag("LifeCycles");
+//        Timber.d("Activity Created");
+//
+//        timeHawkInit();
+//        timeHawkPut();
+//        timeHawkGet();
+//        timeHawkContains();
+//        timeHawkCount();
+//        timeHawkDelete();
 
         FragmentManager fm = getFragmentManager();
         FragmentTransaction tx = fm.beginTransaction();
