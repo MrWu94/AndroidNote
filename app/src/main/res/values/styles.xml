@@ -12,9 +12,14 @@
         <!--colorPrimary 对应ActionBar的颜色。-->
         <!--colorPrimaryDark对应状态栏的颜色-->
         <!--colorAccent 对应EditText编辑时、RadioButton选中、CheckBox等选中时的颜色。-->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+
+        <item name="colorPrimary">@android:color/holo_blue_light</item>
+        <item name="colorPrimaryDark">@android:color/holo_blue_light</item>
+        <item name="colorAccent">@android:color/holo_blue_light</item>
+        <item name="colorControlNormal">@android:color/white</item>
 
         <!--<item name="windowActionBar">false</item>-->
         <!--<item name="windowNoTitle">true</item>-->
