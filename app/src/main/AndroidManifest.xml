@@ -62,7 +62,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MVP.ui.MainActivity"
+            android:name=".Activity.LaunchMode.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name">
             <intent-filter>
@@ -114,6 +114,13 @@
         <activity android:name=".SystemUI.CardViewActivity" />
         <activity android:name=".SystemUI.CollapsingDemoActivity" />
         <activity android:name=".SystemUI.BarTabDemoActivity" />
+
+
+        <activity android:name=".Activity.LaunchMode.TestAActivity"/>
+        <activity android:name=".Activity.LaunchMode.TestBActivity"/>
+        <activity android:name=".Activity.LaunchMode.TestCActivity"/>
+        <activity android:name=".Activity.LaunchMode.TestDActivity"/>
+
 
 
         <service

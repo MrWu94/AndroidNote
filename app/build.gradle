@@ -55,6 +55,8 @@ android {
     }
 
 
+    //    useLibrary 'org.apache.http.legacy'
+
 
 
     lintOptions {
@@ -69,6 +71,7 @@ android {
     }
 
     packagingOptions {
+        // Java的注释冲突
         exclude 'META-INF/services/javax.annotation.processing.Processor'
         exclude 'LICENSE.txt'
         exclude 'META-INF/LICENSE.txt'
@@ -89,9 +92,12 @@ android {
 
     }
     //开启gradle的增量编译，加快编译。
+//    使用递增的dex
+//    增加dex的容量.http://stackoverflow.com/questions/25006075/extremely-long-build-with-gradle-android-studio
     dexOptions {
         preDexLibraries = false
         javaMaxHeapSize "4g"
+        incremental true
     }
 
     signingConfigs {
@@ -206,7 +212,6 @@ dependencies {
     compile 'com.jakewharton:butterknife:6.0.0'
     compile project(':customview')
     compile project(':animation')
-    compile files('libs/org.apache.http.legacy.jar')
     compile 'com.jiechic.library:xUtils:2.6.14'
     compile files('libs/Volley.jar')
     compile 'com.google.code.gson:gson:2.3.1'
@@ -270,6 +275,20 @@ dependencies {
     compile 'io.realm:realm-android:0.84.1'
 
     compile 'com.wanjian:sak:0.0.2'
+
+    // LeanCloud 基础包
+    compile('cn.leancloud.android:avoscloud-sdk:v3.+')
+
+
+    // LeanCloud 应用内搜索包
+    compile('cn.leancloud.android:avoscloud-search:v3.+@aar')
+
+    android {
+        useLibrary 'org.apache.http.legacy'
+    }
+
+
+
 //    去掉重复依赖,剔除整个组织的库
 //    compile 'com.alibaba.fastjson.latest.integration' {
 //        exclude module: 'annotations', group: 'com.google.android'

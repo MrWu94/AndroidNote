@@ -36,7 +36,6 @@ public class HttpsGetActivity extends Activity {
                     HttpGet request = new HttpGet(uri);
                     //客户端使用GET方式执行请教，获得服务器端的回应response
                     HttpResponse response = getClient.execute(request);
-                    System.out.println("======");
                     //判断请求是否成功
                     if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
                         Log.i(TAG_STRING, "请求服务器端成功");

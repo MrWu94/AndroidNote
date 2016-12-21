@@ -3,6 +3,7 @@ package com.hansheng.studynote;
 import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.avos.avoscloud.AVOSCloud;
 import com.facebook.stetho.Stetho;
 import com.hansheng.greendao.DaoMaster;
 import com.hansheng.greendao.DaoSession;
@@ -27,6 +28,11 @@ public class StudyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         Stetho.initializeWithDefaults(this);
+
+
+        // 初始化参数依次为 this, AppId, AppKey
+        AVOSCloud.initialize(this,"0HlFN3BDPl3lkWoJe3moMBA1-gzGzoHsz","9EO3QcsyIyo6Sc4hkBHbnEaS");
+
 //        LayoutManager.init(this);
         if (LeakCanary.isInAnalyzerProcess(this)) {
             // This process is dedicated to LeakCanary for heap analysis.

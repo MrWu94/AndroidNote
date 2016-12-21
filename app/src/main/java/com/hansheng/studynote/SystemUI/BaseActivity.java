@@ -14,6 +14,35 @@ import com.hansheng.studynote.R;
 
 /**
  * Created by hansheng on 16-12-15.
+ * Android使用fitsSystemWindows属性实现--状态栏【status_bar】各版本适配方案
+ * 透明statusbar和全屏ImageView http://www.jianshu.com/p/5c7f7aeae978
+ * status bar设置成为透明颜色.
+ * <p>
+ * <style name="AppTheme.NoStatusBar">
+ * <item name="android:windowTranslucentStatus">true</item>
+ * </style>
+ * 页面的根布局是CollapsingToolbarLayout.
+ * <p>
+ * <android.support.design.widget.CollapsingToolbarLayout
+ * xmlns:android="http://schemas.android.com/apk/res/android"
+ * android:layout_width="match_parent"
+ * android:layout_height="match_parent"
+ * android:fitsSystemWindows="true">
+ * <p>
+ * <ImageView
+ * android:layout_width="match_parent"
+ * android:layout_height="match_parent"
+ * android:contentDescription="@null"
+ * android:fitsSystemWindows="true"
+ * android:scaleType="centerCrop"
+ * android:src="@drawable/christmas"/>
+ * <p>
+ * </android.support.design.widget.CollapsingToolbarLayout>
+ * <p>
+ * 文／SpikeKing（简书作者）
+ * 原文链接：http://www.jianshu.com/p/5c7f7aeae978
+ * 著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。
+ * http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/1122/3712.html
  */
 
 public class BaseActivity extends AppCompatActivity {
@@ -21,7 +50,7 @@ public class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
                     | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);

@@ -432,4 +432,11 @@
 -dontwarn android.net.http.**
 -dontwarn edu.uci.**
 
+# 删除Log http://www.jianshu.com/p/6b663027c371
+-assumenosideeffects class android.util.Log { *; }
+-assumenosideeffects class android.util.Log {
+    public static *** d(...);
+    public static *** e(...);
+}
+
 
