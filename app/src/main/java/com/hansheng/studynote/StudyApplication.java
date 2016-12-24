@@ -1,6 +1,7 @@
 package com.hansheng.studynote;
 
 import android.app.Application;
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.avos.avoscloud.AVOSCloud;
@@ -12,6 +13,7 @@ import com.hansheng.hanshenghttpclient.net.HanShengHttpClient;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.squareup.leakcanary.LeakCanary;
+import com.squareup.leakcanary.RefWatcher;
 
 import timber.log.Timber;
 
@@ -24,22 +26,32 @@ public class StudyApplication extends Application {
     public SQLiteDatabase db;
     public DaoMaster.DevOpenHelper helper;
     public DaoMaster daoMaster;
+
+    public static RefWatcher getRefWatcher(Context context) {
+        StudyApplication application = (StudyApplication) context.getApplicationContext();
+        return application.refWatcher;
+    }
+
+    private RefWatcher refWatcher;
+
     @Override
     public void onCreate() {
         super.onCreate();
         Stetho.initializeWithDefaults(this);
 
+        refWatcher = LeakCanary.install(this);
+
 
         // 初始化参数依次为 this, AppId, AppKey
         AVOSCloud.initialize(this,"0HlFN3BDPl3lkWoJe3moMBA1-gzGzoHsz","9EO3QcsyIyo6Sc4hkBHbnEaS");
 
-//        LayoutManager.init(this);
-        if (LeakCanary.isInAnalyzerProcess(this)) {
-            // This process is dedicated to LeakCanary for heap analysis.
-            // You should not init your app in this process.
-            return;
-        }
-        LeakCanary.install(this);
+////        LayoutManager.init(this);
+//        if (LeakCanary.isInAnalyzerProcess(this)) {
+//            // This process is dedicated to LeakCanary for heap analysis.
+//            // You should not init your app in this process.
+//            return;
+//        }
+//        LeakCanary.install(this);
         initTimber();
         setupDatabase();
 

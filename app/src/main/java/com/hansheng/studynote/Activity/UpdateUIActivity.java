@@ -28,7 +28,7 @@ public class UpdateUIActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
+        setContentView(R.layout.activity_test1);
         textView= (TextView) findViewById(R.id.textView);
         new Thread(new Runnable() {
             @Override

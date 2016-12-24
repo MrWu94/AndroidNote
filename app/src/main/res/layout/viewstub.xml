@@ -19,7 +19,7 @@
     <ViewStub
         android:id="@+id/myViewStub"
         android:inflatedId="@+id/myInflatedViewId"
-        android:layout="@layout/activity_test"
+        android:layout="@layout/activity_test1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/clickMe"

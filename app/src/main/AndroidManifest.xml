@@ -52,7 +52,7 @@
         android:normalScreens="true"
         android:smallScreens="true"
         android:xlargeScreens="true" />
-    <!--增加分配每个app的内存大小-->
+    <!--增加分配每个app的内存大小  android:largeHeap="true"-->
     <application
         android:name=".StudyApplication"
         android:allowBackup="true"
@@ -116,10 +116,15 @@
         <activity android:name=".SystemUI.BarTabDemoActivity" />
 
 
-        <activity android:name=".Activity.LaunchMode.TestAActivity"/>
-        <activity android:name=".Activity.LaunchMode.TestBActivity"/>
-        <activity android:name=".Activity.LaunchMode.TestCActivity"/>
-        <activity android:name=".Activity.LaunchMode.TestDActivity"/>
+        <activity android:name=".Activity.LaunchMode.TestAActivity"
+            android:launchMode="singleInstance"
+            />
+        <activity android:name=".Activity.LaunchMode.TestBActivity"
+            android:launchMode="singleInstance"/>
+        <activity android:name=".Activity.LaunchMode.TestCActivity"
+            android:launchMode="singleInstance"/>
+        <activity android:name=".Activity.LaunchMode.TestDActivity"
+            android:launchMode="singleInstance"/>
 
 
 

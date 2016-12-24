@@ -49,6 +49,14 @@ android {
         }
     }
 
+//关于Android Studio中点9图的编译错误问题
+//    Android Studio内嵌了SDK中的draw9Patch工具，可以直接打开点9图并编辑预览，
+// 只需要将引入的点9图四边黑线按要求补全，然后重新Clean一下
+// Error:Execution failed for task ':app:mergeDebugResources'.
+//    > Some file crunching failed, see logs for details
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
     //显示依赖包的存储路径
     task showMeCache << {
         configurations.compile.each { println it }
@@ -56,7 +64,6 @@ android {
 
 
     //    useLibrary 'org.apache.http.legacy'
-
 
 
     lintOptions {
@@ -97,7 +104,7 @@ android {
     dexOptions {
         preDexLibraries = false
         javaMaxHeapSize "4g"
-        incremental true
+//        incremental true
     }
 
     signingConfigs {
