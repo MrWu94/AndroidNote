@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class Consumer implements Runnable {
     private BlockingQueue<String> queue;
-    private static final int      DEFAULT_RANGE_FOR_SLEEP = 1000;
+    private static final int DEFAULT_RANGE_FOR_SLEEP = 1000;
 
 
     public Consumer(BlockingQueue<String> queue) {
@@ -20,26 +20,25 @@ public class Consumer implements Runnable {
     @Override
     public void run() {
         System.out.println("?????????????");
-        Random r=new Random();
-        boolean isRunning=true;
+        Random r = new Random();
+        boolean isRunning = true;
 
-        while (isRunning){
+        while (isRunning) {
             System.out.println("?????????????????");
             try {
-                String data=queue.poll(2, TimeUnit.SECONDS);
-                if(null!=data){
-                    System.out.println("???????"+data);
-                    System.out.println("????????????"+data);
+                String data = queue.poll(2, TimeUnit.SECONDS);
+                if (null != data) {
+                    System.out.println("???????" + data);
+                    System.out.println("????????????" + data);
                     Thread.sleep(r.nextInt(DEFAULT_RANGE_FOR_SLEEP));
-                }
-                else{
-                    isRunning=false;
+                } else {
+                    isRunning = false;
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
+
                 Thread.currentThread().interrupt();
-            }
-            finally {
+            } finally {
                 System.out.println("????????????");
             }
         }
