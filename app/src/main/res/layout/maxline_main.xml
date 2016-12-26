@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="父视图在对子视图进行measure操作的过程中，使用变量mTotalLength保存已经measure过的child所占用的高度，该变量刚开始时是0。在for循环中调用measureChildBeforeLayout" />
+</LinearLayout>
