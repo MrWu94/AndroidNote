@@ -1,5 +1,6 @@
 package com.hansheng.studynote.asynctask;
 
+import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
@@ -64,15 +65,29 @@ import java.util.Date;
  * <p>
  * 好吧，开发者可能并不喜欢让AsyncTask并行，于是Android团队又把AsyncTask改成了串行。当然这一次的修改并没有完全禁止AsyncTask
  * 并行。你可以通过设置executeOnExecutor(Executor)来实现多个AsyncTask并行。
+ * <p>
+ * <p>
+ * 为线程、异步任务等生命周期的不可控性，成为了内存泄露的另一个源头。平常中，因为对它的频繁使用，所以，我们应慎重对待它。
+ * <p>
+ * 在Activity结束时，应及时销毁所创建的线程。不然，当线程持有该所在Activity的引用时，实际上以为退出去的Activity，其实由于线程未完成，
+ * 所引用的老Activity是不会被销毁的，就出现了内存泄露，所以可使用Thread.interrupt()中断线程，虽然并不是真正意义上的中断！具体详细可见
+ * Thread的中断机制（interrupt）
+ * AsyncTask异步任务的生命周期不可控性。一定得注意一件事，因为平常喜欢在Activity中创建AsyncTask作为内部类，完成一些耗时且Ui交互的操作，
+ * 十分方便，但是其实这个是具有很大风险的，因为很容易出现内存泄露。异步任务内部是以ThreadPoolExcutor作为实现机制的，这样出来的线程对
+ * 象生命周期是不确定的！！
+ * 网上有人给出两个解决方案：1.将线程的内部类改为静态内部类 2.在线程内部采用弱引用保存Context引用
  */
 
 public class AsyncTaskActivity extends AppCompatActivity {
     private static final String TAG = "AsyncTaskActivity";
+    private Context context;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.zoom_test);
+        context = this;
         taskTest();
     }
 
@@ -101,7 +116,20 @@ public class AsyncTaskActivity extends AppCompatActivity {
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
         }
+
     }
+
+    class TaskClean extends WeakAsyncTask<Integer, Void, Void, AsyncTaskActivity> {
+        public TaskClean(AsyncTaskActivity asyncTaskActivity) {
+            super(asyncTaskActivity);
+        }
+
+        @Override
+        protected Void doInBackground(AsyncTaskActivity asyncTaskActivity, Integer... params) {
+            return null;
+        }
+    }
+
 
     private String getTargetSdkVersion() {
         int targetSdkVersion = 0;
