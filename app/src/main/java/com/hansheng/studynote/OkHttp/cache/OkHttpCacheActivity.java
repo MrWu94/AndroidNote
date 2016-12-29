@@ -36,6 +36,9 @@ public class OkHttpCacheActivity extends AppCompatActivity {
         setContentView(R.layout.item_text2);
 
         OkHttpClient client = new OkHttpClient.Builder()
+                .addNetworkInterceptor(new CacheInterctptor())
+                .readTimeout(20, TimeUnit.SECONDS)
+                .connectTimeout(10, TimeUnit.SECONDS)
                 .connectTimeout(5, TimeUnit.SECONDS)
                 .cache(new Cache(new File(this.getExternalCacheDir(), "okhttpcache"), 10 * 1024 * 1024))
                 .build();

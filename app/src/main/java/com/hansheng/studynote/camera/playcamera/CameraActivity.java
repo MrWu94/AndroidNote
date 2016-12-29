@@ -20,10 +20,13 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
     CameraSurfaceView surfaceView = null;
     ImageButton shutterBtn;
     float previewRate = -1f;
+
+    boolean isQuit = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Thread openThread = new Thread(){
+        Thread openThread = new Thread() {
             @Override
             public void run() {
                 // TODO Auto-generated method stub
@@ -45,11 +48,12 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
         return true;
     }
 
-    private void initUI(){
-        surfaceView = (CameraSurfaceView)findViewById(R.id.camera_surfaceview);
-        shutterBtn = (ImageButton)findViewById(R.id.btn_shutter);
+    private void initUI() {
+        surfaceView = (CameraSurfaceView) findViewById(R.id.camera_surfaceview);
+        shutterBtn = (ImageButton) findViewById(R.id.btn_shutter);
     }
-    private void initViewParams(){
+
+    private void initViewParams() {
         ViewGroup.LayoutParams params = surfaceView.getLayoutParams();
         Point p = DisplayUtil.getScreenMetrics(this);
         params.width = p.x;
@@ -60,9 +64,8 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
         //手动设置拍照ImageButton的大小为120dip×120dip,原图片大小是64×64
         ViewGroup.LayoutParams p2 = shutterBtn.getLayoutParams();
         p2.width = DisplayUtil.dip2px(this, 80);
-        p2.height = DisplayUtil.dip2px(this, 80);;
+        p2.height = DisplayUtil.dip2px(this, 80);
         shutterBtn.setLayoutParams(p2);
-
     }
 
     @Override
@@ -71,19 +74,45 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
         SurfaceHolder holder = surfaceView.getSurfaceHolder();
         CameraInterface.getInstance().doStartPreview(holder, previewRate);
     }
+
     private class BtnListeners implements View.OnClickListener {
 
         @Override
         public void onClick(View v) {
             // TODO Auto-generated method stub
-            switch(v.getId()){
+            switch (v.getId()) {
                 case R.id.btn_shutter:
                     CameraInterface.getInstance().doTakePicture();
                     break;
-                default:break;
+                default:
+                    break;
             }
         }
 
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (isQuit) {
+            Thread openThread = new Thread() {
+                @Override
+                public void run() {
+                   // TODO Auto-generated method stub
+                    CameraInterface.getInstance().doOpenCamera(CameraActivity.this);
+                }
+            };
+            openThread.start();
+        }
+        isQuit = false;
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        isQuit = true;
+    }
+
+
 
 }

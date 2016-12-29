@@ -39,6 +39,15 @@ public class CameraInterface {
      */
     public void doOpenCamera(CamOpenOverCallback callback){
         Log.i(TAG, "Camera open....");
+        if(null != mCamera)
+        {
+            mCamera.setPreviewCallback(null);
+            mCamera.stopPreview();
+            isPreviewing = false;
+            mPreviwRate = -1f;
+            mCamera.release();
+            mCamera = null;
+        }
         mCamera = Camera.open();
         Log.i(TAG, "Camera open over....");
         callback.cameraHasOpened();
