@@ -61,8 +61,12 @@
         android:largeHeap="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.hansheng.studynote.glide.CustomCachingGlideModule"
+            android:value="GlideModule" />
+
         <activity
-            android:name=".camera.playcamera.CameraActivity"
+            android:name=".glide.GlideListViewActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name">
             <intent-filter>
@@ -116,16 +120,18 @@
         <activity android:name=".SystemUI.BarTabDemoActivity" />
 
 
-        <activity android:name=".Activity.LaunchMode.TestAActivity"
-            android:launchMode="singleInstance"
-            />
-        <activity android:name=".Activity.LaunchMode.TestBActivity"
-            android:launchMode="singleInstance"/>
-        <activity android:name=".Activity.LaunchMode.TestCActivity"
-            android:launchMode="singleInstance"/>
-        <activity android:name=".Activity.LaunchMode.TestDActivity"
-            android:launchMode="singleInstance"/>
-
+        <activity
+            android:name=".Activity.LaunchMode.TestAActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".Activity.LaunchMode.TestBActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".Activity.LaunchMode.TestCActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".Activity.LaunchMode.TestDActivity"
+            android:launchMode="singleInstance" />
 
 
         <service

@@ -41,8 +41,8 @@ public class VolleyDemo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imageView= (ImageView) findViewById(R.id.image1);
-        mQueue= Volley.newRequestQueue(getApplicationContext());
-        StringRequest stringRequest=new StringRequest("http://www.baidu.com", new Response.Listener<String>() {
+        mQueue= Volley.newRequestQueue(this);
+        StringRequest stringRequest=new StringRequest("http://www.jianshu.com/users/d1d4064c69c7/latest_articles", new Response.Listener<String>() {
             @Override
             public void onResponse(String s) {
                 Log.d(TAG,s);
@@ -76,7 +76,7 @@ public class VolleyDemo extends AppCompatActivity {
             @Override
             public void onResponse(Bitmap bitmap) {
 
-                    imageView.setImageBitmap(bitmap);
+                Log.d(TAG, "onResponse: ");
             }
         },0,0, Bitmap.Config.RGB_565, new Response.ErrorListener(){
             @Override
@@ -131,9 +131,11 @@ public class VolleyDemo extends AppCompatActivity {
                         Log.e("TAG", volleyError.getMessage(), volleyError);
                     }
                 });
-        mQueue.add(gsonRequest);
+//        mQueue.add(gsonRequest);
 //        mQueue.add(imageRequest);
+//        mQueue.add(xmlRequest);
 //        mQueue.add(jsonObjectRequest);
-//        mQueue.add(stringRequest);
+        stringRequest.shouldCache();
+        mQueue.add(stringRequest);
     }
 }

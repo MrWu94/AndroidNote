@@ -2,9 +2,11 @@ package com.hansheng.studynote.glide;
 
 import android.animation.ObjectAnimator;
 import android.content.Context;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +16,13 @@ import android.widget.ListView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.animation.ViewPropertyAnimation;
+import com.bumptech.glide.request.target.Target;
 import com.hansheng.studynote.R;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
 
 /**
  * Created by hansheng on 16-12-28.
@@ -42,6 +50,7 @@ import com.hansheng.studynote.R;
  */
 
 public class GlideListViewActivity extends AppCompatActivity {
+    private static final String TAG = "GlideListViewActivity";
     public static String[] eatFoodyImages = {
             "http://i.imgur.com/rFLNqWI.jpg",
             "http://i.imgur.com/C9pBVt7.jpg",
@@ -92,11 +101,11 @@ public class GlideListViewActivity extends AppCompatActivity {
             imageView = (ImageView) convertView.findViewById(R.id.img_item);
 
 
-            ViewPropertyAnimation.Animator animator=new ViewPropertyAnimation.Animator(){
+            ViewPropertyAnimation.Animator animator = new ViewPropertyAnimation.Animator() {
                 @Override
                 public void animate(View view) {
                     view.setAlpha(0f);
-                    ObjectAnimator fadeAnim=ObjectAnimator.ofFloat( view, "alpha", 0f, 1f );
+                    ObjectAnimator fadeAnim = ObjectAnimator.ofFloat(view, "alpha", 0f, 1f);
                     fadeAnim.setDuration(2500);
                     fadeAnim.start();
 
@@ -114,7 +123,62 @@ public class GlideListViewActivity extends AppCompatActivity {
 //                    .diskCacheStrategy(DiskCacheStrategy.NONE)
                     .into((imageView));
 
+            new GetImageCacheTask(getApplicationContext()).execute(imageUrls);
+
             return convertView;
+        }
+    }
+
+
+
+    private class GetImageCacheTask extends AsyncTask<String, Void, File> {
+        private final Context context;
+
+        public GetImageCacheTask(Context context) {
+            this.context = context;
+        }
+
+        @Override
+        protected File doInBackground(String... params) {
+            String imgUrl = params[0];
+            try {
+                return Glide.with(context)
+                        .load(imgUrl)
+                        .downloadOnly(Target.SIZE_ORIGINAL, Target.SIZE_ORIGINAL)
+                        .get();
+            } catch (Exception ex) {
+                return null;
+            }
+        }
+
+        @Override
+        protected void onPostExecute(File result) {
+            if (result == null) {
+                return;
+            }
+            //此path就是对应文件的缓存路径
+            String path = result.getPath();
+            //将缓存文件copy, 命名为图片格式文件
+            Log.d(TAG, "onPostExecute: " + path);
+        }
+    }
+
+    public static void copyFile(String oldPath, String newPath) {
+        try {
+            int byteRead;
+            File oldFile = new File(oldPath);
+            if (oldFile.exists()) {
+                InputStream inStream = new FileInputStream(oldPath);
+                FileOutputStream fs = new FileOutputStream(newPath);
+                byte[] buffer = new byte[1024];
+                while ((byteRead = inStream.read(buffer)) != -1) {
+                    fs.write(buffer, 0, byteRead);
+                }
+                inStream.close();
+            }
+        } catch (Exception e) {
+            Log.d(TAG, "copyFile: " + "复制文件操作出错");
+            e.printStackTrace();
         }
     }
 }

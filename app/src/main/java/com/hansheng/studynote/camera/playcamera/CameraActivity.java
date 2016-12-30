@@ -37,7 +37,6 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
         setContentView(R.layout.activity_camera);
         initUI();
         initViewParams();
-
         shutterBtn.setOnClickListener(new BtnListeners());
     }
 
