@@ -3,7 +3,9 @@ package com.hansheng.studynote.camera.playcamera;
 import android.app.Activity;
 import android.graphics.Point;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
+import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +52,7 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
     private void initUI() {
         surfaceView = (CameraSurfaceView) findViewById(R.id.camera_surfaceview);
         shutterBtn = (ImageButton) findViewById(R.id.btn_shutter);
+        shutterBtn.getBackground().setAlpha(100);
     }
 
     private void initViewParams() {
@@ -65,6 +68,7 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
         p2.width = DisplayUtil.dip2px(this, 80);
         p2.height = DisplayUtil.dip2px(this, 80);
         shutterBtn.setLayoutParams(p2);
+
     }
 
     @Override
@@ -112,6 +116,17 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
         isQuit = true;
     }
 
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        Log.d(TAG, "onTouchEvent: ");
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        Log.d(TAG, "dispatchTouchEvent: ");
+        return super.dispatchTouchEvent(ev);
+    }
 
 
 }

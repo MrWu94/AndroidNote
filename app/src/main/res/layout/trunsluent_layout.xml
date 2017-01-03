@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/item01"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:padding="10px">//设置内间距
+
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="用户名: "
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user"
+            android:background="#88ffffff" />
+
+        <TextView
+            android:id="@+id/key"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:text="密码："
+            android:textColor="#ffffffff" />
+
+        <EditText
+            android:id="@+id/keyword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/key"
+            android:background="#88ffffff"
+            android:password="true" />
+
+        <CheckBox
+            android:id="@+id/remember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/keyword"
+            android:layout_below="@id/keyword"
+            android:layout_marginLeft="15px"
+            android:text="记住密码" />
+
+        <CheckBox
+            android:id="@+id/autoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/keyword"
+            android:layout_below="@id/keyword"
+            android:text="自动登录" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/autoin"
+            android:layout_margin="10px"
+            android:gravity="center_horizontal"
+            android:text="登 录" />
+
+    </RelativeLayout>
+
+</LinearLayout>
