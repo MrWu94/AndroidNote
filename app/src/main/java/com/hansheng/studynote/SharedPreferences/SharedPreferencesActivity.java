@@ -70,7 +70,7 @@ public class SharedPreferencesActivity extends AppCompatActivity {
         editor.putInt("age", age);
         editor.putString("name", name);
         // 一定要提交
-        editor.commit();
+        boolean success=editor.commit();
 
     }
 

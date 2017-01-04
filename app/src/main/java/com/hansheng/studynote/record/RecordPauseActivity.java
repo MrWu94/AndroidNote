@@ -115,7 +115,7 @@ public class RecordPauseActivity extends Activity {
 
     private File playFile;
 
-    private boolean isDelete=false;
+    private boolean isDelete = false;
 
 
     /**
@@ -249,14 +249,14 @@ public class RecordPauseActivity extends Activity {
                 if (isPause) {
                     //在暂停状态按下结束键,处理list就可以了
                     if (inThePause) {
-                        isDelete=false;
+                        isDelete = false;
                         getInputCollection(list, false);
                     }
                     //在正在录音时，处理list里面的和正在录音的语音
                     else {
                         list.add(myRecAudioFile.getPath());
                         recodeStop();
-                        isDelete=false;
+                        isDelete = false;
                         getInputCollection(list, true);
                     }
                     //还原标志位
@@ -290,7 +290,6 @@ public class RecordPauseActivity extends Activity {
 //                        stop.setEnabled(false);
                     }
                 }
-
                 //停止录音了
                 isStopRecord = true;
             }
@@ -334,7 +333,7 @@ public class RecordPauseActivity extends Activity {
                             Log.d(TAG, "list: " + list.size());
                             Log.d(TAG, "count: " + count);
                             if (count <= 2) {
-                                isDelete=true;
+                                isDelete = true;
                                 playFile = getInputCollection(list, false);
                                 Log.d(TAG, "file: " + playFile.getPath());
                             }
@@ -527,6 +526,9 @@ public class RecordPauseActivity extends Activity {
     }
 
     private void start() {
+        if (timer != null) {
+            timer.cancel();
+        }
         TimerTask timerTask = new TimerTask() {
 
             @Override
@@ -676,20 +678,21 @@ public class RecordPauseActivity extends Activity {
     }
 
     private void deleteListRecord(boolean isAddLastRecord) {
-        if(!isDelete){
-        for (int i = 0; i < list.size(); i++) {
-            File file = new File((String) list.get(i));
+        if (!isDelete) {
+            for (int i = 0; i < list.size(); i++) {
+                File file = new File((String) list.get(i));
 
-            if (file.exists()) {
-                file.delete();
-                Log.d(TAG, "deleteListRecord: ");
+                if (file.exists()) {
+                    file.delete();
+                    Log.d(TAG, "deleteListRecord: ");
+                }
             }
-        }}
+        }
 
         //正在暂停后，继续录音的这一段音频文件
         if (isAddLastRecord) {
 
-            if(myRecAudioFile!=null) {
+            if (myRecAudioFile != null) {
                 myRecAudioFile.delete();
                 Log.d(TAG, "deleteListRecord: " + "删除一段文件");
             }

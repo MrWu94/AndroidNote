@@ -23,6 +23,7 @@ import java.util.TimerTask;
  * 也就是说此时从message queue移除的runnable与原先加入message queue中的runnable并非是同一个对象。
  * 如果把runnable定义为静态的则removeCallbacks不会失效,对于静态变量在内存中只有一个拷贝（节省内存），
  * JVM只为静态分配一次内存，在加载类的过程中完成静态变量的内存分配
+ * http://www.cnblogs.com/benhero/p/4521727.html
  */
 
 public class TimerAndHandlerActivity extends AppCompatActivity {
