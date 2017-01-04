@@ -110,6 +110,13 @@ public class RecordPauseActivity extends Activity {
 
     private boolean isPlay = true;
 
+    private FileInputStream fileInputStream;
+    private int count = 1;
+
+    private File playFile;
+
+    private boolean isDelete=false;
+
 
     /**
      * Called when the activity is first created.
@@ -148,8 +155,11 @@ public class RecordPauseActivity extends Activity {
             }
 //			Environment.getExternalStorageDirectory().getPath() + "/" + PREFIX + "/";
         }
+
+
         // 取得sd card 目录里的.arm文件
         getRecordFiles();
+
 
         adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, recordFiles);
@@ -159,6 +169,7 @@ public class RecordPauseActivity extends Activity {
         start.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                count = 1;
                 if (isFirst) {
                     releaseMedia();
                     second = 0;
@@ -181,6 +192,8 @@ public class RecordPauseActivity extends Activity {
                         start();
                         inThePause = false;
                         isPlay = true;
+
+                        Log.d(TAG, "继续录音: ");
                     }
                     //正在录音，点击暂停,现在录音状态为暂停
                     else {
@@ -193,6 +206,7 @@ public class RecordPauseActivity extends Activity {
                         pauseContinue.setText("继续录音");
                         //计时停止
                         timer.cancel();
+                        Log.d(TAG, "暂停录音: ");
                     }
 
                 }
@@ -204,6 +218,7 @@ public class RecordPauseActivity extends Activity {
         reStart.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
+                count = 1;
                 if (timer != null) {
                     timer.cancel();
                 }
@@ -211,7 +226,12 @@ public class RecordPauseActivity extends Activity {
                 second = 0;
                 minute = 0;
                 deleteListRecord(true);
-                releaseMedia();
+                if (mediaRecorder != null) {
+                    // 停止录音
+                    mediaRecorder.stop();
+                    mediaRecorder.release();
+                    mediaRecorder = null;
+                }
             }
         });
         // 停止
@@ -220,19 +240,23 @@ public class RecordPauseActivity extends Activity {
             @Override
             public void onClick(View v) {
                 xx = false;
-                timer.cancel();
+                if (timer != null) {
+                    timer.cancel();
+                }
                 // TODO Auto-generated method stub
                 //这里写暂停处理的 文件！加上list里面 语音合成起来
                 Log.d(TAG, "stop onClick: ");
                 if (isPause) {
                     //在暂停状态按下结束键,处理list就可以了
                     if (inThePause) {
+                        isDelete=false;
                         getInputCollection(list, false);
                     }
                     //在正在录音时，处理list里面的和正在录音的语音
                     else {
                         list.add(myRecAudioFile.getPath());
                         recodeStop();
+                        isDelete=false;
                         getInputCollection(list, true);
                     }
                     //还原标志位
@@ -275,19 +299,25 @@ public class RecordPauseActivity extends Activity {
         play.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
-                if (myRecAudioFile != null && myRecAudioFile.exists()) {
-                    // 打开播放程序
+                // 打开播放程序
 //                    openFile(myPlayFile);
-                    mPlayer = new MediaPlayer();
-                    try {
-                        if (!isPlay) {
-                            if (list.size() == 0) {
-                                mPlayer.setDataSource(myRecAudioFile.getAbsolutePath());//获取绝对路径来播放音频
-                                Log.d(TAG, "当前方波的音乐文件: " + myRecAudioFile.getAbsolutePath());
+
+                if (mPlayer != null) {
+                    mPlayer.stop();
+                    mPlayer.release();
+                    mPlayer = null;
+                }
+                mPlayer = new MediaPlayer();
+                try {
+                    if (!isPlay) {
+                        if (list.size() == 1) {
+                            Log.d(TAG, "播放: " + list.get(0));
+                            Log.d(TAG, "当前播放的音乐文件myRecAudio: " + myRecAudioFile.getPath());
+                            if (myRecAudioFile != null && myRecAudioFile.exists()) {
+                                mPlayer.setDataSource(myRecAudioFile.getPath());//获取路径来播放音频
                                 mPlayer.prepare();
                                 mPlayer.start();
-                                Toast.makeText(getApplicationContext(), "开始播放", Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(getApplicationContext(), "开始播放", Toast.LENGTH_SHORT).show();
                                 mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
                                     @Override
                                     public void onCompletion(MediaPlayer mp) {
@@ -296,32 +326,41 @@ public class RecordPauseActivity extends Activity {
                                     }
                                 });
                             } else {
-                                File file = getInputCollection(list, false);
-                                mPlayer.setDataSource(file.getAbsolutePath());//获取绝对路径来播放音频
-                                Log.d(TAG, "当前方波的音乐文件: " + file.getAbsolutePath());
-                                mPlayer.prepare();
-                                mPlayer.start();
-                                Toast.makeText(getApplicationContext(), "开始播放", Toast.LENGTH_SHORT).show();
-                                mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                                    @Override
-                                    public void onCompletion(MediaPlayer mp) {
-                                        // TODO Auto-generated method stub
-//                                stopPlaying();
-                                    }
-                                });
+                                Toast.makeText(RecordPauseActivity.this, "你选的是一个空文件", Toast.LENGTH_SHORT).show();
+                                Log.d(TAG, " play onClick: 没有选择文件");
                             }
                         } else {
-                            Toast.makeText(RecordPauseActivity.this, "正在录音，请暂停录音后在试听", Toast.LENGTH_SHORT).show();
+                            count++;
+                            Log.d(TAG, "list: " + list.size());
+                            Log.d(TAG, "count: " + count);
+                            if (count <= 2) {
+                                isDelete=true;
+                                playFile = getInputCollection(list, false);
+                                Log.d(TAG, "file: " + playFile.getPath());
+                            }
+                            Log.d(TAG, "当播放的文件: " + playFile.getPath());
+                            mPlayer.setDataSource(playFile.getPath());//获取路径来播放音频
+                            Log.d(TAG, "当前播放的音乐文件InputCollection: " + playFile.getAbsolutePath());
+                            mPlayer.prepare();
+                            mPlayer.start();
+//                            Toast.makeText(getApplicationContext(), "开始播放", Toast.LENGTH_SHORT).show();
+                            mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                                @Override
+                                public void onCompletion(MediaPlayer mp) {
+                                    // TODO Auto-generated method stub
+//                                stopPlaying();
+                                }
+                            });
                         }
-                    } catch (IOException e) {
-                        Log.e(TAG, "prepare() failed");
+                    } else {
+                        Toast.makeText(RecordPauseActivity.this, "没有录音文件或者正在录音，请暂停录音后在试听", Toast.LENGTH_SHORT).show();
                     }
-
-
-                } else {
-                    Toast.makeText(RecordPauseActivity.this, "你选的是一个空文件", Toast.LENGTH_SHORT).show();
-                    Log.d(TAG, " play onClick: 没有选择文件");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    Log.e(TAG, "prepare() failed");
                 }
+
+
             }
 
         });
@@ -388,7 +427,7 @@ public class RecordPauseActivity extends Activity {
                 checkName.setText("你选的是"
                         + ((TextView) arg1).getText().toString()
                         + "文件大小为：" + length1);
-                Toast.makeText(RecordPauseActivity.this, "你选的是" + (((TextView) arg1).getText()) + "文件大小为：" + length1, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(RecordPauseActivity.this, "你选的是" + (((TextView) arg1).getText()) + "文件大小为：" + length1, Toast.LENGTH_SHORT).show();
 
             }
 
@@ -566,7 +605,8 @@ public class RecordPauseActivity extends Activity {
      */
     public File getInputCollection(List list, boolean isAddLastRecord) {
         String mMinute1 = getTime();
-        Toast.makeText(RecordPauseActivity.this, "当前时间是:" + mMinute1, Toast.LENGTH_LONG).show();
+//        Toast.makeText(RecordPauseActivity.this, "当前时间是:" + mMinute1, Toast.LENGTH_LONG).show();
+        Log.d(TAG, "当前时间是: " + mMinute1);
 
         // 创建音频文件,合并的文件放这里
         File file1 = new File(myRecAudioDir, mMinute1 + SUFFIX);
@@ -591,7 +631,8 @@ public class RecordPauseActivity extends Activity {
             File file = new File((String) list.get(i));
             Log.d("list的长度", list.size() + "");
             try {
-                FileInputStream fileInputStream = new FileInputStream(file);
+                Log.d(TAG, "看看file: " + file);
+                fileInputStream = new FileInputStream(file);
                 byte[] myByte = new byte[fileInputStream.available()];
                 //文件长度
                 int length = myByte.length;
@@ -635,15 +676,24 @@ public class RecordPauseActivity extends Activity {
     }
 
     private void deleteListRecord(boolean isAddLastRecord) {
+        if(!isDelete){
         for (int i = 0; i < list.size(); i++) {
             File file = new File((String) list.get(i));
+
             if (file.exists()) {
                 file.delete();
+                Log.d(TAG, "deleteListRecord: ");
             }
-        }
+        }}
+
         //正在暂停后，继续录音的这一段音频文件
         if (isAddLastRecord) {
-            myRecAudioFile.delete();
+
+            if(myRecAudioFile!=null) {
+                myRecAudioFile.delete();
+                Log.d(TAG, "deleteListRecord: " + "删除一段文件");
+            }
+
         }
     }
 }
