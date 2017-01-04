@@ -10,7 +10,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.2'
+        classpath 'com.android.tools.build:gradle:2.2.3'
         classpath 'com.antfortune.freeline:gradle:0.8.2'
         classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
 
@@ -26,6 +26,8 @@ allprojects {
         maven {
             url "http://mvn.leancloud.cn/nexus/content/repositories/public"
         }
+        //mavenLocal
+
     }
     //全局设定编码
     tasks.withType(JavaCompile) {
@@ -36,7 +38,9 @@ allprojects {
         sourceCompatibility = JavaVersion.VERSION_1_7
         targetCompatibility = JavaVersion.VERSION_1_7
     }
+
 }
+defaultTasks 'clean','build'
 
 task clean(type: Delete) {
     delete rootProject.buildDir

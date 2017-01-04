@@ -42,19 +42,21 @@ public class BaseActivity extends AppCompatActivity {
 
     }
 
-    public void setTypeface(ViewGroup root, Typeface typeface){
-        if(root==null || typeface==null){
+    public void setTypeface(ViewGroup root, Typeface typeface) {
+        if (root == null || typeface == null) {
             return;
         }
         int count = root.getChildCount();
-        for(int i=0;i<count;++i){
+        for (int i = 0; i < count; ++i) {
             View view = root.getChildAt(i);
-            if(view instanceof TextView){
-                ((TextView)view).setTypeface(typeface);
-            }else if(view instanceof ViewGroup){
-                setTypeface((ViewGroup)view, typeface);
+            if (view instanceof TextView) {
+                ((TextView) view).setTypeface(typeface);
+            } else if (view instanceof ViewGroup) {
+                setTypeface((ViewGroup) view, typeface);
             }
 
         }
     }
+
+
 }
