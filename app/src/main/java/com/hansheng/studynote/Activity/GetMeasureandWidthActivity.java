@@ -18,7 +18,7 @@ import android.widget.TextView;
  * getWidth(): 得到的是view在父Layout中布局好后的宽度值，如果没有父布局，那麼默认的父布局是整个屏幕。也许不好理解。
  */
 
-public class Test extends Activity {
+public class GetMeasureandWidthActivity extends Activity {
     private LinearLayout mBackgroundLayout;
     private TextViewTest mTextViewTest;
 

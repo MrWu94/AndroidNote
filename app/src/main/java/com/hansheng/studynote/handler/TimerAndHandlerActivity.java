@@ -81,7 +81,7 @@ public class TimerAndHandlerActivity extends AppCompatActivity {
     }
 
     private void startHandler1() {
-        HandlerThread thread = new HandlerThread("Test");
+        HandlerThread thread = new HandlerThread("Test1");
         thread.start();
         final Handler mHandler = new Handler(thread.getLooper());
         mHandler.post(new Runnable() {

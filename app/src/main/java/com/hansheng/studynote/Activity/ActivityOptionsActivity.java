@@ -24,7 +24,7 @@ public class ActivityOptionsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_options);
     }
     public void start(View view){
-        Intent intent=new Intent(ActivityOptionsActivity.this,Test.class);
+        Intent intent=new Intent(ActivityOptionsActivity.this,ClockActivity.class);
         ActivityOptions activityOptions=ActivityOptions.makeCustomAnimation(ActivityOptionsActivity.this,R.anim.fade_in,R.anim.fade_out);
 //        startActivity(intent,activityOptions.toBundle());
 
