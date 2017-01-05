@@ -220,7 +220,6 @@ dependencies {
     compile project(':customview')
     compile project(':animation')
     compile 'com.jiechic.library:xUtils:2.6.14'
-    compile files('libs/Volley.jar')
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'io.reactivex:rxjava:1.1.0'
     compile 'io.reactivex:rxandroid:1.1.0'
@@ -233,9 +232,6 @@ dependencies {
     compile 'org.greenrobot:eventbus:3.0.0'
     compile 'org.greenrobot:greendao:2.2.0'
     provided 'org.projectlombok:lombok:1.16.6'
-    compile files('libs/universal-image-loader-1.9.4.jar')
-    compile files('libs/autolayout.jar')
-    compile files('libs/ksoap2-android.jar')
     compile 'com.squareup.picasso:picasso:2.4.0'
     compile 'com.getbase:floatingactionbutton:1.7.0'
     compile 'com.android.support:cardview-v7:' + SUPPORT_VERSION
@@ -243,9 +239,6 @@ dependencies {
     //ADD THESE LINES:
 //    androidTestCompile 'com.android.support:support-annotations:' + SUPPORT_VERSION
 //    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
-    compile files('libs/crawler4j-4.1-jar-with-dependencies.jar')
-    compile files('libs/crawler4j-4.2.jar')
-    compile files('libs/androidsvg-1.2.1.jar')
     compile 'com.eftimoff:android-pathview:1.0.8@aar'
     compile project(':hanshenghttpclient')
     compile project(':simplenet')
@@ -256,7 +249,6 @@ dependencies {
     compile 'com.github.ctiao:DanmakuFlameMaster:0.5.0'
     // Image
     compile 'com.github.bumptech.glide:glide:3.7.0'
-    compile files('libs/android-5.0.2_r1-sources.jar')
 
 
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'

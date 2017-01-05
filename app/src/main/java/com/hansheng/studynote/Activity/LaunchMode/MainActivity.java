@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "DEBUG-WCL: " + MainActivity.class.getSimpleName();
 
+
     private static int sCount;
 
     @Bind(R.id.main_b_myself)
