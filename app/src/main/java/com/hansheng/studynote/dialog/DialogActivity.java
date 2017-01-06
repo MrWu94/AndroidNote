@@ -2,17 +2,14 @@ package com.hansheng.studynote.dialog;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
+import com.hansheng.studynote.Activity.BaseActivity;
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.dialog.progress.CustomDialog;
 
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
@@ -20,18 +17,20 @@ import butterknife.OnClick;
  */
 
 
-public class DialogActivity extends AppCompatActivity implements DialogFragmentDemo.LoginInputListener {
+public class DialogActivity extends BaseActivity implements DialogFragmentDemo.LoginInputListener {
 
 
     private CustomDialog dialog;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.dialog_layout);
-        ButterKnife.bind(this);
+    protected int initContentView() {
+        return R.layout.dialog_layout;
     }
 
+    @Override
+    protected void initView() {
+
+    }
     @OnClick({R.id.dialog_btn, R.id.dialog_button, R.id.show_customdialog, R.id.show_dialog, R.id.show_ordinary, R.id.show_ordinarydialog, R.id.show_custom})
     void OnClick(View view) {
         switch (view.getId()) {

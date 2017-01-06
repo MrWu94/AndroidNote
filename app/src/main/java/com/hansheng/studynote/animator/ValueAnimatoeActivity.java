@@ -4,34 +4,37 @@ import android.animation.Animator;
 import android.animation.ObjectAnimator;
 import android.animation.TypeEvaluator;
 import android.animation.ValueAnimator;
-import android.graphics.Point;
 import android.graphics.PointF;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 
+import com.hansheng.studynote.Activity.BaseActivity;
 import com.hansheng.studynote.R;
+
+import butterknife.Bind;
 
 /**
  * Created by hansheng on 2016/6/23.
  */
-public class ValueAnimatoeActivity extends AppCompatActivity {
+public class ValueAnimatoeActivity extends BaseActivity {
 
     private float mScreenHeight;
-    private ImageView imageView;
+
+
+    @Bind(R.id.bol_blue)
+    ImageView imageView;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.value_animator);
-        imageView = (ImageView) findViewById(R.id.bol_blue);
-
+    protected int initContentView() {
+        return R.layout.value_animator;
     }
 
+    @Override
+    protected void initView() {
+
+    }
     public void verticalRun(View view) {
         ValueAnimator animator = ValueAnimator.ofFloat(0, view.getHeight(), imageView.getHeight());
         animator.setTarget(imageView);

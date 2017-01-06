@@ -1,5 +1,6 @@
 package com.hansheng.studynote.Activity;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,11 +9,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import butterknife.ButterKnife;
+
 /**
  * Created by hansheng on 16-11-7.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
+    }
+
+    protected abstract int initContentView();
+
+    protected abstract void initView();
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,7 +52,16 @@ public class BaseActivity extends AppCompatActivity {
 //            }
 //        });
         super.onCreate(savedInstanceState);
+        setContentView(initContentView());
+        ButterKnife.bind(this);
+        initView();
 
+
+    }
+
+    public void setIntent(Class clazz) {
+        Intent intent = new Intent(this, clazz);
+        startActivity(intent);
 
     }
 
