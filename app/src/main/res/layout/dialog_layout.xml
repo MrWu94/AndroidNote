@@ -8,12 +8,43 @@
         android:id="@+id/dialog_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="button" />
+        android:text="对话框一" />
+
     <Button
+        android:id="@+id/dialog_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="button1"
-        android:id="@+id/dialog_button"
-        />
+        android:text="对话框二" />
+
+    <Button
+        android:id="@+id/show_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普通对话框一" />
+
+    <Button
+        android:id="@+id/show_customdialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义对话框一" />
+
+    <Button
+        android:id="@+id/show_ordinarydialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普通对话框二" />
+
+    <Button
+        android:id="@+id/show_ordinary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="普通对话框三" />
+
+    <Button
+        android:id="@+id/show_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="自定义对话框二" />
+
 
 </LinearLayout>

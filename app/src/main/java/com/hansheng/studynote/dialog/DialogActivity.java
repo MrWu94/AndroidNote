@@ -1,28 +1,27 @@
 package com.hansheng.studynote.dialog;
 
 import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.dialog.progress.CustomDialog;
+
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by hansheng on 2016/9/24.
  */
 
 
-public class DialogActivity extends AppCompatActivity implements View.OnClickListener, DialogFragmentDemo.LoginInputListener {
+public class DialogActivity extends AppCompatActivity implements DialogFragmentDemo.LoginInputListener {
 
-    private Button button;
-    private Button button1;
 
     private CustomDialog dialog;
 
@@ -30,33 +29,44 @@ public class DialogActivity extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog_layout);
-        button = (Button) findViewById(R.id.dialog_btn);
-        button1 = (Button) findViewById(R.id.dialog_button);
-        button.setOnClickListener(this);
-        button1.setOnClickListener(this);
+        ButterKnife.bind(this);
     }
 
-    @Override
-    public void onClick(View view) {
-        int id = view.getId();
-        switch (id) {
+    @OnClick({R.id.dialog_btn, R.id.dialog_button, R.id.show_customdialog, R.id.show_dialog, R.id.show_ordinary, R.id.show_ordinarydialog, R.id.show_custom})
+    void OnClick(View view) {
+        switch (view.getId()) {
             case R.id.dialog_btn:
                 showCustomDialogFragment();
                 break;
             case R.id.dialog_button:
                 customDialog();
                 break;
+            case R.id.show_customdialog:
+                showCustomDialogFragment();
+                break;
+            case R.id.show_dialog:
+                showDialogFragment();
+                break;
+            case R.id.show_ordinary:
+                dialog();
+                break;
+            case R.id.show_ordinarydialog:
+                dialog1();
+                break;
+            case R.id.show_custom:
+                showMyDialog();
+                break;
+            default:
+                break;
         }
-
     }
 
 
     public void showCustomDialogFragment() {
 //        ConfirmDialogFragment confirmDialogFragment=new ConfirmDialogFragment();
 //        confirmDialogFragment.show(getFragmentManager(),"log");
-
-       DialogFactory factory= new DialogFactory(getFragmentManager());
-        factory.showConfirmDialog("确定","取消",true,null);
+        DialogFactory factory = new DialogFactory(getFragmentManager());
+        factory.showConfirmDialog("确定", "取消", true, null);
 
     }
 

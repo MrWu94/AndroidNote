@@ -25,12 +25,12 @@ public class FragmentSecureActivity extends AppCompatActivity {
         setContentView(R.layout.fragmentmanager_main);
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        if (savedInstanceState != null) {
-            displayFragment = (DisplayFragment) fragmentManager.findFragmentByTag("displayFragment");
-        } else {
-            displayFragment = new DisplayFragment();
-            fragmentTransaction.add(R.id.framelayout,displayFragment,"displayFragment");
-        }
+//        if (savedInstanceState != null) {
+//            displayFragment = (DisplayFragment) fragmentManager.findFragmentByTag("displayFragment");
+//        } else {
+//            displayFragment = new DisplayFragment();
+//            fragmentTransaction.add(R.id.framelayout,displayFragment,"displayFragment");
+//        }
 
 
     }
