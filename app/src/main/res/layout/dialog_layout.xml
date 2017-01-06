@@ -2,48 +2,66 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <Button
         android:id="@+id/dialog_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
         android:text="对话框一" />
 
     <Button
         android:id="@+id/dialog_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
         android:text="对话框二" />
 
     <Button
         android:id="@+id/show_dialog"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
         android:text="普通对话框一" />
 
     <Button
         android:id="@+id/show_customdialog"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
         android:text="自定义对话框一" />
 
     <Button
         android:id="@+id/show_ordinarydialog"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
         android:text="普通对话框二" />
 
     <Button
         android:id="@+id/show_ordinary"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
         android:text="普通对话框三" />
 
     <Button
         android:id="@+id/show_custom"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
         android:text="自定义对话框二" />
 
 
