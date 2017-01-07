@@ -1,5 +1,7 @@
 package com.hansheng.studynote.ImageCompressandScale;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +15,7 @@ import com.hansheng.studynote.R;
 public class ImageActivity extends AppCompatActivity {
     private ImageView imageView;
     private ImageView image;
+    private Bitmap bitmap;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +29,16 @@ public class ImageActivity extends AppCompatActivity {
         imageView.setScaleType(ImageView.ScaleType.CENTER);
 //        imageView.setForeground(getResources().getDrawable(R.drawable.bitmap));
 //        imageView.setAlpha(100);
-//        Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.bitmap);
+          bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.bitmap);
 //        imageView.setImageBitmap(ImageUtils.compressImage(bitmap));
 }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(bitmap != null && !bitmap.isRecycled()){
+            bitmap.recycle();
+            bitmap = null;
+        }
+    }
 }
