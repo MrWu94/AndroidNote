@@ -11,6 +11,8 @@ import com.hansheng.studynote.R;
 
 import java.util.List;
 
+import static android.view.View.inflate;
+
 /**
  * Created by hansheng on 16-12-14.
  */
@@ -74,7 +76,7 @@ public class MyListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         View view;
         if (convertView == null) {
-            convertView = View.inflate(context, R.layout.listview_m, null);
+            convertView =View.inflate(context, R.layout.listview_m, null);
         }
         view = convertView;
         // 如果是奇数项
