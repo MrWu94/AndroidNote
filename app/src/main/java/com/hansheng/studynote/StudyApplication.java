@@ -10,8 +10,7 @@ import com.hansheng.greendao.DaoMaster;
 import com.hansheng.greendao.DaoSession;
 import com.hansheng.hanshenghttpclient.net.HanShengClientConfig;
 import com.hansheng.hanshenghttpclient.net.HanShengHttpClient;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.hansheng.studynote.loader.ImageLoaderUtil.UniversalAndroidImageLoader;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
@@ -57,13 +56,17 @@ public class StudyApplication extends Application {
 
         HanShengClientConfig clientConfig=new HanShengClientConfig(getApplicationContext());
         HanShengHttpClient.init(clientConfig);
-        //创建默认的ImageLoader配置参数
-        ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(this)
-                .writeDebugLogs() //打印log信息
-                .build();
 
 
-        ImageLoader.getInstance().init(configuration);
+//        //创建默认的ImageLoader配置参数
+//        ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(this)
+//                .writeDebugLogs() //打印log信息
+//                .build();
+//
+//
+//        ImageLoader.getInstance().init(configuration);
+
+        UniversalAndroidImageLoader.init(this);
 
 //        File cacheDir = StorageUtils.getCacheDirectory(this);
 //        ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(this)

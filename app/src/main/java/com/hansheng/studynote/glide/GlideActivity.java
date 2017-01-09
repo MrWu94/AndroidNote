@@ -42,6 +42,8 @@ public class GlideActivity extends AppCompatActivity {
                 .asBitmap()
                 .into(imageGifBitmap);
 
+        ImageLoader.load(getApplicationContext(),"https://avatars0.githubusercontent.com/u/12311938?v=3&s=40",imageView);
+
 
     }
 }

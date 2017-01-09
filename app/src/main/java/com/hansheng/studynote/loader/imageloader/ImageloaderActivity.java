@@ -4,15 +4,13 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.widget.ImageView;
 
 import com.hansheng.studynote.R;
+import com.hansheng.studynote.loader.ImageLoaderUtil.ImageLoaderFactory;
+import com.hansheng.studynote.loader.ImageLoaderUtil.ImageLoaderWrapper;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.assist.FailReason;
 import com.nostra13.universalimageloader.core.assist.ImageSize;
-import com.nostra13.universalimageloader.core.listener.ImageLoadingListener;
 
 
 /**
@@ -27,9 +25,18 @@ public class ImageloaderActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.imageloader_layout);
-        imageView= (ImageView) findViewById(R.id.image2);
-        imageView1= (ImageView) findViewById(R.id.image3);
+        imageView= (ImageView) findViewById(R.id.img_loader);
+        imageView1= (ImageView) findViewById(R.id.img_loader1);
         ImageSize mImageSize = new ImageSize(100, 100);
+
+
+        ImageLoaderWrapper imageLoaderWrapper=ImageLoaderFactory.getLoader();
+        ImageLoaderWrapper.DisplayOption option=new ImageLoaderWrapper.DisplayOption();
+        option.loadErrorResId=R.mipmap.img_error;
+        option.loadingResId=R.mipmap.img_default;
+
+        imageLoaderWrapper.displayImage(imageView,imageUrl,option);
+        imageLoaderWrapper.displayImage(this,imageView1,imageUrl);
 
 
         //显示图片的配置
@@ -41,29 +48,29 @@ public class ImageloaderActivity extends AppCompatActivity {
                 .bitmapConfig(Bitmap.Config.RGB_565)
                 .build();
 
-        ImageLoader.getInstance().loadImage(imageUrl,mImageSize ,options, new ImageLoadingListener() {
-            @Override
-            public void onLoadingStarted(String s, View view) {
+//        ImageLoader.getInstance().loadImage(imageUrl,mImageSize ,options, new ImageLoadingListener() {
+//            @Override
+//            public void onLoadingStarted(String s, View view) {
+//
+//            }
+//
+//            @Override
+//            public void onLoadingFailed(String s, View view, FailReason failReason) {
+//
+//            }
+//
+//            @Override
+//            public void onLoadingComplete(String s, View view, Bitmap bitmap) {
+//                imageView.setImageBitmap(bitmap);
+//
+//            }
+//
+//            @Override
+//            public void onLoadingCancelled(String s, View view) {
+//
+//            }
+//        });
 
-            }
-
-            @Override
-            public void onLoadingFailed(String s, View view, FailReason failReason) {
-
-            }
-
-            @Override
-            public void onLoadingComplete(String s, View view, Bitmap bitmap) {
-                imageView.setImageBitmap(bitmap);
-
-            }
-
-            @Override
-            public void onLoadingCancelled(String s, View view) {
-
-            }
-        });
-        ImageLoader.getInstance().displayImage(imageUrl,imageView1,options);
 
 
     }

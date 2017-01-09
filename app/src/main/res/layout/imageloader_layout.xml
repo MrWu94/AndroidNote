@@ -6,13 +6,13 @@
 
     <ImageView
 
-        android:id="@+id/image2"
+        android:id="@+id/img_loader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher" />
 
     <ImageView
-        android:id="@+id/image3"
+        android:id="@+id/img_loader1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher" />

@@ -16,6 +16,10 @@ public class ImageLoader {
         Glide.with(context).load(imageRes).crossFade().into(view);
     }
 
+    public static void load(Context context,String imageUrl,ImageView view){
+        Glide.with(context).load(imageUrl).centerCrop().crossFade().into(view);
+    }
+
     public static void clear(Context context) {
         Glide.get(context).clearMemory();
     }
