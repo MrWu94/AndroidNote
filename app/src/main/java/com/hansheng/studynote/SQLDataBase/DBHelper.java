@@ -17,6 +17,10 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public static final String TABLE_NAME = "addressbook";
 
+
+    private static final String sql = "CREATE  TABLE IF NOT EXISTS "
+            + TABLE_NAME + "(_id INTEGER PRIMARY KEY , name VARCHAR, phone VARCHAR)";
+
     public DBHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
@@ -28,17 +32,12 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-
-        String sql = "CREATE  TABLE IF NOT EXISTS" + TABLE_NAME + "(_id INTEGER PRIMARY KEY , name VARCHAR, phone VARCHAR)";
         db.execSQL(sql);
-
-
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        String sql = "DROP TABLE IF EXISTS" + TABLE_NAME;
-        db.execSQL(sql);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
 }
