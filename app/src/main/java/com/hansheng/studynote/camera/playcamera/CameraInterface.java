@@ -51,7 +51,7 @@ public class CameraInterface {
             mCamera.release();
             mCamera = null;
         }
-        mCamera = Camera.open(1);
+        mCamera = Camera.open();
         Log.i(TAG, "Camera open over....");
         callback.cameraHasOpened();
     }

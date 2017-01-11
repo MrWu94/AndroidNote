@@ -66,7 +66,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".SQLDataBase.Multile.MainActivity"
+            android:name=".diapatchTouchEvent.DiapatchTouchActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name">
             <intent-filter>

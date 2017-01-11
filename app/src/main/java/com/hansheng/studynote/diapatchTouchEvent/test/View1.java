@@ -26,7 +26,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 public class View1 extends View {
-    private static final String TAG = Static.TAG4;
+    private static final String TAG = "DiapatchTouch";
 
     public View1(Context context) {
         super(context);
@@ -44,7 +44,7 @@ public class View1 extends View {
     public boolean dispatchTouchEvent(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             //Log.i(TAG, Static.dispatchTouchEvent+"做淘宝???");
-            Log.i(TAG, Static.dispatchTouchEvent+"加一道光.");
+            Log.i(TAG, " [码农]"+Static.dispatchTouchEvent+"加一道光.");
         }
         return super.dispatchTouchEvent(event);
     }
@@ -53,8 +53,9 @@ public class View1 extends View {
     public boolean onTouchEvent(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             //Log.i(TAG, Static.onTouchEvent+"这个真心做不了啊");
-            Log.i(TAG, Static.onTouchEvent+"做好了.");
+            Log.i(TAG, " [码农]"+Static.onTouchEvent+"做好了.");
         }
-        return true;
+//       return true;
+        return false;
     }
 }

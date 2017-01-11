@@ -17,13 +17,18 @@ import com.hansheng.studynote.R;
  * Created by hansheng on 16-12-12.
  */
 
-public class CameraActivity extends Activity implements CameraInterface.CamOpenOverCallback {
+public class CameraActivity extends Activity implements CameraInterface.CamOpenOverCallback, View.OnTouchListener {
     private static final String TAG = "CameraActivity";
     CameraSurfaceView surfaceView = null;
     ImageButton shutterBtn;
     float previewRate = -1f;
 
     boolean isQuit = false;
+
+    private int x;
+    private int y;
+    private int rawx;
+    private int rawy;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,6 +83,28 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
         CameraInterface.getInstance().doStartPreview(holder, previewRate);
     }
 
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        int eventaction = event.getAction();
+        switch (eventaction) {
+            case MotionEvent.ACTION_DOWN:
+                break;
+            case MotionEvent.ACTION_MOVE:
+                x = (int) event.getX();
+                y = (int) event.getY();
+                rawx = (int) event.getRawX();
+                rawy = (int) event.getRawY();
+                Log.d(TAG, "getX=" + x + "getY=" + y + "\n" + "getRawX=" + rawx
+                        + "getRawY=" + rawy + "\n");
+                break;
+
+            case MotionEvent.ACTION_UP:
+
+                break;
+        }
+        return false;
+    }
+
     private class BtnListeners implements View.OnClickListener {
 
         @Override
@@ -85,7 +112,7 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
             // TODO Auto-generated method stub
             switch (v.getId()) {
                 case R.id.btn_shutter:
-                    CameraInterface.getInstance().doTakePicture();
+
                     break;
                 default:
                     break;
@@ -101,7 +128,7 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
             Thread openThread = new Thread() {
                 @Override
                 public void run() {
-                   // TODO Auto-generated method stub
+                    // TODO Auto-generated method stub
                     CameraInterface.getInstance().doOpenCamera(CameraActivity.this);
                 }
             };
@@ -119,6 +146,19 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.d(TAG, "onTouchEvent: ");
+
+        x = (int) event.getX();
+        y = (int) event.getY();
+        rawx = (int) event.getRawX();
+        rawy = (int) event.getRawY();
+
+        if (x < 900 && x > 300 && y > 200 && y < 700) {
+            Log.d(TAG, "getX=" + x + "getY=" + y + "\n" + "getRawX=" + rawx
+                    + "getRawY=" + rawy + "\n");
+
+        }
+
+
         return super.onTouchEvent(event);
     }
 

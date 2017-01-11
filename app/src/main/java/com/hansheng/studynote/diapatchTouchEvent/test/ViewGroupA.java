@@ -26,7 +26,7 @@ import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
 public class ViewGroupA extends RelativeLayout {
-    private static final String TAG = Static.TAG3;
+    private static final String TAG = "DiapatchTouch";
 
     public ViewGroupA(Context context) {
         super(context);
@@ -38,6 +38,7 @@ public class ViewGroupA extends RelativeLayout {
 
     public ViewGroupA(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+
     }
 
     @Override
@@ -45,7 +46,7 @@ public class ViewGroupA extends RelativeLayout {
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {
             //Log.i(TAG, Static.dispatchTouchEvent + "老板要做淘宝,下周上线?");
             //Log.i(TAG, Static.dispatchTouchEvent + "给按钮加上一道光.");
-            Log.i(TAG, Static.dispatchTouchEvent + "项目进度?");
+            Log.i(TAG, "[组长]"+Static.dispatchTouchEvent + "项目进度?");
         }
 
         return super.dispatchTouchEvent(ev);
@@ -55,11 +56,11 @@ public class ViewGroupA extends RelativeLayout {
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         if (ev.getAction() == MotionEvent.ACTION_DOWN) {
             //Log.i(TAG, Static.onInterceptTouchEvent + "(看着不太靠谱,先问问小王怎么看)");
-            Log.i(TAG, Static.onInterceptTouchEvent);
+            Log.i(TAG, "[组长]"+Static.onInterceptTouchEvent);
         }
-
-        // return super.onInterceptTouchEvent(ev);
-        return true;
+//        Log.d(TAG, "[组长]"+"onInterceptTouchEvent: "+super.onInterceptTouchEvent(ev));
+         return super.onInterceptTouchEvent(ev);
+//        return true;
     }
 
     @Override
@@ -67,8 +68,9 @@ public class ViewGroupA extends RelativeLayout {
         if (event.getAction() == MotionEvent.ACTION_DOWN) {
             //Log.i(TAG, Static.onTouchEvent + "小王说做不了");
             //Log.i(TAG, Static.onTouchEvent);
-            Log.i(TAG, Static.onTouchEvent+"正在测试,明天就测试完了");
+            Log.i(TAG, "[组长]"+Static.onTouchEvent+"正在测试,明天就测试完了");
         }
-        return true;
+        return super.onTouchEvent(event);
+//       return true;
     }
 }

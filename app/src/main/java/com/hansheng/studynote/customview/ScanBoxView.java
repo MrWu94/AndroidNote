@@ -142,6 +142,7 @@ public class ScanBoxView extends View {
         typedArray.recycle();
 
         afterInitCustomAttrs();
+
     }
 
     private void initCustomAttr(int attr, TypedArray typedArray) {
@@ -256,14 +257,14 @@ public class ScanBoxView extends View {
         // 画四个直角的线
         drawCornerLine(canvas);
 
-        // 画扫描线
-        drawScanLine(canvas);
+//        // 画扫描线
+//        drawScanLine(canvas);
 
         // 画提示文本
         drawTipText(canvas);
 
-        // 移动扫描线的位置
-        moveScanLine();
+//        // 移动扫描线的位置
+//        moveScanLine();
 
     }
 
@@ -496,7 +497,7 @@ public class ScanBoxView extends View {
 
     private void calFramingRect() {
         int leftOffset = (getWidth() - mRectWidth) / 2;
-        mFramingRect = new Rect(leftOffset, mTopOffset, leftOffset + mRectWidth, mTopOffset + mRectHeight);
+        mFramingRect = new Rect(leftOffset-120, mTopOffset, leftOffset + mRectWidth+150, mTopOffset + mRectHeight);
 
         if (mIsBarcode) {
             mGridScanLineRight = mScanLineLeft = mFramingRect.left + mHalfCornerSize + 0.5f;
