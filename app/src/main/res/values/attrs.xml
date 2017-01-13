@@ -240,4 +240,9 @@
         <attr name="qrcv_isOnlyDecodeScanBoxArea" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="SelectorButton">
+        <attr name="normal_drawable" format="reference" />
+        <attr name="pressed_drawable" format="reference" />
+        　　</declare-styleable>
+
 </resources>

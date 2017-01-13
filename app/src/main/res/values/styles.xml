@@ -28,7 +28,9 @@
         <!--<item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>-->
 
     </style>
+
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
 
@@ -65,7 +67,6 @@
     </style>
 
 
-
     <style name="NumberProgressBar_Default">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
@@ -98,6 +99,7 @@
         <item name="android:windowEnterAnimation">@anim/menu_bottombar_in</item>
         <item name="android:windowExitAnimation">@anim/menu_bottombar_out</item>
     </style>
+
     <style name="TextStyle_context">
         <item name="android:textSize">15dp</item>
         <item name="android:textColor">@color/text_color_context</item>
@@ -112,6 +114,7 @@
         <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
         <item name="android:backgroundDimAmount">0.6</item><!-- 灰度 -->
     </style>
+
     <style name="Widget" />
 
     <style name="Widget.SampleMessage">
@@ -125,6 +128,7 @@
         <item name="android:shadowDy">-3.5</item>
         <item name="android:shadowRadius">2</item>
     </style>
+
     <style name="TvTextViewStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -135,6 +139,7 @@
         <item name="android:layout_marginRight">16dp</item>
         <item name="android:textColor">@color/font_black_2</item>
     </style>
+
     <style name="TvButtonStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -171,9 +176,6 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/font_black_2</item>
     </style>
-
-
-
 
 
 </resources>
