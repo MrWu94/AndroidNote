@@ -294,6 +294,8 @@ dependencies {
         useLibrary 'org.apache.http.legacy'
     }
 
+    compile 'com.melnykov:floatingactionbutton:1.1.0'
+
 
 
 //    去掉重复依赖,剔除整个组织的库

@@ -1,6 +1,6 @@
 package com.hansheng.studynote.record;
 
-import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -38,7 +40,7 @@ import java.util.TimerTask;
  * Created by hansheng on 16-12-8.
  */
 
-public class RecordPauseActivity extends Activity {
+public class RecordPauseActivity extends AppCompatActivity {
 
     private static final String TAG = "RecordPauseActivity";
     private ImageButton start;
@@ -117,6 +119,10 @@ public class RecordPauseActivity extends Activity {
 
     private boolean isDelete = false;
 
+    private Context context;
+
+
+
 
     /**
      * Called when the activity is first created.
@@ -125,6 +131,10 @@ public class RecordPauseActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.record_pause);
+
+        context=RecordPauseActivity.this;
+
+
         //暂停标志位 为false
         isPause = false;
         //暂停状态标志位
@@ -308,53 +318,75 @@ public class RecordPauseActivity extends Activity {
                 }
                 mPlayer = new MediaPlayer();
                 try {
+                    Log.d(TAG, "second=: "+second+"minute="+minute);
                     if (!isPlay) {
                         if (list.size() == 1) {
+
+                            PlaybackFragment playbackFragment =
+                                    new PlaybackFragment().newInstance(minute,second,myRecAudioFile.getPath());
+
+                            FragmentTransaction transaction = getSupportFragmentManager()
+                                    .beginTransaction();
+
+                            playbackFragment.show(transaction, "dialog_playback");
+
+
                             Log.d(TAG, "播放: " + list.get(0));
                             Log.d(TAG, "当前播放的音乐文件myRecAudio: " + myRecAudioFile.getPath());
-                            if (myRecAudioFile != null && myRecAudioFile.exists()) {
-                                mPlayer.setDataSource(myRecAudioFile.getPath());//获取路径来播放音频
-                                mPlayer.prepare();
-                                mPlayer.start();
-//                                Toast.makeText(getApplicationContext(), "开始播放", Toast.LENGTH_SHORT).show();
-                                mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                                    @Override
-                                    public void onCompletion(MediaPlayer mp) {
-                                        // TODO Auto-generated method stub
-//                                stopPlaying();
-                                    }
-                                });
-                            } else {
-                                Toast.makeText(RecordPauseActivity.this, "你选的是一个空文件", Toast.LENGTH_SHORT).show();
-                                Log.d(TAG, " play onClick: 没有选择文件");
-                            }
+//                            if (myRecAudioFile != null && myRecAudioFile.exists()) {
+//                                mPlayer.setDataSource(myRecAudioFile.getPath());//获取路径来播放音频
+//                                mPlayer.prepare();
+//                                mPlayer.start();
+////                                Toast.makeText(getApplicationContext(), "开始播放", Toast.LENGTH_SHORT).show();
+//                                mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//                                    @Override
+//                                    public void onCompletion(MediaPlayer mp) {
+//                                        // TODO Auto-generated method stub
+////                                stopPlaying();
+//                                    }
+//                                });
+//                            } else {
+//                                Toast.makeText(RecordPauseActivity.this, "你选的是一个空文件", Toast.LENGTH_SHORT).show();
+//                                Log.d(TAG, " play onClick: 没有选择文件");
+//                            }
                         } else {
                             count++;
                             Log.d(TAG, "list: " + list.size());
                             Log.d(TAG, "count: " + count);
+
+
                             if (count <= 2) {
                                 isDelete = true;
                                 playFile = getInputCollection(list, false);
                                 Log.d(TAG, "file: " + playFile.getPath());
                             }
                             Log.d(TAG, "当播放的文件: " + playFile.getPath());
-                            mPlayer.setDataSource(playFile.getPath());//获取路径来播放音频
-                            Log.d(TAG, "当前播放的音乐文件InputCollection: " + playFile.getAbsolutePath());
-                            mPlayer.prepare();
-                            mPlayer.start();
-//                            Toast.makeText(getApplicationContext(), "开始播放", Toast.LENGTH_SHORT).show();
-                            mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                                @Override
-                                public void onCompletion(MediaPlayer mp) {
-                                    // TODO Auto-generated method stub
-//                                stopPlaying();
-                                }
-                            });
+
+
+                            PlaybackFragment playbackFragment =
+                                    new PlaybackFragment().newInstance(minute,second,playFile.getPath());
+
+                            FragmentTransaction transaction = getSupportFragmentManager()
+                                    .beginTransaction();
+
+                            playbackFragment.show(transaction, "dialog_playback");
+//                            mPlayer.setDataSource(playFile.getPath());//获取路径来播放音频
+//                            Log.d(TAG, "当前播放的音乐文件InputCollection: " + playFile.getAbsolutePath());
+//                            mPlayer.prepare();
+//                            mPlayer.start();
+////                            Toast.makeText(getApplicationContext(), "开始播放", Toast.LENGTH_SHORT).show();
+//                            mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+//                                @Override
+//                                public void onCompletion(MediaPlayer mp) {
+//                                    // TODO Auto-generated method stub
+////                                stopPlaying();
+//                                }
+//                            });
                         }
                     } else {
                         Toast.makeText(RecordPauseActivity.this, "没有录音文件或者正在录音，请暂停录音后在试听", Toast.LENGTH_SHORT).show();
                     }
-                } catch (IOException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                     Log.e(TAG, "prepare() failed");
                 }
@@ -542,6 +574,7 @@ public class RecordPauseActivity extends Activity {
                 handler.sendEmptyMessage(1);
             }
         };
+
         timer = new Timer();
         timer.schedule(timerTask, 1000, 1000);
 
@@ -597,6 +630,7 @@ public class RecordPauseActivity extends Activity {
             // TODO Auto-generated method stub
             super.handleMessage(msg);
             checkName.setText("录音时间：" + minute + ":" + second);
+            Log.d(TAG, "second: "+second+"minute"+minute);
         }
 
     };

@@ -61,5 +61,7 @@
     <color name="pedo_actionbar_divider">#CECECE</color>
     <color name="pedo_actionbar_bkg">#F8F8F8</color>
     <color name="darkBlue">#3e802f</color>
+    <color name="primary">#F44336</color>
+    <color name="accent">#FFC107</color>
 
 </resources>
