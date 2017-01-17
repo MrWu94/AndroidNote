@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:background="@drawable/bg_btn_selector"
-        android:text="普通对话框一" />
+        android:text="DialogFragment" />
 
     <Button
         android:id="@+id/show_customdialog"
@@ -63,6 +63,15 @@
         android:layout_margin="8dp"
         android:background="@drawable/bg_btn_selector"
         android:text="自定义对话框二" />
+
+    <Button
+        android:id="@+id/btn_nofull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
+        android:text="noFullScreen"
+        />
 
 
 </LinearLayout>

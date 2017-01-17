@@ -4,14 +4,21 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.hansheng.studynote.R;
+
+import static android.app.Activity.RESULT_OK;
 
 /**
  * Created by hansheng on 16-9-26.
@@ -20,6 +27,8 @@ import com.hansheng.studynote.R;
 public class DialogFragmentDemo extends DialogFragment {
     private EditText mUsername;
     private EditText mPassword;
+    private static int RESULT_LOAD_IMAGE = 1;
+    private static final String TAG="DialogFragmentDemo";
 
     public interface LoginInputListener
     {
@@ -44,13 +53,36 @@ public class DialogFragmentDemo extends DialogFragment {
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
-                                LoginInputListener listener = (LoginInputListener) getActivity();
-                                listener.onLoginInputComplete(mUsername
-                                        .getText().toString(), mPassword
-                                        .getText().toString());
+//                                LoginInputListener listener = (LoginInputListener) getActivity();
+//                                listener.onLoginInputComplete(mUsername
+//                                        .getText().toString(), mPassword
+//                                        .getText().toString());
+                                Intent i = new Intent(
+                                        Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
+                                startActivityForResult(i, RESULT_LOAD_IMAGE);
                             }
                         }).setNegativeButton("Cancel", null);
-        return builder.create();
+        Dialog dialog=builder.create();
+        dialog.setCanceledOnTouchOutside(false);// 设置点击屏幕Dialog不消失
+        return dialog;
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == RESULT_LOAD_IMAGE && resultCode == RESULT_OK && null != data) {
+            Uri selectedImage = data.getData();
+            String[] filePathColumn = {MediaStore.Images.Media.DATA};
+            Cursor cursor = getActivity().getContentResolver().query(selectedImage,
+                    filePathColumn, null, null, null);
+            cursor.moveToFirst();
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            String picturePath = cursor.getString(columnIndex);
+            Log.d(TAG, "onActivityResult: "+picturePath);
+            cursor.close();
+        }
     }
 
     @Nullable

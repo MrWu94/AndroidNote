@@ -66,7 +66,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".record.RecordPauseActivity"
+            android:name=".dialog.DialogActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name">
             <intent-filter>
@@ -130,6 +130,10 @@
         <activity android:name=".SQLDataBase.PrimarySqlite.CreateOrOpenActivity"/>
         <activity android:name=".SQLDataBase.PrimarySqlite.OptimizeActivity"/>
         <activity android:name=".SQLDataBase.PrimarySqlite.SqlOperateActivity"/>
+
+        <activity android:name=".dialog.NoFullScreenActivity.NoFullScreenActivity"
+            android:theme="@style/Theme.CustomDialog"
+            />
 
 
 
