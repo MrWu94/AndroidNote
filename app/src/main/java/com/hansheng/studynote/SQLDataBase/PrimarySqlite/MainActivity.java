@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.hansheng.studynote.R;
+import com.hansheng.studynote.SQLDataBase.searchview.SearchActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,6 +55,15 @@ public class MainActivity extends AppCompatActivity {
      */
     public void optimize(View view) {
         startActivity(new Intent(this, OptimizeActivity.class));
+    }
+
+    /**
+     * SQLite应用案例
+     *
+     * @param view
+     */
+    public void search(View view) {
+        startActivity(new Intent(this, SearchActivity.class));
     }
 
 
