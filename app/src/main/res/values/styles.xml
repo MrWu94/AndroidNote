@@ -198,4 +198,12 @@
         <item name="android:backgroundDimEnabled">true</item>
     </style>
 
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/dialog_bj_hint</item>
+    </style>
+    <style name="ColdStartTheme" >
+        <item name="android:windowBackground">@drawable/cold_start_bg</item>
+    </style>
+
+
 </resources>
