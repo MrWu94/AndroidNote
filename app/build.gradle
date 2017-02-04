@@ -27,6 +27,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
+
     //构建类型
     buildTypes {
         release {
