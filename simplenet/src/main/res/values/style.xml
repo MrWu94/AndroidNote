@@ -29,4 +29,9 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:contentDescription">@string/app_name</item>
     </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbog_style</item>
+    </style>
+
 </resources>
