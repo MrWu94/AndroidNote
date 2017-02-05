@@ -66,7 +66,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".Activity.start.StartActivity"
+            android:name=".SQLDataBase.SQLiteDBMultiTbl.MainActivity"
             android:theme="@style/AppTheme.Launcher"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name">
