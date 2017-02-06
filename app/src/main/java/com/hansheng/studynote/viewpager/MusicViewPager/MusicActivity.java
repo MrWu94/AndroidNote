@@ -1,23 +1,15 @@
-package com.hansheng.studynote.viewpager;
+package com.hansheng.studynote.viewpager.MusicViewPager;
 
-import android.graphics.PixelFormat;
-import android.graphics.drawable.GradientDrawable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
-import android.util.DisplayMetrics;
-import android.view.Window;
-import android.widget.Button;
 import android.widget.RadioButton;
 
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.widget.BActivity;
-import com.hansheng.studynote.widget.GradientUtils;
 
 import java.util.List;
 

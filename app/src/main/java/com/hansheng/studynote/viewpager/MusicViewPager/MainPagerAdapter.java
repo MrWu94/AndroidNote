@@ -1,4 +1,4 @@
-package com.hansheng.studynote.viewpager;
+package com.hansheng.studynote.viewpager.MusicViewPager;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
