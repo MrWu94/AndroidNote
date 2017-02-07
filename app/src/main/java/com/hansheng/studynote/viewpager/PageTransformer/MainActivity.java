@@ -36,6 +36,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initView() {
         initData();
+        mViewPager.setPageTransformer(true,new ZoomOutPageTransformer());
         mViewPager.setAdapter(new PagerAdapter() {
             @Override
             public int getCount() {
@@ -51,7 +52,6 @@ public class MainActivity extends BaseActivity {
             @Override
             public void destroyItem(ViewGroup container, int position, Object object) {
                 container.removeView(mImageViews.get(position));
-                super.destroyItem(container, position, object);
             }
 
             @Override
