@@ -36,3 +36,22 @@ Manifest文件中并且与activities联系在一起，而非layout）。可以�
         	android:layout_height="match_parent"
         	tools:listitem="@android:layout/simple_list_item_checked"/>
 
+
+        	一般的控件属性以“android:”开头。新增一个同样的属性，改为以“tools:”开头。
+            例如：一个TextView控件，需要设置默认状态为不可见。
+
+            <TextView
+                        android:text="Name"
+                        android:visiblity="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            但是你想预览它，又担心改为android:visiblity="visible"之后忘了改回来，直接提交了。现在你不必担心，新增一个同样名称的属性，以“tools:”开头，就可以了。
+
+            <TextView
+                        android:text="Name"
+                        android:visiblity="gone"
+                        tools:visiblity="visible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
