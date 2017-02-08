@@ -17,7 +17,7 @@ import java.util.List;
  */
 
 public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHolder> {
-    private static final String TAG="GalleryAdapter";
+    private static final String TAG = "GalleryAdapter";
 
     private LayoutInflater mInflater;
     private List<Integer> mDatas;
@@ -25,6 +25,17 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
     public GalleryAdapter(Context context, List<Integer> mDatas) {
         mInflater = LayoutInflater.from(context);
         this.mDatas = mDatas;
+    }
+
+
+    public interface OnItemClickListener {
+        void onItemClick(View view, int position);
+    }
+
+    private OnItemClickListener onItemClickListener;
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
     }
 
 
@@ -40,11 +51,21 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(final ViewHolder holder,final int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
 
 //       Log.d(TAG, "onBindViewHolder: "+ holder.mImg.equals(null));
 //        holder.mImg.equals(null);
-      holder.mImg.setImageResource(mDatas.get(position));
+        holder.mImg.setImageResource(mDatas.get(position));
+
+        if(onItemClickListener!=null){
+            holder.mImg.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onItemClickListener.onItemClick(holder.mImg,position);
+                }
+            });
+        }
+
     }
 
     @Override
@@ -55,9 +76,10 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
     public static class ViewHolder extends RecyclerView.ViewHolder {
         ImageView mImg;
         TextView mTxt;
+
         public ViewHolder(View itemView) {
             super(itemView);
-            mImg= (ImageView) itemView.findViewById(R.id.id_index_gallery_item_image);
+            mImg = (ImageView) itemView.findViewById(R.id.id_index_gallery_item_image);
         }
 
 

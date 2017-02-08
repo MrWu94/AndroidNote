@@ -2,6 +2,8 @@ package com.hansheng.studynote.RecyclerView.RecyclerViewDemo;
 
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Toast;
 
 import com.hansheng.studynote.Activity.BaseActivity;
 import com.hansheng.studynote.R;
@@ -38,6 +40,12 @@ public class MainActivity extends BaseActivity {
         mRecyclerView.setLayoutManager(linearLayoutManager);
 
         mAdapter = new GalleryAdapter(this, mDatas);
+        mAdapter.setOnItemClickListener(new GalleryAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Toast.makeText(MainActivity.this, position+"", Toast.LENGTH_SHORT).show();
+            }
+        });
         mRecyclerView.setAdapter(mAdapter);
 
     }
