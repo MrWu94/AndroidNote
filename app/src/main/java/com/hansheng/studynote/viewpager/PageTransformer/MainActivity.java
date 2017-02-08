@@ -37,6 +37,8 @@ public class MainActivity extends BaseActivity {
     protected void initView() {
         initData();
         mViewPager.setPageTransformer(true,new ZoomOutPageTransformer());
+        mViewPager.setPageMargin(20);
+        mViewPager.setOffscreenPageLimit(3);
         mViewPager.setAdapter(new PagerAdapter() {
             @Override
             public int getCount() {
