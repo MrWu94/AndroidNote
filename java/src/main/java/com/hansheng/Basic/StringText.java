@@ -4,6 +4,10 @@ import java.util.Calendar;
 
 /**
  * Created by hansheng on 2016/9/30.
+ * 1，字符串在java中存储在字符串常量区中
+ * 2，==判断的是对象引用是否是同一个引用，判断字符串相等要用equals方法
+ * 首先判断a==MESSAGE 同一份字符串常量在内存中只有一份，因此是同一地址，返回true
+ * 再次比较(b+c)==MESSAGE 这相当于 new String(b+c)==MESSAGE 这里new了一个String对象，所以返回false
  */
 
 public class StringText {
@@ -17,7 +21,17 @@ public class StringText {
         x /= 3;
     }
 
+    private static final String MESSAGE = "taobao";
+
     public static void main(String... args) {
+
+
+        String a = "tao" + "bao";
+        String b = "tao";
+        String c = "bao";
+        System.out.println(a == MESSAGE);
+        System.out.println((b + c) == MESSAGE);
+
         stringText();
         int i = 1;
         System.out.println(fina(i));
