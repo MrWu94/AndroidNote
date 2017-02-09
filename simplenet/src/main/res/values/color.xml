@@ -8,4 +8,10 @@
     <color name="red">#FC2828</color>
     <color name="blue1">#ff00a4e8</color>
     <color name="black">#ff000000</color>
+    <color name="black_80">#222222</color>
+    <color name="gray_20">#B3B3B3</color>
+    <color name="line_bg">#e6e6e6</color>
+    <color name="colorPrimary">#fb7299</color>
+    <color name="colorPrimaryDark">#b85671</color>
+    <color name="gray_light">#dcdcdc</color>
 </resources>

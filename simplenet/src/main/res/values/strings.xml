@@ -21,4 +21,8 @@
     <string name="wallet">钱包</string>
     <string name="card_bag">卡包</string>
     <string name="expression2">表情</string>
+
+    <string name="login_hint_account">请输入您的哔哩哔哩账号</string>
+    <string name="login_hint_password">请输入您的密码</string>
+    <string name="login">登录</string>
 </resources>

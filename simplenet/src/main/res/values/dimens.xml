@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_button_height">45dp</dimen>
+    <dimen name="default_general_margin">10dp</dimen>
+    <dimen name="default_long_margin">30dp</dimen>
+    <dimen name="default_grow_margin">20dp</dimen>
+    <dimen name="action_bar_default_height">48dp</dimen>
+    <dimen name="default_medium_text_size">16sp</dimen>
+    <dimen name="line_height">1dp</dimen>
+    <dimen name="default_small_padding">8dp</dimen>
+
+</resources>

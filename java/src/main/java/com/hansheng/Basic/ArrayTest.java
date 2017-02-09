@@ -8,7 +8,12 @@ import java.util.List;
  */
 
 public class ArrayTest {
+
+
     public static void main(String... args) {
+
+        String str="hello";
+        str.length();
         int a[] = {1, 2, 3, 4, 5};
         List list = Arrays.asList(1, 2, 3, 4);
         System.out.println("list=" + list.get(0));
