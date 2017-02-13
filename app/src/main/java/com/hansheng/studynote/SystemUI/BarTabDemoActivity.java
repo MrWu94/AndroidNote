@@ -16,7 +16,7 @@ import com.hansheng.studynote.SystemUI.fragment.AuthorInfoFragment;
 /**
  * Created by hansheng on 16-12-15.
  */
-public class BarTabDemoActivity extends BaseActivity {
+public class  BarTabDemoActivity extends BaseActivity {
 
     private Fragment[] mFragmentArrays = new Fragment[3];
     private String[] mTabTitles = new String[3];
