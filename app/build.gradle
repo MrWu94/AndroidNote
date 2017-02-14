@@ -4,6 +4,7 @@ apply plugin: 'findbugs'
 apply plugin: 'android-apt'
 apply plugin: 'com.antfortune.freeline'
 apply plugin: 'com.jakewharton.hugo'
+apply plugin: 'tinyPIC'
 
 //Groovy 的基本语法
 //方法调用
@@ -133,6 +134,14 @@ android {
         targetCompatibility JavaVersion.VERSION_1_7
 
     }
+}
+
+tinyinfo {
+    apiKey ='UOw4TImgfWX6J_HufF24Rimgl8AHjWNK'
+    //是否跳过此task
+    skip = true
+    //是否打印日志
+    isShowLog = false
 }
 
 repositories {

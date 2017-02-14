@@ -44,7 +44,21 @@ public class ContactDBHelper extends SQLiteOpenHelper {
     public static final String CONTACTS_COLUMN_PHONE = "phone";
     public static final String CONTACTS_CREATED_AT = "createdAt";
 
-    public ContactDBHelper(Context context) {
+
+    private static ContactDBHelper instance;
+
+    /**
+     * 加锁单例模式，防止线程死锁
+     */
+
+    public synchronized static ContactDBHelper getInstance(Context context) {
+        if (instance == null) {
+            instance = new ContactDBHelper(context);
+        }
+        return instance;
+    }
+
+    private ContactDBHelper(Context context) {
         super(context, DATABASE_NAME, null, 1);
     }
 

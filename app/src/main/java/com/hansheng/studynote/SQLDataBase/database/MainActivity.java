@@ -30,6 +30,8 @@ import com.hansheng.studynote.R;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ContactDBHelper contactDBHelper;
+
     @SuppressLint("CommitPrefEdits")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         prefsTwo.edit().putString("testTwoNew", "two").commit();
 
-        ContactDBHelper contactDBHelper = new ContactDBHelper(getApplicationContext());
+        contactDBHelper = ContactDBHelper.getInstance(getApplicationContext());
         if (contactDBHelper.count() == 0) {
             for (int i = 0; i < 100; i++) {
                 String name = "name_" + i;
