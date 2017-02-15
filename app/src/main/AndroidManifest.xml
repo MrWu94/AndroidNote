@@ -66,10 +66,10 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".AndroidAnnoation.Annotations_"
-            android:theme="@style/AppTheme.Launcher"
+            android:name=".contentprovider.ContentProvider.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -86,8 +86,9 @@
             android:name=".wifi.FileTransferService"
             android:enabled="true" />
         <receiver android:name=".alarm.AlarmReceiver" />
+
         <activity android:name=".ActivityManager.BrowseProcessInfoActivity" />
-        <activity android:name=".SQLDataBase.SQLiteDB2.StudentDetail"/>
+        <activity android:name=".SQLDataBase.SQLiteDB2.StudentDetail" />
 
         <service
             android:name=".Socket.chat.TCPServerService"
@@ -97,6 +98,11 @@
             android:name=".contentprovider.MyProvider"
             android:authorities="com.hansheng.contentprovider.myprovider"
             android:exported="true" />
+
+        <!-- android:authorities 授权属性，表示外部应用程序访问当前内容提供者的标示符，它是自定义的，一般我们是以 "包名 + 类名" 的形式来定义的。有些人可以理解为 URI 路径
+--><provider
+        android:name=".contentprovider.ContentProvider.StudentProvider"
+        android:authorities="com.android.contentproviderdemo.StudentProvider" />
 
         <activity android:name=".Activity.SecondActivity" />
         <activity android:name=".webview.ShowWebViewActivity" />
@@ -128,17 +134,16 @@
         <activity android:name=".animator.ViewAnimateActivity" />
         <activity android:name=".animator.XfermodeActivity" />
 
-        <activity android:name=".SQLDataBase.PrimarySqlite.ApiOperateActivity"/>
-        <activity android:name=".SQLDataBase.PrimarySqlite.CreateOrOpenActivity"/>
-        <activity android:name=".SQLDataBase.PrimarySqlite.OptimizeActivity"/>
-        <activity android:name=".SQLDataBase.PrimarySqlite.SqlOperateActivity"/>
-        <activity android:name=".SQLDataBase.searchview.SearchActivity"/>
+        <activity android:name=".SQLDataBase.PrimarySqlite.ApiOperateActivity" />
+        <activity android:name=".SQLDataBase.PrimarySqlite.CreateOrOpenActivity" />
+        <activity android:name=".SQLDataBase.PrimarySqlite.OptimizeActivity" />
+        <activity android:name=".SQLDataBase.PrimarySqlite.SqlOperateActivity" />
+        <activity android:name=".SQLDataBase.searchview.SearchActivity" />
 
 
-        <activity android:name=".dialog.NoFullScreenActivity.NoFullScreenActivity"
-            android:theme="@style/Theme.CustomDialog"
-            />
-
+        <activity
+            android:name=".dialog.NoFullScreenActivity.NoFullScreenActivity"
+            android:theme="@style/Theme.CustomDialog" />
 
 
         <activity
