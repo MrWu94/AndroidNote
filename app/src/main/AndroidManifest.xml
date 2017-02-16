@@ -66,7 +66,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".AndroidAnnoation.Annotations_"
+            android:name=".fragment.retainstate.MainActivity"
             android:theme="@style/AppTheme.Launcher"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name">
@@ -134,10 +134,19 @@
         <activity android:name=".SQLDataBase.PrimarySqlite.SqlOperateActivity"/>
         <activity android:name=".SQLDataBase.searchview.SearchActivity"/>
 
+        <activity android:name=".AndroidAnnoation.Annotations_"/>
+
 
         <activity android:name=".dialog.NoFullScreenActivity.NoFullScreenActivity"
             android:theme="@style/Theme.CustomDialog"
             />
+
+        <activity android:name=".fragment.retainstate.FragmentRetainDataActivity"/>
+        <activity android:name=".fragment.retainstate.ConfigChangesTestActivity"
+            android:configChanges="keyboard|screenSize|orientation"
+            />
+        <activity android:name=".fragment.retainstate.StateAsyncTask.FixProblemsActivity"/>
+        <activity android:name=".fragment.retainstate.SavedInstanceStateActivity"/>
 
 
 
