@@ -103,6 +103,7 @@ public class MusicActivity extends BActivity {
     }
 
     @Override
+
     public void onBackPressed() {
         moveTaskToBack(true);
     }
