@@ -34,6 +34,7 @@ public class StringRepetingTest {
             throw new RuntimeException("Arg should not be null or empty");
         }
 
+
         Map<Character, Integer> map = new LinkedHashMap<>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
