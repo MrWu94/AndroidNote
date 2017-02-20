@@ -3,6 +3,7 @@ package com.hansheng.Algorithm;
 /**
  * Created by hansheng on 17-2-17.
  * 二分查找
+ * http://wiki.jikexueyuan.com/project/for-offer/question-twenty-seven.html
  */
 
 public class algorithm {
@@ -18,11 +19,8 @@ public class algorithm {
         if (len < 1 || a == null) {
             return -1;
         }
-
         int low = 0;
-
         int high = len - 1;
-
         while (low <= high) {
             int mid = (low + high) >> 1;
             if (key == a[mid])

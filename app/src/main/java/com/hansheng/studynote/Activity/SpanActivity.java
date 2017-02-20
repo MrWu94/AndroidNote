@@ -7,18 +7,17 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
 import android.text.style.BackgroundColorSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.RelativeSizeSpan;
+import android.text.style.StrikethroughSpan;
 import android.text.style.StyleSpan;
 import android.text.style.TypefaceSpan;
 import android.text.style.URLSpan;
 import android.widget.TextView;
 
 import com.hansheng.studynote.R;
-
-
-import static com.caverock.androidsvg.CSSParser.MediaType.tv;
 
 /**
  * Created by hansheng on 16-9-23.
@@ -90,6 +89,27 @@ public class SpanActivity extends AppCompatActivity {
         URLSpan span = new URLSpan("http://www.baidu.com");
         spanString.setSpan(span, 0, 3, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         textView5.append(spanString);
+    }
+
+    private void mode6() {
+        SpannableStringBuilder spannableString = new SpannableStringBuilder();
+        spannableString.append("暗影IV已经开始暴走了");
+        StrikethroughSpan strikethroughSpan = new StrikethroughSpan();
+        spannableString.setSpan(strikethroughSpan, 0, 8, Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
+        textView5.setText(spannableString);
+    }
+
+    /**
+     * 这里就可以看出SpannableStringBuilder的可拼接性，这里同样采用了ForegroundColorSpan为文本设置颜色。
+     */
+
+    private void mode2() {
+        SpannableStringBuilder spannableString = new SpannableStringBuilder();
+        spannableString.append("暗影IV");
+        spannableString.append("已经开始暴走了");
+        ForegroundColorSpan colorSpan = new ForegroundColorSpan(Color.parseColor("#009ad6"));
+        spannableString.setSpan(colorSpan, 0, 8, Spannable.SPAN_EXCLUSIVE_INCLUSIVE);
+        textView5.setText(spannableString);
     }
 
 }
