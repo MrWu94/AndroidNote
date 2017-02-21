@@ -73,9 +73,10 @@ public class ListMergeDemo {
         if (head2 == null) {
             return head1;
         }
-        // 记录两个链表中头部较小的结点
-        ListNode tmp = head1;
-        if (tmp.value < head2.value) {
+        ListNode tmp=null;
+        if (head1.value < head2.value) {
+            // 记录两个链表中头部较小的结点
+             tmp = head1;
             // 如果第一个链表的头结点小，就递归处理第一个链表的下一个结点和第二个链表的头结点
             tmp.next = merge2(head1.next, head2);
         } else {
@@ -121,8 +122,8 @@ public class ListMergeDemo {
         head2.next.next.next.value = 6;
         head2.next.next.next.next = new ListNode();
         head2.next.next.next.next.value = 7;
-//        head = merge(head, head2);
-        head = merge2(head, head2);
+        head = merge(head, head2);
+//        head = merge2(head, head2);
         printList(head);
     }
 
