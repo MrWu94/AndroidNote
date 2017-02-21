@@ -64,4 +64,9 @@
     <color name="primary">#F44336</color>
     <color name="accent">#FFC107</color>
 
+    <color name="btn_dialog_negative_normal">#ff0000</color>
+    <color name="btn_dialog_negative_pressed">#bf0000</color>
+    <color name="btn_dialog_positive_normal">#368bff</color>
+    <color name="btn_dialog_positive_pressed">#0067f3</color>
+
 </resources>

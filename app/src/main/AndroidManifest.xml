@@ -66,7 +66,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".contentprovider.ContentProvider.MainActivity"
+            android:name=".dialog.BuilderDialog.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Launcher">
