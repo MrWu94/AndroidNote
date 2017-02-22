@@ -37,8 +37,12 @@ public class TreeNodeSumDemo {
                     System.out.println(result);
                 }
             }
+            System.out.println("====");
+
             // 移除当前结点
             result.remove(result.size() - 1);
+
+
         }
 
     }
@@ -63,12 +67,12 @@ public class TreeNodeSumDemo {
         // 有两条路径上的结点和为22
         System.out.println("findPath(root, 22);");
         findPath(root, 22);
-        // 没有路径上的结点和为15
-        System.out.println("findPath(root, 15);");
-        findPath(root, 15);
-        // 有一条路径上的结点和为19
-        System.out.println("findPath(root, 19);");
-        findPath(root, 19);
+//        // 没有路径上的结点和为15
+//        System.out.println("findPath(root, 15);");
+//        findPath(root, 15);
+//        // 有一条路径上的结点和为19
+//        System.out.println("findPath(root, 19);");
+//        findPath(root, 19);
         //               5
         //              /
         //             4
@@ -89,11 +93,11 @@ public class TreeNodeSumDemo {
         root2.left.left.left.left = new BinaryTreeNode();
         root2.left.left.left.left.value = 1;
         // 有一条路径上面的结点和为15
-        System.out.println("findPath(root2, 15);");
-        findPath(root2, 15);
-        // 没有路径上面的结点和为16
-        System.out.println("findPath(root2, 16);");
-        findPath(root2, 16);
+//        System.out.println("findPath(root2, 15);");
+//        findPath(root2, 15);
+//        // 没有路径上面的结点和为16
+//        System.out.println("findPath(root2, 16);");
+//        findPath(root2, 16);
         // 1
         //  \
         //   2
@@ -114,23 +118,23 @@ public class TreeNodeSumDemo {
         root3.right.right.right.right = new BinaryTreeNode();
         root3.right.right.right.right.value = 5;
         // 有一条路径上面的结点和为15
-        System.out.println("findPath(root3, 15);");
-        findPath(root3, 15);
-        // 没有路径上面的结点和为16
-        System.out.println("findPath(root3, 16);");
-        findPath(root3, 16);
-        // 树中只有1个结点
-        BinaryTreeNode root4 = new BinaryTreeNode();
-        root4.value = 1;
-        // 有一条路径上面的结点和为1
-        System.out.println("findPath(root4, 1);");
-        findPath(root4, 1);
-        // 没有路径上面的结点和为2
-        System.out.println("findPath(root4, 2);");
-        findPath(root4, 2);
-        // 树中没有结点
-        System.out.println("findPath(null, 0);");
-        findPath(null, 0);
+//        System.out.println("findPath(root3, 15);");
+//        findPath(root3, 15);
+//        // 没有路径上面的结点和为16
+//        System.out.println("findPath(root3, 16);");
+//        findPath(root3, 16);
+//        // 树中只有1个结点
+//        BinaryTreeNode root4 = new BinaryTreeNode();
+//        root4.value = 1;
+//        // 有一条路径上面的结点和为1
+//        System.out.println("findPath(root4, 1);");
+//        findPath(root4, 1);
+//        // 没有路径上面的结点和为2
+//        System.out.println("findPath(root4, 2);");
+//        findPath(root4, 2);
+//        // 树中没有结点
+//        System.out.println("findPath(null, 0);");
+//        findPath(null, 0);
     }
 
 }
