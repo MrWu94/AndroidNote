@@ -1,5 +1,8 @@
 package com.hansheng.map;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by hansheng on 16-10-17.
  * 什么是HashSet
@@ -21,7 +24,27 @@ package com.hansheng.map;
  * <p>
  * 简单的说HashMap的存储结构是由数组和链表共同完成的
  * HashMap是Y轴方向是数组，X轴方向就是链表的存储方式
+ *
+ * 几个关键的信息：基于Map接口实现、允许null键/值、非同步、不保证有序(比如插入的顺序)、也不保证序不随时间变化。
  */
 
 public class HashmapAndHashSet {
+
+   public static void main(String... args){
+
+       HashMap<String, Integer> map = new HashMap<String, Integer>();
+       map.put("语文", 1);
+       map.put("数学", 2);
+       map.put("英语", 3);
+       map.put("历史", 4);
+       map.put("政治", 5);
+       map.put("地理", 6);
+       map.put("生物", 7);
+       map.put("化学", 8);
+       map.put("语文", 1);
+       map.put("语文", 1);
+       for(Map.Entry<String, Integer> entry : map.entrySet()) {
+           System.out.println(entry.getKey() + ": " + entry.getValue());
+       }
+   }
 }
