@@ -1,5 +1,7 @@
 package com.hansheng.Algorithm;
 
+import java.util.Stack;
+
 /**
  * Created by mrwu on 2017/2/19.
  */
@@ -25,7 +27,7 @@ public class ListReverseList {
         head.next.next.next.next.next.next.next.next = new ListNode();
         head.next.next.next.next.next.next.next.next.value = 9;
 //        printList(head);
-        printList(reverseList2(head));
+        printList(ReverseList(head));
 
     }
 
@@ -58,9 +60,7 @@ public class ListReverseList {
             // 记录当前处理的结点，最后一个记录的结点就是反转后的头结点
             reverseHead = curr;
             // 记录当然前下一个结点
-            if (next == null) {
-                reverseHead = curr;
-            }
+            next = curr.next;
             // 当前结点的下一个结点指向前驱结点，这样当前结点就插入到了反转链表的头部
             curr.next = prev;
             // 记录当前结点为前驱结点
@@ -70,6 +70,27 @@ public class ListReverseList {
         }
         // 返回转后的头结点
         return reverseHead;
+    }
+
+    public static ListNode ReverseList(ListNode head) {
+
+        if(head==null){
+            return null;
+        }
+        Stack<ListNode> list=new Stack<>();
+       if(head!=null){
+            list.push(head);
+            head=head.next;
+        }
+
+        ListNode tmp=null;
+        tmp=list.pop();
+        if(!list.isEmpty()){
+            tmp.next=list.pop();
+
+        }
+        return tmp;
+
     }
 
     public static ListNode reversrList(ListNode head) {
