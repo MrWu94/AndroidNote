@@ -29,6 +29,10 @@ public class StringReverse {
         System.out.println(matrix[0].length);
         System.out.println(matrix[1].length);
 
+        String str="hhh";
+        str.charAt(1);
+        char cha[]=str.toCharArray();
+
 
         System.out.println(reverseSentence(new char[]{'a', 's', 'a', 'c', ' ', 'a', 'r'}));
 
