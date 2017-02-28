@@ -1,8 +1,5 @@
 package com.hansheng.map;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by hansheng on 16-10-17.
  * 什么是HashSet
@@ -24,8 +21,11 @@ import java.util.Map;
  * <p>
  * 简单的说HashMap的存储结构是由数组和链表共同完成的
  * HashMap是Y轴方向是数组，X轴方向就是链表的存储方式
- *
- * 几个关键的信息：基于Map接口实现、允许null键/值、非同步、不保证有序(比如插入的顺序)、也不保证序不随时间变化。
+ * 链地址法
+ * 再哈希法
+ * 当发生冲突时，使用第二个、第三个、哈希函数计算地址，直到无冲突时。缺点：计算时间增加。
+ * 比如上面第一次按照姓首字母进行哈希，如果产生冲突可以按照姓字母首字母第二位进行哈希，再冲突，第三位，直到不冲突为止
+ * 开放地址法
  */
 
 public class HashmapAndHashSet {

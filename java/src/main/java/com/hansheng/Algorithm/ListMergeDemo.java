@@ -122,8 +122,8 @@ public class ListMergeDemo {
         head2.next.next.next.value = 6;
         head2.next.next.next.next = new ListNode();
         head2.next.next.next.next.value = 7;
-        head = merge(head, head2);
-//        head = merge2(head, head2);
+//        head = merge(head, head2);
+        head = merge2(head, head2);
         printList(head);
     }
 

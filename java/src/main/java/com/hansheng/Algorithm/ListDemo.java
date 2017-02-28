@@ -1,5 +1,6 @@
 package com.hansheng.Algorithm;
 
+
 import java.util.Stack;
 
 /**
@@ -16,6 +17,7 @@ public class ListDemo {
     public static class ListNode {
         int val; // 结点的值
         ListNode nxt; // 下一个结点
+
     }
     /**
      * 输入个链表的头结点，从尾到头反过来打印出每个结点的值

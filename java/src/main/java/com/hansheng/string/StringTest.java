@@ -52,7 +52,12 @@ public class StringTest {
             usedLength--;
         }
         return tmp;
+
+
+
+
     }
+
     public static void main(String[] args) {
         char[] string = new char[50];
         string[0] = ' ';
