@@ -21,6 +21,7 @@ public class BinarySequenceDemo {
         // 有数据，就调用辅助方法
         return verifySequenceOfBST(sequence, 0, sequence.length - 1);
     }
+
     /**
      * 输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历的结果。
      * 【此方法与上一个方法不同，未进行空值判断，对于数组度为0的情况返回的true也于上题不同，
@@ -69,6 +70,7 @@ public class BinarySequenceDemo {
         index = right;
         return verifySequenceOfBST(sequence, start, index - 1) && verifySequenceOfBST(sequence, index, end - 1);
     }
+
     public static void main(String[] args) {
         //           10
         //         /   \
@@ -113,5 +115,8 @@ public class BinarySequenceDemo {
         System.out.println("false: " + verifySequenceOfBST(data6));
         int[] data7 = {4, 6, 12, 8, 16, 14, 10};
         System.out.println("false: " + verifySequenceOfBST(data7));
+
+
+
     }
 }

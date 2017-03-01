@@ -69,8 +69,7 @@ public class DownloadThread extends Thread {
                         this.saveFile, "rwd");
                 // 定位到pos位置
                 threadfile.seek(startPos);
-                while (!downloader.getExit()
-                        && (offset = inStream.read(buffer, 0, 1024)) != -1) {
+                while (!downloader.getExit() && (offset = inStream.read(buffer, 0, 1024)) != -1) {
                     // 写入文件
                     threadfile.write(buffer, 0, offset);
                     downLength += offset; // 累加下载的大小
