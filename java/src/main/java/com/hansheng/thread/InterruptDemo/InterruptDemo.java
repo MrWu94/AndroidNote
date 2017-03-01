@@ -1,4 +1,4 @@
-package com.hansheng.thread.InterruptDemo;
+package com.hansheng.Thread.InterruptDemo;
 
 /**
  * Created by mrwu on 2017/3/1.

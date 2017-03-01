@@ -1,4 +1,4 @@
-package com.hansheng.thread.ReentrantloackandlockandSynchronized;
+package com.hansheng.Thread.ReentrantloackandlockandSynchronized;
 
 /**
  * Created by mrwu on 2017/2/23.

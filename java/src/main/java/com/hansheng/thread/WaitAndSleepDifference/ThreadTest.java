@@ -1,4 +1,4 @@
-package com.hansheng.thread.WaitAndSleepDifference;
+package com.hansheng.Thread.WaitAndSleepDifference;
 
 /**
  * Created by hansheng on 2016/8/6.

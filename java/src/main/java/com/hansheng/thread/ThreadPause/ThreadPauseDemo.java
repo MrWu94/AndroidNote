@@ -1,4 +1,4 @@
-package com.hansheng.thread.ThreadPause;
+package com.hansheng.Thread.ThreadPause;
 
 import static java.lang.Thread.currentThread;
 

@@ -1,4 +1,4 @@
-package com.hansheng.thread.share;
+package com.hansheng.Thread.share;
 
 /**
  * Created by hansheng on 2016/7/29.

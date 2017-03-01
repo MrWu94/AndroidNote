@@ -1,4 +1,4 @@
-package com.hansheng.Threadkey;
+package com.hansheng.Thread.AtomicInteger;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

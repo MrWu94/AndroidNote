@@ -1,4 +1,4 @@
-package com.hansheng.thread.Timer;
+package com.hansheng.Thread.Timer;
 
 import java.util.Date;
 import java.util.Timer;

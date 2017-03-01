@@ -1,4 +1,4 @@
-package com.hansheng.thread.share;
+package com.hansheng.Thread.share;
 
 /**
  * Created by hansheng on 2016/7/29.
@@ -11,7 +11,7 @@ public class Ticket implements Runnable {
     public void run() {
         while(ticket>0){
             ticket--;
-            System.out.println("µ±Ç°Æ±ÊýÎª£º"+ticket);
+            System.out.println("ï¿½ï¿½Ç°Æ±ï¿½ï¿½Îªï¿½ï¿½"+ticket);
         }
     }
 }

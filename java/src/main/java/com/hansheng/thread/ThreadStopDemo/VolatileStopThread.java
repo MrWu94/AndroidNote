@@ -1,4 +1,4 @@
-package com.hansheng.thread.ThreadStopDemo;
+package com.hansheng.Thread.ThreadStopDemo;
 
 import java.util.concurrent.TimeUnit;
 

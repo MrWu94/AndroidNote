@@ -1,4 +1,4 @@
-package com.hansheng.thread.RunnableAndThreadDifference;
+package com.hansheng.Thread.RunnableAndThreadDifference;
 
 /**
  * Created by hansheng on 2016/8/6.

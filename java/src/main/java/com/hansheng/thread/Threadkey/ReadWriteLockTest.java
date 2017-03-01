@@ -1,4 +1,4 @@
-package com.hansheng.Threadkey;
+package com.hansheng.Thread.Threadkey;
 
 import java.util.Random;
 import java.util.concurrent.locks.ReadWriteLock;
