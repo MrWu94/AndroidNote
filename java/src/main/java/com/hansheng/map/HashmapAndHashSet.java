@@ -1,5 +1,8 @@
 package com.hansheng.map;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by hansheng on 16-10-17.
  * 什么是HashSet

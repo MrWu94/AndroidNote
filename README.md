@@ -1,2 +1,2 @@
-##更多请看
+##更多笔记
 https://github.com/fuqinwu/StudyNote/wiki
