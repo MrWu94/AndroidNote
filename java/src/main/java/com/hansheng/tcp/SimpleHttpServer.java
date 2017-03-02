@@ -1,4 +1,4 @@
-package com.hansheng.tcp;
+package com.hansheng.Tcp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -29,7 +29,7 @@ public class SimpleHttpServer extends Thread {
         }
 
         if (mSocket == null) {
-            throw new RuntimeException("·þÎñÆ÷Socket³õÊ¼»¯Ê§°Ü");
+            throw new RuntimeException("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Socketï¿½ï¿½Ê¼ï¿½ï¿½Ê§ï¿½ï¿½");
         }
     }
 
@@ -37,7 +37,7 @@ public class SimpleHttpServer extends Thread {
     public void run() {
         try {
             while (true) {
-                System.out.println("µÈ´ýÁ¬½ÓÖÐ");
+                System.out.println("ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
                 new DeliverThread(mSocket.accept()).start();
             }
 
@@ -51,26 +51,26 @@ public class SimpleHttpServer extends Thread {
         BufferedReader mInputStream;
         PrintStream mOutputStream;
         /**
-         * ÇëÇó·½·¨,GET¡¢POSTµÈ
+         * ï¿½ï¿½ï¿½ó·½·ï¿½,GETï¿½ï¿½POSTï¿½ï¿½
          */
         String httpMethod;
         /**
-         * ×ÓÂ·¾¶
+         * ï¿½ï¿½Â·ï¿½ï¿½
          */
         String subPath;
         /**
-         * ·Ö¸ô·û
+         * ï¿½Ö¸ï¿½ï¿½ï¿½
          */
         String boundary;
 
         /**
-         * ÇëÇó²ÎÊý
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
          */
         Map<String, String> mParams = new HashMap<String, String>();
-        // ÇëÇóheaders
+        // ï¿½ï¿½ï¿½ï¿½headers
         Map<String, String> mHeaders = new HashMap<String, String>();
         /**
-         * ÊÇ·ñÒÑ¾­½âÎöÍêHeader
+         * ï¿½Ç·ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Header
          */
         boolean isParseHeader = false;
 
@@ -100,7 +100,7 @@ public class SimpleHttpServer extends Thread {
             try {
                 int lineNum = 0;
                 while ((line = mInputStream.readLine()) != null) {
-                    // ½ÓÊÕ´Ó¿Í»§¶Ë·¢ËÍ¹ýÀ´µÄÊý¾Ý
+                    // ï¿½ï¿½ï¿½Õ´Ó¿Í»ï¿½ï¿½Ë·ï¿½ï¿½Í¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                     if (lineNum == 0) {
                         parseRequestLine(line);
                     }
@@ -122,31 +122,31 @@ public class SimpleHttpServer extends Thread {
             }
         }
 
-        // ÊÇ·ñÊÇ½áÊøÐÐ
+        // ï¿½Ç·ï¿½ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½
         private boolean isEnd(String line) {
             return line.equals("--" + boundary + "--");
         }
 
-        // ½âÎöÇëÇóÐÐ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         private void parseRequestLine(String lineOne) {
             String[] tempStrings = lineOne.split(" ");
             httpMethod = tempStrings[0];
             subPath = tempStrings[1];
-            System.out.println("ÇëÇóÐÐ,ÇëÇó·½Ê½ : " + tempStrings[0] + ", ×ÓÂ·¾¶ : " + tempStrings[1]
-                    + ",HTTP°æ±¾ : " + tempStrings[2]);
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ê½ : " + tempStrings[0] + ", ï¿½ï¿½Â·ï¿½ï¿½ : " + tempStrings[1]
+                    + ",HTTPï¿½æ±¾ : " + tempStrings[2]);
             System.out.println();
         }
 
-        // ½âÎöheader,²ÎÊýÎªÃ¿¸öheaderµÄ×Ö·û´®
+        // ï¿½ï¿½ï¿½ï¿½header,ï¿½ï¿½ï¿½ï¿½ÎªÃ¿ï¿½ï¿½headerï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
         private void parseHeaders(String headerLine) {
 
             if (headerLine.equals("")) {
                 isParseHeader = true;
-                System.out.println("-----------> header½âÎöÍê³É\n");
+                System.out.println("-----------> headerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\n");
                 return;
             } else if (headerLine.contains("boundary")) {
                 boundary = parseSecondField(headerLine);
-                System.out.println("·Ö¸ô·û : " + boundary);
+                System.out.println("ï¿½Ö¸ï¿½ï¿½ï¿½ : " + boundary);
             } else {
                 parseHeaderParam(headerLine);
             }
@@ -155,11 +155,11 @@ public class SimpleHttpServer extends Thread {
         private void parseHeaderParam(String headerLine) {
             String[] keyvalue = headerLine.split(":");
             mHeaders.put(keyvalue[0].trim(), keyvalue[1].trim());
-            System.out.println("header²ÎÊýÃû : " + keyvalue[0].trim() + ", ²ÎÊýÖµ : "
+            System.out.println("headerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + keyvalue[0].trim() + ", ï¿½ï¿½ï¿½ï¿½Öµ : "
                     + keyvalue[1].trim());
         }
 
-        // ½âÎöheaderÖÐµÄµÚ¶þ¸ö²ÎÊý
+        // ï¿½ï¿½ï¿½ï¿½headerï¿½ÐµÄµÚ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         private String parseSecondField(String line) {
             String[] headerArray = line.split(";");
             parseHeaderParam(headerArray[0]);
@@ -169,7 +169,7 @@ public class SimpleHttpServer extends Thread {
             return "";
         }
 
-        // ½âÎöÇëÇó²ÎÊý
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         private void parseRequestParams(String paramLine) throws IOException {
             if (paramLine.equals("--" + boundary)) {
                 String ContentDisposition = mInputStream.readLine();
@@ -177,11 +177,11 @@ public class SimpleHttpServer extends Thread {
                 mInputStream.readLine();
                 String paramValue = mInputStream.readLine();
                 mParams.put(paramName, paramValue);
-                System.out.println("²ÎÊýÃû : " + paramName + ", ²ÎÊýÖµ : " + paramValue);
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : " + paramName + ", ï¿½ï¿½ï¿½ï¿½Öµ : " + paramValue);
             }
         }
 
-        // ·µ»Ø½á¹û
+        // ï¿½ï¿½ï¿½Ø½ï¿½ï¿½
         private void handleResponse() {
             sleep();
             mOutputStream.println("HTTP/1.1 200 OK");

@@ -1,4 +1,4 @@
-package com.hansheng.map;
+package com.hansheng.Map;
 
 import java.util.Enumeration;
 import java.util.HashMap;

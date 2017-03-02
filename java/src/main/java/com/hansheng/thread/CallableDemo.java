@@ -1,4 +1,4 @@
-package com.hansheng.thread;
+package com.hansheng.Thread;
 
 import java.util.ArrayList;
 import java.util.List;

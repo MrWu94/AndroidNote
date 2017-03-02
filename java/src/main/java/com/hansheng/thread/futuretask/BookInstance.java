@@ -1,4 +1,4 @@
-package com.hansheng.thread.futuretask;
+package com.hansheng.Thread.Futuretask;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -9,11 +9,11 @@ import java.util.concurrent.FutureTask;
  */
 public class BookInstance {
     /**
-     * µ±Ç°µÄÒ³Âë
+     * ï¿½ï¿½Ç°ï¿½ï¿½Ò³ï¿½ï¿½
      */
     private volatile int currentPage = 1;
     /**
-     * Òì²½µÄÈÎÎñ»ñÈ¡µ±Ç°Ò³µÄÄÚÈÝ
+     * ï¿½ì²½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ç°Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     FutureTask<String> futureTask = new FutureTask<String>(new Callable<String>() {
         @Override
@@ -23,7 +23,7 @@ public class BookInstance {
     });
 
     /**
-     * ÊµÀý»¯Ò»±¾Êé£¬²¢´«Èëµ±Ç°¶Áµ½µÄÒ³Âë
+     * Êµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½é£¬ï¿½ï¿½ï¿½ï¿½ï¿½ëµ±Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½
      *
      * @param currentPage
      */
@@ -36,7 +36,7 @@ public class BookInstance {
     }
 
     /**
-     * »ñÈ¡µ±Ç°Ò³µÄÄÚÈÝ
+     * ï¿½ï¿½È¡ï¿½ï¿½Ç°Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @return
      * @throws InterruptedException
@@ -47,7 +47,7 @@ public class BookInstance {
 
         String con = futureTask.get();
         /**
-         * Ô¤¼ÓÔØÏÂÒ»Ò³µÄÄÚÈÝ
+         * Ô¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
          * */
         this.currentPage = currentPage + 1;
 
@@ -62,7 +62,7 @@ public class BookInstance {
     }
 
     /**
-     * ¸ù¾ÝÒ³Âë´ÓÍøÂç×¥È¡Êý¾Ý
+     * ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¥È¡ï¿½ï¿½ï¿½ï¿½
      *
      * @return
      * @throws InterruptedException
@@ -78,7 +78,7 @@ public class BookInstance {
         for (int i = 0; i < 10; i++) {
             long start = System.currentTimeMillis();
             String content = instance.getCurrentPageContent();
-            System.out.println("[1ÃëÔÄ¶ÁÊ±¼ä]read:" + content);
+            System.out.println("[1ï¿½ï¿½ï¿½Ä¶ï¿½Ê±ï¿½ï¿½]read:" + content);
             Thread.sleep(1000);
             System.out.println(System.currentTimeMillis() - start);
         }

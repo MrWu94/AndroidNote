@@ -1,4 +1,4 @@
-package com.hansheng.list;
+package com.hansheng.List;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package com.hansheng.string;
+package com.hansheng.String;
 
 /**
  * Created by hansheng on 2016/7/19.
