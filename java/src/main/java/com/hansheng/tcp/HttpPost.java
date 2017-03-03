@@ -1,4 +1,4 @@
-package com.hansheng.tcp;
+package com.hansheng.Tcp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -37,11 +37,11 @@ public class HttpPost {
             BufferedReader inputStream = new BufferedReader(new InputStreamReader(
                     mSocket.getInputStream()));
             final String boundary = "my_boundary_123";
-            // Ð´Èëheader
+            // Ð´ï¿½ï¿½header
             writeHeader(boundary, outputStream);
-            // Ð´Èë²ÎÊý
+            // Ð´ï¿½ï¿½ï¿½ï¿½ï¿½
             writeParams(boundary, outputStream);
-            // µÈ´ý·µ»ØÊý¾Ý
+            // ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             waitResponse(inputStream);
         } catch (IOException e) {
             e.printStackTrace();
@@ -66,12 +66,12 @@ public class HttpPost {
             outputStream.println();
             outputStream.println(mParamsMap.get(paramName));
         }
-        // ½áÊø·û
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         outputStream.println("--" + boundary + "--");
     }
 
     private void waitResponse(BufferedReader inputStream) throws IOException {
-        System.out.println("ÇëÇó½á¹û: ");
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: ");
         String responseLine = inputStream.readLine();
         while (responseLine == null || !responseLine.contains("HTTP")) {
             responseLine = inputStream.readLine();

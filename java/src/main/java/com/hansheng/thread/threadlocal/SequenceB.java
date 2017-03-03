@@ -1,4 +1,4 @@
-package com.hansheng.thread.threadlocal;
+package com.hansheng.Thread.ThreadLocal;
 
 /**
  * Created by hansheng on 2016/7/29.

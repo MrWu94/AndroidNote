@@ -1,4 +1,4 @@
-package com.hansheng.thread.futuretask;
+package com.hansheng.Thread.Futuretask;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -6,8 +6,8 @@ import java.util.concurrent.FutureTask;
 
 /**
  * Created by hansheng on 2016/7/15.
- * FutureTask可以返回执行完毕的数据，并且FutureTask的get方法支持阻塞这两个特性，
- * 我们可以用来预先加载一些可能用到资源，然后要用的时候，调用get方法获取（如果资源加载完，直接返回；否则继续等待其加载完成）。
+ * FutureTask锟斤拷锟皆凤拷锟斤拷执锟斤拷锟斤拷系锟斤拷锟斤拷荩锟斤拷锟斤拷锟紽utureTask锟斤拷get锟斤拷锟斤拷支锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟皆ｏ拷
+ * 锟斤拷锟角匡拷锟斤拷锟斤拷锟斤拷预锟饺硷拷锟斤拷一些锟斤拷锟斤拷锟矫碉拷锟斤拷源锟斤拷然锟斤拷要锟矫碉拷时锟津，碉拷锟斤拷get锟斤拷锟斤拷锟斤拷取锟斤拷锟斤拷锟斤拷锟皆达拷锟斤拷锟斤拷辏憋拷臃锟斤拷兀锟斤拷锟斤拷锟斤拷锟斤拷锟饺达拷锟斤拷锟斤拷锟斤拷锟缴ｏ拷锟斤拷
  *
  */
 public class PreLoaderUseFutureTask {
@@ -16,7 +16,7 @@ public class PreLoaderUseFutureTask {
         @Override
         public String call() throws Exception {
             Thread.sleep(3000);
-            return "加载资源需要3秒";
+            return "锟斤拷锟斤拷锟斤拷源锟斤拷要3锟斤拷";
         }
     });
     public Thread thread=new Thread(futureTask);
@@ -44,12 +44,12 @@ public class PreLoaderUseFutureTask {
         Thread.sleep(2000);
 
         /**
-         * 获取资源
+         * 锟斤拷取锟斤拷源
          */
-        System.out.println(System.currentTimeMillis() + "：开始加载资源");
+        System.out.println(System.currentTimeMillis() + "锟斤拷锟斤拷始锟斤拷锟斤拷锟斤拷源");
         String res = task.getRes();
         System.out.println(res);
-        System.out.println(System.currentTimeMillis() + "：加载资源结束");
+        System.out.println(System.currentTimeMillis() + "锟斤拷锟斤拷锟斤拷锟斤拷源锟斤拷锟斤拷");
     }
 
 

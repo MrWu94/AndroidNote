@@ -1,4 +1,4 @@
-package com.hansheng.thread;
+package com.hansheng.Thread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
