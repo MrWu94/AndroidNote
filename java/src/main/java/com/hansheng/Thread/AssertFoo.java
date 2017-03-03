@@ -1,4 +1,4 @@
-package com.hansheng;
+package com.hansheng.Thread;
 
 /**
  * Created by hansheng on 2016/9/6.

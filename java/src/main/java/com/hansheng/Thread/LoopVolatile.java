@@ -1,4 +1,4 @@
-package com.hansheng;
+package com.hansheng.Thread;
 
 public class LoopVolatile  implements Runnable{
 	private static volatile int value=0;
