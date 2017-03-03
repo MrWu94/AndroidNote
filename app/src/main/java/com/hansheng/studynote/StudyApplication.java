@@ -32,6 +32,20 @@ public class StudyApplication extends Application {
 
     private static Context context;
 
+
+    public String name;
+
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+
     public static RefWatcher getRefWatcher(Context context) {
         StudyApplication application = (StudyApplication) context.getApplicationContext();
         return application.refWatcher;

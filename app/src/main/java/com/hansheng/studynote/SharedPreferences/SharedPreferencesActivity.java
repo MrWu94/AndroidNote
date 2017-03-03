@@ -44,6 +44,8 @@ import com.hansheng.studynote.R;
  * 官方给的提示是：全局可见的文件是很为危险的方式，容易导致安全漏洞，推荐更普遍的通信方式，比如：ContentProvider， BroadcastReceiver
  * 或者Service,
  * 而且因为这个权限设置是在生成SharedPreferences文件的时候就设置的，但是不能保证这个权限设置在备份或者恢复的时候保留。
+ * 在SharedPreferences的Editor中如果用commit()方法提交数据，其过程是先把数据更新到内存，然后在当前线程中写文件操作，提交完成返回提交状态；
+ * 如果用的是apply()方法提交数据，首先也是写到内存，接着在一个新线程中异步写文件，然后没有返回值。
  */
 
 public class SharedPreferencesActivity extends AppCompatActivity {

@@ -24,8 +24,17 @@ package com.hansheng.string;
  关于JVM运行时数据区的 http://droidyue.com/blog/2014/12/21/java-runtime-data-areas/
  */
 public class Inverse {
+
+
     public static void main(String... args) {
-        System.out.println(inverse("hansheng"));
+
+        String str="hanbshengfedsd";
+        System.out.println(str.hashCode());
+        System.out.println(String.valueOf(str));
+
+
+
+//        System.out.println(inverse("hansheng"));
     }
 
     private static String inverse(String str) {
