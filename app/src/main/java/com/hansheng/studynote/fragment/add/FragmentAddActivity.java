@@ -12,6 +12,18 @@ import com.hansheng.studynote.fragment.fragment1;
 
 /**
  * Created by hansheng on 16-12-1.
+ * <p>
+ * Fragment比Activity多了几个额外的生命周期回调方法：
+ * <p>
+ * onAttach(Activity):当Fragment和Activity发生关联时使用
+ * onCreateView(LayoutInflater, ViewGroup, Bundle):创建该Fragment的视图
+ * onActivityCreate(Bundle):当Activity的onCreate方法返回时调用
+ * onDestoryView():与onCreateView相对应，当该Fragment的视图被移除时调用
+ * onDetach():与onAttach相对应，当Fragment与Activity关联被取消时调用
+ * <p>
+ * Fragment与Activity之间的交互
+ * <p>
+ * Fragment与Activity之间的交互可以通过Fragment.setArguments(Bundle args)以及Fragment.getArguments()来实现。
  */
 
 public class FragmentAddActivity extends AppCompatActivity {
@@ -21,7 +33,6 @@ public class FragmentAddActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_main);
-
 
 
 //        SoundFragment targetFragment;
@@ -55,8 +66,9 @@ public class FragmentAddActivity extends AppCompatActivity {
         switchFragment(mTempFragment);
 
     }
-    public void switcha(View view){
-        Fragment fragment=new fragment1();
+
+    public void switcha(View view) {
+        Fragment fragment = new fragment1();
         switchFragment(fragment);
     }
 
