@@ -32,6 +32,7 @@ public class SingtonTest {
 
     public static SingtonTest getInstance() {
 
+
         if (singtonTest == null) {
             synchronized (SingtonTest.class) {
                 if (singtonTest == null) {

@@ -13,7 +13,7 @@ public class RoationTest {
 
     public static void main(String... args) {
 
-        System.out.println( chkRotation("1234",4,"1234",4));
+        System.out.println(chkRotation("1234",4,"1234",4));
     }
 
     public static boolean chkRotation(String A, int lena, String B, int lenb) {
