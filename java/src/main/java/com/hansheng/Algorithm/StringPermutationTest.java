@@ -58,10 +58,13 @@ public class StringPermutationTest {
     }
 
     public static void main(String[] args) {
-        char[] c1 = {'a', 'b', 'c'};
-        permutation(c1);
-        System.out.println();
-        char[] c2 = {'a', 'b', 'c', 'd'};
-        permutation(c2);
+//        char[] c1 = {'a', 'b', 'c'};
+//        permutation(c1);
+//        System.out.println();
+//        char[] c2 = {'a', 'b', 'c', 'd'};
+//        permutation(c2);
+        String str="i can fly!";
+        char[] arr=str.toCharArray();
+        permutation(arr);
     }
 }
