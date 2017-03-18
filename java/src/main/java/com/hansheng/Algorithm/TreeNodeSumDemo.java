@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Created by hansheng on 17-2-20.
+ * 二叉树中某一路径的和
  */
 
 public class TreeNodeSumDemo {

@@ -2,6 +2,7 @@ package com.hansheng.Algorithm;
 
 /**
  * Created by hansheng on 17-3-3.
+ * 二叉树转换为链表
  */
 
 public class TreeConverter {

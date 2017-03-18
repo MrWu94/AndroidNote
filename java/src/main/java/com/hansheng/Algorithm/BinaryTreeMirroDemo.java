@@ -14,7 +14,7 @@ public class BinaryTreeMirroDemo {
         BinaryTreeNode right;
     }
     /**
-     * 请完成一个函数，输入…个二叉树，该函数输出它的镜像
+     * 请完成一个函数，输入一个二叉树，该函数输出它的镜像
      *
      * @param node 二叉树的根结点
      */

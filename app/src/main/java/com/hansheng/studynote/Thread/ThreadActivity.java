@@ -19,9 +19,6 @@ import java.util.concurrent.FutureTask;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-/**
- * Created by hansheng on 16-12-26.
- */
 
 public class ThreadActivity extends AppCompatActivity implements View.OnClickListener {
     @Bind(R.id.toolbar)
