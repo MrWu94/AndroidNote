@@ -20,13 +20,7 @@ import butterknife.OnCheckedChanged;
 
 /**
  * Created by hansheng on 16-9-21.
- * onPageScrollStateChanged(int arg0) ，此方法是在状态改变的时候调用，其中arg0这个参数有三种状态（0，1，2）。arg0 ==1表示正在滑动，
- * arg0==2表示滑动完毕了，arg0==0表示什么都没做。当页面开始滑动的时候，三种状态的变化顺序为（1，2，0）。
- *
- * onPageScrolled(int arg0,float arg1,int arg2) ，当页面在滑动的时候会调用此方法，在滑动被停止之前，此方法回一直得到调用。
- * 其中三个参数的含义分别为：arg0 :当前页面，及你点击滑动的页面。arg1:当前页面偏移的百分比。arg2:当前页面偏移的像素位置。
- *
- * onPageSelected(int arg0) ，此方法是页面跳转完后得到调用，arg0是你当前选中的页面的position。
+
  */
 
 public class MusicActivity extends BActivity {

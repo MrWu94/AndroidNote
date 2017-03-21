@@ -7,7 +7,7 @@ import java.util.List;
  * Created by hansheng on 17-2-22.
  */
 
-public class BinaryTreeSubDemo {
+public class  BinaryTreeSubDemo {
 
     public static void main(String... args) {
         BinaryTree root = new BinaryTree(1);
