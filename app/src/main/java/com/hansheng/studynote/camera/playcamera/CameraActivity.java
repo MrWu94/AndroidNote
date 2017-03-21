@@ -10,6 +10,7 @@ import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 
 import com.hansheng.studynote.R;
 
@@ -21,6 +22,7 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
     private static final String TAG = "CameraActivity";
     CameraSurfaceView surfaceView = null;
     ImageButton shutterBtn;
+    RelativeLayout rPhoto;
     float previewRate = -1f;
 
     boolean isQuit = false;
@@ -45,6 +47,7 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
         initUI();
         initViewParams();
         shutterBtn.setOnClickListener(new BtnListeners());
+        rPhoto.setOnTouchListener(this);
     }
 
     @Override
@@ -55,6 +58,7 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
     }
 
     private void initUI() {
+        rPhoto= (RelativeLayout) findViewById(R.id.re_photo);
         surfaceView = (CameraSurfaceView) findViewById(R.id.camera_surfaceview);
         shutterBtn = (ImageButton) findViewById(R.id.btn_shutter);
         shutterBtn.getBackground().setAlpha(100);
@@ -86,8 +90,10 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         int eventaction = event.getAction();
+
         switch (eventaction) {
             case MotionEvent.ACTION_DOWN:
+                CameraInterface.getInstance().doTakePicture();
                 break;
             case MotionEvent.ACTION_MOVE:
                 x = (int) event.getX();
@@ -96,13 +102,14 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
                 rawy = (int) event.getRawY();
                 Log.d(TAG, "getX=" + x + "getY=" + y + "\n" + "getRawX=" + rawx
                         + "getRawY=" + rawy + "\n");
+
                 break;
 
             case MotionEvent.ACTION_UP:
 
                 break;
         }
-        return false;
+        return true;
     }
 
     private class BtnListeners implements View.OnClickListener {
@@ -112,7 +119,7 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
             // TODO Auto-generated method stub
             switch (v.getId()) {
                 case R.id.btn_shutter:
-
+                    CameraInterface.getInstance().doTakePicture();
                     break;
                 default:
                     break;
@@ -143,30 +150,31 @@ public class CameraActivity extends Activity implements CameraInterface.CamOpenO
         isQuit = true;
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        Log.d(TAG, "onTouchEvent: ");
-
-        x = (int) event.getX();
-        y = (int) event.getY();
-        rawx = (int) event.getRawX();
-        rawy = (int) event.getRawY();
-
-        if (x < 900 && x > 300 && y > 200 && y < 700) {
-            Log.d(TAG, "getX=" + x + "getY=" + y + "\n" + "getRawX=" + rawx
-                    + "getRawY=" + rawy + "\n");
-
-        }
-
-
-        return super.onTouchEvent(event);
-    }
-
-    @Override
-    public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.d(TAG, "dispatchTouchEvent: ");
-        return super.dispatchTouchEvent(ev);
-    }
+//    @Override
+//    public boolean onTouchEvent(MotionEvent event) {
+//        Log.d(TAG, "onTouchEvent: ");
+//
+//        x = (int) event.getX();
+//        y = (int) event.getY();
+//        rawx = (int) event.getRawX();
+//        rawy = (int) event.getRawY();
+//
+//        if (x < 900 && x > 300 && y > 200 && y < 700) {
+//            Log.d(TAG, "getX=" + x + "getY=" + y + "\n" + "getRawX=" + rawx
+//                    + "getRawY=" + rawy + "\n");
+//
+//        }
+//
+////        CameraInterface.getInstance().doTakePicture();
+//        return super.onTouchEvent(event);
+//    }
+//
+//    @Override
+//    public boolean dispatchTouchEvent(MotionEvent ev) {
+//        Log.d(TAG, "dispatchTouchEvent: ");
+//        CameraInterface.getInstance().doTakePicture();
+//        return super.dispatchTouchEvent(ev);
+//    }
 
 
 }

@@ -45,6 +45,7 @@ public class CamParaUtil {
         }
         return list.get(i);
     }
+
     public Size getPropPictureSize(List<Camera.Size> list, float th, int minWidth){
         Collections.sort(list, sizeComparator);
 
