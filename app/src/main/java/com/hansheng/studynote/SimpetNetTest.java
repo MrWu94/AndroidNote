@@ -25,7 +25,8 @@ public class SimpetNetTest extends AppCompatActivity {
     }
     public void testMultiRequests() {
 
-            StringRequest request = new StringRequest(HttpMethod.GET, "http://nbaplus.sinaapp.com/api/v1.0/blogs/update", new RequestListener<String>() {
+            StringRequest request = new StringRequest(HttpMethod.GET, "http://nbaplus.sinaapp.com/api/v1.0/blogs/update",
+                    new RequestListener<String>() {
                 @Override
                 public void onComplete(int stCode, String response, String errMsg) {
                     System.out.println("........"+response);

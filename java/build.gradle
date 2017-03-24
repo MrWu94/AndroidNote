@@ -2,11 +2,6 @@ apply plugin: 'java'
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile files('libs/org.apache.http.legacy.jar')
-    compile files('libs/Volley.jar')
-    compile files('libs/jsoup-1.7.3.jar')
-    compile files('libs/slf4j-api-1.7.14.jar')
-    compile files('libs/mina-core-2.0.13.jar')
     compile 'cn.leancloud.android:fastjson:1.1.39-leancloud'
-    compile files('libs/org.json.jar')
+
 }
