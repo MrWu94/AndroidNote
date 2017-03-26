@@ -35,6 +35,8 @@ public class StudyApplication extends Application {
 
     public String name;
 
+    public static final String key="hajfehhadf";
+
 
 
     public String getName() {
