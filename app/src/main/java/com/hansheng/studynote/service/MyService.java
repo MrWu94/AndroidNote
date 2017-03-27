@@ -1,8 +1,6 @@
 package com.hansheng.studynote.service;
 
 
-import android.app.Notification;
-import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
@@ -10,9 +8,6 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
 import android.util.Log;
-
-import com.hansheng.studynote.MainActivity;
-import com.hansheng.studynote.R;
 
 /**
  * Created by hansheng on 2016/6/29.
@@ -28,6 +23,7 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
+        //前台服务
 //        Notification notification = new Notification(R.drawable.ic_launcher,
 //                "有通知到来", System.currentTimeMillis());
 //        Intent notificationIntent = new Intent(this, MainActivity.class);
@@ -74,6 +70,7 @@ public class MyService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
+        stopForeground(true);// 停止前台服务--参数：表示是否移除之前的通知
         Log.d(TAG, "onDestroy() executed");
     }
 
@@ -96,4 +93,6 @@ public class MyService extends Service {
 
         }
     }
+
+
 }
