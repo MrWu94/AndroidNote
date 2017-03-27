@@ -32,6 +32,9 @@
     <dimen name="edge">10dp</dimen>
     <dimen name="default_text_size">50sp</dimen>
     <dimen name="text_size_huge">20sp</dimen>
+    <dimen name="header_height">160dp</dimen>
+    <dimen name="pan_content_width">1280dp</dimen>
+    <dimen name="pan_content_height">720dp</dimen>
 
 
 </resources>
