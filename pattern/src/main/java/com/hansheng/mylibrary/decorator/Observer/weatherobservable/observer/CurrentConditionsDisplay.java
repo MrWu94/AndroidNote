@@ -5,6 +5,7 @@ import com.hansheng.mylibrary.decorator.Observer.weatherobservable.subject.Weath
 
 import java.util.Observable;
 import java.util.Observer;
+//observable可观察者
 	
 public class CurrentConditionsDisplay implements Observer, DisplayElement {
 	Observable observable;
