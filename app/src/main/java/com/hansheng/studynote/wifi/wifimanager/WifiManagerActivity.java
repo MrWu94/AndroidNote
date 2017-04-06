@@ -54,6 +54,26 @@ public class WifiManagerActivity extends AppCompatActivity {
                     +" 信号强度："+scanResult.level+"/n :"+wifiManager.calculateSignalLevel(scanResult.level,4));
             addNetwork(createWifiCfg(scanResult.SSID, null,1));
         }
+
+
+    }
+
+
+    /**
+     * 设备连接Wifi之后， 设备获取Wifi热点的IP地址
+     * @return
+     */
+    public String getIpAddressFromHotspot(){
+        // WifiAP ip address is hardcoded in Android.
+        /* IP/netmask: 192.168.43.1/255.255.255.0 */
+        String ipAddress = "192.168.43.1";
+        DhcpInfo dhcpInfo = wifiManager.getDhcpInfo();
+        int address = dhcpInfo.gateway;
+        ipAddress = ((address & 0xFF)
+                + "." + ((address >> 8) & 0xFF)
+                + "." + ((address >> 16) & 0xFF)
+                + "." + ((address >> 24) & 0xFF));
+        return ipAddress;
     }
     /**
      * 过滤有密码的Wifi扫描结果集合
