@@ -68,5 +68,6 @@
     <color name="btn_dialog_negative_pressed">#bf0000</color>
     <color name="btn_dialog_positive_normal">#368bff</color>
     <color name="btn_dialog_positive_pressed">#0067f3</color>
+    <color name="grid" >#3F51B5</color>
 
 </resources>

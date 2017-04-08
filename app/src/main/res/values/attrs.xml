@@ -108,20 +108,20 @@
     </declare-styleable>
 
     <declare-styleable name="ProgressCircularIndeterminate">
-        <attr name="leftColor" format="color"/>
-        <attr name="rightColor" format="color"/>
+        <attr name="leftColor" format="color" />
+        <attr name="rightColor" format="color" />
     </declare-styleable>
 
     <declare-styleable name="FlipViewController">
         <attr name="orientation" format="enum">
-            <enum name="vertical" value="0"/>
-            <enum name="horizontal" value="1"/>
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
         </attr>
 
         <attr name="animationBitmapFormat" format="enum">
-            <enum name="ARGB_8888" value="0"/>
-            <enum name="ARGB_4444" value="1"/>
-            <enum name="RGB_565" value="2"/>
+            <enum name="ARGB_8888" value="0" />
+            <enum name="ARGB_4444" value="1" />
+            <enum name="RGB_565" value="2" />
         </attr>
     </declare-styleable>
 
@@ -148,22 +148,22 @@
     </declare-styleable>
 
     <declare-styleable name="CircleProgress">
-        <attr name="circle_progress" format="integer"/>
-        <attr name="circle_max" format="integer"/>
+        <attr name="circle_progress" format="integer" />
+        <attr name="circle_max" format="integer" />
 
-        <attr name="circle_unfinished_color" format="color"/>
-        <attr name="circle_finished_color" format="color"/>
+        <attr name="circle_unfinished_color" format="color" />
+        <attr name="circle_finished_color" format="color" />
 
-        <attr name="circle_text_size" format="dimension"/>
-        <attr name="circle_text_color" format="color"/>
+        <attr name="circle_text_size" format="dimension" />
+        <attr name="circle_text_color" format="color" />
 
-        <attr name="circle_prefix_text" format="string"/>
-        <attr name="circle_suffix_text" format="string"/>
+        <attr name="circle_prefix_text" format="string" />
+        <attr name="circle_suffix_text" format="string" />
     </declare-styleable>
 
     <declare-styleable name="RoundProgressBar">
-        <attr name="roundColor" format="color"/>
-        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
         <attr name="roundWidth" format="dimension"></attr>
         <attr name="textColor" format="color" />
         <attr name="textSize" format="dimension" />
@@ -242,7 +242,11 @@
 
     <declare-styleable name="SelectorButton">
         <attr name="normal_drawable" format="reference" />
-        <attr name="pressed_drawable" format="reference" />
-        　　</declare-styleable>
-
+        <attr name="pressed_drawable" format="reference" />　　
+    </declare-styleable>
+    <declare-styleable name="RootSurfaceView">
+        <attr name="background" format="reference" />
+        <attr name="view_width" format="dimension" />
+        <attr name="view_height" format="dimension" />
+    </declare-styleable>
 </resources>

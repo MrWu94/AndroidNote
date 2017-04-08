@@ -1,4 +1,4 @@
-package com.hansheng.studynote.Activity.ThreadLooper;
+package com.hansheng.studynote.Thread.ThreadLooper;
 
 import android.os.Handler;
 import android.os.Looper;
