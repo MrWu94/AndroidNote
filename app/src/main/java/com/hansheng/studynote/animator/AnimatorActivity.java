@@ -5,6 +5,9 @@ import android.view.View;
 
 import com.hansheng.studynote.Activity.BaseActivity;
 import com.hansheng.studynote.R;
+import com.hansheng.studynote.animator.animationdrawable.AminationDrawableActivity;
+import com.hansheng.studynote.animator.higeanim.HighAnimActivity;
+import com.hansheng.studynote.drawable.AnimationDrawableActivity1;
 
 import butterknife.OnClick;
 
@@ -23,7 +26,9 @@ public class AnimatorActivity extends BaseActivity {
 
     }
 
-    @OnClick({R.id.show_amimatorset, R.id.show_objectamimator, R.id.show_valueanimator, R.id.show_valueanimator1, R.id.show_viewanimation, R.id.show_xfermode})
+    @OnClick({R.id.show_amimatorset, R.id.show_objectamimator, R.id.show_valueanimator,
+            R.id.show_valueanimator1, R.id.show_viewanimation, R.id.show_xfermode,
+            R.id.show_high_anim,R.id.show_animation_drawable,R.id.show_animation_drawable1})
     void OnClick(View view) {
         switch (view.getId()) {
             case R.id.show_amimatorset:
@@ -43,6 +48,15 @@ public class AnimatorActivity extends BaseActivity {
                 break;
             case R.id.show_xfermode:
                 setIntent(XfermodeActivity.class);
+                break;
+            case R.id.show_high_anim:
+                setIntent(HighAnimActivity.class);
+                break;
+            case R.id.show_animation_drawable:
+                setIntent(AminationDrawableActivity.class);
+                break;
+            case R.id.show_animation_drawable1:
+                setIntent(AnimationDrawableActivity1.class);
                 break;
         }
     }

@@ -66,7 +66,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".jni.MainActivity"
+            android:name=".animator.AnimatorActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Launcher">
@@ -90,6 +90,9 @@
         <activity android:name=".ActivityManager.BrowseProcessInfoActivity" />
         <activity android:name=".SQLDataBase.SQLiteDB2.StudentDetail" />
         <activity android:name=".Application.NoStoreApplication.GreetLoudlyActivity"/>
+        <activity android:name=".animator.higeanim.HighAnimActivity"/>
+        <activity android:name=".animator.animationdrawable.AminationDrawableActivity"/>
+        <activity android:name=".drawable.AnimationDrawableActivity1"/>
 
         <service
             android:name=".Socket.chat.TCPServerService"

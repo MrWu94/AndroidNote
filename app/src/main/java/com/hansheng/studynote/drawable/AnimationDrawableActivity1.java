@@ -13,7 +13,7 @@ import com.hansheng.studynote.R;
  * Created by wfq on 2016/11/12.
  */
 
-public class AnimationDrawableActivity extends AppCompatActivity {
+public class AnimationDrawableActivity1 extends AppCompatActivity {
     private ImageView imageView;
 
     @Override

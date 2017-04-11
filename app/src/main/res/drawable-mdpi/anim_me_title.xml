@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/ic_me_title_logo_one"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_two"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_three"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_four"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_five"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_six"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_seven"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_eight"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_nine"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_ten"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_eleven"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_twelve"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_thirteen"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_fourteen"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_fifteen"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_sixteen"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_seventeen"
+        android:duration="150" />
+    <item
+        android:drawable="@drawable/ic_me_title_logo_eighteen"
+        android:duration="150" />
+
+</animation-list>

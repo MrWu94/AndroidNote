@@ -56,5 +56,29 @@
         android:background="@drawable/bg_btn_selector"
         android:text="Xfermode" />
 
+    <Button
+        android:id="@+id/show_high_anim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
+        android:text="highanim" />
+
+    <Button
+        android:id="@+id/show_animation_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
+        android:text="animationdrawable" />
+    <Button
+        android:id="@+id/show_animation_drawable1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_btn_selector"
+        android:text="animationdrawable1" />
+
+
 
 </LinearLayout>
