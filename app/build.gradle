@@ -28,6 +28,10 @@ android {
         //ADD THIS LINE:
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
+        ndk {
+            moduleName "hello_jni"       //生成的so文件名字，调用C程序的代码中会用到该名字
+//            abiFilters "armeabi", "armeabi-v7a", "x86" //输出指定三种平台下的so库
+        }
     }
 
     //构建类型
@@ -50,7 +54,6 @@ android {
 //            consumerProguardFiles 'consumer-proguard-rules.pro'
 
 
-
         }
     }
 
@@ -66,7 +69,6 @@ android {
     task showMeCache << {
         configurations.compile.each { println it }
     }
-
 
     //    useLibrary 'org.apache.http.legacy'
 
@@ -99,7 +101,7 @@ android {
                            'src/main/res/layout/fragment',
                            'src/main/res/'
             ]
-            jni.srcDirs = []
+//            jni.srcDirs = ['src/main/jni', 'src/main/jni/']
         }
 
     }
@@ -137,7 +139,7 @@ android {
 }
 
 tinyinfo {
-    apiKey ='UOw4TImgfWX6J_HufF24Rimgl8AHjWNK'
+    apiKey = 'UOw4TImgfWX6J_HufF24Rimgl8AHjWNK'
     //是否跳过此task
     skip = true
     //是否打印日志
@@ -243,7 +245,7 @@ dependencies {
     compile project(':customview')
 //    compile project(':animation')
     //module和aar只能有一个
-    compile(name:'animation-release', ext:'aar')
+    compile(name: 'animation-release', ext: 'aar')
     compile 'com.jiechic.library:xUtils:2.6.14'
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'io.reactivex:rxjava:1.1.0'
@@ -301,7 +303,6 @@ dependencies {
     // LeanCloud 基础包
     compile('cn.leancloud.android:avoscloud-sdk:v3.+')
 
-
     // LeanCloud 应用内搜索包
     compile('cn.leancloud.android:avoscloud-search:v3.+@aar')
 
@@ -312,8 +313,6 @@ dependencies {
     compile 'com.melnykov:floatingactionbutton:1.1.0'
 
     debugCompile 'com.amitshekhar.android:debug-db:0.4.0'
-
-
 
 //    去掉重复依赖,剔除整个组织的库
 //    compile 'com.alibaba.fastjson.latest.integration' {
