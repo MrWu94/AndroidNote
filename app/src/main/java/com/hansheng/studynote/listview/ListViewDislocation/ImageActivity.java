@@ -1,4 +1,4 @@
-package com.hansheng.studynote.listview;
+package com.hansheng.studynote.listview.ListViewDislocation;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -18,7 +18,7 @@ public class ImageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listview_layout);
         listView = (ListView) findViewById(R.id.list_view);
-        WeakImageAdapter adapter = new WeakImageAdapter(this, 0, Images.imageUrls);
+        ImageAdapter adapter = new ImageAdapter(this, 0, Images.imageUrls);
         listView.setAdapter(adapter);
     }
 }
