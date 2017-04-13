@@ -1,8 +1,6 @@
-package com.hansheng.studynote.bitmapcache.util;
+package com.hansheng.studynote.ImageCompressandScale.bitmapcache.util;
 
-import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 /**
  * Created by hansheng on 2016/6/26.

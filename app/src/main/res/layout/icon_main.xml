@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_below="@+id/top_menu">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/all"
+                style="@style/MenuStyle"
+                android:text="@string/all" />
+
+            <TextView
+                android:id="@+id/fuli"
+                style="@style/MenuStyle"
+                android:text="@string/fuli" />
+
+            <TextView
+                android:id="@+id/android"
+                style="@style/MenuStyle"
+                android:text="@string/android" />
+
+            <TextView
+                android:id="@+id/ios"
+                style="@style/MenuStyle"
+                android:text="@string/ios" />
+
+            <TextView
+                android:id="@+id/video"
+                style="@style/MenuStyle"
+                android:text="@string/video" />
+
+            <TextView
+                android:id="@+id/front"
+                style="@style/MenuStyle"
+                android:text="@string/front" />
+
+            <TextView
+                android:id="@+id/resource"
+                style="@style/MenuStyle"
+                android:text="@string/resource" />
+
+            <TextView
+                android:id="@+id/app"
+                style="@style/MenuStyle"
+                android:text="@string/app" />
+
+            <TextView
+                android:id="@+id/more"
+                style="@style/MenuStyle"
+                android:text="@string/more" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/about"-->
+            <!--style="@style/MenuStyle"-->
+            <!--android:text="@string/about"/>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

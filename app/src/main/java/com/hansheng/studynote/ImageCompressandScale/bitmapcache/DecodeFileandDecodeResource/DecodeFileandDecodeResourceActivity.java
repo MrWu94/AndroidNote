@@ -1,4 +1,4 @@
-package com.hansheng.studynote.bitmapcache.DecodeFileandDecodeResource;
+package com.hansheng.studynote.ImageCompressandScale.bitmapcache.DecodeFileandDecodeResource;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

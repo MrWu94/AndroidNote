@@ -1,4 +1,4 @@
-package com.hansheng.studynote.bitmapcache;
+package com.hansheng.studynote.ImageCompressandScale.bitmapcache;
 
 import android.graphics.Bitmap;
 import android.support.v4.util.LruCache;

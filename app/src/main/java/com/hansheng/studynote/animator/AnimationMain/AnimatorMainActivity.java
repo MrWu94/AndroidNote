@@ -13,7 +13,7 @@ import com.hansheng.studynote.animator.ViewAnimateActivity;
 import com.hansheng.studynote.animator.XfermodeActivity;
 import com.hansheng.studynote.animator.animationdrawable.AminationDrawableActivity;
 import com.hansheng.studynote.animator.higeanim.HighAnimActivity;
-import com.hansheng.studynote.drawable.AnimationDrawableActivity1;
+import com.hansheng.studynote.ImageCompressandScale.drawable.AnimationDrawableActivity1;
 
 import butterknife.OnClick;
 

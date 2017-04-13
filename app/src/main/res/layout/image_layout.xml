@@ -8,15 +8,12 @@
         android:id="@+id/image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        android:background="@color/blue"
-
-        />
+        android:src="@drawable/zhangjinxuan" />
 
     <com.hansheng.studynote.ImageCompressandScale.ForegroundImageView
         android:id="@+id/imagecustom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" />
+        android:src="@drawable/zhangjinxuan" />
 
 </LinearLayout>

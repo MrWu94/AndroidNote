@@ -1,4 +1,4 @@
-package com.hansheng.studynote.bitmapcache;
+package com.hansheng.studynote.ImageCompressandScale.bitmapcache;
 
 /**
  * Created by hansheng on 2016/6/27.

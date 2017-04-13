@@ -1,4 +1,4 @@
-package com.hansheng.studynote.drawable;
+package com.hansheng.studynote.ImageCompressandScale.drawable;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;

@@ -145,5 +145,16 @@
     <string name="text_com">Text Button</string>
     <string name="share">分享</string>
 
+    <string name="all">全部</string>
+    <string name="setting">设置</string>
+    <string name="fuli">福利</string>
+    <string name="android">Android</string>
+    <string name="ios">iOS</string>
+    <string name="video">休息视频</string>
+    <string name="front">前端</string>
+    <string name="resource">拓展资源</string>
+    <string name="app">App</string>
+    <string name="more">瞎推荐</string>
+
 
 </resources>

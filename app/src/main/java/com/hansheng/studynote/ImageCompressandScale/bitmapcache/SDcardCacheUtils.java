@@ -1,11 +1,11 @@
-package com.hansheng.studynote.bitmapcache;
+package com.hansheng.studynote.ImageCompressandScale.bitmapcache;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Environment;
 import android.util.Log;
 
-import com.hansheng.studynote.bitmapcache.util.MD5Encoder;
+import com.hansheng.studynote.ImageCompressandScale.bitmapcache.util.MD5Encoder;
 
 import java.io.File;
 import java.io.FileInputStream;

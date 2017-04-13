@@ -1,7 +1,6 @@
-package com.hansheng.studynote.bitmapcache;
+package com.hansheng.studynote.ImageCompressandScale.bitmapcache;
 
 import android.graphics.Bitmap;
-import android.media.Image;
 import android.util.Log;
 import android.widget.ImageView;
 
