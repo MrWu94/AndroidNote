@@ -380,6 +380,7 @@ dependencies {
     compile 'com.mikepenz:material-design-iconic-typeface:2.2.0.1@aar'
     compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
     compile 'com.mikepenz:foundation-icons-typeface:3.0.0.1@aar'
+    compile 'com.orhanobut:logger:1.15'
 
 
 //    去掉重复依赖,剔除整个组织的库

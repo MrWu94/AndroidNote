@@ -13,6 +13,8 @@ import com.hansheng.hanshenghttpclient.net.HanShengHttpClient;
 import com.hansheng.studynote.SQLDataBase.SQLiteDBMultiTbl.data.DBHelper;
 import com.hansheng.studynote.SQLDataBase.SQLiteDBMultiTbl.data.DatabaseManager;
 import com.hansheng.studynote.loader.ImageLoaderUtil.UniversalAndroidImageLoader;
+import com.orhanobut.logger.LogLevel;
+import com.orhanobut.logger.Logger;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
@@ -35,8 +37,7 @@ public class StudyApplication extends Application {
 
     public String name;
 
-    public static final String key="hajfehhadf";
-
+    public static final String key = "hajfehhadf";
 
 
     public String getName() {
@@ -74,6 +75,11 @@ public class StudyApplication extends Application {
 
         // 初始化参数依次为 this, AppId, AppKey
         AVOSCloud.initialize(this, "0HlFN3BDPl3lkWoJe3moMBA1-gzGzoHsz", "9EO3QcsyIyo6Sc4hkBHbnEaS");
+        Logger.init("loger")
+                .methodOffset(2)
+                .methodCount(2)
+                .hideThreadInfo()
+                .logLevel(BuildConfig.DEBUG ? LogLevel.FULL : LogLevel.NONE);
 
 ////        LayoutManager.init(this);
 //        if (LeakCanary.isInAnalyzerProcess(this)) {
