@@ -4,6 +4,7 @@ import android.os.Handler;
 import android.os.Looper;
 
 import com.google.gson.Gson;
+import com.hansheng.studynote.Logger.db.DBManager;
 import com.orhanobut.logger.Logger;
 
 import org.json.JSONException;
@@ -116,6 +117,15 @@ public class RequestManager {
 
     public static void get(Object tag, final String url, final boolean isCache, final CallBack callBack) {
         //读取缓存数据
+        final DBManager dbManager = new DBManager();
+        String data = dbManager.getData(url);
+        if (!"".equals(data)) {
+            //解析json数据并返回成功回调
+            Logger.json(data);
+
+            callBack.onSuccess(new Gson().fromJson(data, callBack.type));
+        }
+
 
         //初始化请求对象
         Request request = new Request.Builder()
@@ -130,7 +140,7 @@ public class RequestManager {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-//                        callBack.onFailure(e.getLocalizedMessage());
+                        callBack.onFailure(e.getLocalizedMessage());
                     }
                 });
 
@@ -141,17 +151,18 @@ public class RequestManager {
                 //获取String类型响应，注意是string(),不是toString()
                 final String json = response.body().string();
                 //在控制台格式化打印json数据
-                Logger.json(json);
+//                Logger.json(json);
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-//                        handleResponse(json, callBack, dbManager, url, isCache);
+                        handleResponse(json, callBack, dbManager, url, isCache);
                     }
                 });
 
             }
         });
     }
+
 
     /**
      * 处理请求结果
@@ -160,27 +171,36 @@ public class RequestManager {
      * @param callBack
      * @param url
      */
-    private static void handleResponse(String json, CallBack callBack, String url, boolean isCache) {
+    private static void handleResponse(String json, CallBack callBack, DBManager dbManager, String url, boolean isCache) {
         try {
             //转化为json对象
             JSONObject jsonObject = new JSONObject(json);
             //判断error字段是否存在，不存在返回失败信息并结束请求
             if (jsonObject.isNull(ERROR)) {
-//                callBack.onFailure("error key not exists!!");
+                callBack.onFailure("error key not exists!!");
                 return;
             }
             //判断后台返回结果，true表示失败，false表示成功，失败则返回错误回调并结束请求
             if (jsonObject.getBoolean(ERROR)) {
+                callBack.onFailure("request failure!!");
                 return;
             }
             //判断results字段是否存在，不存在返回时报回调并结束请求
             if (jsonObject.isNull(RESULTS)) {
+                callBack.onFailure("results key not exists!!");
                 return;
             }
             //获取results的值
             String results = jsonObject.getString(RESULTS);
-        } catch (JSONException e) {
+            if (isCache) {
+                //插入缓存数据库
+                dbManager.insertData(url, results);
+            }
 
+            //返回成功回调
+            callBack.onSuccess(new Gson().fromJson(results, callBack.type));
+        } catch (JSONException e) {
+            callBack.onFailure(e.getLocalizedMessage());
         }
     }
 
