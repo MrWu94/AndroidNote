@@ -80,7 +80,7 @@
         </activity>
         <activity android:name=".fragment.SoundActivity" />
         <activity android:name=".fragment.DisplayActivity" />
-        <activity android:name=".vector.LActivity" />
+        <activity android:name=".ImageViewandDrawable.vector.LActivity" />
         <!-- Used for transferring files  after a successful connection -->
         <service
             android:name=".wifi.FileTransferService"
@@ -92,7 +92,7 @@
         <activity android:name=".Application.NoStoreApplication.GreetLoudlyActivity" />
         <activity android:name=".animator.higeanim.HighAnimActivity" />
 
-        <activity android:name=".ImageCompressandScale.drawable.AnimationDrawableActivity1" />
+        <activity android:name=".ImageViewandDrawable.drawable.AnimationDrawableActivity1" />
 
         <service
             android:name=".Socket.chat.TCPServerService"

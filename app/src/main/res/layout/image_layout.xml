@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/zhangjinxuan" />
 
-    <com.hansheng.studynote.ImageCompressandScale.ForegroundImageView
+    <com.hansheng.studynote.ImageViewandDrawable.ForegroundImageView
         android:id="@+id/imagecustom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.hansheng.studynote.ImageCompressandScale.ImageBackground.RootSurfaceView
+    <com.hansheng.studynote.ImageViewandDrawable.ImageBackground.RootSurfaceView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:background="@drawable/ic_common_read_book_bg"
