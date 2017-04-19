@@ -1,4 +1,4 @@
-package com.hansheng.studynote.record;
+package com.hansheng.studynote.Media.record;
 
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;

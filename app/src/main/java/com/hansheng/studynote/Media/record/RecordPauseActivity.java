@@ -1,4 +1,4 @@
-package com.hansheng.studynote.record;
+package com.hansheng.studynote.Media.record;
 
 import android.content.Context;
 import android.content.Intent;
