@@ -20,7 +20,7 @@
             android:src="@drawable/ic_launcher" />
     </FrameLayout>
 
-    <com.hansheng.studynote.RecyclerView.CustomRecyclerView.MyRecyclerView
+    <com.hansheng.studynote.Listview.RecyclerView.CustomRecyclerView.MyRecyclerView
         android:id="@+id/id_recyclerview_horizontal"
         android:layout_width="match_parent"
         android:layout_height="120dp"

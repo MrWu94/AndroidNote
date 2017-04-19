@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <com.hansheng.studynote.listview.sortlistview.ClearEditText
+    <com.hansheng.studynote.Listview.sortlistview.ClearEditText
         android:id="@+id/filter_edit"
         android:layout_marginTop="5dip"
         android:layout_width="fill_parent"
@@ -37,7 +37,7 @@
             android:textSize="30.0dip"
             android:visibility="invisible" />
 
-        <com.hansheng.studynote.listview.sortlistview.SideBar
+        <com.hansheng.studynote.Listview.sortlistview.SideBar
             android:id="@+id/sidrbar"
             android:layout_width="30.0dip"
             android:layout_height="fill_parent"
