@@ -12,7 +12,7 @@ import com.hansheng.hanshenghttpclient.net.HanShengClientConfig;
 import com.hansheng.hanshenghttpclient.net.HanShengHttpClient;
 import com.hansheng.studynote.SQLDataBase.SQLiteDBMultiTbl.data.DBHelper;
 import com.hansheng.studynote.SQLDataBase.SQLiteDBMultiTbl.data.DatabaseManager;
-import com.hansheng.studynote.loader.ImageLoaderUtil.UniversalAndroidImageLoader;
+import com.hansheng.studynote.ImageViewandDrawable.Imageloader.ImageLoaderUtil.UniversalAndroidImageLoader;
 import com.orhanobut.logger.LogLevel;
 import com.orhanobut.logger.Logger;
 import com.squareup.leakcanary.LeakCanary;

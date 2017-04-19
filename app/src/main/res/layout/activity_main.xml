@@ -55,7 +55,7 @@
         android:onClick="toAnimation"
         android:text="Animation" />
 
-    <com.hansheng.studynote.SelectorDrawable.SelectorButton
+    <com.hansheng.studynote.ImageViewandDrawable.SelectorDrawable.SelectorButton
         android:id="@+id/btn_selector"
         style="@style/MatchWrap"
         android:text="selector"

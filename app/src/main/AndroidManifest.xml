@@ -62,11 +62,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
-            android:name="com.hansheng.studynote.glide.CustomCachingGlideModule"
+            android:name="com.hansheng.studynote.ImageViewandDrawable.glide.CustomCachingGlideModule"
             android:value="GlideModule" />
 
         <activity
-            android:name=".Logger.LoggerActvity"
+            android:name=".Media.MediaPlayer.MediaPlayerActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Launcher">
@@ -220,7 +220,7 @@
             android:name=".service.MyService"
             android:process=":remote" />
 
-        <activity android:name=".OkHttp.OkHttpPostActivity" />
+        <activity android:name=".Http.OkHttp.OkHttpPostActivity" />
 
 
         <receiver
@@ -236,8 +236,8 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".music.MusicService" />
-        <service android:name=".music.musicplayer.MusicService1" />
+        <service android:name=".Media.music.MusicService" />
+        <service android:name=".Media.music.musicplayer.MusicService1" />
         <service
             android:name=".systemclean.service.CleanerService"
             android:exported="false" />
