@@ -70,7 +70,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".ToolBar.fullscreen.FullScreenActivity"
+            android:name=".notifaction.NotiactionCompat.NoticationCompatActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Launcher">
