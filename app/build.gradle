@@ -383,6 +383,8 @@ dependencies {
     compile 'com.orhanobut:logger:1.15'
     compile 'com.github.scribejava:scribejava-apis:3.2.0'
 
+    compile 'com.zhuge.analysis:zhugeio:latest.integration'
+
 //    去掉重复依赖,剔除整个组织的库
 //    compile 'com.alibaba.fastjson.latest.integration' {
 //        exclude module: 'annotations', group: 'com.google.android'
