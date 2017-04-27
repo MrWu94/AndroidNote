@@ -27,6 +27,7 @@ import java.util.TimerTask;
  */
 
 public class TimerAndHandlerActivity extends AppCompatActivity {
+    public static final String TAG="TimerAndHandlerActivity";
     int mCount = 0;
     static Handler handler = new Handler();
     static Runnable runnable = new Runnable() {
@@ -40,8 +41,10 @@ public class TimerAndHandlerActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item);
-        startHandler();
+//        startHandler();
 //        startTimer();
+//        sTimer();
+        startHandler();
 
     }
 
@@ -50,7 +53,7 @@ public class TimerAndHandlerActivity extends AppCompatActivity {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-
+                Log.d(TAG, "run: ");
             }
         }, 0, 100);
 
