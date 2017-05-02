@@ -31,7 +31,7 @@ android {
         vectorDrawables.useSupportLibrary = true
         ndk {
             moduleName "hello_jni"       //生成的so文件名字，调用C程序的代码中会用到该名字
-//            abiFilters "armeabi", "armeabi-v7a", "x86" //输出指定三种平台下的so库
+//            abiFilters "armeabi", "armeabi-v7a", "x86" //输出指定三种平台下的so库,设置所需要的so库架构
         }
     }
 
@@ -213,9 +213,24 @@ repositories {
         dirs 'aars'
     }
 }
+//http://tech.meituan.com/mt-android-auto-split-dex.html
+tasks.whenTaskAdded { task ->
+    if (task.name.startsWith('proguard') && (task.name.endsWith('Debug') || task.name.endsWith('Release'))) {
+        task.doLast {
+            makeDexFileAfterProguardJar();
+        }
+        task.doFirst {
+            delete "${project.buildDir}/intermediates/classes-proguard";
 
-
-
+            String flavor = task.name.substring('proguard'.length(), task.name.lastIndexOf(task.name.endsWith('Debug') ? "Debug" : "Release"));
+            generateMainIndexKeepList(flavor.toLowerCase());
+        }
+    } else if (task.name.startsWith('zipalign') && (task.name.endsWith('Debug') || task.name.endsWith('Release'))) {
+        task.doFirst {
+            ensureMultiDexInApk();
+        }
+    }
+}
 
 def propFile = project.rootProject.file('signing.properties');
 if (propFile.exists()) {
