@@ -166,7 +166,7 @@ protected void onCreate(Bundle savedInstanceState){  
 下一节将讲述如何实现一些常见的动作，例如探测并连接到对等设备。
 
 **探测对等设备（Discovering peers）**
-调用[discoverPeers()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeers(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pManager.ActionListener))函数可以探测到有效距离内的对等设备。它是一个异步函数，调用成功与否会在程序所创建[WifiP2pManager.ActionListener](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html)监听器的[onSuccess()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onSuccess())和[onFailure()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onFailure(int))中给出通知。值得注意的是，[onSuccess()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onSuccess())方法只会对成功探测到对等设备这一事件做出通知，而并不会提供任何关于已发现的对等设备的具体信息：
+调用[discoverPeers()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html) #discoverPeers(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pManager.ActionListener))函数可以探测到有效距离内的对等设备。它是一个异步函数，调用成功与否会在程序所创建[WifiP2pManager.ActionListener](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html)监听器的[onSuccess()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onSuccess())和[onFailure()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onFailure(int))中给出通知。值得注意的是，[onSuccess()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onSuccess())方法只会对成功探测到对等设备这一事件做出通知，而并不会提供任何关于已发现的对等设备的具体信息：
 ```java
 manager.discoverPeers(channel, new WifiP2pManager.ActionListener() {  
     @Override  
@@ -180,7 +180,8 @@ manager.discoverPeers(channel, new WifiP2pManager.ActionListener() {  
     }  
 });  
 ```
-当成功检测到对等设备存在的时候，系统会广播[WIFI_P2P_PEERS_CHANGED_ACTION](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_PEERS_CHANGED_ACTION)意向。程序接收到该意向后，通过调用[requestPeers()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestPeers(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pManager.PeerListListener))方法，就能获得已经探测到对等设备的清单。下面代码将展示如何实现这一过程：
+当成功检测到对等设备存在的时候，系统会广播[WIFI_P2P_PEERS_CHANGED_ACTION](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_PEERS_CHANGED_ACTION)意向。程序接收到该意向后，
+通过调用[requestPeers()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html) #requestPeers(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pManager.PeerListListener))方法，就能获得已经探测到对等设备的清单。下面代码将展示如何实现这一过程：
 ```
 PeerListListener myPeerListListener;  
 ...java
