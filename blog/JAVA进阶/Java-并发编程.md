@@ -1,6 +1,6 @@
 **并发（concurrency）** 并发的关注点在于任务切分。举例来说，你是一个创业公司的CEO，开始只有你一个人，你一人分饰多角，一会做产品规划，一会写代码，一会见客户，虽然你不能见客户的同时写代码，但由于你切分了任务，分配了时间片，表现出来好像是多个任务一起在执行。
 **并行（parallelism）** 并行的关注点在于同时执行。还是上面的例子，你发现你自己太忙了，时间分配不过来，于是请了工程师，产品经理，市场总监，各司一职，这时候多个任务可以同时执行了
-##Runnable与Thread的区别
+## Runnable与Thread的区别
 使用Runnable的好处
  1、可以避免由于Java的单继承特性而带来的局限；
  2、增强程序的健壮性，代码能够被多个线程共享，代码与数据是独立的；
@@ -28,7 +28,7 @@ class RunnableDemo {
 }
 ```
 
-##Volatile
+## Volatile
  
   在多线程，同步变量。 线程为了提高效率，将某成员变量(如A)拷贝了一份（如B），线程中对A的访问其实访问的是B。只在某些动作时才进行A和B的同步。因此存在A和B不一致的情况。volatile就是用来避免这种情况的。volatile告诉jvm， 它所修饰的变量不保留拷贝，直接访问主内存中的（也就是上面说的A) 假如pleaseStop没有被声明为volatile，线程执行run的时候检查的是自己的副本， 就不能及时得知其他线程已经调用tellMeToStop()修改了pleaseStop的值。** 简单的说就是synchronized的代码块是确保可见性和原子性的, volatile只能确保可见性, 当且仅当下面条件全部满足时, 才能使用volatile 对变量的写入操作不依赖于变量的当前值, **(++i/i++这种肯定不行), 或者能确保只有单个线程在更新该变量不会与其他状态变量一起纳入不变性条件中访问变量时不需要加锁volatile关键字不起作用，也就是说如下的表达式都不是原子操作n  =  n  +   1 ;n ++ ;**所以在使用volatile关键时一定要谨慎，如果自己没有把握，可以使用synchronized来代替volatile。**
 ```java
@@ -101,9 +101,9 @@ class  JoinThread  extends  Thread
 }
 
 ```
-##Wait、notify、notifyAll
+## Wait、notify、notifyAll
  在调用wait(), notify()或notifyAll()的时候，必须先获得锁，且状态变量须由该锁保护，而固有锁对象与固有条件队列对象又是同一个对象。也就是说，要在某个对象上执行wait，notify，先必须锁定该对象，而对应的状态变量也是由该对象锁保护的。
-##AtomicInteger
+## AtomicInteger
 AtomicInteger，一个提供原子操作的Integer的类。在Java语言中，++i和i++操作并不是线程安全的，在使用的时候，不可避免的会用到synchronized关键字。而AtomicInteger则通过一种线程安全的加减操作接口。来看AtomicInteger提供的接口。
 //获取当前的值  
 public final int get()
@@ -115,7 +115,7 @@ public final int get()
  public final int getAndDecrement()
  //获取当前的值，并加上预期的值
  public final int getAndAdd(int delta)
-```
+```java
 时间比较
 public class AtomicIntegerCompareTest {
     private int value;
@@ -151,10 +151,10 @@ public class AtomicIntegerCompareTest {
 }
 
 ```
-##BlockingQueue阻塞队列
+## BlockingQueue阻塞队列
 作为BlockingQueue的使用者，我们再也不需要关心什么时候需要阻塞线程，什么时候需要唤醒线程，因为这一切BlockingQueue都给你一手包办了。offer(anObject):表示如果可能的话,将anObject加到BlockingQueue里,即如果BlockingQueue可以容纳, 
 基于链表的阻塞队列，同ArrayListBlockingQueue类似，其内部也维持着一个数据缓冲队列（该队列由一个链表构成），当生产者往队列中放入一个数据时，队列会从生产者手中获取数据，并缓存在队列内部，而生产者立即返回；只有当队列缓冲区达到最大值缓存容量时 （LinkedBlockingQueue可以通过构造函数指定该值）， 才会阻塞生产者队列，直到消费者从队列中消费掉一份数据，生产者线程会被唤醒，反之对于消费者这端的处理也基于同样的原理。
-```
+```java
 public class BlockingQueueTest {
     public static void main(String[] args) throws InterruptedException {
         BlockingQueue<String> bqueue = new ArrayBlockingQueue<String>(20);
@@ -186,11 +186,11 @@ class BlockingQueueTest1 {
 }
 从结果中可以看出，当添加了第20个元素后，我们从队首移出一个元素，这样便可以继续向队列中添加元素， 之后每添加一个元素，便从将队首元素移除，这样程序便可以执行结束。
 ```
-#FutureTask
+# FutureTask
 FutureTask可以返回执行完毕的数据，并且FutureTask的get方法支持阻塞这两个特性， 我们可以用来预先加载一些可能用到资源，然后要用的时候，调用get方法获取（如果资源加载完，直接返回；否则继续等待其加载完成）。
  FutureTask则是一个RunnableFuture<V>，即实现了Runnbale又实现了Futrue<V>这两个接口，  另外它还可以包装Runnable(实际上会转换为Callable)和Callable ，所以一般来讲是一个符合体了，它可以通过Thread包装来直接执行，也可以提交给ExecuteService来执行  ，并且还可以通过v get()返回执行结果，在线程体没有执行完成的时候，主线程一直阻塞等待，执行完则直接返回结果。 
   其中Runnable实现的是void run()方法，无返回值；Callable实现的是 call()方法，并且可以返回执行结果。其中Runnable可以提交给Thread来包装下 ，直接启动一个线程来执行，而Callable则一般都是提交给ExecuteService来执行。
-```
+```java
 public class RunnableFutureTask {
 
     /**
@@ -287,7 +287,7 @@ public class RunnableFutureTask {
 ```
 ##Execute、ExecuteService
  Executor接口中之定义了一个方法execute（Runnable command），该方法接收一个Runable实例，它用来执行一个任务，即一个实现了Runnable接口的类。ExecutorService接口继承自Executor接口，它提供了更丰富的实现多线程的方法，比如，ExecutorService提供了关闭自己的方法，以及可为跟踪一个或多个异步任务执行状况而生成 Future 的方法。 可 以调用ExecutorService的shutdown（）方法来平滑地关闭 ExecutorService，调用该方法后，将导致ExecutorService 停止接受任何新的任务且等待已经提交的任务执行完成(已经提交的任务会分两类：一类是已经在执行的，另一类是还没有开始执行的)， 当所有已经提交的任务执行完毕后将会关闭ExecutorService。因此我们一般用该接口来实现和管理多线程。
-```
+```java
 public class ExecutorDemo {
     private static final int MAX = 10;
 
@@ -353,9 +353,9 @@ public class ExecutorDemo {
 
 }
 ```
-##Wait与Sleep的区别
+## Wait与Sleep的区别
 **sleep()睡眠时，保持对象锁，仍然占有该锁；而wait()睡眠时，释放对象锁。** 但是wait()和sleep()都可以通过interrupt()方法打断线程的暂停状态， 从而使线程立刻抛出InterruptedException（但不建议使用该方法）。
-```
+```java
 public class ThreadTest implements Runnable {
     int number = 10;
 
@@ -396,9 +396,9 @@ public class ThreadTest implements Runnable {
     }
 }
 ```
-##ReadWiteLock
+## ReadWiteLock
 下面要介绍的是读写锁(ReadWriteLock)， 我们会有一种需求，在对数据进行读写的时候，为了保证数据的一致性和完整性， 需要读和写是互斥的，写和写是互斥的，但是读和读是不需要互斥的，这样读和读不互斥性能更高些
-```
+```java
 public class ReadWriteLockTest {
     public static void main(String[] args) {
         final Data data = new Data();
@@ -462,7 +462,7 @@ class Data {
 ## ReentrantLock 
 可重入锁最大的作用是避免死锁
  ReentrantLock 类实现了 Lock ，它拥有与 synchronized 相同的并发性和内存语义，但是添加了类似锁投票、定时锁等候和可中断锁等候的一些特性
-```
+```java
 public class ReentrantloackTest implements Runnable {
     ReentrantLock lock = new ReentrantLock();
 
@@ -495,9 +495,9 @@ public class ReentrantloackTest implements Runnable {
 }
 
 ```
-##synchronized
+## synchronized
 ** synchronized(this)以及非static的synchronized方法（至于stati csynchronized方法请往下看）， 只能防止多个线程同时执行同一个对象的同步代码段。**
-**用synchronized(Sync.class)实现了全局锁的效果。**synchronized锁住的是代码还是对象。答案是：synchronized锁住的是括号里的对象，而不是代码。对于非static的synchronized方法，锁的就是对象本身也就是this。最后说说static synchronized方法，static方法可以直接类名加方法名调用，方法中无法使用this，所以它锁的不是this，*而是类的Class对象，所以，static synchronized方法也相当于全局锁，相当于锁住了代码段。
+** 用synchronized(Sync.class)实现了全局锁的效果。**synchronized锁住的是代码还是对象。答案是：synchronized锁住的是括号里的对象，而不是代码。对于非static的synchronized方法，锁的就是对象本身也就是this。最后说说static synchronized方法，static方法可以直接类名加方法名调用，方法中无法使用this，所以它锁的不是this，*而是类的Class对象，所以，static synchronized方法也相当于全局锁，相当于锁住了代码段。
  锁作为并发共享数据，*保证一致性的工具，在JAVA平台有多种实现(如 synchronized 和 ReentrantLock等等是广义上的可重入锁， 而不是单指JAVA下的ReentrantLock。*可重入锁，也叫做递归锁，指的是同一线程 外层函数获得锁之后 ，内层递归函数仍然有获取该锁的代码，但不受影响。* 在JAVA环境下 ReentrantLock 和synchronized 都是 可重入锁
 ```
 class Sync {
@@ -534,9 +534,9 @@ class Main {
 }
 ```
 
-##Callable
+## Callable
 当将一个Callable的对象传递给ExecutorService的submit方法，则该call方法自动在一个线程上执行，并且会返回执行结果Future对象。同样，将Runnable的对象传递给ExecutorService的submit方法， 则该run方法自动在一个线程上执行，并且会返回执行结果Future对象，但是在该Future对象上调用get方法，将返回null。
-```
+```java
 public class CallableDemo {
     public static void main(String[] args) {
         ExecutorService executorService = Executors.newCachedThreadPool();
@@ -587,9 +587,9 @@ class TaskWithResult implements Callable<String> {
 }
 
 ```
-##CyclicBarrier
+## CyclicBarrier
 CyclicBarrier（又叫障碍器）同样是Java 5中加入的新特性，使用时需要导入java.util.concurrent.CylicBarrier。它适用于这样一种情况：你希望创建一组任务，它们并发地执行工作，另外的一个任务在这一组任务并发执行结束前一直阻塞等待， 直到该组任务全部执行结束，这个任务才得以执行。这非常像CountDownLatch，只是CountDownLatch是只触发一次的事件，而CyclicBarrier可以多次重用。
-```
+```java
 public class CyclicBarrierTest {
     public static void main(String[] args) {
         //创建CyclicBarrier对象，
@@ -639,9 +639,9 @@ class SubTask extends Thread {
     }
 }
 ```
-##Smeaphore
+## Smeaphore
 Java并发包中的信号量Semaphore实际上是一个功能完毕的计数信号量，从概念上讲，它维护了一个许可集合， 对控制一定资源的消费与回收有着很重要的意义。Semaphore可以控制某个资源被同时访问的任务数， 它通过acquire（）获取一个许可，release（）释放一个许可。如果被同时访问的任务数已满，则其他acquire的任务进入等待状态，直到有一个任务被release掉，它才能得到许可。 可以看出，Semaphore允许并发访问的任务数一直为5，当然，这里还很容易看出一点， 就是Semaphore仅仅是对资源的并发访问的任务数进行监控，而不会保证线程安全，因此，在访问的时候，要自己控制线程的安全访问。
-```
+```java
 public class SemaphoreTest {
     public static void main(String[] args) {
         //采用新特性来启动和管理线程——内部使用线程池

@@ -1,6 +1,6 @@
 [Android RelativeLayout 属性]
 // 相对于给定ID控件
-```
+```xml
 android:layout_above 将该控件的底部置于给定ID的控件之上;
 android:layout_below 将该控件的底部置于给定ID的控件之下;
 android:layout_toLeftOf    将该控件的右边缘与给定ID的控件左边缘对齐;
@@ -30,7 +30,7 @@ android:layout_marginRight 　 右偏移的值;
 比如下面这个是最常用的布局。或许高手一下子就写出来了。那怎么写呢？
 看到这个布局，你首先想到这是一个ListView或者RecyclerView，然后是一个item的布局，就是我们看到一列一列的布局，tiem理有一张图片和文字。
 ![item.jpg](http://upload-images.jianshu.io/upload_images/1990324-7c7b024b6501a0ec.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -83,7 +83,7 @@ android:layout_marginRight 　 右偏移的值;
 
 ##LinearLayout里面有一个属性android:layout_weight比较重要
 先上代码：
-```
+```xml
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -119,7 +119,7 @@ android:layout_marginRight 　 右偏移的值;
 - 长度宽度的数值要使用dp作为单位放入dimens.xml文件中
 - 字体大小的数值要使用sp作为单位,也放入dimens.xml文件中
 
-```
+```xml
 <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -147,7 +147,7 @@ ViewStub是什么
 - ViewStub是View的子类
 - 它不可见,大小为0
 - 用来延迟加载布局资源
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -222,7 +222,7 @@ activity_test.xml
 - android:layout延迟加载布局的资源id
 - android:inflatedId加载的布局被重写的id,这里为RelativeLayout的id
 - ViewStub不支持<merge>标签.但是可以<include>
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"

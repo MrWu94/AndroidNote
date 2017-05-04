@@ -1,6 +1,6 @@
-###泛型类
+### 泛型类
 容器类应该算得上最具重用性的类库之一。
-```
+```java
 public class Container{
       private String key;
       private String value;
@@ -24,7 +24,7 @@ public class Container{
 
 ```
 Container类保存了一对key-value键值对，但类型是死定的，也就是说如果我要创建一个键值对String-integer类型的，当前这个Container是做不到的，必须在定义。
-```
+```java
 public class Container<k,V>{
         private k key;
         private V value;
@@ -47,7 +47,7 @@ public class Container<k,V>{
 }
 ```
 在编译器，是无法知道K和V具体是什么类型，只有在运行时才会真正根据类型来构造和分配内存。可以看一下现在Container类对于不同类型的支持情况。
-```
+```java
 public class Main{
         public static void main(String[] args){
                   Container<String,String> c1=new Container<String ,String>("name","hansheng");
@@ -61,7 +61,7 @@ public class Main{
 ```
 ###泛型接口
 在泛型接口中，生成器是一个很好的理解
-```
+```java
 public interface Generator<T>{
           public T next();
 }
@@ -75,9 +75,9 @@ public class FruitGenerator implements Generator<String>{
           }
 }
 ```
-###泛型方法
+### 泛型方法
 一个基本原则是：**无论何时，只要你能做到，你就应该尽量使用泛型方法。**也就是说，如果使用泛型方法可以取代将整个类型化，那么应该有限使用泛型方法。
-```
+```java
 public class Main{
       public static <T> void out(T,t){
                 System.out.println(t);
@@ -90,7 +90,7 @@ public class Main{
 ```
 可以看到方法的参数彻底泛型化了，这个过程设计到编译器的类型推到和自动打包，也就是原来需要我们自己对类型进行的判断和处理，现在编译器帮我们做了。这样在定义方法的时候不必考虑以后到底需要处理哪些类型的参数，大大增加了编程的灵活性。
 再看一个泛型方法和可变参数的例子：
-```
+```java
 public class Main {
 
     public static <T> void out(T... args) {
@@ -130,8 +130,8 @@ public class Test{
 }
 
 ```
-###类型擦除
-```
+### 类型擦除
+```java
 Class c1=new ArrayList<Integer>().getClass();
 Class c2=new ArrayList<String>().getClass();
 System.out.println(c1==c2);
@@ -139,7 +139,7 @@ System.out.println(c1==c2);
 显然在平时使用中，ArrayList<Integer>()和new ArrayList<String>()是完全不同的类型，但是在这里，程序却的的确确会输出true
 ###限制泛型可用类型
 如果想限制使用泛型类别时，只能用某个特定类型或者是其子类型才能实例化该类型时，可以在定义类型时，使用extends关键字**指定这个类型必须是继承某个类，或者实现某个接口，也可以是这个类或接口本身。**
-```
+```java
 public class ListGenerator<T extends List>
 {  
       private T[] fooArray;

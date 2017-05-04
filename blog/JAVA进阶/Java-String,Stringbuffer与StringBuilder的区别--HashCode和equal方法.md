@@ -20,12 +20,12 @@ equals()是对两个对象的地址值进行的比较（即比较引用是否相
 hashCode()是一个本地方法，它的实现是根据本地机器相关的。
 
 
-**equals()相等的两个对象，hashcode()一定相等；反过来：hashcode()不等，一定能推出equals()也不等；hashcode()相等，equals()可能相等，也可能不等。 **
+**equals()相等的两个对象，hashcode()一定相等；反过来：hashcode()不等，一定能推出equals()也不等；hashcode()相等，equals()可能相等，也可能不等。**
 
 >1、为什么要重载equal方法？
 >答案：因为Object的equal方法默认是两个对象的引用的比较，意思就是指向同一内存,地址则相等，否则不相等；如果你现在需要利用对象里面的值来判断是否相等，则重载equal方法。
 
-```
+```java
 public class Test {
     public static void main(String[] args) {
         HashSet<Demo1> set = new HashSet<Demo1>();

@@ -1,4 +1,4 @@
-###Comparable简介
+### Comparable简介
 Comparable是排序接口。
 若一个实现了Comparable接口，就意味着“该类支持排序”。即实现Comparable接口的类支持排序。
 Comparable定义
@@ -29,7 +29,7 @@ Comparator是一个比较接口
 也就是说，我们可以通过“实现Comparator“来新建一个比较器，然后通过该比较器对类进行排序
 
 Comparator定义
-```
+```java
 public interface Comparator<T>{
         int compare(T o1,T o2);
         boolean equals(Object obj);
@@ -43,7 +43,7 @@ public interface Comparator<T>{
 **Comparator 和 Comparable 比较**
 Comparable是排序接口；若一个类实现了Comparable接口，就意味着“该类支持排序”。而Comparator是比较器；我们若需要控制某个类的次序，可以建立一个“该类的比较器”来进行排序。
 我们不难发现：Comparable相当于“内部比较器”，而Comparator相当于“外部比较器”。
-```
+```java
 import java.util.*;
 import java.lang.Comparable;
 

@@ -7,17 +7,17 @@
 
 
 注解的作用
-**格式检查：**告诉编译器信息，比如被@Override标记的方法如果不是父类的某个方法，IDE会报错；
+**格式检查：** 告诉编译器信息，比如被@Override标记的方法如果不是父类的某个方法，IDE会报错；
 
-**减少配置：**运行时动态处理，得到注解信息，实现代替配置文件的功能；
+**减少配置：** 运行时动态处理，得到注解信息，实现代替配置文件的功能；
 
-**减少重复工作：**比如第三方框架xUtils，通过注解@ViewInject减少对findViewById的调用，类似的还有（JUnit、ActiveAndroid等）；
+**减少重复工作：** 比如第三方框架xUtils，通过注解@ViewInject减少对findViewById的调用，类似的还有（JUnit、ActiveAndroid等）；
 
 
 AndroidAnnotions是一个能够让你快速进行Android开发的开源框架，它能让你专注于真正重要的地方。是代码更加精简，是项目更加容易维护，它的目标是“Fast Android Development.Easy maintainance”
 Here is a simple example of how your code can dramatically shrink, and become much easier to understand
 Before
-```
+```java
 public class BookmarksToClipboardActivity extends Activity {
  
  BookmarkAdapter adapter;
@@ -128,7 +128,7 @@ public class BookmarksToClipboardActivity extends Activity {
 ```
 
 after
-```
+```java
 @Fullscreen//全屏
 @EActivity(R.layout.bookmarks)// Sets content view to R.layout.translate
 @WindowFeature(Window.FEATURE_NO_TITLE)

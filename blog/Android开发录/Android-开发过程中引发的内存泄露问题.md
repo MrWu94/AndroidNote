@@ -1,8 +1,8 @@
-##什么是内存泄漏
+## 什么是内存泄漏
 
 内存泄露，简单的说，就是该被释放的内存没有被释放，一直被某个或某些实例所引用但不能被使用，导致GC不能回收，造成内存泄漏。总结的说，可以理解为长生命周期的对象一直持有短生命周期对象的引用，导致短生命周期对象一直被引用而无法被GC回收，内存泄漏是造成OOM的主要原因之一，当一个应用中产生的内存泄漏比较多时，就难免会导致应用所需要的内存超过这个系统分配的内存限额，这就造成了内存溢出而导致应用Crash。
 
-##安卓中常见的内存泄漏场景
+## 安卓中常见的内存泄漏场景
 1、单例造成内存泄漏、
 2、非静态内部类创建其静态实例造成内存泄漏
 3、匿名内部类/异步线程造成内存泄漏
@@ -23,7 +23,7 @@ GridView和ListView的实现方式不太一样。GridView的View不是即时创�
 初始时ListView会从BaseAdapter中根据当前的屏幕布局实例化一定数量的view对象，同时ListView会将这些view对象 缓存起来。当向上滚动ListView时，原先位于最上面的list item的view对象会被回收，然后被用来构造新出现的最下面的list item。这个构造过程就是由getView()方法完成的，getView()的第二个形参View convertView就是被缓存起来的list item的view对象(初始化时缓存中没有view对象则convertView是null)。
 由此可以看出，如果我们不去使用convertView，而是每次都在getView()中重新实例化一个View对象的话，即浪费时间，也造 成内存垃圾，给垃圾回收增加压力，如果垃圾回收来不及的话，虚拟机将不得不给该应用进程分配更多的内存，造成不必要的内存开支。
 
-```
+```java
 public View getView(int position, View convertView, ViewGroup parent) {
 　　ViewHolder holder;
 if (convertView == null) {
@@ -58,7 +58,7 @@ private class ViewHolder {
 如果程序会频繁创建线程，则可以考虑使用线程池。
 
 看一个类：
-```
+```java
 public class MemoryActivity extends AppCompatActivity {
 
   //正确写法

@@ -1,7 +1,7 @@
-##讲述HttpClient，HttpUrlConnection，OkHttp对Https访问
+## 讲述HttpClient，HttpUrlConnection，OkHttp对Https访问
 
 
-##何为Https
+## 何为Https
 具体http协议知识可查看[Http协议精讲)[http://www.jianshu.com/p/d1a6ff54a253]
 **HTTP + 加密 + 认证 + 完整性保护 = HTTPS**
 HTTPS并非是应用层的一种新协议。只是普通HTTP通信接口部分用SSL和TLS协议替代而已。

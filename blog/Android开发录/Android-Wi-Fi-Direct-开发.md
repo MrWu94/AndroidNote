@@ -1,4 +1,4 @@
-###Wi-Fi Direct 简介
+### Wi-Fi Direct 简介
   Wi-Fi Direct标准是指允许无线网络中的设备无需通过无线路由器即可相互连接。与蓝牙技术类似，这种标准允许无线设备以点对点形式互连，而且在传输速度与传输距离方面则比蓝牙有大幅提升。按照定义，**Wi-Fi Direct设备是支持对等连接的设备，这种设备既支持基础设施网络，也支持P2P连接。**Wi-Fi Direct设备能够作为典型的站点（STA）加入基础设施网络，而且必须支持Wi-Fi Protected Setup加入者功能。**Wi-Fi Direct设备通过组建小组（以一对一或一对多的拓扑形式）来建立连接，小组的工作形式与基础设施BSS类似。**由一部Wi-Fi Direct设备负责整个小组，包括控制哪部设备加入、小组何时启动和终止等。这种设备对于传统客户设备而言就是一部接入点，能够提供基础设施接入点所提供的部分服务。
 
 关于Wi-Fi Direct的API函数的使用需要注意一下几个要点：
@@ -21,7 +21,7 @@ WIFI_P2P_CONNECTION_CHANGED_ACTION 表示Wi-Fi对等网络的连接状态发生�
 在广播接收器的[onReceive()](http://developer.android.com/reference/android/content/BroadcastReceiver.html#onReceive(android.content.Context, android.content.Intent))函数中，针对感兴趣的特定意向可以执行相应的动作（actions）。例如，当广播接收器收到了意向[WIFI_P2P_PEERS_CHANGED_ACTION](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_PEERS_CHANGED_ACTION)，就可以调用[requestPeers()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestPeers(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pManager.PeerListListener))方法来列举出当前探测到的对等设备。
 
 下面的代码将展示了如何创建一个特定的广播接收器。例子中的广播接收器以[WifiP2pManager](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html)对象和一个活动（activity）作为参数，并使用它们针对收到的意向（intent）做出相应的动作（action）:
-```
+```java
 /** 
  * A BroadcastReceiver that notifies of important Wi-Fi p2p events. 
  */  
@@ -62,7 +62,7 @@ public class WiFiDirectBroadcastReceiver extends BroadcastReceiver {  
 **准备工作（Initial setup）**
 在使用Wi-Fi Direct API之前，首先要确保应用程序能够访问硬件，并且设备支持Wi-Fi Direct协议。如果这些条件都满足，就可以获取一个[WifiP2pManager](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html)实例，创建并注册广播接收器，最后就是使用Wi-Fi Direct API了。
 在Android manifest文件中加入以下内容，允许使用Wi-Fi设备上的硬件并声明应用程序正确支持了调用API所需的最低SDK版本
-```
+```java
 <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
   
 <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
@@ -74,7 +74,7 @@ public class WiFiDirectBroadcastReceiver extends BroadcastReceiver {  
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
 ```
 检查Wi-Fi Direct支持并已开启。推荐在广播接收器收到[WIFI_P2P_STATE_CHANGED_ACTION](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_STATE_CHANGED_ACTION)意向的时候进行检测。检测结果需要通告相应的活动并做出处理：
-```
+```java
 public void onReceive(Context context, Intent intent) {  
   
     ...  
@@ -102,7 +102,7 @@ public void onReceive(Context context, Intent intent) {  
 }
 ```
 在活动的[onCreate()](http://developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle))方法中获取[WifiP2pManager](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html)对象的一个实例，通过该对象的[initialize()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#initialize(android.content.Context, android.os.Looper, android.net.wifi.p2p.WifiP2pManager.ChannelListener))方法向Wi-Fi Direct系统注册当前的应用程序。注册成功后，会返回一个[WifiP2pManager.Channel](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.Channel.html)，通过它，应用程序就能和Wi-Fi Direct系统交互。[WifiP2pManager](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html)和[WifiP2pManager.Channel](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.Channel.html)对象以及一个活动的引用最后都被作为参数传递给自定义的广播接收器。这样，该活动就能够响应广播接收器的通知并作出相应的更新。当然，这样做也使程序具备了操纵设备Wi-Fi状态的能力：
-```
+```java
 WifiP2pManager mManager;  
   
 Channel mChannel;  
@@ -129,7 +129,7 @@ protected void onCreate(Bundle savedInstanceState){  
 
 ```
 创建一个意向过滤器（intent filter），其中添加的意向种类和广播接收器中的保持一致：
-```
+```java
  public static IntentFilter getAction() {
         final IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION);
@@ -140,7 +140,7 @@ protected void onCreate(Bundle savedInstanceState){  
     }
 ```
 在活动的[onResume()](http://developer.android.com/reference/android/app/Activity.html#onResume())方法中注册广播接收器，并在活动的[onPause()](http://developer.android.com/reference/android/app/Activity.html#onPause())方法中注销它：
-```
+```java
  @Override
     protected void onPause() {
         super.onPause();
@@ -159,7 +159,7 @@ protected void onCreate(Bundle savedInstanceState){  
 
 **探测对等设备（Discovering peers）**
 调用[discoverPeers()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#discoverPeers(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pManager.ActionListener))函数可以探测到有效距离内的对等设备。它是一个异步函数，调用成功与否会在程序所创建[WifiP2pManager.ActionListener](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html)监听器的[onSuccess()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onSuccess())和[onFailure()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onFailure(int))中给出通知。值得注意的是，[onSuccess()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html#onSuccess())方法只会对成功探测到对等设备这一事件做出通知，而并不会提供任何关于已发现的对等设备的具体信息：
-```
+```java
 manager.discoverPeers(channel, new WifiP2pManager.ActionListener() {  
     @Override  
     public void onSuccess() {  
@@ -175,7 +175,7 @@ manager.discoverPeers(channel, new WifiP2pManager.ActionListener() {  
 当成功检测到对等设备存在的时候，系统会广播[WIFI_P2P_PEERS_CHANGED_ACTION](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#WIFI_P2P_PEERS_CHANGED_ACTION)意向。程序接收到该意向后，通过调用[requestPeers()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#requestPeers(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pManager.PeerListListener))方法，就能获得已经探测到对等设备的清单。下面代码将展示如何实现这一过程：
 ```
 PeerListListener myPeerListListener;  
-...  
+...java
 if (WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION.equals(action)) {  
   
     // request available peers from the wifi p2p manager. This is an  
@@ -190,7 +190,7 @@ if (WifiP2pManager.WIFI_P2P_PEERS_CHANGED_ACTION.equals(action)) {  
 
 **连接对等设备（Connecting to peers）**
 确定了要连接的设备，还需调用[connect()](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html#connect(android.net.wifi.p2p.WifiP2pManager.Channel, android.net.wifi.p2p.WifiP2pConfig, android.net.wifi.p2p.WifiP2pManager.ActionListener))方法建立连接。该方法的其中一个参数是[WifiP2pConfig](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pConfig.html)对象，它提供了要连接设备的相关信息。连接的成功与否需要通过监听器[WifiP2pManager.ActionListener](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.ActionListener.html)获取通知。下面的代码将示范如何建立设备连接：
-```
+```java
 //obtain a peer from the WifiP2pDeviceList  
 WifiP2pDevice device;  
 WifiP2pConfig config = new WifiP2pConfig();  

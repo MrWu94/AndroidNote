@@ -2,13 +2,13 @@
 枚举类型是指一组固定的常量组成合法值的类型。
 
 怎么定义？
-```
+```java
 public enum Apple{FUJI,PIPPIN,GRANNY_SMITH}
 public enum Orange{NAVEL,TEMPLE,BLOOD}
 ```
 它们就是通过公有的静态final域为每个枚举常量导出实例的类。
 **使用构造器描述枚举类型**
-```
+```java
 public enum Planet{
       MERCURY(3,5),
       MARS(4,6),
@@ -34,7 +34,7 @@ public class Test{
 
 + values()
 静态方法，返回一个包含全部枚举值的数组
-```
+```java
 Colors[] colors=Colors.values();
 for(Color c:colors){
           System.out.println(c+",");
@@ -48,7 +48,7 @@ System.out.println(c);//返回结果：RED
 
 
 ###Switch
-```
+```java
 enum Signal{
       GREEN,YELLOW,RED
 }
@@ -71,7 +71,7 @@ public class TrassicLight{
 ```
 向枚举中添加新方法
 如果打算自定义自己的方法，那么必须在enum实例系列中的最后添加一个分号。
-```
+```java
 public enum Color{
         RED("红色",1),GREEN("绿色",2),BLANK("白色",3),YELLOW("黄色"，4);
         //成员变量
@@ -106,7 +106,7 @@ public enum Color{
 }
 ```
 覆盖枚举方法
-```
+```java
 public class Test{
         public enum Color{
                 RED("红色",1),GREEN("绿色"，2),BLANK("白色",3),YELLO("黄色",4);
@@ -130,7 +130,7 @@ public class Test{
  }
 ```
 实现接口
-```
+```java
 public interface Behaviour{
 	        void print();  
 	        String getInfo();      
@@ -156,7 +156,7 @@ public interface Behaviour{
 	
 ```
 使用接口组织枚举
- ```
+ ```java
 public interface Food{
       enum Coffee implements Food{
               BLANK_COFFEE,DECAF_COFFEE,LATTE,CAPPUCCINO

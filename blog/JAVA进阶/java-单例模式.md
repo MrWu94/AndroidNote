@@ -1,5 +1,5 @@
 第一种（懒汉，线程不安全）
-```
+```java
 public class Singleton{
      private static Singleton instance;
      private Singleton(){}  //私有的构造方法，使其不能用new来实例化对象
@@ -12,7 +12,7 @@ public class Singleton{
 Singleton s=Singleton.getInstance();
 ```
 第二种（懒汉，线程安全）
-```
+```java
 public class Singleton{
       private Singleton(){}
       //同步代码块
@@ -27,7 +27,7 @@ public class Singleton{
 这种写法效率很低，99%情况下不需要同步
 
 第三种（饿汉）
-```
+```java
 public class Singleton{
       private static Singleton instance=new Singleton();
       private Singleton(){}
@@ -39,7 +39,7 @@ public class Singleton{
 instance在类装载是就实例化，浪费
 
 第四种（饿汉，变种）
-```
+```java
 public class Singleton{
       private Singleton instance=null;
       static{
@@ -52,7 +52,7 @@ public class Singleton{
 }
 ```
 第五种（静态内部类）
-```
+```java
 public class Sigleton{
       private static class SingletonHolder{
             private static final Singleton instance=new Singleton();
@@ -64,7 +64,7 @@ public class Sigleton{
 }
 ```
 第六种
-```
+```java
 public class Singleton{
      private volatile static Singleton singleton;
      private Singleton(){}

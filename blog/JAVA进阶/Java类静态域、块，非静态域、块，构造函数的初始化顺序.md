@@ -1,5 +1,5 @@
 对于静态变量、静态初始化块、变量、初始化块、构造器，它们的初始化顺序以此是 （静态变量、静态初始化块）>（变量、初始化块）>构造器。
-```
+```java
 public class InitialOrderTest {               
     // 静态变量          
     public static String staticField = "静态变量";          
@@ -84,7 +84,7 @@ public class SubClass extends Parent {
 子类--构造器      
 ```
 面试题：
-```
+```java
 public class Test1 {  
   
     public static int k = 0;  

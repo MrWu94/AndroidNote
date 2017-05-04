@@ -1,6 +1,6 @@
-###初始化ViewDragHelper
+### 初始化ViewDragHelper
 首先，自然是需要ViewDragHelper。ViewDrapHelper通常定义在一个ViewGroup的内部，并通过其静态工厂方法进行初始化
-```
+```java
     /**
      *静态工厂方法创建一个ViewDragHelper
      * Factory method to create a new ViewDragHelper.
@@ -17,7 +17,7 @@
 mViewDragHelper=ViewDragHelper.create(this,callback);
 ```
 它的第一个参数是要监听的View,通常需要是一个ViewGroup，即parentview;第二个参数是一个CallBack回调
-```
+```java
 
     public static abstract class Callback {
 
@@ -63,9 +63,9 @@ mViewDragHelper=ViewDragHelper.create(this,callback);
         }
     }
 ```
-###拦截事件
+### 拦截事件
 重写事件拦截方法，将事件传递给ViewDragHelper进行处理
-```
+```java
 @Override
 public boolean onInterceptTouchEvent(MotionEvent event){
       return mViewDragHelper.shouldInterceptTouchEvent(event);
@@ -77,7 +77,7 @@ public boolean onTouchEvent(MotionEvent event){
 }
 ```
 处理computeScroll,使用ViewDragHelper同样需要重写computeScroll方法，因为ViewDragHelper内部也是通过Scroller来实现平滑移动的。
-```
+```java
 @Override、
 public void computeScroll(){
       if(mViewDragHelper.continueSettling(true){
@@ -86,7 +86,7 @@ public void computeScroll(){
 }
 ```
 处理CallBack
-```
+```java
 private ViewDragHelper.CallBack callback=new ViewDragHelper.Callback(){
       @Override
       public boolean tryCaptureview(View child,int pointId){

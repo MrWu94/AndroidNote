@@ -1,5 +1,5 @@
 首先添加依赖
-```
+```java
 dependencies {  
     // Retrofit & OkHttp
     compile 'com.squareup.retrofit2:retrofit:2.0.0'
@@ -8,7 +8,7 @@ dependencies {
 }
 ```
 创建Retrofit实例
-```
+```java
 public class ServiceGenerator {
 
     public static final String API_BASE_URL = "http://your.api-base.url";
@@ -27,7 +27,7 @@ public class ServiceGenerator {
 }
 ```
 
-```
+```java
 public interface GitHubClient {  
     @GET("/repos/{owner}/{repo}/contributors")
     Call<List<Contributor>> contributors(
@@ -42,7 +42,7 @@ static class Contributor {
 }
 ```
 API请求示例
-```
+```java
 public static void main(String... args) {  
     // Create a very simple REST adapter which points the GitHub API endpoint.
     GitHubClient client = ServiceGenerator.createService(GitHubClient.class);

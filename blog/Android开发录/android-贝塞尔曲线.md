@@ -10,8 +10,8 @@ B(t) = P0 + (P1 - P0) * t = (1 - t) * P0 + t * P1, t ∈ [0, 1]
 B(t) = (1 - t)^2 * P0 + 2t * (1 - t) * P1 + t^2 * P2, t ∈ [0,1]
 TrueType字型就运用了以贝兹样条组成的二次贝兹曲线。
 
-###初识Path类
-```
+### 初识Path类
+```java
 Path.moveTo(float x, float y) // Path的初始点
 Path.lineTo(float x, float y) // 线性公式的贝赛尔曲线, 其实就是直线
 Path.quadTo(float x1, float y1, float x2, float y2) // 二次方公式的贝赛尔曲线
@@ -22,7 +22,7 @@ Path.cubicTo(float x1, float y1, float x2, float y2, float x3, float y3) // 三�
 
 实现一个三次方贝赛尔曲线Evaluator，已知公式为：B(t) = P0 * (1-t)^3 + 3 * P1 * t * (1-t)^2 + 3 * P2 * t^2 * (1-t) + P3 * t^3
  代码如下：
-```
+```java
 public class BezierEvaluator implements TypeEvaluator<PointF> {
 
     private PointF points[];

@@ -21,23 +21,23 @@ onDestory():因为引用会在Activity销毁的时候销毁，而线程不会，
 
 
 ![](http://upload-images.jianshu.io/upload_images/1990324-849ac7b1b7eee439.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-###standard
+### standard
 默认的启动模式，如果不指定Activity的启动模式，则使用这种方式启动Activity。这种启动模式每次都会创建新的实例，每次点击standard模式创建Activity后，都会创建新的Activity覆盖在原Activity上。
-###singleTop
+### singleTop
 系统会判断当前栈顶Activity是不是要启动的Activity，如果是则不创建新的Activity而直接引用这个Acitivty。
-###singleTask
+### singleTask
 singleTask是检查整个Activity栈中是否存在当前需要启动的Activity。如果存在，则将在Activity主语栈顶，并将该Activity以上的Acitivity以上的Activity都销毁。不过这里是指在同一个app中启动这个singleTask的Activity，如果是其他程序singleTask模式来启动这个，那么它将创建一个新的任务栈。
-###singleInstance
+### singleInstance
 singleInstance这种启动模式和使用的浏览器工作原理类似，比如多个程序访问浏览器，如果没有打开，则会打开浏览器。申明为singleInstance也一样，举个例子，如果应用A的任务栈中创建了MainActivity实例，且启动模式为singleInstance,如果B也要激活MainActivity,则不需要创建。
 
-###Intent Flag模式
+### Intent Flag模式
 + Intent.FLAG_Activity_NEW_TASK 
 + Intent.FLAG_ACTIVITY_CLEAR_TOP
 + Intent.FLAG_ACTIVITY_CLEAR_TOP
 + Intent.FLAG.ACTIVITY_NO_HISTORY
 
-###创建、配置Service
-```
+### 创建、配置Service
+```java
 public class FirstService extends Service{
        //必须实现的方法
       @Override
@@ -68,7 +68,7 @@ public class FirstService extends Service{
 当Service开发完成之后，接下来就要在程序中运行Service了，通过Context的**startService**方法，通过该方法启动Service,访问者与Service之间没有关联。
 
 如果Service和访问者之间需要进行调用或交换数据，则应该使bingService()和unbingService()方法启动、关闭Service。
-```
+```java
 public class BindService extends Service{
       private int count;
       private boolean quit;

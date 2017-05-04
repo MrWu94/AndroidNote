@@ -4,7 +4,7 @@ Scroller是一个View滚动的帮助类，在使用它之前，用户需要通�
 **ScrollBy是让View相对于当前位置滚动某段距离**
 
 下面看一个实例
-```
+```java
 public class ScrollLayout extends FrameLayout{
         private String Tag=ScrollLayout.class.getSimpleName();
         Scroller mScroller;
@@ -34,7 +34,7 @@ public class ScrollLayout extends FrameLayout{
 ```
 
 下拉刷新实现
-```
+```java
 public abstract class RefreshLayoutBase<T extends View> extends ViewGroup implements OnScrollListener{
       protected Scroller mScroller;
       protected View mHeaderView;
@@ -87,7 +87,7 @@ public abstract class RefreshLayoutBase<T extends View> extends ViewGroup implem
       }
 ```
 Header View,内容视图，Footer view
-```
+```java
 protected void setupHeaderView(Context context){
         mHeaderView=LayoutInflater.from(context).inflater(R.layout.pull_to_refresh_header,this,false);
         mHeaderView.setLayoutParams(newViewGroup.LayoutParams(LayoutParams.MATCH_PARNET,mHeaderHeight));

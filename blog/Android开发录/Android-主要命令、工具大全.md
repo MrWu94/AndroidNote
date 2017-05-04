@@ -48,7 +48,7 @@ sudo apt-get install yosembiance-gtk-theme
 
 5、unbutu命令提示神器cheat
 怎么安装
-```
+```java
 1、Install Python
 apt-get install Python
 2、Install Pip
@@ -627,7 +627,7 @@ adb shell setprop debug.hwui.overdraw showadb shell setprop debug.hwui.overdraw 
 
 Button生成工具
 比如要生成下面的button
-```
+```xml
 <Buttonandroid:id="@+id/angry_btn"
 android:text="Button"
 android:textColor="#FFFFFF"

@@ -1,6 +1,6 @@
 Handler:**谁发送，谁处理**，主要工作就是消息的发送和接收过程。消息的发送可以通过post的一系列方法以及send的一系列方法来实现，post的方式最终是通过send的方法来实现的。
 Handler发送一条消息的过程
-```
+```java
 public final boolean sendMessage(Message msg){
         return sendMessageDelayed(msg,0);
 }
@@ -29,7 +29,7 @@ private boolean enqueueMessage(MessageQueue queue,Message msg,long uptimeMillis)
 }
 ```
 Handler发送消息的过程是向消息队列中插入一条消息，MessageQueue的next方法就会返回这条消息给Looper，Looper收到这条消息之后就开始处理了，最终消息由looper交由Handler处理，即Handler的dispatchmessage方法会被调用，这是Handler就进入处理消息的阶段。
-```
+```java
 public void dispatchMessage(Message msg){
           //检查message的callback是否为null
           if(msg.calllback!=null){
@@ -48,13 +48,13 @@ public void dispatchMessage(Message msg){
 
 Handlet处理消息的过程
 首先，检查Message的callback是否为null,不为空就通过handleCallback来处理消息。message的callback是一个Runnbale对象，实际上就是Handler的post方法所传递的Runnable参数。
-```
+```java
 private static void handleCallback(Message message){
         message.callback.run(); 
 }
 ```
 其次，检查mCallback是否为空，不为null及调用mCallback的handleMessage方法来处理消息
-```
+```java
 public interface Callback{
       public boolean handleMessage(Message msg); 
 }
@@ -63,7 +63,7 @@ public interface Callback{
 ![](http://upload-images.jianshu.io/upload_images/1990324-37f423ad4a8691cb.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 从这个图中我们很清楚可以看到**调用sendEmptyMessage后，会把Message对象放入一个MessageQueue队列，该队列属于某个Looper对象，每个Looper对象通过ThreadLocal.set(new Looper())跟一个Thread绑定了，Looper对象所属的线程在Looper.Loop方法中循环执行从MessageQueue队列读取Message对象，并把Message对象交由Handler处理，调用Handler的dispatchMessage方法**。
      现在我们再来看一下使用Handler的基本实现代码：
-```
+```java
        // 主线程中新建一个handler
          Handler  h= new Handler() {
                   public void handleMessage(android.os.Message msg) {             

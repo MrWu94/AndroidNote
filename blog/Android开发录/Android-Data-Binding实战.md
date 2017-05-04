@@ -7,8 +7,8 @@
 Model层
 Model层我定义了一个**Nba**类，要获得通知UI更新的功能，需要继承**BaseObservable**类；如果要能被View绑定，需要在get方法上添加**@Bindable**标注，同时在set方法中要调用*notifyPropertyChanged(BR.title)*方法通知View更新。
 
-BR类会根据**@Bindable**标注自动生成
-```
+BR类会根据 **@Bindable** 标注自动生成
+```java
 public class Nba extends BaseObservable {
 
     private String contentType;
@@ -103,7 +103,7 @@ public class Nba extends BaseObservable {
 View层
 需要在布局文件中使用**layout**作为最外层布局，同时在其中的**data**区域中声明一个nba变量，并指定类型为我们在Model中定义的**Nba**类。
 在View中使用@{Nba.title}这样的表达式, 将变量进行绑定。
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
     <data>
@@ -165,17 +165,17 @@ ViewModel层
 Android Data Binding中的ViewModel是根据layout自动生成的Binding类，如果layout的名称是*nba_item.xml*，生成的Binding类名称就是NbaItemBinding。
 
 + 创建Binding类在RecyclerView的Adapter的onCreateViewHolder中创建Binding类
-```
+```java
 NbaItemBinding binding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()),  R.layout.nba_item, parent, false);
 ```
 设置变量值在onBindViewHolder中设置layout中定义的movie变量值
-```
+```java
  Nba mnba= nba.get(position);
  holder.binding.setVariable(shineloading.hansheng.com.nbadatabinding.BR.nba, mnba);
   holder.binding.executePendingBindings();
 ```
 显示图片使用Glide显示图片，ivNews是NbaItemBinding根据ImageView的id自动生成的
-```
+```java
   Glide.with(NbaActivity.this)
                         .load(img.get(0))
                         .fitCenter()

@@ -1,6 +1,6 @@
 静态工厂和构建器有个共同的局限性;他们都不能很好地扩展到大量的可选参数。
 用Builder模式，不直接生成想要的对象，而是让客户端利用所有必要的参数调用构造器
-```
+```java
 public class Nutrition{
       private final int servingSize;
       private final int  servings;
@@ -52,7 +52,7 @@ public class Nutrition{
 }
 ```
 怎么使用呢？
-```
+```java
 Nutrition nutr=new Nutrition.Builder(240,8).calories(100).sodium(35).carbohyrate(27).build();
 ```
 

@@ -1,6 +1,6 @@
 在View Animation中，其改变的是View的绘制效果，真正的View的属性保持不变，比如无论如何改变Button的位置，大小，button的有效点击区域还是没有应用动画时的区域，其位置和大小都不变。而Property Animation中，改变的是对象的实际属性。如Button的改变大小与位置，Button的位置与大小属性值都改变了.而且Property Animation不止可以应用于View。还可以应用于任何对象。
 
-###Property Animation 中可以改变的属性
+### Property Animation 中可以改变的属性
 + **Duration**:动画的持续时间
 + ** TimeInterpolation**:属性值的计算方式，如先快后慢
 + **TypeEvaluator**:根据属性的开始，结束值与TimInterpolator计算出的因子计算出当前时间的属性值
@@ -8,7 +8,7 @@
 + **Animation sets**：动画集合，即可以同时对一个对象应用几个动画，这些动画可以同时播放也可以对不同动画设置不同开始偏移
 + **Frame refreash delay**：多少时间刷新一次，即每隔多少时间计算一次属性值，默认为10ms，最终刷新时间还受系统进程调度与硬件的影响
 ###ObjectAnimator
-```
+```java
 ObjectAnimator animator=ObjectAnimator.ofFloat(
 view,
 "translationX",
@@ -24,8 +24,8 @@ scaleX和scaleY:这两个属性控制着View对象围绕它的支点进行2D缩�
 privotX与privotY:这两个属性控制着View对象的支点位置，围绕这个支点进行旋转和缩放变换处理，默认情况下，该支点的位置就是View对象的中心点。
 x和y:这是两个实用的属性，它描述了View对象在它的容器中的最终位置，它是最初的左上角坐标和translationX、translationY值得累计和
 alpha:View对象的alphade 透明度，默认值是1，0代表完全透明
-###ValueAnimator
-```
+### ValueAnimator
+```java
 ValurAnimator animator=new ValueAnimator.ofFloat(0,100);
 animator.setTarget(view);
 animator.setDuration(1000).start();
@@ -36,8 +36,8 @@ animator.addUpdateListener(new AnimatorUpdateListener(){
     }
 });
 ```
-###动画事件的监听
-```
+### 动画事件的监听
+```java
 objectAnimator anim=ObjectAnimator.ofFloat(view,"alpha",0.5f);
 anim.addListener(new AnimatorListener(){
     @Override
@@ -56,7 +56,7 @@ anim.addListener(new AnimatorListener(){
 ```
 ###AnimatorSet
 在属性动画中通过playTogether(),playSequentially(),animSet.play().with()、defore(),after()这些方法控制多个动画的协同工作方式。
- ```
+ ```java
 ObjectAnimator animator1=ObjectAnimator.ofFloat(view,"translationX",300f);
 ObjectAnimator animator2=ObjectAnimator.ofFloat(view,"translationY",1f,0f,1f);
 ObjectAnimator animator3=ObjectAnimator.ofFloat(view,"scaleX",1f,0f,1f);
@@ -66,7 +66,7 @@ set.playTogether(animator1,animator2,animator3);
 set.start();
 ```
 属性动画除了可以通过代码实现之外，还可以通过XML来定义，属性动画需要在res/animator/目录下
-```
+```java
 <set android:ordering=["togrther"|"sequentially"]>
       <objectAnimator
               android:propertyName="string" //属性的名称
@@ -91,13 +91,13 @@ set.start();
 </set>
 ```
 如何使用上面的属性动画呢？
-```
+```java
 AnimatiorSet set=(Animator)AnimatorInflater.loadAnimator(myContext,R.anim.animator);
 set.setTarget(mButton);
 set.start();
 ```
 ###讲解静态工厂类
-```
+```java
 public final class Boolean implements java.io.Serializable,
         Comparable<Boolean> {
 
@@ -112,7 +112,7 @@ public final class Boolean implements java.io.Serializable,
 我们要获取一个 Boolean 的一个对象，可以使用构造函数 new Boolean(true) 也可以使用里面的静态方法Boolean.valueOf(true)，后者便是静态工厂方法。
 
 创建ObjectAnimaror只需通过他的静态工厂直接返回ObjectAnimator对象
-```
+```java
 public final class ObjectAnimator extends ValueAnimator 
 ```
 

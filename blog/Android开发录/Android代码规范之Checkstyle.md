@@ -1,4 +1,4 @@
-##CheckStyle检验的主要内容：
+## CheckStyle检验的主要内容：
 Javadoc注释
 命名约定
 标题

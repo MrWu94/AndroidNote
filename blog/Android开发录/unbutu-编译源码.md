@@ -1,8 +1,8 @@
 记录一下，谨防忘记，又要一遍遍搜索，浪费时间。
 重要网址[清华大学镜像](https://mirrors.tuna.tsinghua.edu.cn/help/AOSP/)[AndroidSource](https://source.android.com/source/initializing.html)
-##1、源码下载
+## 1、源码下载
 下载 repo 工具:
-```
+```java
 mkdir ~/bin
 PATH=~/bin:$PATH
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
@@ -10,7 +10,7 @@ chmod a+x ~/bin/repo
 ```
 
 ## 2、下载openJDK
-```
+```java
 sudo add-apt-repository ppa:openjdk-r/ppa
 sudo apt-get update
 sudo apt-get install openjdk-8-jdk
@@ -32,7 +32,7 @@ sudo apt-get install openjdk-7-jdk
  目录，下载后解压 再 repo sync
  一遍即可得到完整的目录。
 使用方法如下:
-```
+```java
 wget https://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/aosp-latest.tar # 下载初始化包
 tar xf aosp-latest.tarcd AOSP # 解压得到的 AOSP 工程目录# 这时 ls 的话什么也看不到，因为只有一个隐藏的 .repo 目录
 repo sync # 正常同步一遍即可得到完整目录# 或 repo sync -l 仅checkout代码
@@ -70,7 +70,7 @@ Android 1.5至Android 2.2.x|	Oracle JDK 5
 更具体的可以参看:[Google源码编译要求](https://source.android.com/source/requirements.html)
 
 下面是Ubuntu14.04中的依赖设置:
-```
+```java
 sudo apt-get install gnupg flex bison gperf build-essential \
   zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 \
   lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache \

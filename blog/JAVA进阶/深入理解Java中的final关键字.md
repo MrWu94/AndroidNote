@@ -4,7 +4,7 @@
 2、运行期初始化，我们希望它不会改变。
 3、接口中声明的所有变量本身是final的。
 4、对于集合对象声明为final指的是引用不能被更改，但是你可以向其中增加，删除或者改变内容。譬如：
-```
+```java
 private final List Loans = new ArrayList();
 list.add(“home loan”);  //valid
 list.add("personal loan"); //valid
@@ -12,7 +12,7 @@ loans = new Vector();  //not valid
 ```
 
  有些变量，我们希望它可以根据对象的不同而表现不同，但同时又不希望它被改变，这个时候我们就可以使用运行期常量。对于运行期常量，它既可是基本数据类型，也可是引用数据类型。**基本数据类型不可变的是其内容，而引用数据类型不可变的是其引用，引用所指定的对象内容是可变的。**
-```
+```java
 public class FinalText {
 
     private final String final01="hansheng"; //编译期常量，必须要进行初始化，且不可更改
@@ -64,17 +64,17 @@ public class Person {
 ```
 
 
-#final关键字的含义？
+# final关键字的含义？
 final在Java是一个保留的关键字，可以声明成员变量，方法，类以及本地变量。一旦你将引用声明做final，你将不能官弁这个引用了，编译器会检查代码，如果你将试图将变量再次初始化的话，编译器会报编译错误。
 什么事final变量？
 凡是对成员变量或者本地变量（在方法中的常量或者代码块中的变量称为本地变量）声明为final的都叫做final变量（编译时常量）。final变量经常和static关键字一起使用，作为变量
-```
+```java
 public static final String LOAN="loan";
 LOAN=new String("loan");//invalid compilation error
 ```
-#什么是final方法？
+# 什么是final方法？
 final也可以声明方法。方法前面加上final关键字，代表这个方法不可以被子类的方法重写。如果你认为一个方法的功能已经足够完整了，子类中不需要改变的话，你可以声明此方法为final。final方法比非final方法要快，因为在编译的时候已经静态绑定了，不需要在运行时再动态绑定。
-```
+```java
 class Person{
   public final String getName(){
         return "personal loan"
@@ -88,7 +88,7 @@ class loan extends Person{
         }
 }
 ```
-#什么是final类？
+# 什么是final类？
 使用final来修饰的类叫作final类。final类通常功能是完整的，它们不能被继承。Java中有许多类是final的，譬如String, Interger以及其他包装类。
 ```java
 final class PersonalLoan{
@@ -98,7 +98,7 @@ final class PersonalLoan{
 ```
 
 
-#不可变类
+# 不可变类
 
 创建不可变类要使用final关键字。不可变类是指它的对象一旦被创建了就不能被更改了。String是不可变类的代表。不可变类有很多好处，譬如它们的对象是只读的，可以在多线程环境下安全的共享，不用额外的同步开销等等。
 

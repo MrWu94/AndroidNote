@@ -2,7 +2,7 @@
 ###AsyncTask
 AsyncTask是一种轻量级的异步任务类，它可以在线程池中执行后台任务，然后把执行的进度和最终结果传递到主线程并在主线程中更新UI.从实现上来说，AsyncTask封装了Thread和Handler，通过AsyncTask可以更加方便地执行后台任务以及在主线程中访问UI,但是AsyncTask并不适合执行特别耗时的后台任务。
 AsyncTask是一个**抽象的泛型类**，所以如果我们想要使用它，就必须创建一个子类去继承它，在继承时我们可以为AsyncTask类指定三个泛型类。
-```
+```java
 public abstract class AsyncTask<Params, Progress, Result>
 ```
 1. Params
@@ -12,7 +12,7 @@ public abstract class AsyncTask<Params, Progress, Result>
 3. Result
 当任务执行完毕后，如果需要对结果进行返回，则使用这里指定的泛型作为返回值类型。
 一个简单的自定义AsyncTask可以写成如下：
-```
+```java
   class MyAsyncTask extends AsyncTask<Void,Integer,Boolean>{
         //这个方法会在子线程中运行，我们在这里执行耗时的操作，任务一旦完成，就通过return语句将任务执行的结果进行返回
         @Override
@@ -39,7 +39,7 @@ new MyAsyncTask.execute();//执行任务
 ```
 AsyncTask的工作原理
 为了分析AsyncTask的工作原理，我们从他的execute方法开始分析，execute()方法会调用executeOnExecutor方法
-``` 
+```java
 public final AsyncTask<params,Progress,Result> execute(Params...params){
       return executeOnExecutor(sDefaultExecutor,params);
 }

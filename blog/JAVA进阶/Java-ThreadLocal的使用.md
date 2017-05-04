@@ -4,14 +4,14 @@ Java中的ThreadLocal类允许我们创建只能被同一个线程读写的变�
 
 #如何创建ThreadLocal变量
 以下下代码展示如何创建一个ThreadLocal变量
-```
+```java
 private ThreadLocal myThreadLocal=new ThreadLocal();
 ```
 我们可以看到，通过这段代码实例化一个ThreadLocal对象。我们只需要实例化对象一次，并且也不需要知道它是被哪个线程实例化。虽然所有的线程都能访问到这个ThreadLocal实例，但是每个线程却只能访问到自己通过调用ThreadLocal的set()方法设置的值。即使是两个不同的线程在同一个ThreadLocal对象设置了不同的值，他们依然无法访问到对方的值。
 
 #如何访问到ThreadLocal变量
 一旦创建了一个ThreadLocal的变量，你可以通过如下代码设置某个需要保存的值：
-```
+```java
 myThreadLocal.set("a Thread local value");
 ```
 可以通过下面方法读取保存在ThreadLocal变量中的值
@@ -20,14 +20,14 @@ String threadLocalValue=(String)myThreadLocal.get();
 ```
 #为ThreadLocal指定泛型类型
 我们可以创建一个指定泛型类型的ThreadLocal对象，这样我们就不需要每次使用get()方法返回的值做强制类型转换。
-```
+```java
 private ThreadLocal muThreadLocal=new ThreadLocal<String>();
 ```
 #如何初始化ThreadLocal变量的值
 由于在ThreadLocal对象中设置的值只能被设置这个值得线程访问到，线程无法在ThreadLocal对象使用set()方法保存一个初始值，并且这个初始值能被所有的线程访问到
 
 我们可以通过创建一个ThreadLocal的子类并且重写initialValue()方法，来为一个ThreadLocal对象指定一个初始值
-```
+```java
 private ThreadLocal myThreadLocal=new ThreadLocal<String>(){
         @Override
         protected String initialValue(){
@@ -36,7 +36,7 @@ private ThreadLocal myThreadLocal=new ThreadLocal<String>(){
 };
 ```
 #一个完整的ThreadLocal的例子
-```
+```java
 public class ThreadLocalExample{
       public static class MyRunnable implements Runnable{
               private ThreadLocal threadlocal=new ThreadLocal();
@@ -66,13 +66,13 @@ public class ThreadLocalExample{
 
 在做一个实例
 先定义一个接口：
-```
+```java
 public interface Sequence {
 	int getNumber();
 }
 ```
 在做一个线程类
-```
+```java
 public class ClientThread extends Thread {
 
 	@Override
@@ -94,7 +94,7 @@ public class ClientThread extends Thread {
 ```
 在线程中连续输出三次线程名与其对应的序列号。
 我们先不用 ThreadLocal，来做一个实现类吧。
-```
+```java
 public class SequenceA implements Sequence{
 	
 	private static int number=0;
@@ -136,7 +136,7 @@ Thread-2=>9
 
 那么如何来保证“线程安全”呢？对应于这个案例，就是说不同的线程可拥有自己的 static 变量，如何实现呢？下面看看另外一个实现吧。
 
-```
+```java
 public class SequenceB implements Sequence {
 	
 	private static ThreadLocal<Integer> numberContainer=new ThreadLocal<Integer>(){

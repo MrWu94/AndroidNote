@@ -15,7 +15,7 @@
  
 上面的消费即表示相应函数返回值为true。
 对于ViewGroup,重写了三个方法
-```
+```java
 @Override
 public boolean dispatchTouchEvent(MotionEvent event){
       return super.dispatchTouchEvent(event);
@@ -31,7 +31,7 @@ public boolean onTouchEvent(MotionEvent event){
 }
 ```
 对于View来说，重写了如下的方法
-```
+```java
 @Override
 public boolean onTouchEvent(MotionEvent event){
           return super.onTouchEvent(event); 

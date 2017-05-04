@@ -43,7 +43,7 @@ Presenter： 负责完成View于Model间的交互
 + 通常View与Presenter是一对一的，但复杂的View可能绑定多个Presenter来处理逻辑。
 **1、Model层**
 首先是一个javabean User实体类
-```
+```java
 public class User {    
     private String name;    
     private String id;    
@@ -78,7 +78,7 @@ public class User {
 ```
 
 Model层抽象接口实现：
-```
+```java
 public class GetUserInfo implements IGetUser {    
     @Override
     public void getUserInfo(final int id, final OnUserInfoListener listener) {        
@@ -108,7 +108,7 @@ public class GetUserInfo implements IGetUser {
 }
 ```
 Model层抽象接口
-```
+```java
 public interface IGetUser {    
    public void getUserInfo(int id, OnUserInfoListener listener);
 }
@@ -167,7 +167,7 @@ public class UserInfoPresenter {
 }
 ```
 **4、Activity中的调用**
-```
+```java
 public class MainActivity extends Activity implements IShowUserView {    
     private Button btn;    
     private TextView name_tv, age_tv, sex_tv;    

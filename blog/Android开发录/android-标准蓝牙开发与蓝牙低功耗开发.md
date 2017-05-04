@@ -1,16 +1,16 @@
-###做蓝牙开发，先认识几个蓝牙的几个要点：
+### 做蓝牙开发，先认识几个蓝牙的几个要点：
 
 1、UUID:通用唯一识别码（英语：Universally Unique Identifier，简称UUID）
 
 2、GATT:通用属性描述[Generic Attribute Profile](GATT)-GATT是为通过BLE链接发送和接收的短数据（属性值）而做的一个规范描述。* 属性协议[Attribute Protocol](ATT)-GATT是建立在ATT之上的。它们一起指的是GATT/ATT(类似于TCP/IP的概念)。* ATT对在BLE设备上的运行进行优化。为此，它使用尽可能少的字节。每个属性都是由一个全局唯一标识符唯一地标识（UUID），这是一个字符串ID，* 一个标准的128位格式，用于唯一标识信息。这里的attributes(属性)的传输被ATT格式化为characteristics和services。* 特征[Characteristic]-一个characteristic包含一个唯一的值和0到n个描述数来描述characteristic的值。一个characteristic可以被看作一个数据类型，或者一个类。* 描述符[Descriptor]-Descriptor被定义为一些属性用来描述一个characteristic的值。例如，一个描述符可能特指为一个只有人才可以读的描述，* characteristic的值的一个可接受的范围。或者是characteristic的一个测量单元
 
-###标准蓝牙开发流程
+### 标准蓝牙开发流程
 1、开启权限
 2、开启蓝牙
 3、蓝牙搜寻广播
 4、连接与配对
 
-###简要介绍Bluetooth开发要使用的类
+### 简要介绍Bluetooth开发要使用的类
 1、**BluetoothAdapter 蓝牙适配器**，可判断蓝牙设备是否可用等功能
 有几个重要的方法：
 **cancelDiscovery()** ，取消搜索过程，在进行蓝牙设备搜索时，如果调用该方法会停止搜索。（搜索过程会持续12秒）
@@ -20,7 +20,7 @@
  2.BluetoothDevice看名字就知道，这个类描述了一个蓝牙设备**createRfcommSocketToServiceRecord(UUIDuuid)**根据UUID创建并返回一个BluetoothSocket* 这个方法也是我们获取BluetoothDevice的目的——创建BluetoothSocket* 这个类其他的方法，如getAddress(),getName(),同BluetoothAdapter* 这个类有几个隐藏方法，涉及到蓝牙的自动配对，setPin,createBond,cancelPairingUserInput,等方法（需要通过java的反射，调用这几个隐藏方法）
 
 下面通过案例说明：
-```
+```java
 public class ClientThread extends Thread {
 
     private BluetoothSocket socket;
@@ -253,8 +253,8 @@ public class BluetoothActivity1 extends AppCompatActivity {
 }
 
 ```
-###蓝牙低功耗开发
-####区别：
+### 蓝牙低功耗开发
+#### 区别：
    
  **标准蓝牙的的开发和BLE不同**。标准蓝牙连接里有两个角色一个是客户端一个是服务器，当客户端搜索到蓝牙服务器后并与之配对后， 才能通过UUID（这个是唯一的，服务器端必须与客户端一致）建立socket，然后使用流像文件读写和网络通信那样传输数据就行了。
 
@@ -280,7 +280,7 @@ public class BluetoothActivity1 extends AppCompatActivity {
  7、然后通过BluetoothGattCharacteristic.getDescriptor获取BluetoothGattDescriptor
 
 通过案例：
-```
+```java
 public class DeviceScanActivity extends ListActivity {
     private LeDeviceListAdapter mLeDeviceListAdapter;
     private BluetoothAdapter mBluetoothAdapter;

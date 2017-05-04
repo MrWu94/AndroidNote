@@ -1,7 +1,7 @@
-###Broadcast
+### Broadcast
 一个是广播的注册过程，另一个是广播的发送和接收过程。
 广播的接收者，只需要继承BroadcaseReceiver并冲重写onReceive方法即可。
-```
+```java
 public class MyReceiver extends BroadcastReceiver{
           @Overide
           public void onReceive(Context context,Intent intent){
@@ -13,7 +13,7 @@ public class MyReceiver extends BroadcastReceiver{
 ```
 定义好了广播接收者，接着还需要注册广播接收者，注册方式分为两种，即可以在AndroidManifest文件中静态注册，也可以在代码中动态注册。
 ###静态注册
-```
+```java
 <receiver android:name=".MyReceiver">
   <intent-filter>
           <action android:name="com.hansheng">
@@ -21,13 +21,13 @@ public class MyReceiver extends BroadcastReceiver{
 </receiver>
 ```
 ###动态注册
-```
+```java
 IntentFilter filter=new IntentFilter();
 filter.addAction("com.hansheng");
 registerReceiver(new MyReveiver(),filter);
 ```
 前面两部都完成以后，就可以通过send方法来发送广播了
-```
+```java
 Intent intent=new Intent();
 intent.setAction(com.hansheng);
 sendBroadcast(intent);
@@ -39,7 +39,7 @@ handler是和Thread绑定的，主线程中创建Handler直接通过new Handler(
 
 Handler主要有两个作用，一个是线程间传递消息，另一个则是post Runnable对象，让Runnable对象在Handler对应的那个线程里运行
 
-```
+```java
 public class MainActivity extends Activity{
           private Handler mHandler;
           private Button button;
@@ -76,7 +76,7 @@ public class MainActivity extends Activity{
  }
 ```
 使用Interface定义回调，不懂得可以看看[回调机制](http://www.jianshu.com/p/18ec24b6a39f),可以用在任意两个对象之间。比如Activity和Fragment通信
-```
+```java
 public class LeftFragment extends Fragment {
     
     private Button button;
@@ -203,13 +203,13 @@ Publisher:发布者，post事件，通知订阅者
 3、发布一个事件
 4、接收这个事件
 用代码实现着4不就是：
-```
+```java
 1、public class MyEvent()
 2、EventBus.getDefault().register(this)---比如这是一个Activity,那就等于把Activity注册为一个订阅者
 3、EventBus.getDefault.post(event)-———随便哪个组件或者线程中发送出一个MyEvent的对象
 4、public void onEvent(MyEvent event)———第2步中的Activity中的onEvent方法接收到该事件并处理。注意一定Event类型要对应。如果写成了onEvent(Object event)，那就是post什么类型的Event都能接受了。
 ```
-```
+```java
 public class MainActivity extends Activity{
 
     private TextView textView;
@@ -250,7 +250,7 @@ onEventAsync	|事件会单独启动一个线程执行(每个事件都会启动�
 onEventMainThread使用演示
 
 onEventMainThread就是会放到主线程去执行的事件处理，一般在其中进行比如UI的更新的操作，比如TextView的更改。下面通过代码展示一下。一个自定义的线程发送该事件，Activity通过onEventMainThread接收到该事件,并更新UI.这个时候就不能使用onEvent了，因为根据上表所示，onEvent会放在发送事件的那个线程中去执行，其实不能进行UI更新操作的。
-```
+```java
 public class MainActivity extends Activity{
 
     private TextView textView;
@@ -293,7 +293,7 @@ Sticky Event是指我注册一个sticky的订阅，这样注册之前发送的st
 + postSticky(event) ：发送sticky的event
 + registerSticky(subscriber) :注册接收sticky事件的订阅者
 + getStickyEvent(Class)
-```
+```java
 public class MainActivity extends Activity {
     private TextView textView;
     private Button sendEvent;

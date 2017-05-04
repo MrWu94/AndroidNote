@@ -1,4 +1,4 @@
-###目录
+### 目录
 + Android控件架构
 + View的测量与绘制
 + ViewGroup的测量与绘制
@@ -20,7 +20,7 @@ EXACTLY
 View类默认的onMeasure方法只支持EXACTLY模式，所以如果在自定义控件的时候不重写onMeasure方法的话，就只能使用EXACTLY模式。控件可以响应你指定的具体宽高值或者match_parent属性。**如果要让自定义的View支持wrap_content属性，那么就必须重写onMeasure方法来指定wrap_content时的大小**
 
 演示如何进行View 的测量。
-```
+```java
 @Override
 protected void onMeasure(int widthMeasureSpec,int heightMeasureSpec){
       super.onMeasure(widthMeasureSpec,heigthMeasureSpec);
@@ -30,7 +30,7 @@ protected void onMeasure(int widthMeasureSpec,int heightMeasureSpec){
 这两个值都是有父视图经过计算传递给子视图的，说明父视图在一定程度上决定了子视图的大小。
 
 重写onMeasure方法后，最终要做的工作就是把测量后的宽高值作为参数设置给setaMeasureDimension()
-```
+```java
 @Override
 proteced void onMeasure(int widthMeasureSpec,int heigthMeasureSpec){
         setMeasureDimension(measureWidth(widthMeasureSpec),measureHeigth(heigthMeasureSpec));
@@ -64,7 +64,7 @@ private int measureHeigth(int measureSpec){
       return result;
 }
 ```
-###自定义View
+### 自定义View
 有三种方法来实现自定义控件
 + 对现有控件进行扩展
 + 通过组合来实现新的控件
@@ -77,13 +77,13 @@ private int measureHeigth(int measureSpec){
 + onTouchEvent :监听到触摸事件时回调
 
 通过改变控件的绘制行为创建自定义View的思路，首先你要有画笔，所以你在重写onDraw()方法前都可以初始化画笔：
-```
+```java
 mPaint1=new Paint();
 mPaint1.setColor(#000000);//画笔颜色
 mPaint1.setStyle(Paint.Style.FILL);
 ```
 你有了画笔之后，当然要有纸，也就是Canvas画布
-```
+```java
 canvas.draw(0,0,getMeasureWidth(),getMeasureHeight,mPaint1);
 canvas.save();
 canvas.translate(10,0);

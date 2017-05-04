@@ -1,4 +1,4 @@
-```
+```java
 class OuterClass { 
       static class StaticNestedClass {} //静态嵌套类 
       class InnerClass {} //内部类
@@ -14,7 +14,7 @@ static修饰符使得嵌套类**成为外部类的静态成员**，与**外部�
 这样静态嵌套类作为一个静态成员，**仅能引用外部类静态成员**，外部类中的非静态成员与外部类对象相关，静态嵌套类就不能访问他们，这使得静态嵌套类的功能变的很弱，可用之处很少。
 另外因为静态嵌套类是**依附于外部类而非外部类对象**的，所以**不同的外部类对象共享一个静态嵌套类**，这一点与内部类不同，可以用来包装main方法。
 静态嵌套类的声明示例:
-```
+```java
 OuterClass.StaticNestedClass nestedObject = new OuterClass.StaticNestedClass();
 ```
 **内部类**
@@ -24,12 +24,12 @@ OuterClass.StaticNestedClass nestedObject = new OuterClass.StaticNestedClass();
 因为内部类引用外部类，其外部类就不能被JVM的垃圾回收机制自动垃圾回收。
 不同的外部类对象之间没**有公共的内部类对象成员**。
 内部类的声明示例:
-```
+```java
 OuterClass.InnerClass innerObject = outerObject.new InnerClass();
 ```
 **变量遮蔽(Shadowing)**
 外部类，嵌套类以及局部方法区的变量作用域有重叠，如果出现**同名变量**将发生**变量遮蔽**。
-```
+```java
 public class ShadowTest {
 
     public int x = 0;
