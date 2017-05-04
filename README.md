@@ -52,14 +52,14 @@
 [MAC-常用工具以及配置](https://github.com/fuqinwu/StudyNote/blob/master/blog/MAC-%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E9%9B%86%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE/MAC-%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E4%BB%A5%E5%8F%8A%E9%85%8D%E7%BD%AE.md)
 
 ## Java设计模式
-[策略模式](https://github.com/fuqinwu/StudyNote/blob/master/blog/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md)
-[观察者模式](https://github.com/fuqinwu/StudyNote/blob/master/blog/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md
+[策略模式](https://github.com/fuqinwu/StudyNote/blob/master/blog/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.md)</br>
+[观察者模式](https://github.com/fuqinwu/StudyNote/blob/master/blog/Java%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.md)
 
 ## Java进阶
 [Java类静态域、块，非静态域、块，构造函数的初始化顺序](https://github.com/fuqinwu/StudyNote/blob/master/blog/JAVA%E8%BF%9B%E9%98%B6/Java%E7%B1%BB%E9%9D%99%E6%80%81%E5%9F%9F%E3%80%81%E5%9D%97%EF%BC%8C%E9%9D%9E%E9%9D%99%E6%80%81%E5%9F%9F%E3%80%81%E5%9D%97%EF%BC%8C%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F.md)
-[Java-并发编程](https://github.com/fuqinwu/StudyNote/blob/master/blog/JAVA%E8%BF%9B%E9%98%B6/Java-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B.md)
-[Java-集合框架](https://github.com/fuqinwu/StudyNote/blob/master/blog/Android%E5%BC%80%E5%8F%91%E5%BD%95/Java-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md)
-[Java-序列化与反序列化](https://github.com/fuqinwu/StudyNote/blob/master/blog/JAVA%E8%BF%9B%E9%98%B6/Java-%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.md)
-[java中的堆和栈](https://github.com/fuqinwu/StudyNote/blob/master/blog/JAVA%E8%BF%9B%E9%98%B6/java%E4%B8%AD%E7%9A%84%E5%A0%86%E5%92%8C%E6%A0%88.md)
+[Java-并发编程](https://github.com/fuqinwu/StudyNote/blob/master/blog/JAVA%E8%BF%9B%E9%98%B6/Java-%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B.md))</br>
+[Java-集合框架](https://github.com/fuqinwu/StudyNote/blob/master/blog/Android%E5%BC%80%E5%8F%91%E5%BD%95/Java-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6.md))</br>
+[Java-序列化与反序列化](https://github.com/fuqinwu/StudyNote/blob/master/blog/JAVA%E8%BF%9B%E9%98%B6/Java-%E5%BA%8F%E5%88%97%E5%8C%96%E4%B8%8E%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.md))</br>
+[java中的堆和栈](https://github.com/fuqinwu/StudyNote/blob/master/blog/JAVA%E8%BF%9B%E9%98%B6/java%E4%B8%AD%E7%9A%84%E5%A0%86%E5%92%8C%E6%A0%88.md))</br>
 ## 更多笔记
 https://github.com/fuqinwu/StudyNote/wiki
