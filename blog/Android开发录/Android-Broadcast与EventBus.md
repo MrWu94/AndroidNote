@@ -12,7 +12,7 @@ public class MyReceiver extends BroadcastReceiver{
 }
 ```
 定义好了广播接收者，接着还需要注册广播接收者，注册方式分为两种，即可以在AndroidManifest文件中静态注册，也可以在代码中动态注册。
-###静态注册
+### 静态注册
 ```java
 <receiver android:name=".MyReceiver">
   <intent-filter>
@@ -20,7 +20,7 @@ public class MyReceiver extends BroadcastReceiver{
   </intent-filter>
 </receiver>
 ```
-###动态注册
+### 动态注册
 ```java
 IntentFilter filter=new IntentFilter();
 filter.addAction("com.hansheng");
@@ -32,7 +32,7 @@ Intent intent=new Intent();
 intent.setAction(com.hansheng);
 sendBroadcast(intent);
 ```
-###Eventbus
+### Eventbus
 Android应用内常用通信方式
 1、使用Handler进行线程间通信
 handler是和Thread绑定的，主线程中创建Handler直接通过new Handler()来创建即可。自定义线程则需调用Looper.prepare(),Looper.loop()来让Handler起作用。
@@ -75,7 +75,7 @@ public class MainActivity extends Activity{
           
  }
 ```
-使用Interface定义回调，不懂得可以看看[回调机制](http://www.jianshu.com/p/18ec24b6a39f),可以用在任意两个对象之间。比如Activity和Fragment通信
+使用Interface定义回调，可以用在任意两个对象之间。比如Activity和Fragment通信
 ```java
 public class LeftFragment extends Fragment {
     
@@ -190,7 +190,7 @@ public class MainActivity extends Activity {
 使用Intent进行组件间的通信
 通过Intent来比如启动Service，启动Activity， 通过Intent来发送Broadcast，然后注册一个BroadcastReceiver来接收并处理Intent.
 
-###EventBus进行应用内通信
+### EventBus进行应用内通信
 简介
 EventBus是Android端的一个订阅/发布的消息总线，用在应用程序中，组件之间，线程之间的通信，并且由于事件可以是任意类型的对象，所以使用起来更加的方便快捷。
 角色;
@@ -288,7 +288,7 @@ public class MainActivity extends Activity{
 
 }
 ```
-###Sticky Event
+### Sticky Event
 Sticky Event是指我注册一个sticky的订阅，这样注册之前发送的sticky事件的最近的一个会保存在内存中，错过这个事件的发送的情况下，也可以通过getStickyEvent收到。
 + postSticky(event) ：发送sticky的event
 + registerSticky(subscriber) :注册接收sticky事件的订阅者
