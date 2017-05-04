@@ -77,7 +77,7 @@ sudo apt-get install gnupg flex bison gperf build-essential \
   libgl1-mesa-dev libxml2-utils xsltproc unzip
 ```
 
-##初始化编译环境
+## 初始化编译环境
 ```
 . build/envsetup.sh
 ```
@@ -88,15 +88,15 @@ lunch 2
 lunch
 然后选编号
 ```
-##开始编译，这里使用了4个并发数：
+## 开始编译，这里使用了4个并发数：
 ```
 make -j4
 ```
-##打包源码固件
+## 打包源码固件
 ```
 pack
 ```
-##运行模拟器
+## 运行模拟器
 ```
 emulator
 ```
