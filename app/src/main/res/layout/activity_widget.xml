@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/test" />
+        android:src="@drawable/zhangjinxuan" />
 
     <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"

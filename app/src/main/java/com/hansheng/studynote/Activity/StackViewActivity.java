@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.StatFs;
 import android.os.Vibrator;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -30,11 +28,11 @@ public class StackViewActivity extends AppCompatActivity {
 
     StackView stackView;
     int[] imageIds = new int[]{
-            R.drawable.img1,
-            R.drawable.img2,
-            R.drawable.img3,
-            R.drawable.img4,
-            R.drawable.img5,
+            R.drawable.ic_item01,
+            R.drawable.ic_item02,
+            R.drawable.ic_item03,
+            R.drawable.ic_item04,
+            R.drawable.ic_item05,
 
     };
     private Vibrator vibrator;

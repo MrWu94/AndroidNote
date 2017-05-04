@@ -8,8 +8,6 @@
         android:angle="90"
         android:endColor="@color/btn_bg_s"
         android:startColor="@color/btn_bg_e" />
-
-
     <corners android:radius="5dp" />
 
 

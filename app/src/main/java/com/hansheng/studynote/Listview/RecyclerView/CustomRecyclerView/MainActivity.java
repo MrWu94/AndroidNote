@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity{
 
         mImg = (ImageView) findViewById(R.id.id_content);
 
-        mDatas = new ArrayList<Integer>(Arrays.asList(R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5));
+        mDatas = new ArrayList<Integer>(Arrays.asList(R.drawable.ic_item01, R.drawable.ic_item02, R.drawable.ic_item03, R.drawable.ic_item04, R.drawable.ic_item05));
 
         mRecyclerView = (MyRecyclerView) findViewById(R.id.id_recyclerview_horizontal);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);

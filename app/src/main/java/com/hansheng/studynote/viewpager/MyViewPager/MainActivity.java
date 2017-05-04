@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.myviewpager_main);
 
-        mImgIds=new int[]{R.drawable.img1,R.drawable.img2,R.drawable.img3,R.drawable.img4};
+        mImgIds=new int[]{R.drawable.ic_item08,R.drawable.ic_item02,R.drawable.ic_item07,R.drawable.ic_item03};
 
         mViewPager= (MyJazzyViewPager) findViewById(R.id.id_viewpager);
 

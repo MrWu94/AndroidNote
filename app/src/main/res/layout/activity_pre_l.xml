@@ -64,7 +64,7 @@
         <Button
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:background="@drawable/test_selector"/>
+            android:background="@drawable/selector_vector"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -76,7 +76,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:button="@drawable/test_selector"
+            android:button="@drawable/selector_vector"
             android:text="Android"/>
 
     </LinearLayout>

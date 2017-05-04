@@ -22,7 +22,7 @@ public class MainActivity extends BaseActivity {
     @Bind(R.id.transformer_viewpager)
     ViewPager mViewPager;
 
-    private int[] mImgIds = new int[]{R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4};
+    private int[] mImgIds = new int[]{R.drawable.ic_item01, R.drawable.ic_item02 R.drawable.ic_item03, R.drawable.ic_item04};
 
 
     private List<ImageView> mImageViews = new ArrayList<ImageView>();

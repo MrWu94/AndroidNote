@@ -9,7 +9,6 @@ import android.graphics.Paint;
 import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.View;
-import android.widget.ImageView;
 
 import com.hansheng.studynote.R;
 
@@ -40,7 +39,7 @@ public class ImageViewShader extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        mBitmap= BitmapFactory.decodeResource(getResources(), R.drawable.bitmap);
+        mBitmap= BitmapFactory.decodeResource(getResources(), R.drawable.zhangjinxuan);
         mBitmapShader=new BitmapShader(mBitmap,Shader.TileMode.CLAMP,Shader.TileMode.REPEAT);
 
         mPaint=new Paint();

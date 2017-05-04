@@ -74,7 +74,7 @@ public class XFermodeView extends View {
         mPaint.setStrokeJoin(Paint.Join.ROUND);
         mPaint.setStrokeCap(Paint.Cap.ROUND);
         mPath=new Path();
-        mBgBitmap= BitmapFactory.decodeResource(getResources(), R.drawable.test);
+        mBgBitmap= BitmapFactory.decodeResource(getResources(), R.drawable.zhangjinxuan);
         mFgBitmap=Bitmap.createBitmap(mBgBitmap.getWidth(),mBgBitmap.getHeight(),Bitmap.Config.ARGB_8888);
         mCanavas=new Canvas(mFgBitmap);
         mCanavas.drawColor(Color.GRAY);

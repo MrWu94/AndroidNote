@@ -18,9 +18,9 @@ import com.hansheng.studynote.R;
 public class GridViewActivity extends Activity {
 
     private GridView gridView = null;
-    private int[] imageId = new int[] { R.drawable.img1, R.drawable.img2,
-            R.drawable.img1, R.drawable.img4, R.drawable.img5,
-            R.drawable.img2, R.drawable.img3, R.drawable.img4,
+    private int[] imageId = new int[] { R.drawable.ic_item03, R.drawable.ic_item05,
+            R.drawable.ic_item04, R.drawable.ic_item01, R.drawable.ic_item02,
+            R.drawable.ic_item06, R.drawable.ic_item02, R.drawable.ic_item08,
            }; // 定义并初始化保存图片id的数组
 
     @Override

@@ -30,14 +30,14 @@ public class ImageBitmapActivity extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.image_view);
         image = (ImageView) findViewById(R.id.imagecustom);
 
-        imageView.setImageDrawable(getResources().getDrawable(R.drawable.bitmap));
+        imageView.setImageDrawable(getResources().getDrawable(R.drawable.zhangjinxuan));
         imageView.setBackgroundColor(getResources().getColor(R.color.app_color));
         imageView.setAdjustViewBounds(true);
         imageView.setScaleType(ImageView.ScaleType.CENTER);
 //        imageView.setForeground(getResources().getDrawable(R.drawable.bitmap));
 //        imageView.setAlpha(100);
         BitmapFactory.decodeResource(getResources(), R.drawable.zhangjinxuan);
-        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.bitmap);
+        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.zhangjinxuan);
 //        imageView.setImageBitmap(ImageUtils.compressImage(bitmap));
     }
 

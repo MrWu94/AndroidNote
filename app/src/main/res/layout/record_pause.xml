@@ -14,7 +14,7 @@
             android:id="@+id/start_record"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/record_hover1" />
+            android:background="@drawable/record_hover" />
 
         <ImageButton
             android:id="@+id/stop_record"
@@ -26,7 +26,7 @@
             android:id="@+id/start_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/play_hover1" />
+            android:background="@drawable/play_hover" />
 
         <Button
             android:layout_width="wrap_content"

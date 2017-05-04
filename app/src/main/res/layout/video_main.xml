@@ -20,7 +20,7 @@
         <ImageButton android:id="@+id/play"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:src="@drawable/play"/>
+            android:src="@drawable/ic_play"/>
 
         <ImageButton android:id="@+id/pause"
             android:layout_height="wrap_content"

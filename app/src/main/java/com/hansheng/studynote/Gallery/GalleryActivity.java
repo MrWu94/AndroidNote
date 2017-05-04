@@ -16,9 +16,9 @@ import com.hansheng.studynote.R;
  * Created by wfq on 2016/11/11.
  */
 public class GalleryActivity extends AppCompatActivity {
-    int[] Images={R.drawable.item01,R.drawable.item02,R.drawable.item03,R.drawable.item04,
-            R.drawable.item05, R.drawable.item06, R.drawable.item07, R.drawable.item08,R.drawable.item09,
-            R.drawable.item10, R.drawable.item11, R.drawable.item12};
+    int[] Images={R.drawable.ic_item01,R.drawable.ic_item02,R.drawable.ic_item03,R.drawable.ic_item04,
+            R.drawable.ic_item05, R.drawable.ic_item06, R.drawable.ic_item07, R.drawable.ic_item08,R.drawable.ic_item09,
+            R.drawable.ic_item10, R.drawable.ic_item11, R.drawable.ic_item12};
     Gallery g;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

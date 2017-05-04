@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.PorterDuff;
@@ -40,7 +39,7 @@ public class XfermodeView extends View {
 //        canvas.drawBitmap(mBgBitmap,0,0,null);
 //        canvas.drawBitmap(mFgBitmap,0,0,null);
 
-        mBgBitmap=BitmapFactory.decodeResource(getResources(),R.drawable.bitmap);
+        mBgBitmap=BitmapFactory.decodeResource(getResources(),R.drawable.zhangjinxuan);
         mFgBitmap=Bitmap.createBitmap(mBgBitmap.getWidth(),mBgBitmap.getHeight(),Bitmap.Config.ARGB_8888);
         canvas=new Canvas(mFgBitmap);
         mPaint=new Paint();

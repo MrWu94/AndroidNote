@@ -17,8 +17,8 @@ import com.hansheng.studynote.R;
  */
 
 public class ViewFlipperActivity extends Activity implements android.view.GestureDetector.OnGestureListener {
-    private int[] imgs = { R.drawable.img1, R.drawable.img2,
-            R.drawable.img3, R.drawable.img4, R.drawable.img5 };
+    private int[] imgs = { R.drawable.ic_item02, R.drawable.ic_item08,
+            R.drawable.ic_item02, R.drawable.ic_item08, R.drawable.ic_item02};
 
     private GestureDetector gestureDetector = null;
     private ViewFlipper viewFlipper = null;

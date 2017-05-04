@@ -38,7 +38,7 @@ public class RoundRectShader extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        mBitmap= BitmapFactory.decodeResource(getResources(), R.drawable.test);
+        mBitmap= BitmapFactory.decodeResource(getResources(), R.drawable.zhangjinxuan);
         mBitmapShader=new BitmapShader(mBitmap,Shader.TileMode.REPEAT,Shader.TileMode.REPEAT);
         mPaint=new Paint();
         mPaint.setShader(mBitmapShader);

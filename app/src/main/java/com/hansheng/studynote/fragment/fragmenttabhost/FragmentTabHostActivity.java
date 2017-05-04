@@ -26,10 +26,10 @@ public class FragmentTabHostActivity extends AppCompatActivity {
     // 图片
     @DrawableRes
     private int mImages[] = {
-            R.drawable.tab_counter,
-            R.drawable.tab_assistant,
+            R.drawable.selector_tab_counter,
+            R.drawable.selector_tab_assistant,
             R.drawable.tab_contest,
-            R.drawable.tab_center
+            R.drawable.selector_tab_center
     };
 
     // 标题

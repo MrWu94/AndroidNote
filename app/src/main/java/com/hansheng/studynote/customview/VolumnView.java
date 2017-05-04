@@ -54,7 +54,7 @@ public class VolumnView extends View {
     void init(Context context) {
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setStyle(Style.STROKE);
-        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ling);
+        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_ling);
     }
 
     @Override

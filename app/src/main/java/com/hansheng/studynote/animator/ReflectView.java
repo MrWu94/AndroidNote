@@ -43,7 +43,7 @@ public class ReflectView extends View {
     }
 
     private void init() {
-        mSrcBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.test);
+        mSrcBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.zhangjinxuan);
         Matrix matrix = new Matrix();
         matrix.setScale(1f, -1f);
         //实现图像的垂直翻转
