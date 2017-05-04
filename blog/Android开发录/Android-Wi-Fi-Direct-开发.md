@@ -1,7 +1,13 @@
 ### Wi-Fi Direct 简介
-  Wi-Fi Direct标准是指允许无线网络中的设备无需通过无线路由器即可相互连接。与蓝牙技术类似，这种标准允许无线设备以点对点形式互连，而且在传输速度与传输距离方面则比蓝牙有大幅提升。按照定义，**Wi-Fi Direct设备是支持对等连接的设备，这种设备既支持基础设施网络，也支持P2P连接。**Wi-Fi Direct设备能够作为典型的站点（STA）加入基础设施网络，而且必须支持Wi-Fi Protected Setup加入者功能。**Wi-Fi Direct设备通过组建小组（以一对一或一对多的拓扑形式）来建立连接，小组的工作形式与基础设施BSS类似。**由一部Wi-Fi Direct设备负责整个小组，包括控制哪部设备加入、小组何时启动和终止等。这种设备对于传统客户设备而言就是一部接入点，能够提供基础设施接入点所提供的部分服务。
+  Wi-Fi Direct标准是指允许无线网络中的设备无需通过无线路由器即可相互连接。与蓝牙技术类似，
+这种标准允许无线设备以点对点形式互连，而且在传输速度与传输距离方面则比蓝牙有大幅提升。按照定义，
+**Wi-Fi Direct设备是支持对等连接的设备，这种设备既支持基础设施网络，也支持P2P连接。**
+Wi-Fi Direct设备能够作为典型的站点（STA）加入基础设施网络，而且必须支持Wi-Fi Protected Setup加入者功能。**
+Wi-Fi Direct设备通过组建小组（以一对一或一对多的拓扑形式）来建立连接，小组的工作形式与基础设施BSS类似。
+** 由一部Wi-Fi Direct设备负责整个小组，包括控制哪部设备加入、小组何时启动和终止等。这种设备对于传统客户设备而言就是一部接入点，能够提供基础设施接入点所提供的部分服务。
 
 关于Wi-Fi Direct的API函数的使用需要注意一下几个要点：
+
 ·用于探测（discover）对等设备（peers）、向对等设备发起请求（request）以及建立连接（connect）的方法定义在类[WifiP2pManager](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html)中。
 ·通过设置监听器（Listener）可以获知[WifiP2pManager](http://developer.android.com/reference/android/net/wifi/p2p/WifiP2pManager.html)中方法调用的成功与否。监听器以参数的形式传递给被调用的方法。
 ·当发现新对等设备或链接丢失的时候，Wi-Fi Direct系统（framework）以意向（Intent）的方式根据检测到的不同事件做出相应的通知。

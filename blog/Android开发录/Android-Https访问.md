@@ -2,7 +2,7 @@
 
 
 ## 何为Https
-具体http协议知识可查看[Http协议精讲)[http://www.jianshu.com/p/d1a6ff54a253]
+具体http协议知识可查看,Http协议精讲
 **HTTP + 加密 + 认证 + 完整性保护 = HTTPS**
 HTTPS并非是应用层的一种新协议。只是普通HTTP通信接口部分用SSL和TLS协议替代而已。
 SSL是独立于HTTP的协议，所以不光是HTTP协议，其他运行在应用层的SMTP和Telnet等协议均可配合SSL协议使用。所以说SSL是当今世界上应用最为广泛的网络安全技术。
