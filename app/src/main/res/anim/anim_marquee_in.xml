@@ -8,5 +8,4 @@
         android:duration="500"
         android:fromAlpha="0.0"
         android:toAlpha="1.0"/>
-
 </set>
