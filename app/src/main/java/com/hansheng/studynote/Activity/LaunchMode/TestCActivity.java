@@ -58,6 +58,7 @@ public class TestCActivity extends AppCompatActivity {
                 startActivity(new Intent(TestCActivity.this, TestAActivity.class));
             }
         });
+        Log.e(TAG, "onCreate");
     }
 
     @Override protected void onNewIntent(Intent intent) {

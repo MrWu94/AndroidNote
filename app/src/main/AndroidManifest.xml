@@ -70,7 +70,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".handler.TimerAndHandlerActivity"
+            android:name=".Activity.LaunchMode.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Launcher">
@@ -151,16 +151,16 @@
 
         <activity
             android:name=".Activity.LaunchMode.TestAActivity"
-            android:launchMode="singleInstance" />
+            android:launchMode="standard" />
         <activity
             android:name=".Activity.LaunchMode.TestBActivity"
-            android:launchMode="singleInstance" />
+            android:launchMode="standard" />
         <activity
             android:name=".Activity.LaunchMode.TestCActivity"
-            android:launchMode="singleInstance" />
+            android:launchMode="standard" />
         <activity
             android:name=".Activity.LaunchMode.TestDActivity"
-            android:launchMode="singleInstance" />
+            android:launchMode="standard" />
 
 
         <service

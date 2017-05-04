@@ -1,0 +1,10 @@
+系统通过提供的Canvas对象来提供绘图方法。它提供了各种绘制图像的API,如drawPoint(点)，drawLine(线),drawRect(矩形)，drawVertices(多边形)，drawArc(弧)，drawCircle(圆)
+Paint作为一种非常重要的元素，功能也是非常强大的：
+setAntiAlias():设置画笔的锯齿效果
+setColor():设置画笔的颜色
+setARGB():设置画笔的ARGB值
+setAlpha():设置画笔的alpha值
+setTextSize():设置字体的尺寸
+setStyle():设置画笔的风格
+setStrokeWidth():设置空心边框的宽度
+setTextAligin():

@@ -74,6 +74,7 @@ public class TestBActivity extends AppCompatActivity {
                 finish();
             }
         });
+        Log.e(TAG, "onCreate");
     }
 
     @Override protected void onActivityResult(int requestCode, int resultCode, Intent data) {
