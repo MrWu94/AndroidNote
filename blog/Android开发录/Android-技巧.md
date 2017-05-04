@@ -36,7 +36,7 @@ String param = getIntent.getStringExtra(EXTRA_PARAM);
 ```
 写法一，存在的问题是，如果 SrcActivity 和 DestActivity 哪个把 "param" 打错成 "para" 或者 "paran" ，传递的数据都无法成功接收到。而写法二则不会出现此类问题，因为两个 Activity 之间传递数据只需要知道 EXTRA_PARAM 变量即可，至于 EXTRA_PARAM 变量到底是 "param" 、 "para" 、"paran" 这一点并不需要关心，这就是一种对可能发生变化的地方进行抽象封装的体现，它所带来的好处就是降低手抖出错的概率，同时方便我们进行修改。
 
-##assert与raw的区别
+## assert与raw的区别
 res/raw和asserts的相同点：
 1.两者目录下的文件在打包后会原封不动的保存在apk包中，不会被编译成二进制文件
 res/raw和assets的不同点：
@@ -47,6 +47,7 @@ assets文件夹下的文件不会被映射到到R.java文件中，访问的时�
 
 读取文件资源：
 1.读取res/raw下的文件资源，通过以下方式获取输入流来进行读写操作
+
 ```java
   InputStream is =getResources().openRawResource(R.id.filename);
 ```  
@@ -115,7 +116,7 @@ Android version | API version
 
 ## 发布时移除日志语句
 在混淆文件中加入以下语句进混淆即可移除
-```
+```java
 -assumenosideeffects class android.util.Log { 
      public static *** d(...);
 }
