@@ -5,23 +5,23 @@ Java反射是可以让我们在运行时**获取类的函数、属性、父类�
 Class<?> myClass=Student.class;
 ```
 如果你在编译期得到了某个对象，但是你想获取这个对象的Class对象，那么你可以通过如下的形式来获取Class 对象
-```
+```java
 Student me=new Student("hansheng");
 Class<?> class=me.getClass();
 ```
 如果你在编译期获取不到目标类型，但是你知道他的完整类路径，那么你可以通过如下的形式来获取Class对象
-```
+```java
 Class<?> myClass=Class.forName("com.hansheng");
 ```
 接口说明
-```
+```java
 //加载完整路径
 public static Class<?> forName(String className)
 
 ```
 通过Class对象构造目标类型的对象
 在java中药构造对象，必须通过该类的构造函数，那么其实反射也是如此。通过反射构造对象，我们首先获取类的Constructor(构造器)对象，然后通过Constructor来创建目标类的对象。
-```
+```java
 //获取class对象
 Class<?> clazz=Class.forName("com.hansheng");
 //通过class对象获取Constructor,Student的构造函数有一个字符串函数，这里需要传递参数的类型
