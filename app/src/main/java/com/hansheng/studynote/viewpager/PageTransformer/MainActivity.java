@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.hansheng.studynote.Activity.BaseActivity;
+import com.hansheng.studynote.activity.BaseActivity;
 import com.hansheng.studynote.R;
 
 import java.util.ArrayList;

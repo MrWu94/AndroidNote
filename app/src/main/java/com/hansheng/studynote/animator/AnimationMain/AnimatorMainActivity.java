@@ -3,7 +3,7 @@ package com.hansheng.studynote.animator.AnimationMain;
 
 import android.view.View;
 
-import com.hansheng.studynote.Activity.BaseActivity;
+import com.hansheng.studynote.activity.BaseActivity;
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.animator.AnimatorSetActivity;
 import com.hansheng.studynote.animator.ObjectAnimActivity;
@@ -13,7 +13,7 @@ import com.hansheng.studynote.animator.ViewAnimateActivity;
 import com.hansheng.studynote.animator.XfermodeActivity;
 import com.hansheng.studynote.animator.animationdrawable.AminationDrawableActivity;
 import com.hansheng.studynote.animator.higeanim.HighAnimActivity;
-import com.hansheng.studynote.ImageViewandDrawable.drawable.AnimationDrawableActivity1;
+import com.hansheng.studynote.imageordrawable.drawable.AnimationDrawableActivity1;
 
 import butterknife.OnClick;
 

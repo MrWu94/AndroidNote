@@ -6,7 +6,7 @@ import android.os.Message;
 import android.util.Log;
 import android.view.View;
 
-import com.hansheng.studynote.Activity.BaseActivity;
+import com.hansheng.studynote.activity.BaseActivity;
 import com.hansheng.studynote.R;
 
 /**

@@ -58,7 +58,7 @@
         android:xlargeScreens="true" />
     <!--增加分配每个app的内存大小  android:largeHeap="true"-->
     <application
-        android:name=".StudyApplication"
+        android:name=".application.StudyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -66,11 +66,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <meta-data
-            android:name="com.hansheng.studynote.ImageViewandDrawable.glide.CustomCachingGlideModule"
+            android:name="com.hansheng.studynote.imageordrawable.glide.CustomCachingGlideModule"
             android:value="GlideModule" />
 
         <activity
-            android:name=".Activity.LaunchMode.MainActivity"
+            android:name=".activity.launchmode.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Launcher">
@@ -84,22 +84,22 @@
         </activity>
         <activity android:name=".fragment.SoundActivity" />
         <activity android:name=".fragment.DisplayActivity" />
-        <activity android:name=".ImageViewandDrawable.vector.LActivity" />
+        <activity android:name=".imageordrawable.vector.LActivity" />
         <!-- Used for transferring files  after a successful connection -->
         <service
             android:name=".wifi.FileTransferService"
             android:enabled="true" />
-        <receiver android:name=".alarm.AlarmReceiver" />
+        <receiver android:name=".activity.alarm.AlarmReceiver" />
 
-        <activity android:name=".ActivityManager.BrowseProcessInfoActivity" />
-        <activity android:name=".SQLDataBase.SQLiteDB2.StudentDetail" />
-        <activity android:name=".Application.NoStoreApplication.GreetLoudlyActivity" />
+        <activity android:name=".activity.activitymanager.BrowseProcessInfoActivity" />
+        <activity android:name=".sqlite.SQLiteDB2.StudentDetail" />
+        <activity android:name=".application.NoStoreApplication.GreetLoudlyActivity" />
         <activity android:name=".animator.higeanim.HighAnimActivity" />
 
-        <activity android:name=".ImageViewandDrawable.drawable.AnimationDrawableActivity1" />
+        <activity android:name=".imageordrawable.drawable.AnimationDrawableActivity1" />
 
         <service
-            android:name=".Socket.chat.TCPServerService"
+            android:name=".socket.chat.TCPServerService"
             android:process=":remote" />
 
         <provider
@@ -107,7 +107,7 @@
             android:authorities="com.hansheng.contentprovider.myprovider"
             android:exported="true" />
 
-        <activity android:name=".Activity.SecondActivity" />
+        <activity android:name=".activity.SecondActivity" />
         <activity android:name=".webview.ShowWebViewActivity" />
         <activity android:name=".webview.WithPhotoWebViewActivity" />
         <activity android:name=".webview.Html5WebView.Html5Activity" />
@@ -125,10 +125,10 @@
         <activity android:name=".style.ShapeActivity" />
         <activity android:name=".style.SelectorActivity" />
 
-        <activity android:name=".SystemUI.BottomDialogActivity" />
-        <activity android:name=".SystemUI.CardViewActivity" />
-        <activity android:name=".SystemUI.CollapsingDemoActivity" />
-        <activity android:name=".SystemUI.BarTabDemoActivity" />
+        <activity android:name=".systemui.BottomDialogActivity" />
+        <activity android:name=".systemui.CardViewActivity" />
+        <activity android:name=".systemui.CollapsingDemoActivity" />
+        <activity android:name=".systemui.BarTabDemoActivity" />
 
         <activity android:name=".animator.AnimatorSetActivity" />
         <activity android:name=".animator.ObjectAnimActivity" />
@@ -137,11 +137,11 @@
         <activity android:name=".animator.ViewAnimateActivity" />
         <activity android:name=".animator.XfermodeActivity" />
 
-        <activity android:name=".SQLDataBase.PrimarySqlite.ApiOperateActivity" />
-        <activity android:name=".SQLDataBase.PrimarySqlite.CreateOrOpenActivity" />
-        <activity android:name=".SQLDataBase.PrimarySqlite.OptimizeActivity" />
-        <activity android:name=".SQLDataBase.PrimarySqlite.SqlOperateActivity" />
-        <activity android:name=".SQLDataBase.searchview.SearchActivity" />
+        <activity android:name=".sqlite.PrimarySqlite.ApiOperateActivity" />
+        <activity android:name=".sqlite.PrimarySqlite.CreateOrOpenActivity" />
+        <activity android:name=".sqlite.PrimarySqlite.OptimizeActivity" />
+        <activity android:name=".sqlite.PrimarySqlite.SqlOperateActivity" />
+        <activity android:name=".sqlite.searchview.SearchActivity" />
 
 
         <activity
@@ -150,26 +150,26 @@
 
 
         <activity
-            android:name=".Activity.LaunchMode.TestAActivity"
+            android:name=".activity.launchmode.TestAActivity"
             android:launchMode="standard" />
         <activity
-            android:name=".Activity.LaunchMode.TestBActivity"
+            android:name=".activity.launchmode.TestBActivity"
             android:launchMode="standard" />
         <activity
-            android:name=".Activity.LaunchMode.TestCActivity"
+            android:name=".activity.launchmode.TestCActivity"
             android:launchMode="standard" />
         <activity
-            android:name=".Activity.LaunchMode.TestDActivity"
+            android:name=".activity.launchmode.TestDActivity"
             android:launchMode="standard" />
 
 
         <service
-            android:name=".AIDL.MyService"
+            android:name=".aidl.MyService"
             android:process="com.xu.remote" />
-        <activity android:name=".Activity.startActivityForActivity.OtherActivity" />
+        <activity android:name=".activity.startactivity.OtherActivity" />
 
         <service
-            android:name=".AIDL.AIDLService"
+            android:name=".aidl.AIDLService"
             android:exported="true">
             <intent-filter>
                 <action android:name="com.lypeer.aidl" />
@@ -179,7 +179,7 @@
 
 
         <service
-            android:name=".Messager.MessagerService"
+            android:name=".activity.messager.MessagerService"
             android:process=":remote">
             <intent-filter>
                 <action android:name="com.hansheng.MessengerService.launch" />
@@ -205,10 +205,10 @@
             android:enabled="true" />
 
         <activity android:name=".bluetooth.ChatActivity" />
-        <activity android:name=".Note.activity.EditNoteActivity" />
+        <activity android:name=".note.activity.EditNoteActivity" />
 
-        <activity android:name=".WebService.CityActivity" />
-        <activity android:name=".WebService.WeatherActivity" />
+        <activity android:name=".webservice.CityActivity" />
+        <activity android:name=".webservice.WeatherActivity" />
 
         <service android:name=".service.MsgService">
             <!--<intent-filter>-->
@@ -224,7 +224,7 @@
             android:name=".service.MyService"
             android:process=":remote" />
 
-        <activity android:name=".Http.OkHttp.OkHttpPostActivity" />
+        <activity android:name=".http.OkHttp.OkHttpPostActivity" />
 
 
         <receiver
@@ -240,8 +240,8 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".Media.music.MusicService" />
-        <service android:name=".Media.music.musicplayer.MusicService1" />
+        <service android:name=".media.music.MusicService" />
+        <service android:name=".media.music.musicplayer.MusicService1" />
         <service
             android:name=".systemclean.service.CleanerService"
             android:exported="false" />

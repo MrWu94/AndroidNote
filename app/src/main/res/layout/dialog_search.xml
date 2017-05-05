@@ -11,7 +11,7 @@
         android:background="@color/colorPrimaryDark"
         android:padding="10dp">
 
-        <com.hansheng.studynote.SQLDataBase.searchview.SearchView
+        <com.hansheng.studynote.sqlite.searchview.SearchView
             android:id="@+id/sv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

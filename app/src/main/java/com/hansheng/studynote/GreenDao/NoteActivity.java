@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.hansheng.greendao.Note;
 import com.hansheng.greendao.NoteDao;
 import com.hansheng.studynote.R;
-import com.hansheng.studynote.StudyApplication;
+import com.hansheng.studynote.application.StudyApplication;
 
 import java.text.DateFormat;
 import java.util.Date;

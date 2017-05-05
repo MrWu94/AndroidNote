@@ -1,6 +1,6 @@
 package com.hansheng.studynote.customview;
 
-import com.hansheng.studynote.Activity.BaseActivity;
+import com.hansheng.studynote.activity.BaseActivity;
 import com.hansheng.studynote.R;
 
 /**

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.hansheng.studynote.ImageViewandDrawable.CustomViewImage.VideoImageView
+    <com.hansheng.studynote.imageordrawable.CustomViewImage.VideoImageView
         style="@style/MatchMatch"
         android:background="@drawable/zhangjinxuan" />
 
