@@ -1,5 +1,5 @@
 // IMyInterface.aidl
-package com.hansheng.studynote.service;
+package com.hansheng.studynote.ui.service;
 
 // Declare any non-default types here with import statements
 

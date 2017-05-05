@@ -1,6 +1,6 @@
 // BookManager.aidl
-package com.hansheng.studynote.service;
-import com.hansheng.studynote.service.Book;
+package com.hansheng.studynote.ui.service;
+import com.hansheng.studynote.ui.service.Book;
 
 // Declare any non-default types here with import statements
 
