@@ -13,8 +13,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.hansheng.studynote.R;
-import com.hansheng.studynote.service.Book;
-import com.hansheng.studynote.service.BookManager;
+import com.hansheng.studynote.ui.service.Book;
+import com.hansheng.studynote.ui.service.BookManager;
 
 import java.util.List;
 

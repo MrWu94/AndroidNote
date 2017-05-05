@@ -5,7 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
-import com.hansheng.studynote.activity.BaseActivity;
+import com.hansheng.studynote.ui.activity.BaseActivity;
 import com.hansheng.studynote.R;
 
 import java.util.ArrayList;

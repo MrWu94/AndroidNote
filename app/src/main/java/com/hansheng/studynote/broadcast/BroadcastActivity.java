@@ -15,8 +15,7 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 
 import com.hansheng.studynote.R;
-import com.hansheng.studynote.service.*;
-import com.hansheng.studynote.service.MsgService;
+import com.hansheng.studynote.ui.service.MsgService;
 
 import java.util.List;
 

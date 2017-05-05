@@ -11,7 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.hansheng.studynote.R;
-import com.hansheng.studynote.service.IMyInterface;
+import com.hansheng.studynote.ui.service.IMyInterface;
 
 /**
  * Created by hansheng on 16-10-24.

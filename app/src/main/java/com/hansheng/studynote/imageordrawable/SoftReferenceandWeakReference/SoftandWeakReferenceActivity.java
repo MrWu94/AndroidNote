@@ -3,7 +3,7 @@ package com.hansheng.studynote.imageordrawable.SoftReferenceandWeakReference;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-import com.hansheng.studynote.activity.BaseActivity;
+import com.hansheng.studynote.ui.activity.BaseActivity;
 
 import java.lang.ref.SoftReference;
 import java.util.HashMap;

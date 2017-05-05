@@ -5,7 +5,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
-import com.hansheng.studynote.activity.BaseActivity;
+import com.hansheng.studynote.ui.activity.BaseActivity;
 import com.hansheng.studynote.R;
 
 import butterknife.Bind;

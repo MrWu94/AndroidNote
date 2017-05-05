@@ -10,7 +10,7 @@ import android.util.Log;
 import android.widget.RadioButton;
 
 import com.hansheng.studynote.R;
-import com.hansheng.studynote.widget.BActivity;
+import com.hansheng.studynote.ui.widget.BActivity;
 
 import java.util.List;
 

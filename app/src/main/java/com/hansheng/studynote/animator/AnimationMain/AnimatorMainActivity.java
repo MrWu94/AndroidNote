@@ -3,7 +3,7 @@ package com.hansheng.studynote.animator.AnimationMain;
 
 import android.view.View;
 
-import com.hansheng.studynote.activity.BaseActivity;
+import com.hansheng.studynote.ui.activity.BaseActivity;
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.animator.AnimatorSetActivity;
 import com.hansheng.studynote.animator.ObjectAnimActivity;

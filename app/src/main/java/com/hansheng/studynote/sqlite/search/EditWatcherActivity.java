@@ -4,7 +4,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
-import com.hansheng.studynote.activity.BaseActivity;
+import com.hansheng.studynote.ui.activity.BaseActivity;
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.inject.OnClick;
 

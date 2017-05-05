@@ -10,10 +10,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.hansheng.studynote.R;
-import com.hansheng.studynote.fragment.ListFragement.Fragment1;
-import com.hansheng.studynote.fragment.ListFragement.Fragment2;
+import com.hansheng.studynote.ui.fragment.ListFragement.Fragment1;
+import com.hansheng.studynote.ui.fragment.ListFragement.Fragment2;
 import com.hansheng.studynote.viewpager.fragmentpageradapter.MyFragmentPagerAdapter;
-import com.hansheng.studynote.viewpager.fragmentpagerstagepager.MyFragmentPagerAdapter2;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -6,7 +6,7 @@ import android.os.IBinder;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.hansheng.studynote.service.IMyInterface;
+import com.hansheng.studynote.ui.service.IMyInterface;
 
 /**
  * Created by hansheng on 16-10-24.

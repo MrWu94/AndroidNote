@@ -7,8 +7,8 @@ import android.os.RemoteException;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.hansheng.studynote.service.Book;
-import com.hansheng.studynote.service.BookManager;
+import com.hansheng.studynote.ui.service.Book;
+import com.hansheng.studynote.ui.service.BookManager;
 
 import java.util.ArrayList;
 import java.util.List;

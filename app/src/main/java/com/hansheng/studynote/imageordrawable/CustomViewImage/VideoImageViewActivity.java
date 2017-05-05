@@ -1,6 +1,6 @@
 package com.hansheng.studynote.imageordrawable.CustomViewImage;
 
-import com.hansheng.studynote.activity.BaseActivity;
+import com.hansheng.studynote.ui.activity.BaseActivity;
 import com.hansheng.studynote.R;
 
 /**

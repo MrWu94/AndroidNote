@@ -6,14 +6,14 @@
 
     <fragment
         android:id="@+id/fragment1"
-        android:name="com.hansheng.studynote.fragment.fragment"
+        android:name="com.hansheng.studynote.ui.fragment.fragment"
         android:layout_width="0dip"
         android:layout_height="match_parent"
         android:layout_weight="1" />
 
     <fragment
         android:id="@+id/fragment2"
-        android:name="com.hansheng.studynote.fragment.fragment1"
+        android:name="com.hansheng.studynote.ui.fragment.fragment1"
         android:layout_width="0dip"
         android:layout_height="match_parent"
         android:layout_weight="1" />

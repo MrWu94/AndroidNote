@@ -3,7 +3,7 @@ package com.hansheng.studynote.sqlite;
 import android.util.Log;
 import android.view.View;
 
-import com.hansheng.studynote.activity.BaseActivity;
+import com.hansheng.studynote.ui.activity.BaseActivity;
 import com.hansheng.studynote.R;
 
 import java.util.List;

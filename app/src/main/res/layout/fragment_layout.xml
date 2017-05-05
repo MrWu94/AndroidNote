@@ -14,7 +14,7 @@
 
     <fragment
         android:id="@+id/flip_text_view_fragment"
-        android:name="com.hansheng.studynote.activity.filp.demo.FlipTextViewFragment"
+        android:name="com.hansheng.studynote.ui.activity.filp.demo.FlipTextViewFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

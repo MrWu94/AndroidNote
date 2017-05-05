@@ -3,7 +3,7 @@ package com.hansheng.studynote.imageordrawable.SelectorDrawable;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import com.hansheng.studynote.activity.BaseActivity;
+import com.hansheng.studynote.ui.activity.BaseActivity;
 import com.hansheng.studynote.R;
 
 import butterknife.Bind;

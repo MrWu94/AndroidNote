@@ -11,7 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
-import com.hansheng.studynote.activity.BaseActivity;
+import com.hansheng.studynote.ui.activity.BaseActivity;
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.dialog.NoFullScreenActivity.NoFullScreenActivity;
 import com.hansheng.studynote.dialog.progress.CustomDialog;
