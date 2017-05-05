@@ -11,7 +11,7 @@
         android:id="@+id/img_album"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_launcher" />
+        android:background="@mipmap/ic_launcher" />
 
     <Button
         android:id="@+id/btn_camera"

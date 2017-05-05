@@ -17,7 +17,7 @@
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher" />
+            android:src="@mipmap/ic_launcher" />
     </FrameLayout>
 
     <com.hansheng.studynote.Listview.RecyclerView.CustomRecyclerView.MyRecyclerView

@@ -120,7 +120,7 @@ public class MySurfaceView extends SurfaceView implements Runnable, SurfaceHolde
                 m_circle_r++;
             }
             Bitmap pic = ((BitmapDrawable) getResources().getDrawable(
-                    R.drawable.ic_launcher)).getBitmap();
+                    R.mipmap.ic_launcher)).getBitmap();
             mCanvas.drawBitmap(pic, 0, 0, paint);
             for (int i = 0; i < 5; i++)
                 for (int j = 0; j < 8; j++)

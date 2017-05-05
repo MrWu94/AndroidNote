@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <level-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:drawable="@drawable/ic_launcher"
+        android:drawable="@mipmap/ic_launcher"
         android:maxLevel="10"
         android:minLevel="0" />
     <item
-        android:drawable="@drawable/ic_launcher"
+        android:drawable="@mipmap/ic_launcher"
         android:maxLevel="50"
         android:minLevel="10" />
     <item
-        android:drawable="@drawable/ic_launcher"
+        android:drawable="@mipmap/ic_launcher"
         android:maxLevel="80"
         android:minLevel="50" />
     <item
-        android:drawable="@drawable/ic_launcher"
+        android:drawable="@mipmap/ic_launcher"
         android:maxLevel="100"
         android:minLevel="80" />
 </level-list>

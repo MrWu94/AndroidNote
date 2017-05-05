@@ -99,7 +99,7 @@
             <Button
                 android:id="@+id/clear_button"
                 android:layout_margin="8dip"
-                android:background="@drawable/btn_normal_green"
+                android:background="@drawable/selector_btn_normal_green"
                 android:textColor="@color/white"
                 android:textSize="@dimen/text_size_large"
                 android:layout_width="match_parent"

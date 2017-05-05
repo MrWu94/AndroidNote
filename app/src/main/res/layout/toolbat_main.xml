@@ -9,7 +9,7 @@
         android:id="@+id/id_toolbar"
         app:title="App Title"
         app:subtitle="Sub Title"
-        app:navigationIcon="@drawable/ic_launcher"
+        app:navigationIcon="@mipmap/ic_launcher"
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:layout_width="match_parent"

@@ -59,11 +59,11 @@ public class NotifactionActivity extends AppCompatActivity {
                 //自定义下拉视图，比如下载软件时，显示的进度条。
                 Notification notification = new Notification();
 
-                notification.icon = R.drawable.ic_launcher;
+                notification.icon = R.mipmap.ic_launcher;
                 notification.tickerText = "Custom!";
 
                 RemoteViews contentView = new RemoteViews(getPackageName(), R.layout.notifaction_layout);
-                contentView.setImageViewResource(R.id.image, R.drawable.ic_launcher);
+                contentView.setImageViewResource(R.id.image, R.mipmap.ic_launcher);
                 contentView.setTextViewText(R.id.text, "Hello, this message is in a custom expanded view");
                 notification.contentView = contentView;
 
@@ -80,7 +80,7 @@ public class NotifactionActivity extends AppCompatActivity {
             public void onClick(View v) {
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext());
 
-                builder.setSmallIcon(R.drawable.ic_launcher);
+                builder.setSmallIcon(R.mipmap.ic_launcher);
                 builder.setContentTitle("My notification");
                 builder.setContentText("Hello World!");
 // 设置通知的优先级
@@ -99,7 +99,7 @@ public class NotifactionActivity extends AppCompatActivity {
             public void onClick(View v) {
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplication());
 
-                builder.setSmallIcon(R.drawable.ic_launcher);
+                builder.setSmallIcon(R.mipmap.ic_launcher);
                 builder.setContentTitle("My notification");
                 builder.setContentText("Hello World!");
 

@@ -28,7 +28,7 @@ public class FragmentTabHostActivity extends AppCompatActivity {
     private int mImages[] = {
             R.drawable.selector_tab_counter,
             R.drawable.selector_tab_assistant,
-            R.drawable.tab_contest,
+            R.drawable.selector_tab_contest,
             R.drawable.selector_tab_center
     };
 

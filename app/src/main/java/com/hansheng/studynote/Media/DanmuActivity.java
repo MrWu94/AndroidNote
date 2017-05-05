@@ -407,7 +407,7 @@ public class DanmuActivity extends Activity implements View.OnClickListener {
 
     private void addDanmaKuShowTextAndImage(boolean islive) {
         BaseDanmaku danmaku = mContext.mDanmakuFactory.createDanmaku(BaseDanmaku.TYPE_SCROLL_RL);
-        Drawable drawable = getResources().getDrawable(R.drawable.ic_launcher);
+        Drawable drawable = getResources().getDrawable(R.mipmap.ic_launcher);
         drawable.setBounds(0, 0, 100, 100);
         SpannableStringBuilder spannable = createSpannable(drawable);
         danmaku.text = spannable;

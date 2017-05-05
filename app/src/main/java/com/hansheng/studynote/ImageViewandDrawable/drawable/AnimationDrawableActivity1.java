@@ -22,7 +22,7 @@ public class AnimationDrawableActivity1 extends AppCompatActivity {
 
         setContentView(R.layout.animationdrawable_main);
         imageView = (ImageView) findViewById(R.id.imageView_animation1);
-        imageView.setBackgroundResource(R.drawable.ic_launcher);
+        imageView.setBackgroundResource(R.mipmap.ic_launcher);
 
     }
     public void myClickHandler(View targetButton){

@@ -30,8 +30,8 @@ public class LActivity extends AppCompatActivity {
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void anim1(View view) {
         ImageView imageView = (ImageView) view;
-        AnimatedVectorDrawable tickToCross = (AnimatedVectorDrawable) getDrawable(R.drawable.path_tick2cross_anim);
-        AnimatedVectorDrawable crossToTick = (AnimatedVectorDrawable) getDrawable(R.drawable.path_tick2cross_anim);
+        AnimatedVectorDrawable tickToCross = (AnimatedVectorDrawable) getDrawable(R.drawable.path_tick_cross_anim);
+        AnimatedVectorDrawable crossToTick = (AnimatedVectorDrawable) getDrawable(R.drawable.path_tick_cross_anim);
         AnimatedVectorDrawable animDrawable = isTick1 ? crossToTick : tickToCross;
         imageView.setImageDrawable(animDrawable);
         if (animDrawable != null) {

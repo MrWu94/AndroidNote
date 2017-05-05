@@ -229,7 +229,7 @@
 
         <receiver
             android:name=".widget.MyAppWidgetProvider"
-            android:icon="@drawable/ic_launcher">
+            android:icon="@mipmap/ic_launcher">
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/appwidget_provider_info" />

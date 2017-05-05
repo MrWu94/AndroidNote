@@ -38,7 +38,7 @@ public class MyAppWidgetProvider extends AppWidgetProvider {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    Bitmap srcBitmap= BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_launcher);
+                    Bitmap srcBitmap= BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_launcher);
                     for(int i=0;i<20;i++){
                         float degree=(i*90)%360;
                         mRemoteViews.setImageViewBitmap(R.id.imageView1,rotateBitmap(context,srcBitmap,degree));

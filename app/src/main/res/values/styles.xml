@@ -163,7 +163,7 @@
         <item name="android:button">@null</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:background">@color/transparent</item>
-        <item name="android:drawableRight">@drawable/checkbox_selector</item>
+        <item name="android:drawableRight">@drawable/selector_checkbox</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/font_black_2</item>
     </style>
@@ -175,7 +175,7 @@
         <item name="android:button">@null</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:background">@color/transparent</item>
-        <item name="android:drawableLeft">@drawable/checkbox_selector</item>
+        <item name="android:drawableLeft">@drawable/selector_checkbox</item>
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/font_black_2</item>
     </style>
@@ -205,7 +205,7 @@
         <item name="android:windowBackground">@drawable/dialog_bj_hint</item>
     </style>
     <style name="ColdStartTheme" >
-        <item name="android:windowBackground">@drawable/cold_start_bg</item>
+        <item name="android:windowBackground">@drawable/selector_cold_start_bg</item>
     </style>
 
     <style name="dialog" parent="@android:style/Theme.Dialog">

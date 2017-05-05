@@ -118,7 +118,7 @@ public class DialogActivity extends BaseActivity implements DialogFragmentDemo.L
     }
 
     private void dialog1() {
-        Dialog dialog = new AlertDialog.Builder(this).setTitle("对话框").setIcon(R.drawable.ic_launcher)
+        Dialog dialog = new AlertDialog.Builder(this).setTitle("对话框").setIcon(R.mipmap.ic_launcher)
                 .setNegativeButton("删除", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {

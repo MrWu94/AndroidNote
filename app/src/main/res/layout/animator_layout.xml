@@ -53,7 +53,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_centerInParent="true"
-        android:background="@drawable/ic_launcher"
+        android:background="@mipmap/ic_launcher"
         android:contentDescription="@null" />
 
 </RelativeLayout>

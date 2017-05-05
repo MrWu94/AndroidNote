@@ -20,6 +20,6 @@
         android:id="@+id/img_display"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" />
+        android:src="@mipmap/ic_launcher" />
 
 </LinearLayout>

@@ -18,7 +18,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" />
+        android:src="@mipmap/ic_launcher" />
 
     <master.flame.danmaku.ui.widget.DanmakuView
         android:id="@+id/sv_danmaku"

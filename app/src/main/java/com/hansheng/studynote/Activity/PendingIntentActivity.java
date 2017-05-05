@@ -24,7 +24,7 @@ public class PendingIntentActivity extends AppCompatActivity {
     }
     public void start(View view){
         Notification notification=new Notification();
-        notification.icon=R.drawable.ic_launcher;
+        notification.icon=R.mipmap.ic_launcher;
         notification.tickerText="这是一条信息";
         notification.defaults= Notification.DEFAULT_SOUND;
         notification.when=10L;
@@ -39,7 +39,7 @@ public class PendingIntentActivity extends AppCompatActivity {
         builder.setContentInfo("补充内容");
         builder.setContentText("主内容区");
         builder.setContentTitle("通知标题");
-        builder.setSmallIcon(R.drawable.ic_launcher);
+        builder.setSmallIcon(R.mipmap.ic_launcher);
         builder.setTicker("新消息");
         builder.setAutoCancel(true);
         builder.setWhen(System.currentTimeMillis());

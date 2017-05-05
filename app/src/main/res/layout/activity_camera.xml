@@ -50,7 +50,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dip"
-        android:background="@drawable/btn_shutter_background" />
+        android:background="@drawable/selector_btn_shutter_background" />
 
 
 </RelativeLayout>

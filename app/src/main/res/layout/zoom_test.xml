@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-        android:src="@drawable/btn_pause"/>
+        android:src="@drawable/selector_btn_pause"/>
 
 
     <TextView
@@ -35,6 +35,6 @@
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         android:background="@android:color/transparent"
-        android:src="@drawable/btn_pause"/>
+        android:src="@drawable/selector_btn_pause"/>
 
 </LinearLayout>

@@ -1,5 +1,5 @@
 <resources xmlns:xliff="http://schemas.android.com/tools">
-    <string name="app_name">StudyNote</string>
+    <string name="app_name">AndroidNote</string>
     <string name="hello_world">滑动</string>
 
     <string name="text_bluetooth_off">Bluetooth is Off</string>
