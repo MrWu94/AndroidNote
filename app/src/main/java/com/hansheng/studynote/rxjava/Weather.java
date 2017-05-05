@@ -1,4 +1,4 @@
-package com.hansheng.studynote.RxJava;
+package com.hansheng.studynote.rxjava;
 
 /**
  * Created by hansheng on 2016/6/30.

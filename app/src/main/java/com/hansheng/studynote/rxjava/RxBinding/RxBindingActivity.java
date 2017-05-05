@@ -1,4 +1,4 @@
-package com.hansheng.studynote.RxJava.RxBinding;
+package com.hansheng.studynote.rxjava.RxBinding;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

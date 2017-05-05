@@ -1,4 +1,4 @@
-package com.hansheng.studynote.RxJava;
+package com.hansheng.studynote.rxjava;
 
 import android.content.Context;
 import android.os.Bundle;

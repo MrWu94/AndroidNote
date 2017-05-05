@@ -1,4 +1,4 @@
-package com.hansheng.studynote.RxJava;
+package com.hansheng.studynote.rxjava;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
