@@ -1,4 +1,10 @@
 
+这些文章是记录我学习过的,总结出来的文章,文章内容难免有错误以及没有标注来源,如果侵犯了作者了权利,我将备注来源,或者删除文章,
+这些文章都可以转载,但请尊重作者的劳动成果,注明来源,我将感激不尽.
+
+由于本身作者的知识有限,文章中的总结难免会有错误,如果可以,可以提issue或者联系我本人,本人尽快解决.
+
+
 
 ## Android 开发录
 
@@ -129,3 +135,7 @@
 [线程池参数的最佳讲解](https://github.com/fuqinwu/AndroidNote/wiki/%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8F%82%E6%95%B0%E7%9A%84%E6%9C%80%E4%BD%B3%E8%AE%B2%E8%A7%A3)
 
 [解决Canvas的drawText绘制文本是不会自动换行的-staticlayout](https://github.com/fuqinwu/AndroidNote/wiki/%E8%A7%A3%E5%86%B3Canvas%E7%9A%84drawText%E7%BB%98%E5%88%B6%E6%96%87%E6%9C%AC%E6%98%AF%E4%B8%8D%E4%BC%9A%E8%87%AA%E5%8A%A8%E6%8D%A2%E8%A1%8C%E7%9A%84-staticlayout)
+
+
+
+[▲ 回到顶部](#top)
