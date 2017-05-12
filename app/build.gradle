@@ -154,7 +154,6 @@ android {
 
     }
 
-
 }
 
 andResGuard{
@@ -322,7 +321,7 @@ task findbugs(type: FindBugs) {
 //    all*.exclude group: 'org.hamcrest', module: 'hamcrest-core'
 //}
 
-def SUPPORT_VERSION = "24.2.0"
+def SUPPORT_VERSION = "25.0.0"
 
 def aaVersion = '3.3.2';
 dependencies {

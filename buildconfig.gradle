@@ -1,17 +1,17 @@
 // model config file ,make app build.gradle clean
 ext {
     android = [
-            AndroidBuildToolsVersion : "24.0.3",
+            AndroidBuildToolsVersion : "25.0.0",
             AndridMinSdkVersion : 21,
-            AndroidTargetSdkVersion : 24,
-            AndroidCompileSdkVersion : 24,
+            AndroidTargetSdkVersion : 25,
+            AndroidCompileSdkVersion : 25,
             applicationId : "com.hansheng.studynote",
             versionCode:1,
             versionName:"1.0"
     ]
 
     //LibrariesVersion
-    googlesupportVersion="24.2.0"
+    googlesupportVersion="25.0.0"
 
     goodleDependencies =[
             appcompat_v7: "com.android.support:appcompat-v7:${googlesupportVersion}",
