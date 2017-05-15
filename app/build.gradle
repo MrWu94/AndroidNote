@@ -68,7 +68,7 @@ android {
             def outputFile = output.outputFile
             if (outputFile != null && outputFile.name.endsWith('.apk')) {
                 //这里修改apk文件名
-                def fileName = outputFile.name.replace("app","${defaultConfig.applicationId }_${defaultConfig.versionName}_${releaseTime() }")
+                def fileName = outputFile.name.replace("app", "${defaultConfig.applicationId}_${defaultConfig.versionName}_${releaseTime()}")
                 output.outputFile = new File(outputFile.parent, fileName)
             }
         }
@@ -156,7 +156,7 @@ android {
 
 }
 
-andResGuard{
+andResGuard {
     // mappingFile = file("./resource_mapping.txt")
     mappingFile = null
     // 当你使用v2签名的时候，7zip压缩是无法生效的。
@@ -322,60 +322,68 @@ task findbugs(type: FindBugs) {
 //}
 
 def SUPPORT_VERSION = "25.0.0"
-
 def aaVersion = '3.3.2';
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     def googleDependencies = rootProject.ext.goodleDependencies
-    def otherDependencies = rootProject.ext.otherDependdencies
+    def otherDependencies = rootProject.ext.otherDependencies
     compile googleDependencies.appcompat_v7
-    compile 'com.android.support:recyclerview-v7:' + SUPPORT_VERSION
-    compile 'com.android.support:design:' + SUPPORT_VERSION
+    compile googleDependencies.recyclerview_v7
+    compile googleDependencies.cardview_v7
+    compile googleDependencies.design
+
+    compile otherDependencies.butterknife
+    compile otherDependencies.gson
+    compile otherDependencies.retrofit_rxjava
+    compile otherDependencies.retrofit_2_0
+    compile otherDependencies.retrofit_converter_gson
+    compile otherDependencies.picasso
+    compile otherDependencies.glide
+
+    debugCompile otherDependencies.leakcanary_debug
+    releaseCompile otherDependencies.leakcanary_release
+    testCompile otherDependencies.leakcanary_test
+
+    compile otherDependencies.eventbus
+    compile otherDependencies.greendao
+
+    compile otherDependencies.okhttp_logging_interceptor
+    compile otherDependencies.okhttp
+
+    compile otherDependencies.timber
+    compile otherDependencies.hawk
+
+    compile otherDependencies.rxjava
+    compile otherDependencies.rxandroid
+
+    compile otherDependencies.stetho
+    compile otherDependencies.stetho_okhttp
+
     apt "org.androidannotations:androidannotations:${aaVersion}"
     compile "org.androidannotations:androidannotations:${aaVersion}"
-    compile 'com.jakewharton:butterknife:6.0.0'
+
     compile project(':customview')
-//    compile project(':animation')
+    compile project(':hanshenghttpclient')
+    compile project(':simplenet')
+    compile project(':animation')
     //module和aar只能有一个
     compile(name: 'animation-release', ext: 'aar')
     compile 'com.jiechic.library:xUtils:2.6.14'
-    compile 'com.google.code.gson:gson:2.3.1'
-    compile 'io.reactivex:rxjava:1.1.0'
-    compile 'io.reactivex:rxandroid:1.1.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0-beta4'
-    compile 'com.squareup.retrofit2:retrofit:2.0.0-beta4'
-    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta4'
-    compile 'com.squareup.okhttp3:okhttp:3.3.1'
-    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
-    compile 'com.jakewharton:butterknife:7.0.1'
-    compile 'org.greenrobot:eventbus:3.0.0'
-    compile 'org.greenrobot:greendao:2.2.0'
+
     provided 'org.projectlombok:lombok:1.16.6'
-    compile 'com.squareup.picasso:picasso:2.4.0'
+
     compile 'com.getbase:floatingactionbutton:1.7.0'
-    compile 'com.android.support:cardview-v7:' + SUPPORT_VERSION
+
     compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 
     compile 'com.eftimoff:android-pathview:1.0.8@aar'
-    compile project(':hanshenghttpclient')
-    compile project(':simplenet')
+
     compile 'com.github.castorflex.smoothprogressbar:library-circular:1.0.0'
     configurations {
         all*.exclude module: 'android'
     }
     compile 'com.github.ctiao:DanmakuFlameMaster:0.5.0'
     // Image
-    compile 'com.github.bumptech.glide:glide:3.7.0'
-
-
-    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
-    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
-    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
-
-
-    compile 'com.jakewharton.timber:timber:4.3.1'
-
-    compile 'com.orhanobut:hawk:2.0.1'
 
     // If you want to bind to Android-specific lifecycles
     compile 'com.trello:rxlifecycle-android:1.0'
@@ -383,8 +391,6 @@ dependencies {
 // If you want pre-written Activities and Fragments you can subclass as providers
     compile 'com.trello:rxlifecycle-components:1.0'
 
-    compile 'com.facebook.stetho:stetho:1.4.1'
-    compile 'com.facebook.stetho:stetho-okhttp3:1.4.1'
 
     compile 'com.jakewharton.rxbinding:rxbinding:1.0.0'
 
