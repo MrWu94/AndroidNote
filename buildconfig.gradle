@@ -48,7 +48,10 @@ ext {
             timber:"com.jakewharton.timber:timber:4.3.1",
             hawk:"com.orhanobut:hawk:2.0.1",
             stetho :"com.facebook.stetho:stetho:1.4.1",
-            stetho_okhttp :"com.facebook.stetho:stetho-okhttp3:1.4.1"
+            stetho_okhttp :"com.facebook.stetho:stetho-okhttp3:1.4.1",
+            rxlifecycle:"com.trello:rxlifecycle-android:1.0",
+            rxlifecycle_components:"com.trello:rxlifecycle-components:1.0",
+            rxbinding:"com.jakewharton.rxbinding:rxbinding:1.0.0"
     ]
 }
 

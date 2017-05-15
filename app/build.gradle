@@ -358,6 +358,17 @@ dependencies {
 
     compile otherDependencies.stetho
     compile otherDependencies.stetho_okhttp
+    // If you want to bind to Android-specific lifecycles
+    compile otherDependencies.rxlifecycle
+    // If you want pre-written Activities and Fragments you can subclass as providers
+    compile otherDependencies.rxlifecycle_components
+    compile otherDependencies.rxbinding
+
+    provided 'org.projectlombok:lombok:1.16.6'
+
+    android {
+        useLibrary 'org.apache.http.legacy'
+    }
 
     apt "org.androidannotations:androidannotations:${aaVersion}"
     compile "org.androidannotations:androidannotations:${aaVersion}"
@@ -370,7 +381,6 @@ dependencies {
     compile(name: 'animation-release', ext: 'aar')
     compile 'com.jiechic.library:xUtils:2.6.14'
 
-    provided 'org.projectlombok:lombok:1.16.6'
 
     compile 'com.getbase:floatingactionbutton:1.7.0'
 
@@ -385,15 +395,6 @@ dependencies {
     compile 'com.github.ctiao:DanmakuFlameMaster:0.5.0'
     // Image
 
-    // If you want to bind to Android-specific lifecycles
-    compile 'com.trello:rxlifecycle-android:1.0'
-
-// If you want pre-written Activities and Fragments you can subclass as providers
-    compile 'com.trello:rxlifecycle-components:1.0'
-
-
-    compile 'com.jakewharton.rxbinding:rxbinding:1.0.0'
-
     compile 'io.realm:realm-android:0.84.1'
 
     compile 'com.wanjian:sak:0.0.2'
@@ -403,10 +404,6 @@ dependencies {
 
     // LeanCloud 应用内搜索包
     compile('cn.leancloud.android:avoscloud-search:v3.+@aar')
-
-    android {
-        useLibrary 'org.apache.http.legacy'
-    }
 
     compile 'com.melnykov:floatingactionbutton:1.1.0'
 
