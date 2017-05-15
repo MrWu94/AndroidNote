@@ -363,7 +363,6 @@ dependencies {
     // If you want pre-written Activities and Fragments you can subclass as providers
     compile otherDependencies.rxlifecycle_components
     compile otherDependencies.rxbinding
-
     provided 'org.projectlombok:lombok:1.16.6'
 
     android {
@@ -378,7 +377,7 @@ dependencies {
     compile project(':simplenet')
     compile project(':animation')
     //module和aar只能有一个
-    compile(name: 'animation-release', ext: 'aar')
+//    compile(name: 'animation-release', ext: 'aar')
     compile 'com.jiechic.library:xUtils:2.6.14'
 
 
