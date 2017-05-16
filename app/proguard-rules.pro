@@ -325,7 +325,7 @@
 -dontwarn com.squareup.**
 -dontwarn okio.**
 -keep public class org.codehaus.* { *; }
--keep public class java.nio.* { *; }
+#-keep public class java.nio.* { *; }
 
 # OrmLite
 -keepattributes *DatabaseField*
@@ -431,6 +431,50 @@
 -dontwarn uk.org.**
 -dontwarn android.net.http.**
 -dontwarn edu.uci.**
+-dontwarn java.nio.**
+-dontwarn rx.subjects.**
+-dontwarn rx.observables.**
+-dontwarn rx.**
+
+# rxjava
+-keep class rx.schedulers.Schedulers {
+    public static <methods>;
+}
+-keep class rx.schedulers.ImmediateScheduler {
+    public <methods>;
+}
+-keep class rx.schedulers.TestScheduler {
+    public <methods>;
+}
+-keep class rx.schedulers.Schedulers {
+    public static ** test();
+}
+-keepclassmembers class rx.internal.util.unsafe.*ArrayQueue*Field* {
+    long producerIndex;
+    long consumerIndex;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
+    long producerNode;
+    long consumerNode;
+}
+-keep class rx.**
+# Retrofit 2.X
+## https://square.github.io/retrofit/ ##
+
+-dontnote okhttp3.**, okio.**, retrofit2.**, pl.droidsonroids.**,org.**,master.**,io.**,fr.**,edu.**,de.**,com.**,com.hansheng.**
+-dontnote android.net.http.*
+-dontnote org.apache.commons.codec.**
+-dontnote org.apache.http.**
+-keep class com.sun.**
+-dontwarn com.sun.**
+-keep class retrofit2.**
+-keepattributes Signature
+-keepattributes Exceptions
+
+-keepclasseswithmembers class * {
+    @retrofit2.http.* <methods>;
+}
+
 
 # 删除Log http://www.jianshu.com/p/6b663027c371
 -assumenosideeffects class android.util.Log { *; }
