@@ -38,9 +38,7 @@ android {
             moduleName "hello_jni"       //生成的so文件名字，调用C程序的代码中会用到该名字
 //            abiFilters "armeabi", "armeabi-v7a", "x86" //输出指定三种平台下的so库,设置所需要的so库架构
         }
-        jackOptions {
-            enabled true
-        }
+
     }
 
     //构建类型
@@ -151,8 +149,8 @@ android {
     }
 //    设置java版本
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
 
     }
 
@@ -333,6 +331,7 @@ dependencies {
     compile googleDependencies.recyclerview_v7
     compile googleDependencies.cardview_v7
     compile googleDependencies.design
+    compile googleDependencies.paletee_v7
 
     compile otherDependencies.butterknife
     compile otherDependencies.gson
@@ -377,11 +376,10 @@ dependencies {
     compile project(':customview')
     compile project(':hanshenghttpclient')
     compile project(':simplenet')
-    compile project(':animation')
+//    compile project(':animation')
     //module和aar只能有一个
 //    compile(name: 'animation-release', ext: 'aar')
     compile 'com.jiechic.library:xUtils:2.6.14'
-
 
     compile 'com.getbase:floatingactionbutton:1.7.0'
 

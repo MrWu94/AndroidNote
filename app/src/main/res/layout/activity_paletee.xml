@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/zhangjinxuan" />
+
+    <TextView
+        android:id="@+id/tv_vibrant"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="vibrant" />
+
+    <TextView
+        android:id="@+id/tv_dark_vibrant"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="dark vibrant" />
+
+    <TextView
+        android:id="@+id/tv_lighed_vibrant"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Light vibrant" />
+
+    <TextView
+        android:id="@+id/tv_muted_vibrant"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="muted vibrant" />
+
+    <TextView
+        android:id="@+id/tv_dark_muted"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="dark_muted" />
+    <TextView
+        android:id="@+id/tv_light_muted"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="lighte muted" />
+
+
+</LinearLayout>

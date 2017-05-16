@@ -18,7 +18,8 @@ ext {
             design : "com.android.support:design:${googlesupportVersion}",
             support_v4 :"com.android.support:support-v4:${googlesupportVersion}",
             recyclerview_v7: "com.android.support:recyclerview-v7:${googlesupportVersion}",
-            cardview_v7 :"com.android.support:cardview-v7:${googlesupportVersion}"
+            cardview_v7 :"com.android.support:cardview-v7:${googlesupportVersion}",
+            paletee_v7: "com.android.support:palette-v7:${googlesupportVersion}"
     ]
 
     otherDependencies=[
