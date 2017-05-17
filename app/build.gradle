@@ -39,9 +39,6 @@ def gitVersionTag() {
     return version
 }
 
-
-
-
 android {
     def globalConfiguration = rootProject.ext.android
     compileSdkVersion globalConfiguration.AndroidCompileSdkVersion
@@ -399,6 +396,7 @@ dependencies {
     compile googleDependencies.cardview_v7
     compile googleDependencies.design
     compile googleDependencies.paletee_v7
+    compile googleDependencies.preference_v7
 
     compile otherDependencies.butterknife
     compile otherDependencies.gson
