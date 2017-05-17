@@ -6,6 +6,8 @@ apply plugin: 'com.antfortune.freeline'
 apply plugin: 'com.jakewharton.hugo'
 apply plugin: 'tinyPIC'
 apply plugin: 'AndResGuard'
+apply plugin: "build-time-tracker"
+apply plugin: 'com.getkeepsafe.dexcount'
 
 //Groovy 的基本语法
 //方法调用
@@ -16,6 +18,29 @@ apply plugin: 'AndResGuard'
 def releaseTime() {
     return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
 }
+def gitVersionCode() {
+    def cmd = 'git rev-list HEAD --first-parent --count'
+    cmd.execute().text.trim().toInteger()
+}
+
+def gitVersionTag() {
+    def cmd = 'git describe --tags'
+    def version = cmd.execute().text.trim()
+
+    def pattern = "-(\\d+)-g"
+    def matcher = version =~ pattern
+
+    if (matcher) {
+        version = version.substring(0, matcher.start()) + "." + matcher[0][1]
+    } else {
+        version = version + ".0"
+    }
+
+    return version
+}
+
+
+
 
 android {
     def globalConfiguration = rootProject.ext.android
@@ -29,8 +54,10 @@ android {
         targetSdkVersion globalConfiguration.AndroidTargetSdkVersion
         multiDexEnabled true
         resConfigs "zh"
-        versionCode globalConfiguration.versionCode
-        versionName globalConfiguration.versionName
+        versionCode gitVersionCode()
+        versionName gitVersionTag()
+//        versionCode = Integer.parseInt("git rev-list --count HEAD".execute([], project.rootDir).text.trim())
+//        versionName = project.version.toString().replace('+', '-')
         //ADD THIS LINE:
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
@@ -61,6 +88,12 @@ android {
 //            consumerProguardFiles 'consumer-proguard-rules.pro'
 
 
+        }
+    }
+
+    productFlavors{
+        dev{
+            minSdkVersion=21
         }
     }
 
@@ -148,13 +181,47 @@ android {
         }
     }
 //    设置java版本
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_7
-        targetCompatibility JavaVersion.VERSION_1_7
-
-    }
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_7
+//        targetCompatibility JavaVersion.VERSION_1_7
+//
+//    }
 
 }
+buildtimetracker {
+    reporters {
+        csv {
+            output "build/times.csv"
+            append true
+            header false
+        }
+
+        summary {
+            ordered false
+            threshold 50
+            barstyle "unicode"
+        }
+
+        csvSummary {
+            csv "build/times.csv"
+        }
+    }
+}
+dexcount {
+    format = "list"
+    includeClasses = false
+    includeFieldCount = true
+    includeTotalMethodCount = false
+    orderByMethodCount = false
+    verbose = false
+    maxTreeDepth = Integer.MAX_VALUE
+    teamCityIntegration = false
+    enableForInstantRun = false
+    teamCitySlug = null
+    runOnEachAssemble = true
+    maxMethodCount = 64000
+}
+
 
 andResGuard {
     // mappingFile = file("./resource_mapping.txt")
@@ -428,6 +495,17 @@ dependencies {
 //        exclude group: 'com.android.support', module: 'support-v4'
 //        exclude group: 'com.android.support', module: 'support-vector-drawable'
 //    }
+//    compile ('com.facebook.react:react-native:+'){
+//        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+//        exclude group: 'com.android.support', module: 'support-v4'
+//        exclude group: 'com.android.support', module: 'support-v7'
+//    }
+// 对于本地的module也是可以这样处理的：
+
+//    compile(project(':react-native-custom-module')) {
+//        exclude group: 'com.facebook.react', module: 'react-native'
+//    }
+
 }
 apt {
     arguments {

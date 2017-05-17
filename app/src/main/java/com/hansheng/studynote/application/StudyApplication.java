@@ -154,4 +154,12 @@ public class StudyApplication extends Application {
     public SQLiteDatabase getDb() {
         return db;
     }
+
+    @Override
+    protected void attachBaseContext(Context base) {
+        super.attachBaseContext(base);
+        if(BuildConfig.DEBUG){
+
+        }
+    }
 }
