@@ -1,4 +1,4 @@
-package com.hansheng.studynote.systemui;
+package com.hansheng.studynote.material.materialdesign;
 
 import android.annotation.TargetApi;
 import android.content.Intent;
@@ -15,8 +15,8 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.hansheng.studynote.R;
-import com.hansheng.studynote.systemui.adapter.AuthorRecyclerAdapter;
-import com.hansheng.studynote.systemui.bean.AuthorInfo;
+import com.hansheng.studynote.material.materialdesign.adapter.AuthorRecyclerAdapter;
+import com.hansheng.studynote.material.materialdesign.bean.AuthorInfo;
 import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 /**

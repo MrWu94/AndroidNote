@@ -1,4 +1,4 @@
-package com.hansheng.studynote.systemui.toolbar.fullscreen;
+package com.hansheng.studynote.material.materialdesign.toolbar.fullscreen;
 
 import android.os.Build;
 import android.os.Bundle;

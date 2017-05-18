@@ -125,10 +125,10 @@
         <activity android:name=".style.ShapeActivity" />
         <activity android:name=".style.SelectorActivity" />
 
-        <activity android:name=".systemui.BottomDialogActivity" />
-        <activity android:name=".systemui.CardViewActivity" />
-        <activity android:name=".systemui.CollapsingDemoActivity" />
-        <activity android:name=".systemui.BarTabDemoActivity" />
+        <activity android:name=".material.materialdesign.BottomDialogActivity" />
+        <activity android:name=".material.materialdesign.CardViewActivity" />
+        <activity android:name=".material.materialdesign.CollapsingDemoActivity" />
+        <activity android:name=".material.materialdesign.BarTabDemoActivity" />
 
         <activity android:name=".animator.AnimatorSetActivity" />
         <activity android:name=".animator.ObjectAnimActivity" />

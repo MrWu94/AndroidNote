@@ -1,4 +1,4 @@
-package com.hansheng.studynote.systemui.toolbar;
+package com.hansheng.studynote.material.materialdesign.toolbar;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

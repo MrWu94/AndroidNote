@@ -1,4 +1,4 @@
-package com.hansheng.studynote.systemui.adapter;
+package com.hansheng.studynote.material.materialdesign.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;

@@ -1,4 +1,4 @@
-package com.hansheng.studynote.systemui;
+package com.hansheng.studynote.material.materialdesign;
 
 import android.content.Intent;
 import android.os.Bundle;

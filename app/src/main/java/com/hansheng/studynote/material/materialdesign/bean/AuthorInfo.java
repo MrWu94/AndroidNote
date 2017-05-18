@@ -1,4 +1,4 @@
-package com.hansheng.studynote.systemui.bean;
+package com.hansheng.studynote.material.materialdesign.bean;
 
 
 import com.hansheng.studynote.R;

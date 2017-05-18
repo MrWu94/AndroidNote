@@ -1,4 +1,4 @@
-package com.hansheng.studynote.systemui;
+package com.hansheng.studynote.material.materialdesign;
 
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetDialog;
@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.hansheng.studynote.R;
-import com.hansheng.studynote.systemui.adapter.RecyclerItemAdapter;
+import com.hansheng.studynote.material.materialdesign.adapter.RecyclerItemAdapter;
 
 /**
  * Created by hansheng on 16-12-15.

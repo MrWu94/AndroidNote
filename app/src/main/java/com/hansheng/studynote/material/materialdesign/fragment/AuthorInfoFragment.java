@@ -1,4 +1,4 @@
-package com.hansheng.studynote.systemui.fragment;
+package com.hansheng.studynote.material.materialdesign.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,8 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hansheng.studynote.R;
-import com.hansheng.studynote.systemui.adapter.AuthorRecyclerAdapter;
-import com.hansheng.studynote.systemui.bean.AuthorInfo;
+import com.hansheng.studynote.material.materialdesign.adapter.AuthorRecyclerAdapter;
+import com.hansheng.studynote.material.materialdesign.bean.AuthorInfo;
 
 
 /**
