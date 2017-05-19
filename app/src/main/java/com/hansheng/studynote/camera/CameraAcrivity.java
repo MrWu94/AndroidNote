@@ -24,7 +24,7 @@ public class CameraAcrivity extends AppCompatActivity {
         b1=(Button)findViewById(R.id.button);
         iv=(ImageView)findViewById(R.id.imageView);
 
-        b1.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);

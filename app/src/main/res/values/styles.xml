@@ -28,6 +28,9 @@
         <!--<item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>-->
 
     </style>
+    <style name="AppTheme2" parent="android:Theme.Material">
+
+    </style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 

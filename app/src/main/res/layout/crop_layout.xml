@@ -27,12 +27,21 @@
 
             />
     </LinearLayout>
+
     <ImageView
         android:id="@+id/show_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/zhangjinxuan"
+        android:src="@drawable/zhangjinxuan" />
 
-        />
+    <TextView
+        android:id="@+id/tv_evelation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_color_tv"
+        android:elevation="2dp"
+        android:text="确定吗？"
+        android:textSize="20sp"
+    />
 
 </LinearLayout>
