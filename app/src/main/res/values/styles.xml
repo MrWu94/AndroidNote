@@ -28,7 +28,10 @@
         <!--<item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>-->
 
     </style>
+
     <style name="AppTheme2" parent="android:Theme.Material">
+        <item name="android:windowEnterTransition">@transition/changebounds_fadein_together</item>
+        <item name="android:windowExitTransition">@transition/scene3_transition_manager</item>
 
     </style>
 
@@ -44,7 +47,6 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
 
 
     <style name="SwipeBackLayout">
@@ -87,7 +89,6 @@
         <item name="progress_reached_bar_height">1.5dp</item>
         <item name="progress_unreached_bar_height">0.75dp</item>
     </style>
-
 
 
     <!-- 自定义loading dialog -->
@@ -207,7 +208,8 @@
     <style name="AppTheme.Launcher">
         <item name="android:windowBackground">@drawable/dialog_bj_hint</item>
     </style>
-    <style name="ColdStartTheme" >
+
+    <style name="ColdStartTheme">
         <item name="android:windowBackground">@drawable/selector_cold_start_bg</item>
     </style>
 

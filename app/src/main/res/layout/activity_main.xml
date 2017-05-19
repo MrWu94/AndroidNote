@@ -62,6 +62,21 @@
         android:onClick="testCall"
         android:text="Call" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="波纹动画" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="波纹超出边界" />
+
+
     <com.hansheng.studynote.imageordrawable.SelectorDrawable.SelectorButton
         android:id="@+id/btn_selector"
         style="@style/MatchWrap"
