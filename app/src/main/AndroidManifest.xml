@@ -71,7 +71,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".material.permissions.PermissionActivity"
+            android:name=".material.material.ApplayoutActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name"
            >

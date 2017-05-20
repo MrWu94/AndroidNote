@@ -63,18 +63,32 @@
         android:text="Call" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:onClick="revel"
         android:background="?android:attr/selectableItemBackground"
         android:text="波纹动画" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:text="波纹超出边界" />
+
+    <Button
+        android:id="@+id/btn_anim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="anim" />
+    <Button
+        android:id="@+id/btn_anim_reve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="anim" />
 
 
     <com.hansheng.studynote.imageordrawable.SelectorDrawable.SelectorButton

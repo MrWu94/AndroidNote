@@ -1,6 +1,8 @@
 package com.hansheng.studynote.material.permissions;
 
 import android.Manifest;
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -8,6 +10,8 @@ import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.ViewAnimationUtils;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.hansheng.studynote.R;
@@ -24,7 +28,56 @@ public class PermissionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
     }
+
+    public void revel(View view){
+        // previously invisible view
+        Button myView = (Button) findViewById(R.id.btn_anim);
+
+        // get the center for the clipping circle
+        int cx = (myView.getLeft() + myView.getRight()) / 2;
+        int cy = (myView.getTop() + myView.getBottom()) / 2;
+
+        // get the final radius for the clipping circle
+        int finalRadius = Math.max(myView.getWidth(), myView.getHeight());
+
+        // create the animator for this view (the start radius is zero)
+        Animator anim =
+                ViewAnimationUtils.createCircularReveal(myView, cx, cy, 0, finalRadius);
+
+        // make the view visible and start the animation
+        myView.setVisibility(View.VISIBLE);
+        anim.start();
+
+        // previously visible view
+        final Button myView1 = (Button) findViewById(R.id.btn_anim_reve);
+
+        // get the center for the clipping circle
+        int cx1 = (myView1.getLeft() + myView.getRight()) / 2;
+        int cy1 = (myView1.getTop() + myView.getBottom()) / 2;
+
+        // get the initial radius for the clipping circle
+        int initialRadius = myView1.getWidth();
+
+        // create the animation (the final radius is zero)
+        Animator anim1 =
+                ViewAnimationUtils.createCircularReveal(myView1, cx1, cy1, initialRadius, 0);
+
+        // make the view invisible when the animation is done
+        anim1.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                myView1.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        // start the animation
+        anim1.start();
+    }
+
 
     public void testCall(View view) {
         if (ActivityCompat.checkSelfPermission(this,

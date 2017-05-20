@@ -29,7 +29,7 @@
 
     </style>
 
-    <style name="AppTheme2" parent="android:Theme.Material">
+    <style name="AppTheme2" parent="android:Theme.Material.Light">
         <item name="android:windowEnterTransition">@transition/changebounds_fadein_together</item>
         <item name="android:windowExitTransition">@transition/scene3_transition_manager</item>
 
