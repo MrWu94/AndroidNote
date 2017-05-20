@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class AuthorInfo {
 
-    private int portrait = R.mipmap.huge;
+    private int portrait = R.drawable.huge;
 
     private String nickName;
 
@@ -58,7 +58,7 @@ public class AuthorInfo {
             AuthorInfo authorInfo2 = new AuthorInfo();
             authorInfo2.setMotto("爱看书，爱做饭，爱玩手游！");
             authorInfo2.setNickName("葱花妹妹");
-            authorInfo2.setPortrait(R.mipmap.huge);
+            authorInfo2.setPortrait(R.drawable.huge);
             authorInfoList.add(authorInfo2);
 
             AuthorInfo authorInfo3 = new AuthorInfo();

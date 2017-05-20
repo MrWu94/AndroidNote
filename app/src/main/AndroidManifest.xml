@@ -71,7 +71,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".material.material.ApplayoutActivity"
+            android:name=".ui.activity.ActivityTest"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:label="@string/app_name"
            >

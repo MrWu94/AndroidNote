@@ -83,9 +83,14 @@ android {
             applicationIdSuffix '.release' // 设置release时的包名,设置应用 ID
 //            定义库的私有混淆
 //            consumerProguardFiles 'consumer-proguard-rules.pro'
+//            signingConfig signingConfigs.release
 
 
         }
+        debug {
+            applicationIdSuffix ".debug"
+        }
+
     }
 
     productFlavors{
@@ -171,6 +176,7 @@ android {
             //storePassword "your password"
             //keyAlias "your alias"
             //keyPassword "your password"
+            //v2SigningEnabled false
 
             //setting your signing.properties
             //first, add signing.properties to ./app/
