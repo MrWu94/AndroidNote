@@ -88,6 +88,7 @@ android {
 
         }
         debug {
+            minifyEnabled false
             applicationIdSuffix ".debug"
         }
 
@@ -172,11 +173,15 @@ android {
 
         }
         release {
-            //storeFile file("../yourapp.keystore")
+            //storeFile file("../yourapp.jks")
             //storePassword "your password"
             //keyAlias "your alias"
             //keyPassword "your password"
             //v2SigningEnabled false
+
+//            要让构建流程在您要从命令行调用此构建时提示您输入这些密码：
+//            storePassword System.console().readLine("\nKeystore password: ")
+//            keyPassword System.console().readLine("\nKey password: ")
 
             //setting your signing.properties
             //first, add signing.properties to ./app/
@@ -435,6 +440,9 @@ dependencies {
     // If you want pre-written Activities and Fragments you can subclass as providers
     compile otherDependencies.rxlifecycle_components
     compile otherDependencies.rxbinding
+//    provided
+//    指定 Gradle 不与应用的 APK 一起打包的编译时依赖项。如果运行时无需此依赖项，这将有助于缩减 APK 的大小。
+//    您可以将此配置与 JAR 二进制依赖项一起使用，而不能与其他库模块依赖项或 AAR 二进制依赖项一起使用。
     provided 'org.projectlombok:lombok:1.16.6'
 
     android {

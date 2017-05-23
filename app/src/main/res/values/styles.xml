@@ -25,6 +25,7 @@
         <!--<item name="windowNoTitle">true</item>-->
 
         <item name="android:screenOrientation">portrait</item>
+        <item name="android:navigationBarColor">?android:attr/textColorPrimaryInverse</item>
         <!--<item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>-->
 
     </style>
@@ -46,6 +47,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <!-- 欢迎页背景引用刚才写好的 -->
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- <item name="android:windowIsTranslucent">true</item> --> <!-- 透明背景不要了 -->
     </style>
 
 

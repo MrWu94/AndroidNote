@@ -4,9 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    android:padding="10dp">
+    android:orientation="vertical">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+       />
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -45,5 +53,6 @@
         android:src="@mipmap/email_icon"
         app:fabSize="normal"
         app:layout_anchorGravity="right|bottom" />
+
 
 </LinearLayout>

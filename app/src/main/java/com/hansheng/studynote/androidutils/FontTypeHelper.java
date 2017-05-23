@@ -13,6 +13,7 @@ import java.util.Map;
 
 public class FontTypeHelper {
 
+
     private static final Map<String, Typeface> cacheTypefaces = new LinkedHashMap<>();
 
     public static Typeface get(@NonNull Context c, @Nullable String typeFacePath) {
