@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'maven'
+//http://blog.csdn.net/l2show/article/details/48653949
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
@@ -16,6 +17,44 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenLocal()
+    }
+    dependencies{
+        repositories {
+            maven { url 'http://172.17.0.1:8081/nexus/content/repositories/1/' }
+        }
+    }
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            snapshotRepository(url: 'http://172.17.0.1:8081/nexus/content/repositories/snapshots/') {
+                authentication(userName: 'User', password: '123456')
+            }
+
+            repository(url: 'http://192.168.9.190:8081/nexus/content/repositories/jesse/') {
+                authentication(userName: 'User', password: '123456')
+            }
+
+            pom.project {
+                version '1.0.2'
+                artifactId 'animation'
+                groupId 'com.hansehng.android'
+                packaging 'aar'
+                description 'dependences lib'
+            }
+        }
+    }
+}
+
+artifacts {
+    archives file('animation-release.aar')
 }
 
 dependencies {

@@ -31,9 +31,10 @@ allprojects {
         maven {
             url "http://mvn.leancloud.cn/nexus/content/repositories/public"
         }
-        //mavenLocal
+
 
     }
+
     //全局设定编码
     tasks.withType(JavaCompile) {
         options.encoding = "UTF-8"
@@ -45,6 +46,9 @@ allprojects {
     }
 
 }
+
+
+
 defaultTasks 'clean','build'
 
 task clean(type: Delete) {

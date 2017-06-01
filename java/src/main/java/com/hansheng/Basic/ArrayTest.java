@@ -1,6 +1,8 @@
 package com.hansheng.Basic;
 
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -12,7 +14,10 @@ public class ArrayTest {
 
     public static void main(String... args) {
 
-        String str="hello";
+        System.out.println(System.currentTimeMillis());
+        System.out.println(new Date(System.currentTimeMillis()));
+        System.out.println(getCurrentTime());
+        String str = "hello";
         str.length();
         int a[] = {1, 2, 3, 4, 5};
         List list = Arrays.asList(1, 2, 3, 4);
@@ -36,5 +41,12 @@ public class ArrayTest {
             System.out.println("integer3 != integer4");
 
 
+    }
+
+    private static String getCurrentTime() {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy年MM月dd日HH：mm：ss");
+        Date curDate = new Date(System.currentTimeMillis());//获取当前时间
+        String time = formatter.format(curDate);
+        return time;
     }
 }

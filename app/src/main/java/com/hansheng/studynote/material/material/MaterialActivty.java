@@ -1,5 +1,6 @@
 package com.hansheng.studynote.material.material;
 
+import android.app.ActivityManager;
 import android.content.Context;
 import android.content.res.Resources;
 import android.os.Build;
@@ -71,6 +72,8 @@ public class MaterialActivty extends BaseActivity {
         getNavigationBarHeight(this);
         getStatusBarHeight(this);
         SystemClock.sleep(1);
+
+        caculateMemory();
 
     }
 
@@ -147,6 +150,13 @@ public class MaterialActivty extends BaseActivity {
 //        finish();
         System.exit(0);
     }
-
+    private void caculateMemory() {
+        ActivityManager activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
+        ActivityManager.MemoryInfo info = new ActivityManager.MemoryInfo();
+        activityManager.getMemoryInfo(info);
+        Log.i(TAG, "系统剩余内存:" + (info.availMem >> 10) + "k");
+        Log.i(TAG, "系统是否处于低内存运行：" + info.lowMemory);
+        Log.i(TAG, "当系统剩余内存低于" + (info.threshold >> 10) + "k" + "时就看成低内存运行");
+    }
 
 }

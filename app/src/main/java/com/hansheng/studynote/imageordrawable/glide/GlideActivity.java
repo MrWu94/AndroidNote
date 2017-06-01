@@ -35,6 +35,13 @@ public class GlideActivity extends AppCompatActivity {
                 .transform(new GlideCircleTransform(this))
                 .into(imageView);
 
+
+//        Glide.with(this).load("https://avatars0.githubusercontent.com/u/12311938?v=3&s=40")
+//                .placeholder(ic_launcher)
+//                .transform(new GlideCircleTransform(this))
+//                .thumbnail(0.1f)
+//                .into(imageView);
+
         int resourceId = R.mipmap.ic_launcher;
 
         Glide.with(this).load(resourceId).into(imageRec);

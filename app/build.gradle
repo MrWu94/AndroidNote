@@ -18,6 +18,7 @@ apply plugin: 'com.getkeepsafe.dexcount'
 def releaseTime() {
     return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
 }
+
 def gitVersionCode() {
     def cmd = 'git rev-list HEAD --first-parent --count'
     cmd.execute().text.trim().toInteger()
@@ -94,9 +95,9 @@ android {
 
     }
 
-    productFlavors{
-        dev{
-            minSdkVersion=21
+    productFlavors {
+        dev {
+            minSdkVersion = 21
         }
     }
 
@@ -137,7 +138,9 @@ android {
             task.enabled = false
         }
     }
-
+//    不同 Jar 包包含相同文件 （ 路径也相同 ） 的情况还有一种 ，
+//    就是 duplicate files 错误 。 多个 Jar 包包含重复的文件 。
+//    https://stackoverflow.com/questions/31912459/duplicate-lib-file-copied-in-apk-meta-inf-license-txt-error-in-android-studio
     packagingOptions {
         // Java的注释冲突
         exclude 'META-INF/services/javax.annotation.processing.Processor'
@@ -297,7 +300,7 @@ tinyinfo {
     //是否打印日志
     isShowLog = false
 }
-
+//依赖本地arr配置
 repositories {
     flatDir {
         dirs 'aars'
