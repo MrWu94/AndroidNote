@@ -3,22 +3,36 @@ package com.hansheng.studynote.material.material;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.drawable.BitmapDrawable;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.SystemClock;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.widget.Toolbar;
+import android.telephony.TelephonyManager;
 import android.text.format.DateUtils;
 import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hansheng.studynote.R;
 import com.hansheng.studynote.ui.activity.BaseActivity;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.util.UUID;
 
 import butterknife.Bind;
 
@@ -34,6 +48,9 @@ public class MaterialActivty extends BaseActivity {
     TextView tvError;
     @Bind(R.id.ed_login)
     EditText editText;
+
+    private Installation installation;
+    private PopupWindow mPopupWindow;
 
     @Override
     protected int initContentView() {
@@ -74,7 +91,30 @@ public class MaterialActivty extends BaseActivity {
         SystemClock.sleep(1);
 
         caculateMemory();
+        getMacAddress();
+        getIPAddress();
+        getDeviceId();
+        installation = new Installation();
+        installation.id(this);
 
+        findViewById(R.id.btn_popuwindow).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showPopupWindow();
+
+            }
+        });
+
+
+    }
+
+    private void showPopupWindow() {
+        if (mPopupWindow == null) {
+            View contentView = LayoutInflater.from(this).inflate(R.layout.popu_window_content, null);
+            mPopupWindow = new PopupWindow(contentView, LinearLayout.LayoutParams.MATCH_PARENT, 500, true);
+            mPopupWindow.setBackgroundDrawable(new BitmapDrawable());
+        }
+        mPopupWindow.showAtLocation(findViewById(R.id.btn_float), Gravity.BOTTOM, 0, 0);
     }
 
     @Override
@@ -150,6 +190,7 @@ public class MaterialActivty extends BaseActivity {
 //        finish();
         System.exit(0);
     }
+
     private void caculateMemory() {
         ActivityManager activityManager = (ActivityManager) getSystemService(ACTIVITY_SERVICE);
         ActivityManager.MemoryInfo info = new ActivityManager.MemoryInfo();
@@ -157,6 +198,69 @@ public class MaterialActivty extends BaseActivity {
         Log.i(TAG, "系统剩余内存:" + (info.availMem >> 10) + "k");
         Log.i(TAG, "系统是否处于低内存运行：" + info.lowMemory);
         Log.i(TAG, "当系统剩余内存低于" + (info.threshold >> 10) + "k" + "时就看成低内存运行");
+    }
+
+    private void getMacAddress() {
+        WifiManager wifiManager = (WifiManager) getSystemService(WIFI_SERVICE);
+        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+        String mac = wifiInfo.getMacAddress();
+        Log.d(TAG, "getMacAddress: mac=" + mac);
+    }
+
+    private void getIPAddress() {
+        WifiManager wifiManager = (WifiManager) getSystemService(WIFI_SERVICE);
+        WifiInfo wifiInfo = wifiManager.getConnectionInfo();
+        Log.d(TAG, "getIPAddress: ip=" + wifiInfo.getIpAddress());
+        Log.d(TAG, "getIPAddress: format IP=" + intToIpAddress(wifiInfo.getIpAddress()));
+    }
+
+    public static String intToIpAddress(long ipInt) {
+        StringBuffer sb = new StringBuffer();
+        sb.append(ipInt & 0xFF).append(".");
+        sb.append((ipInt >> 8) & 0xFF).append(".");
+        sb.append((ipInt >> 16) & 0xFF).append(".");
+        sb.append((ipInt >> 24) & 0xFF);
+        return sb.toString();
+    }
+
+    private void getDeviceId() {
+        TelephonyManager telephoneManager = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
+        Log.d(TAG, "getDeviceId: deviceId=" + telephoneManager.getDeviceId());
+    }
+
+    public class Installation {
+        private String sID = null;
+        private static final String INSTALLATION = "INSTALLATION";
+
+        public synchronized String id(Context context) {
+            if (sID == null) {
+                File installation = new File(context.getFilesDir(), INSTALLATION);
+                try {
+                    if (!installation.exists())
+                        writeInstallationFile(installation);
+                    sID = readInstallationFile(installation);
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+            }
+            return sID;
+        }
+
+        private String readInstallationFile(File installation) throws IOException {
+            RandomAccessFile f = new RandomAccessFile(installation, "r");
+            byte[] bytes = new byte[(int) f.length()];
+            f.readFully(bytes);
+            f.close();
+            Log.d(TAG, "readInstallationFile: " + new String(bytes));
+            return new String(bytes);
+        }
+
+        private void writeInstallationFile(File installation) throws IOException {
+            FileOutputStream out = new FileOutputStream(installation);
+            String id = UUID.randomUUID().toString();
+            out.write(id.getBytes());
+            out.close();
+        }
     }
 
 }

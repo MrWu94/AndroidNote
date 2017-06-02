@@ -8,13 +8,13 @@
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
-        android:visibility="gone"
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:visibility="gone"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <android.support.design.widget.TextInputLayout
@@ -60,6 +60,13 @@
         android:id="@+id/tv_error"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btn_popuwindow"
+        android:text="弹出popu window"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="?android:attr/selectableItemBackground" />
 
 
 </LinearLayout>
