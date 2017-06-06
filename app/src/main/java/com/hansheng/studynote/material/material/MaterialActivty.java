@@ -7,6 +7,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
+import android.os.Environment;
 import android.os.SystemClock;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -32,6 +33,7 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.util.ArrayList;
 import java.util.UUID;
 
 import butterknife.Bind;
@@ -96,6 +98,14 @@ public class MaterialActivty extends BaseActivity {
         getDeviceId();
         installation = new Installation();
         installation.id(this);
+        Log.d(TAG, "Storge=: " + Environment.getExternalStorageDirectory().getPath());
+        Log.d(TAG, "cachePath=: " + this.getCacheDir());
+        Log.d(TAG, "ExternalPath=: " + this.getExternalCacheDir());
+        Log.d(TAG, "initView: " + Environment.getDataDirectory().getAbsolutePath());
+
+        ArrayList<String> fileName = getFileNameList("/storage/emulated/0/MagicBooks/Cover/");
+        Log.d(TAG, "initView: fileName=" + fileName);
+
 
         findViewById(R.id.btn_popuwindow).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -263,4 +273,28 @@ public class MaterialActivty extends BaseActivity {
         }
     }
 
+    private ArrayList<String> getFileNameList(String path) {
+        ArrayList<String> fileNameList = new ArrayList<String>();
+
+        File file = new File(path);
+        File[] fileList = file.listFiles();
+        if (fileList == null) return null;
+        for (int i = 0; i < fileList.length; i++) {
+            fileNameList.add(getFileNameNoEx(fileList[i].getName()));
+        }
+
+        return fileNameList;
+    }
+    public static String getFileNameNoEx(String filename) {
+        if ((filename != null) && (filename.length() > 0)) {
+            int dot = filename.lastIndexOf('.');
+            if ((dot >-1) && (dot < (filename.length()))) {
+                return filename.substring(0, dot);
+            }
+        }
+        return filename;
+    }
+
 }
+
+
