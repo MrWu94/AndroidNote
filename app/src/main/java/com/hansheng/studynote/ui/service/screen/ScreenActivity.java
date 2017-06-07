@@ -19,4 +19,9 @@ public class ScreenActivity extends BaseActivity {
     protected void initView() {
         startService(new Intent(ScreenActivity.this,ScreenService.class));
     }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+    }
 }

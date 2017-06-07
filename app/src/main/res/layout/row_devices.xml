@@ -5,12 +5,6 @@
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:background="?android:attr/activatedBackgroundIndicator"
     android:padding="6dip">
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:layout_marginRight="2dip"
-        android:src="@drawable/zhangjinxuan" />
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="0dip"

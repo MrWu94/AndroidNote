@@ -72,6 +72,6 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_margin="5dp"
-            android:textColor="@android:color/white"></TextView>
+            android:textColor="@android:color/white"/>
     </LinearLayout>
 </FrameLayout>

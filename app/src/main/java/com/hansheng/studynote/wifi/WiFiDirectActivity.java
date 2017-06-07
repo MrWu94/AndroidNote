@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.provider.Settings;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -72,7 +73,7 @@ public class WiFiDirectActivity extends AppCompatActivity implements WifiP2pMana
     public static final String TAG = "wifiDirectActivity";
     private WifiP2pManager manager;
     private boolean isWifiP2pEnabled = false;
-
+    private Toolbar toolbar;
     private boolean retryChannel = false;
     private WifiP2pManager.Channel channel;
     private BroadcastReceiver receiver = null;
@@ -102,9 +103,11 @@ public class WiFiDirectActivity extends AppCompatActivity implements WifiP2pMana
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wifi_main);
-
         manager = (WifiP2pManager) getSystemService(Context.WIFI_P2P_SERVICE);
         channel = manager.initialize(this, getMainLooper(), null);
+        toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
