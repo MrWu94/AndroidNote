@@ -31,7 +31,7 @@ currentPoint = (1, 2, 3)
 for c in currentPoint:
     print c
 
-sum=0
+sum = 0
 for a in range(100):
     sum = sum + a
     print a
@@ -43,7 +43,12 @@ if birth < 2000:
 else:
     print '00后'
 
-d={'hansheng':1,'dongzhi':20}
+d = {'hansheng': 1, 'dongzhi': 20}
 print d['hansheng']
 
 
+def getCurrentTime(x):
+    if x >= 0:
+        return x
+    else:
+        return -x
