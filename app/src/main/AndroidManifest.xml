@@ -72,7 +72,7 @@
             android:value="GlideModule" />
 
         <activity
-            android:name=".wifi.WiFiDirectActivity"
+            android:name=".ui.activity.context.ContextActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:excludeFromRecents="true"
             android:label="@string/app_name">
