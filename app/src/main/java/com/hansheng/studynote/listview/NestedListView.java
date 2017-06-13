@@ -2,12 +2,15 @@ package com.hansheng.studynote.listview;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import static com.bumptech.glide.gifdecoder.GifHeaderParser.TAG;
 
 /**
  * Created by hansheng on 2016/7/18.
@@ -22,6 +25,7 @@ public class NestedListView extends ListView implements View.OnTouchListener, Ab
         listViewTouchAction = -1;
         setOnScrollListener(this);
         setOnTouchListener(this);
+        Log.d(TAG, "NestedListView: ");
     }
 
     @Override
