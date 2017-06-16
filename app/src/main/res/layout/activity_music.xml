@@ -16,8 +16,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="停止播放音乐"
+        android:text="停止播放音乐" />
 
-        />
+    <ImageView
+        android:id="@+id/btn_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="center" />
 
 </LinearLayout>
