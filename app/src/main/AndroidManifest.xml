@@ -70,7 +70,7 @@
         <meta-data
             android:name="com.hansheng.studynote.imageordrawable.glide.CustomCachingGlideModule"
             android:value="GlideModule" />
-
+        <!--android:excludeFromRecents="true" 长按Home键，该Activity不会在最近任务列表中显示-->
         <activity
             android:name=".ui.service.music.MusicActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
