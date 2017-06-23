@@ -520,6 +520,15 @@ dependencies {
 //        exclude group: 'com.facebook.react', module: 'react-native'
 //    }
 
+//    dependencies {
+//        compile('com.github.BolexLiu:PressScanCode:v1.0.0'', {
+//                exclude group: 'com.google.zxing' //排除依赖
+//    })
+//    compile 'com.google.zxing:core:3.3.0'
+//}
+//
+//这样做的意思排除PressScanCode原有的依赖。而选择依赖我们自己设定的3.3.0的zxing库。
+
 }
 apt {
     arguments {
