@@ -19,10 +19,10 @@ def releaseTime() {
     return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
 }
 
-def gitVersionCode() {
-    def cmd = 'git rev-list HEAD --first-parent --count'
-    cmd.execute().text.trim().toInteger()
-}
+//def gitVersionCode() {
+//    def cmd ='git rev-list HEAD --first-parent --count'
+//    cmd.execute().text.trim().toInteger()
+//}
 
 def gitVersionTag() {
     def cmd = 'git describe --tags'
@@ -52,7 +52,7 @@ android {
         targetSdkVersion globalConfiguration.AndroidTargetSdkVersion
         multiDexEnabled true
         resConfigs "zh"
-        versionCode gitVersionCode()
+        versionCode 1
         versionName gitVersionTag()
 //        versionCode = Integer.parseInt("git rev-list --count HEAD".execute([], project.rootDir).text.trim())
 //        versionName = project.version.toString().replace('+', '-')
