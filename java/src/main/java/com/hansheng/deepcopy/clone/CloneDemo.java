@@ -3,6 +3,8 @@ package com.hansheng.deepcopy.clone;
 /**
  * Created by mrwu on 2017/7/11.
  * <p>
+ * http://droidyue.com/blog/2016/05/15/dive-into-java-clone/
+ * <p>
  * Java中的赋值
  * <p>
  * 在Java中，赋值是很常用的，一个简单的赋值如下
