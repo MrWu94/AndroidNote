@@ -106,7 +106,7 @@ public class MainActivity extends Activity {
 						eventObject.put("点击人", nameInput.getText().toString().trim());
 					}
 					eventObject.put("点击项", "按钮1");
-					ZhugeSDK.getInstance().onEvent(getApplicationContext(), "点击", eventObject);
+//					ZhugeSDK.getInstance().onEvent(getApplicationContext(), "点击", eventObject);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -129,7 +129,7 @@ public class MainActivity extends Activity {
 						eventObject.put("点击人", nameInput.getText().toString().trim());
 					}
 					eventObject.put("点击项", "按钮2");
-					ZhugeSDK.getInstance().onEvent(getApplicationContext(), "点击", eventObject);
+//					ZhugeSDK.getInstance().onEvent(getApplicationContext(), "点击", eventObject);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

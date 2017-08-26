@@ -10,12 +10,12 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.android.tools.build:gradle:2.3.3'
         classpath 'com.antfortune.freeline:gradle:0.8.2'
         classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.4'
         classpath 'com.mogujie.gradle:tinyPicPlugin:1.1.4'
-        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.1'
+//        classpath 'com.tencent.mm:AndResGuard-gradle-plugin:1.2.1'
         classpath "net.rdrei.android.buildtimetracker:gradle-plugin:0.9.+"
         classpath 'com.getkeepsafe.dexcount:dexcount-gradle-plugin:0.6.4'
 

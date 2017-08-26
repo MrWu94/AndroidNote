@@ -21,15 +21,15 @@ package com.hansheng.deepcopy;
  */
 public class Client1 {
 
-    public static void getClone(){
-        int x=2,y;
-        y=x;
-        x=1;
-        System.out.println(y==x);
+    public static void getClone() {
+        int x = 2, y;
+        y = x;
+        x = 1;
+        System.out.println(y == x);
 
-        String str1="hansheng",str2;
-        str2=str1;
-        str1="hanming";
+        String str1 = "hansheng", str2;
+        str2 = str1;
+        str1 = "hanming";
         System.out.println(str1.equals(str2));
 
     }
