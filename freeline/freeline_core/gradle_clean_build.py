@@ -75,7 +75,7 @@ class GradleReadProjectInfoTask(Task):
         output, err, code = cexec(command.split(' '), callback=None)
         if code != 0:
             from exceptions import FreelineException
-            raise FreelineException('freeline failed when read project info with script: {}'.format(command),
+            raise FreelineException('freeline failed when read.md project info with script: {}'.format(command),
                                     '{}\n{}'.format(output, err))
 
 

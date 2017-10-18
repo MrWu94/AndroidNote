@@ -168,5 +168,6 @@
     <string name="notify_dayline_summary">开启后,每天早晨8点,手机会为你提示学习每日一句。</string>
     <string name="open_auto_paste_summary">开启后,每次打开 App 时将会自动检测粘贴板是否有单词并翻译。</string>
 
+    <string name="auto_service_des">自动安装</string>
 
 </resources>

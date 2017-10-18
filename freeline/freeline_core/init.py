@@ -35,7 +35,7 @@ def init():
     print('freeline is reading project info, please wait a moment...')
     output, err, code = cexec(args, cwd=project_dir)
     if code != 0:
-        raise FreelineException('freeline failed when read project info with script: {}'.format(args),
+        raise FreelineException('freeline failed when read.md project info with script: {}'.format(args),
                                 '{}\n{}'.format(output, err))
     print('freeline init success')
 

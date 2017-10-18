@@ -72,7 +72,7 @@
             android:value="GlideModule" />
         <!--android:excludeFromRecents="true" 长按Home键，该Activity不会在最近任务列表中显示-->
         <activity
-            android:name=".ui.service.music.MusicActivity"
+            android:name=".accessibility.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize"
             android:excludeFromRecents="true"
             android:label="@string/app_name">
@@ -97,6 +97,18 @@
         <activity android:name=".sqlite.SQLiteDB2.StudentDetail" />
         <activity android:name=".application.NoStoreApplication.GreetLoudlyActivity" />
         <activity android:name=".animator.higeanim.HighAnimActivity" />
+
+        <service
+            android:name=".accessibility.InstallService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_auto_install" />
+        </service>
 
         <activity android:name=".imageordrawable.drawable.AnimationDrawableActivity1" />
 

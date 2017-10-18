@@ -57,7 +57,6 @@ android {
 //        versionCode = Integer.parseInt("git rev-list --count HEAD".execute([], project.rootDir).text.trim())
 //        versionName = project.version.toString().replace('+', '-')
         //ADD THIS LINE:
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
         ndk {
             moduleName "hello_jni"       //生成的so文件名字，调用C程序的代码中会用到该名字
@@ -96,7 +95,7 @@ android {
 
     productFlavors {
         dev {
-            minSdkVersion = 21
+            minSdkVersion == 21
         }
     }
 
@@ -437,8 +436,8 @@ dependencies {
     compile otherDependencies.rxjava
     compile otherDependencies.rxandroid
 
-    compile otherDependencies.stetho
-    compile otherDependencies.stetho_okhttp
+//    compile otherDependencies.stetho
+//    compile otherDependencies.stetho_okhttp
     // If you want to bind to Android-specific lifecycles
     compile otherDependencies.rxlifecycle
     // If you want pre-written Activities and Fragments you can subclass as providers
@@ -449,20 +448,20 @@ dependencies {
 //    您可以将此配置与 JAR 二进制依赖项一起使用，而不能与其他库模块依赖项或 AAR 二进制依赖项一起使用。
     provided 'org.projectlombok:lombok:1.16.6'
 
-    android {
-        useLibrary 'org.apache.http.legacy'
-    }
+//    android {
+//        useLibrary 'org.apache.http.legacy'
+//    }
 
-    apt "org.androidannotations:androidannotations:${aaVersion}"
-    compile "org.androidannotations:androidannotations:${aaVersion}"
+//    apt "org.androidannotations:androidannotations:${aaVersion}"
+//    compile "org.androidannotations:androidannotations:${aaVersion}"
 
     compile project(':customview')
     compile project(':hanshenghttpclient')
-    compile project(':simplenet')
+//    compile project(':simplenet')
 //    compile project(':animation')
     //module和aar只能有一个
 //    compile(name: 'animation-release', ext: 'aar')
-    compile 'com.jiechic.library:xUtils:2.6.14'
+//    compile 'com.jiechic.library:xUtils:2.6.14'
 
     compile 'com.getbase:floatingactionbutton:1.7.0'
 
@@ -481,11 +480,11 @@ dependencies {
 
     compile 'com.wanjian:sak:0.0.2'
 
-    // LeanCloud 基础包
-    compile('cn.leancloud.android:avoscloud-sdk:v3.+')
-
-    // LeanCloud 应用内搜索包
-    compile('cn.leancloud.android:avoscloud-search:v3.+@aar')
+//    // LeanCloud 基础包
+//    compile('cn.leancloud.android:avoscloud-sdk:v3.+')
+//
+//    // LeanCloud 应用内搜索包
+//    compile('cn.leancloud.android:avoscloud-search:v3.+@aar')
 
     compile 'com.melnykov:floatingactionbutton:1.1.0'
 
@@ -496,7 +495,7 @@ dependencies {
     compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
     compile 'com.mikepenz:foundation-icons-typeface:3.0.0.1@aar'
     compile 'com.orhanobut:logger:1.15'
-    compile 'com.github.scribejava:scribejava-apis:3.2.0'
+//    compile 'com.github.scribejava:scribejava-apis:3.2.0'
 
     compile 'com.zhuge.analysis:zhugeio:latest.integration'
     compile 'com.android.support:multidex:1.0.1'
