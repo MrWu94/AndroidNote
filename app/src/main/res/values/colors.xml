@@ -70,4 +70,8 @@
     <color name="btn_dialog_positive_pressed">#0067f3</color>
     <color name="grid" >#3F51B5</color>
 
+    <color name="bg_row_background">#fa315b</color>
+    <color name="item_name">#535353</color>
+    <color name="description">#a9a9a9</color>
+
 </resources>

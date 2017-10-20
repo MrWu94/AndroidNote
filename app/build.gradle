@@ -436,6 +436,9 @@ dependencies {
     compile otherDependencies.rxjava
     compile otherDependencies.rxandroid
 
+    // volley http library
+    compile 'com.android.volley:volley:1.0.0'
+
 //    compile otherDependencies.stetho
 //    compile otherDependencies.stetho_okhttp
     // If you want to bind to Android-specific lifecycles
