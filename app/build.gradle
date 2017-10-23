@@ -149,6 +149,7 @@ android {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/NOTICE'
     }
+
     sourceSets {
         main {
             java.srcDirs = ['src/main/java', 'src/main/java-gen']
