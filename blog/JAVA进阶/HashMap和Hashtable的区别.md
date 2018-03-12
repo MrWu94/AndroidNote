@@ -73,9 +73,21 @@ List有三个子类使用
 
 如果都多ArrayList。
 
+## Map
 
+Map是键值对，键Key是唯一不能重复的，一个键对应一个值，值可以重复。 
 
+TreeMap可以保证顺序。
 
+HashMap不保证顺序，即为无序的。
+
+Map中可以将Key和Value单独抽取出来，其中KeySet()方法可以将所有的keys抽取正一个Set。而Values()方法可以将map中所有的values抽取成一个集合。
+
+## Set
+
+不包含重复元素的集合，set中最多包含一个null元素。
+
+只能用Lterator实现单项遍历，Set中没有同步方法。
 
 参考：
 
